@@ -2,7 +2,7 @@
     "name": "integrated/integrated",
     "license": "MIT",
     "type": "project",
-    "description": "Integrated, software suite for publishers.",
+    "description": "Skeleton for a new Integrated based application, which includes the use of all core bundles",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -23,11 +23,12 @@
         "components/jquery": "1.10.*",
         "integrated/library": "~0.3",
         "integrated/channel-bundle": "~0.3",
-        "integrated/content-bundle": "~0.3",
+        "integrated/content-bundle": "~0.4",
         "integrated/formtype-bundle": "~0.3",
         "integrated/solr-bundle": "~0.3",
-        "integrated/user-bundle": "~0.2",
-        "integrated/website-bundle": "~0.3"
+        "integrated/user-bundle": "~0.3",
+        "integrated/website-bundle": "~0.4",
+        "integrated/puphpet": "~0.4"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*"
@@ -39,8 +40,6 @@
             "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "php app/console braincrafted:bootstrap:install",
             "php app/console fos:js-routing:dump --env=prod",
             "php app/console assetic:dump web",
             "php app/console doctrine:mongodb:schema:create",
