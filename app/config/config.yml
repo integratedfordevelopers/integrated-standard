@@ -139,6 +139,9 @@ sp_bower:
         IntegratedWebsiteBundle:
             cache:
                 %kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle
+        IntegratedStorageBundle :
+            cache:
+                %kernel.cache_dir%/../sp_bower/IntegratedStorageBundle
     bin: %bower_bin%
     install_on_warmup: true
     assetic:
