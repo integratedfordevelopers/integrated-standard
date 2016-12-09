@@ -52,6 +52,7 @@ assetic:
         cssrewrite: ~
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+        uglifyjs2: ~
 
     assets:
         integrated_css:
