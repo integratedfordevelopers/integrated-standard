@@ -31,7 +31,7 @@
         "integrated/theme-bundle": "~0.6",
         "integrated/user-bundle": "~0.5",
         "integrated/website-bundle": "~0.6",
-        "integrated/workflow-bundle": "~0.5",
+        "integrated/workflow-bundle": "~0.7",
         "integrated/puphpet": "~0.4"
     },
     "require-dev": {

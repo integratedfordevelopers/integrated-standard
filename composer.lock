@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f94867a20d23aeb0dcbe364ce997e11b",
-    "content-hash": "9c41aceecd52a75098e6120a3f9e4fd0",
+    "hash": "4a2b70ed9c76df890fd15cfa53eb26f8",
+    "content-hash": "c6f9de5c7f0adb8f993ee6fe614fbbda",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1591,7 +1591,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/d8a322d44b026729323354c21391b22485013078.zip",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/3de9fa69797b6facd2cc81c48e85e8b449066f3e.zip",
                 "reference": "79131ac44f0d07b4b5e4ec4088e9c77c38204b26",
                 "shasum": ""
             },
@@ -1700,7 +1700,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/39c6c46abe77816a61c59b05d501384a90359679.zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/968155e375aca32787f36b49493d3c01dc0ecf96.zip",
                 "reference": "39c6c46abe77816a61c59b05d501384a90359679",
                 "shasum": ""
             },
@@ -1828,7 +1828,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/d41e484a9d2cad16759aae2673d6d20f5488aba3.zip",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/a206e4e7f100ff958471cfd3c22e0b412ff4d3b2.zip",
                 "reference": "d41e484a9d2cad16759aae2673d6d20f5488aba3",
                 "shasum": ""
             },
@@ -2134,7 +2134,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/483d9d8dc601f07819e28121a69a42096cb46622",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/40741a8daf65bfe734bc746266438e6a9d1d5694",
                 "reference": "40741a8daf65bfe734bc746266438e6a9d1d5694",
                 "shasum": ""
             },
@@ -2276,7 +2276,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/864947e82ee0e336a97570e995abd777f8d3a2b1.zip",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/181158aa34cbc25eda117f3f3a544444b3e3e379.zip",
                 "reference": "a14fdf76629493abdab09453b8c8ce3b44e4921f",
                 "shasum": ""
             },
@@ -2330,7 +2330,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/200541af62c94b0243269883c02d57742877e056",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/935dcdec94ec85bcec1fdf8ad14d8ba61d73f612",
                 "reference": "935dcdec94ec85bcec1fdf8ad14d8ba61d73f612",
                 "shasum": ""
             },
@@ -2385,16 +2385,16 @@
         },
         {
             "name": "integrated/workflow-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle.git",
-                "reference": "bf37cf6af97c650c835b180705101eb26e2db574"
+                "reference": "3f6f26c8b431cb5d4cbcefa64a383c833c8df72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/bf37cf6af97c650c835b180705101eb26e2db574.zip",
-                "reference": "bf37cf6af97c650c835b180705101eb26e2db574",
+                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/3f6f26c8b431cb5d4cbcefa64a383c833c8df72b.zip",
+                "reference": "3f6f26c8b431cb5d4cbcefa64a383c833c8df72b",
                 "shasum": ""
             },
             "require": {
@@ -2437,7 +2437,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2016-10-30 21:44:19"
+            "time": "2017-01-11 12:15:18"
         },
         {
             "name": "jdorn/sql-formatter",
