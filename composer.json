@@ -32,7 +32,8 @@
         "integrated/user-bundle": "~0.5",
         "integrated/website-bundle": "~0.6",
         "integrated/workflow-bundle": "~0.5",
-        "integrated/puphpet": "~0.4"
+        "integrated/puphpet": "~0.4",
+        "integrated/comment-bundle": "~0.6"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*"
