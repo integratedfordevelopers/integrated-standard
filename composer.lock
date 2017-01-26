@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc5b220f988d35c6342e856e9b1e1293",
+    "content-hash": "07d382736d991570462546ab0151a57c",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1592,7 +1592,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/3de9fa69797b6facd2cc81c48e85e8b449066f3e.zip",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/ecab57ff704a7b8a4fe9e6c051242c66ed0ba1d1.zip",
                 "reference": "3de9fa69797b6facd2cc81c48e85e8b449066f3e",
                 "shasum": ""
             },
@@ -1701,7 +1701,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/968155e375aca32787f36b49493d3c01dc0ecf96.zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/c5f912b61f995147760a14efa3a85441060de3ec.zip",
                 "reference": "968155e375aca32787f36b49493d3c01dc0ecf96",
                 "shasum": ""
             },
@@ -1822,6 +1822,56 @@
             "time": "2016-11-26 14:37:37"
         },
         {
+            "name": "integrated/image-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
+                "reference": "4debce0a7541785912581accf87469113578180c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/4debce0a7541785912581accf87469113578180c",
+                "reference": "4debce0a7541785912581accf87469113578180c",
+                "shasum": ""
+            },
+            "require": {
+                "integrated/content-bundle": "~0.6",
+                "integrated/library": "~0.6",
+                "php": ">=5.4",
+                "symfony/symfony": "~2.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Integrated\\Bundle\\ImageBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "e-Active",
+                    "homepage": "http://www.e-active.nl"
+                }
+            ],
+            "description": "Integrated Image Bundle",
+            "homepage": "http://www.e-active.nl",
+            "keywords": [
+                "Integrated",
+                "extension",
+                "image",
+                "thumbnail",
+                "twig"
+            ],
+            "time": "2017-01-25 12:48:58"
+        },
+        {
             "name": "integrated/library",
             "version": "0.6.x-dev",
             "source": {
@@ -1831,7 +1881,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/a206e4e7f100ff958471cfd3c22e0b412ff4d3b2.zip",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/3c8c3a7bdb39491805643f0b50f97a9d194fafcf.zip",
                 "reference": "a206e4e7f100ff958471cfd3c22e0b412ff4d3b2",
                 "shasum": ""
             },
@@ -2184,7 +2234,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/20d4e9d2aca8e9a0d2ef61f035d89a20daa2621f.zip",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/c49a2c709ffe20add69b1b9dd0377bab3865b386.zip",
                 "reference": "20d4e9d2aca8e9a0d2ef61f035d89a20daa2621f",
                 "shasum": ""
             },
@@ -2808,7 +2858,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -4512,7 +4562,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "integrated/image-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
