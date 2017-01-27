@@ -35,7 +35,7 @@
         "integrated/website-bundle": "~0.6,<0.7",
         "integrated/workflow-bundle": "~0.5,<0.7",
         "integrated/puphpet": "~0.4",
-        "integrated/image-bundle": "dev-master"
+        "integrated/image-bundle": "~0.6"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*"
