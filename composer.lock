@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "07d382736d991570462546ab0151a57c",
+    "content-hash": "9b0da2bb582e17bb9f246927dcbf7f0d",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1697,12 +1697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "968155e375aca32787f36b49493d3c01dc0ecf96"
+                "reference": "c5f912b61f995147760a14efa3a85441060de3ec"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/c5f912b61f995147760a14efa3a85441060de3ec.zip",
-                "reference": "968155e375aca32787f36b49493d3c01dc0ecf96",
+                "reference": "c5f912b61f995147760a14efa3a85441060de3ec",
                 "shasum": ""
             },
             "require": {
@@ -1718,6 +1718,7 @@
                 "integrated/asset-bundle": "~0.5",
                 "integrated/block-bundle": "~0.6",
                 "integrated/formtype-bundle": "~0.6",
+                "integrated/image-bundle": "~0.6",
                 "integrated/library": "~0.6",
                 "integrated/locking-bundle": "~0.6",
                 "integrated/menu-bundle": "~0.5",
@@ -1761,7 +1762,64 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-01-09 09:15:17"
+            "time": "2017-01-25 12:01:22"
+        },
+        {
+            "name": "integrated/content-history-bundle",
+            "version": "0.6.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle.git",
+                "reference": "86a67058e9bd906c320f3bd8a915bd514be590e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/86a67058e9bd906c320f3bd8a915bd514be590e3.zip",
+                "reference": "86a67058e9bd906c320f3bd8a915bd514be590e3",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/mongodb": ">=1.0.0",
+                "doctrine/mongodb-odm": "*",
+                "doctrine/mongodb-odm-bundle": "~3.0",
+                "ext-mongo": "~1.2",
+                "integrated/content-bundle": "~0.5",
+                "php": ">=5.4",
+                "symfony/framework-bundle": "~2.2",
+                "symfony/symfony": "~2.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.4.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.9.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Integrated\\Bundle\\ContentHistoryBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "e-Active",
+                    "homepage": "http://www.e-active.nl"
+                }
+            ],
+            "description": "Integrated Content History Bundle",
+            "homepage": "http://www.e-active.nl",
+            "keywords": [
+                "Integrated",
+                "content",
+                "history"
+            ],
+            "time": "2017-01-25 12:01:08"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -1823,16 +1881,16 @@
         },
         {
             "name": "integrated/image-bundle",
-            "version": "dev-master",
+            "version": "0.6.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
-                "reference": "4debce0a7541785912581accf87469113578180c"
+                "reference": "bee36638f13e85eafef59dbc2d7f89d93379247d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/4debce0a7541785912581accf87469113578180c",
-                "reference": "4debce0a7541785912581accf87469113578180c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/bee36638f13e85eafef59dbc2d7f89d93379247d",
+                "reference": "bee36638f13e85eafef59dbc2d7f89d93379247d",
                 "shasum": ""
             },
             "require": {
@@ -1869,7 +1927,7 @@
                 "thumbnail",
                 "twig"
             ],
-            "time": "2017-01-25 12:48:58"
+            "time": "2017-01-27 10:56:38"
         },
         {
             "name": "integrated/library",
@@ -2230,24 +2288,28 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "20d4e9d2aca8e9a0d2ef61f035d89a20daa2621f"
+                "reference": "0aca177ab9ed8b4fdba28baaa8c9dfddec3da62e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/c49a2c709ffe20add69b1b9dd0377bab3865b386.zip",
-                "reference": "20d4e9d2aca8e9a0d2ef61f035d89a20daa2621f",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/0aca177ab9ed8b4fdba28baaa8c9dfddec3da62e.zip",
+                "reference": "0aca177ab9ed8b4fdba28baaa8c9dfddec3da62e",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "~1.3",
                 "fzaninotto/faker": "~1.6",
                 "integrated/content-bundle": "~0.6",
+                "integrated/image-bundle": "~0.6",
                 "knplabs/knp-gaufrette-bundle": "~0.1.7",
                 "php": ">=5.4",
                 "symfony/symfony": "~2.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.4.*"
+            },
+            "suggest": {
+                "ext-imagick": "Allows more image formats to be uploaded"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2271,7 +2333,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2016-11-16 16:35:26"
+            "time": "2017-01-27 07:02:56"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2329,7 +2391,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/181158aa34cbc25eda117f3f3a544444b3e3e379.zip",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/f356853eca11f153252d20297c8f36080143204c.zip",
                 "reference": "181158aa34cbc25eda117f3f3a544444b3e3e379",
                 "shasum": ""
             },
@@ -4562,9 +4624,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "integrated/image-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
