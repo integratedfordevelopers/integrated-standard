@@ -1828,12 +1828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "647607bf54b759dbbb055c4886aad5eb28d795c8"
+                "reference": "6d1407db73eaec20a5cf92db1bbe3ca609116a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/647607bf54b759dbbb055c4886aad5eb28d795c8.zip",
-                "reference": "647607bf54b759dbbb055c4886aad5eb28d795c8",
+                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/6d1407db73eaec20a5cf92db1bbe3ca609116a2a.zip",
+                "reference": "6d1407db73eaec20a5cf92db1bbe3ca609116a2a",
                 "shasum": ""
             },
             "require": {
