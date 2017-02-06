@@ -26,6 +26,10 @@ integrated_workflow:
     resource: "@IntegratedWorkflowBundle/Resources/config/routing/workflow.xml"
     prefix: "/admin/workflow"
 
+integrated_content_history:
+    resource: "@IntegratedContentHistoryBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
 integrated_website:
     resource: "@IntegratedWebsiteBundle/Resources/config/routing.xml"
 
