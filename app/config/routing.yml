@@ -33,5 +33,9 @@ integrated_content_history:
 integrated_website:
     resource: "@IntegratedWebsiteBundle/Resources/config/routing.xml"
 
+integrated_comment:
+    resource: "@IntegratedCommentBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
