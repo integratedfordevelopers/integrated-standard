@@ -1,0 +1,8 @@
+install:
+- curl -sS https://getcomposer.org/installer | php
+before_script:
+- php composer.phar install -n
+script:
+- bin/phpunit -c app/phpunit.xml
+- bin/behat
+- bin/phpcs --standard=PSR2 --severity=error src/
