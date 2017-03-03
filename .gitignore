@@ -19,3 +19,4 @@
 /conf.d/.ssh/
 /.idea/
 /.vagrant/
+/web/adminer.php
