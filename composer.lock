@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2d6e2d6ac599846a35c28caebcd8641f",
-    "content-hash": "c804e85a2bc197acbb6b27c33923b940",
+    "content-hash": "70417f912224f93cb1424422d8ca2c85",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -66,7 +65,7 @@
             "keywords": [
                 "bootstrap"
             ],
-            "time": "2016-01-23 17:44:32"
+            "time": "2016-01-23T17:44:32+00:00"
         },
         {
             "name": "components/jquery",
@@ -111,20 +110,20 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2014-10-11 11:50:53"
+            "time": "2014-10-11T11:50:53+00:00"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.3.1",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558"
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
-                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/54cacc9b81758b14e3ce750f205a393d52339e97",
+                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +132,7 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.6.1"
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "extra": {
@@ -179,7 +178,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2016-12-30 15:59:45"
+            "time": "2017-02-24T16:22:25+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -249,7 +248,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-10-29 11:16:17"
+            "time": "2016-10-29T11:16:17+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -316,7 +315,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2017-01-03 10:49:41"
+            "time": "2017-01-03T10:49:41+00:00"
         },
         {
             "name": "doctrine/common",
@@ -389,7 +388,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2017-01-13 14:02:13"
+            "time": "2017-01-13T14:02:13+00:00"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -448,7 +447,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2016-09-20 10:07:57"
+            "time": "2016-09-20T10:07:57+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -519,7 +518,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2017-02-08 12:53:47"
+            "time": "2017-02-08T12:53:47+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -600,7 +599,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2017-01-16 12:01:26"
+            "time": "2017-01-16T12:01:26+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -688,7 +687,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-01-26 17:28:51"
+            "time": "2016-01-26T17:28:51+00:00"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -745,7 +744,7 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2015-11-04 21:23:23"
+            "time": "2015-11-04T21:23:23+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -812,7 +811,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06 14:35:42"
+            "time": "2015-11-06T14:35:42+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -866,7 +865,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14 21:17:01"
+            "time": "2015-06-14T21:17:01+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -920,7 +919,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09 13:34:57"
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "doctrine/mongodb",
@@ -997,7 +996,7 @@
                 "mongodb",
                 "persistence"
             ],
-            "time": "2016-11-22 19:01:59"
+            "time": "2016-11-22T19:01:59+00:00"
         },
         {
             "name": "doctrine/mongodb-odm",
@@ -1081,7 +1080,7 @@
                 "odm",
                 "persistence"
             ],
-            "time": "2017-01-14 17:19:01"
+            "time": "2017-01-14T17:19:01+00:00"
         },
         {
             "name": "doctrine/mongodb-odm-bundle",
@@ -1154,7 +1153,7 @@
                 "persistence",
                 "symfony"
             ],
-            "time": "2016-12-08 07:05:40"
+            "time": "2016-12-08T07:05:40+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -1230,7 +1229,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2016-12-18 15:42:34"
+            "time": "2016-12-18T15:42:34+00:00"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1288,7 +1287,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2015-10-28 15:08:39"
+            "time": "2015-10-28T15:08:39+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -1336,7 +1335,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-04-29 12:21:54"
+            "time": "2016-04-29T12:21:54+00:00"
         },
         {
             "name": "gregwar/cache",
@@ -1379,27 +1378,31 @@
                 "file-system",
                 "system"
             ],
-            "time": "2016-09-23 08:16:04"
+            "time": "2016-09-23T08:16:04+00:00"
         },
         {
             "name": "gregwar/image",
-            "version": "v2.0.20",
+            "version": "v2.0.21",
             "target-dir": "Gregwar/Image",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Gregwar/Image.git",
-                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
+                "reference": "c9899e4c71009338f89a8c63c12c681692533ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
-                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+                "url": "https://api.github.com/repos/Gregwar/Image/zipball/c9899e4c71009338f89a8c63c12c681692533ede",
+                "reference": "c9899e4c71009338f89a8c63c12c681692533ede",
                 "shasum": ""
             },
             "require": {
                 "ext-gd": "*",
-                "gregwar/cache": "1.*",
-                "php": ">=5.3.0"
+                "gregwar/cache": "^1.0.6",
+                "php": "^5.3 || ^7.0"
+            },
+            "require-dev": {
+                "sllh/php-cs-fixer-styleci-bridge": "~1.0",
+                "symfony/phpunit-bridge": "^2.7.4 || ^3.0"
             },
             "suggest": {
                 "behat/transliterator": "Transliterator provides ability to set non-latin1 pretty names"
@@ -1427,7 +1430,7 @@
                 "gd",
                 "image"
             ],
-            "time": "2015-05-30 19:24:37"
+            "time": "2017-01-24T09:29:39+00:00"
         },
         {
             "name": "gregwar/image-bundle",
@@ -1477,7 +1480,7 @@
                 "image",
                 "symfony"
             ],
-            "time": "2017-01-06 15:19:05"
+            "time": "2017-01-06T15:19:05+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1528,11 +1531,11 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2015-11-10 17:04:01"
+            "time": "2015-11-10T17:04:01+00:00"
         },
         {
             "name": "integrated/asset-bundle",
-            "version": "0.5.x-dev",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-asset-bundle.git",
@@ -1582,7 +1585,7 @@
                 "asset",
                 "asset manager"
             ],
-            "time": "2016-10-17 13:57:02"
+            "time": "2016-10-17T13:57:02+00:00"
         },
         {
             "name": "integrated/block-bundle",
@@ -1649,12 +1652,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-channel-bundle.git",
-                "reference": "ac583645e6a285596bd0def378dfd2d799c74371"
+                "reference": "8f7d3d48a2105937b3f0c2018fd70feee77b1e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/ac583645e6a285596bd0def378dfd2d799c74371",
-                "reference": "ac583645e6a285596bd0def378dfd2d799c74371",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/8f7d3d48a2105937b3f0c2018fd70feee77b1e06",
+                "reference": "8f7d3d48a2105937b3f0c2018fd70feee77b1e06",
                 "shasum": ""
             },
             "require": {
@@ -1691,7 +1694,7 @@
                 "Integrated",
                 "channel"
             ],
-            "time": "2016-10-30 12:26:27"
+            "time": "2017-03-07 17:28:53"
         },
         {
             "name": "integrated/comment-bundle",
@@ -1699,12 +1702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-comment-bundle.git",
-                "reference": "51f73022d0d1f5621863257c5340e337db55fd7b"
+                "reference": "fedf39751afb8f3601d178bf8223bc9ba30ff96b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/51f73022d0d1f5621863257c5340e337db55fd7b",
-                "reference": "51f73022d0d1f5621863257c5340e337db55fd7b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/fedf39751afb8f3601d178bf8223bc9ba30ff96b",
+                "reference": "fedf39751afb8f3601d178bf8223bc9ba30ff96b",
                 "shasum": ""
             },
             "require": {
@@ -1745,7 +1748,7 @@
                 "Integrated",
                 "comment"
             ],
-            "time": "2017-02-10 08:32:28"
+            "time": "2017-02-16 15:19:17"
         },
         {
             "name": "integrated/content-bundle",
@@ -1753,12 +1756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "c6adcb9433c0126fb9466219d4e8ce62d6fe3985"
+                "reference": "e5f78d132198207e17e24aa92bfce3d1a3e483fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/c6adcb9433c0126fb9466219d4e8ce62d6fe3985.zip",
-                "reference": "c6adcb9433c0126fb9466219d4e8ce62d6fe3985",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/e5f78d132198207e17e24aa92bfce3d1a3e483fd.zip",
+                "reference": "e5f78d132198207e17e24aa92bfce3d1a3e483fd",
                 "shasum": ""
             },
             "require": {
@@ -1818,7 +1821,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-02-13 13:51:51"
+            "time": "2017-03-03 11:08:35"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -1826,12 +1829,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-history-bundle.git",
-                "reference": "86a67058e9bd906c320f3bd8a915bd514be590e3"
+                "reference": "42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/86a67058e9bd906c320f3bd8a915bd514be590e3.zip",
-                "reference": "86a67058e9bd906c320f3bd8a915bd514be590e3",
+                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a.zip",
+                "reference": "42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a",
                 "shasum": ""
             },
             "require": {
@@ -1875,7 +1878,7 @@
                 "content",
                 "history"
             ],
-            "time": "2017-01-25 12:01:08"
+            "time": "2017-03-06 14:31:05"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -1884,12 +1887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "fc09f9f268921fc66771bdb1043b2417c01340de"
+                "reference": "c5defdffa353f0e3648709a0903bec7e51f6a4c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/fc09f9f268921fc66771bdb1043b2417c01340de.zip",
-                "reference": "fc09f9f268921fc66771bdb1043b2417c01340de",
+                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/c5defdffa353f0e3648709a0903bec7e51f6a4c2.zip",
+                "reference": "c5defdffa353f0e3648709a0903bec7e51f6a4c2",
                 "shasum": ""
             },
             "require": {
@@ -1933,7 +1936,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-02-13 13:50:20"
+            "time": "2017-02-20 14:04:27"
         },
         {
             "name": "integrated/image-bundle",
@@ -1941,12 +1944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
-                "reference": "78fa54f9c2b0086ddd9973a60a5fdef7f20bf9d1"
+                "reference": "aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/78fa54f9c2b0086ddd9973a60a5fdef7f20bf9d1",
-                "reference": "78fa54f9c2b0086ddd9973a60a5fdef7f20bf9d1",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794",
+                "reference": "aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794",
                 "shasum": ""
             },
             "require": {
@@ -1986,7 +1989,7 @@
                 "thumbnail",
                 "twig"
             ],
-            "time": "2017-02-13 13:22:16"
+            "time": "2017-03-03 11:08:57"
         },
         {
             "name": "integrated/library",
@@ -2212,16 +2215,16 @@
         },
         {
             "name": "integrated/puphpet",
-            "version": "0.4",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba"
+                "reference": "69c8c7f444d6711fce47a3cf13c60f725d5cec06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/e7620c02773c54e68660d86c9e5d7ab0ec454dba",
-                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/69c8c7f444d6711fce47a3cf13c60f725d5cec06",
+                "reference": "69c8c7f444d6711fce47a3cf13c60f725d5cec06",
                 "shasum": ""
             },
             "type": "library",
@@ -2242,7 +2245,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2016-03-16 21:46:08"
+            "time": "2017-02-08T13:37:13+00:00"
         },
         {
             "name": "integrated/slug-bundle",
@@ -2299,17 +2302,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-solr-bundle.git",
-                "reference": "3c3cead4e7a5b71eb73ae01e959b4d24a65ad46b"
+                "reference": "ce7384a0d521b35e4c8a10057c265b6edcc9e74a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/3c3cead4e7a5b71eb73ae01e959b4d24a65ad46b",
-                "reference": "3c3cead4e7a5b71eb73ae01e959b4d24a65ad46b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/ce7384a0d521b35e4c8a10057c265b6edcc9e74a",
+                "reference": "ce7384a0d521b35e4c8a10057c265b6edcc9e74a",
                 "shasum": ""
             },
             "require": {
                 "integrated/library": "~0.6",
-                "php": ">=5.4",
+                "php": ">=5.5",
                 "symfony/symfony": "~2.7"
             },
             "require-dev": {
@@ -2338,7 +2341,7 @@
                 "Integrated",
                 "solr"
             ],
-            "time": "2017-01-11 07:20:25"
+            "time": "2017-03-07 17:35:03"
         },
         {
             "name": "integrated/storage-bundle",
@@ -2499,12 +2502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "200541af62c94b0243269883c02d57742877e056"
+                "reference": "d0cc924d5ccff98cce4f0f7ea3a7586366f45ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/200541af62c94b0243269883c02d57742877e056",
-                "reference": "200541af62c94b0243269883c02d57742877e056",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/d0cc924d5ccff98cce4f0f7ea3a7586366f45ead",
+                "reference": "d0cc924d5ccff98cce4f0f7ea3a7586366f45ead",
                 "shasum": ""
             },
             "require": {
@@ -2554,7 +2557,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2016-10-30 22:26:13"
+            "time": "2017-03-07 17:39:20"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -2660,7 +2663,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2014-01-12 16:20:24"
+            "time": "2014-01-12T16:20:24+00:00"
         },
         {
             "name": "jms/metadata",
@@ -2711,7 +2714,7 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2016-12-05 10:18:33"
+            "time": "2016-12-05T10:18:33+00:00"
         },
         {
             "name": "knplabs/gaufrette",
@@ -2795,7 +2798,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2015-03-09 08:06:57"
+            "time": "2015-03-09T08:06:57+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -2866,7 +2869,7 @@
                 "pager",
                 "paginator"
             ],
-            "time": "2016-12-06 18:10:24"
+            "time": "2016-12-06T18:10:24+00:00"
         },
         {
             "name": "knplabs/knp-gaufrette-bundle",
@@ -2926,7 +2929,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2014-03-24 22:15:03"
+            "time": "2014-03-24T22:15:03+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -2992,7 +2995,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2016-09-22 07:36:19"
+            "time": "2016-09-22T07:36:19+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -3049,7 +3052,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2016-09-22 12:24:40"
+            "time": "2016-09-22T12:24:40+00:00"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -3110,7 +3113,7 @@
                 "pagination",
                 "paginator"
             ],
-            "time": "2016-04-20 11:40:30"
+            "time": "2016-04-20T11:40:30+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -3187,20 +3190,20 @@
                 "compression",
                 "minification"
             ],
-            "time": "2016-11-11 18:43:20"
+            "time": "2016-11-11T18:43:20+00:00"
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.6.6",
+            "version": "v0.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "6fdfe19d2b13a3f12ba0792227f0718809ce4e4d"
+                "reference": "562213cd803e42ea53b0735554794c4022d8db89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/6fdfe19d2b13a3f12ba0792227f0718809ce4e4d",
-                "reference": "6fdfe19d2b13a3f12ba0792227f0718809ce4e4d",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/562213cd803e42ea53b0735554794c4022d8db89",
+                "reference": "562213cd803e42ea53b0735554794c4022d8db89",
                 "shasum": ""
             },
             "require": {
@@ -3240,7 +3243,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2016-09-11 01:34:11"
+            "time": "2017-02-23T05:07:33+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3318,7 +3321,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-11-26 00:15:39"
+            "time": "2016-11-26T00:15:39+00:00"
         },
         {
             "name": "nelmio/alice",
@@ -3375,7 +3378,7 @@
                 "orm",
                 "test"
             ],
-            "time": "2014-10-10 13:07:37"
+            "time": "2014-10-10T13:07:37+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3423,7 +3426,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-18 20:34:03"
+            "time": "2016-03-18T20:34:03+00:00"
         },
         {
             "name": "psr/log",
@@ -3470,7 +3473,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "robloach/component-installer",
@@ -3518,7 +3521,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2015-08-10 12:35:38"
+            "time": "2015-08-10T12:35:38+00:00"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -3578,20 +3581,20 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2017-01-04 13:34:44"
+            "time": "2017-01-04T13:34:44+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.22",
+            "version": "v3.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "1c66c2e3b8f17f06178142386aff5a9f8057a104"
+                "reference": "d3601fd5709168ace7a1ca6eefa2619a1632b7f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/1c66c2e3b8f17f06178142386aff5a9f8057a104",
-                "reference": "1c66c2e3b8f17f06178142386aff5a9f8057a104",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/d3601fd5709168ace7a1ca6eefa2619a1632b7f7",
+                "reference": "d3601fd5709168ace7a1ca6eefa2619a1632b7f7",
                 "shasum": ""
             },
             "require": {
@@ -3648,7 +3651,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2017-02-15 06:52:30"
+            "time": "2017-03-02T20:17:28+00:00"
         },
         {
             "name": "sensio/generator-bundle",
@@ -3696,7 +3699,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-03-17 06:36:52"
+            "time": "2015-03-17T06:36:52+00:00"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -3740,7 +3743,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2015-11-07 08:07:40"
+            "time": "2015-11-07T08:07:40+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -3798,7 +3801,7 @@
                 "search",
                 "solr"
             ],
-            "time": "2017-02-02 13:32:22"
+            "time": "2017-02-02T13:32:22+00:00"
         },
         {
             "name": "sp/bower-bundle",
@@ -3859,7 +3862,7 @@
                 "bower manager",
                 "dependencies"
             ],
-            "time": "2014-07-14 08:51:16"
+            "time": "2014-07-14T08:51:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3913,7 +3916,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-02-13 07:52:53"
+            "time": "2017-02-13T07:52:53+00:00"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3983,7 +3986,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2016-11-22 11:42:57"
+            "time": "2016-11-22T11:42:57+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -4043,7 +4046,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2017-01-02 19:04:26"
+            "time": "2017-01-02T19:04:26+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -4096,7 +4099,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14 01:06:16"
+            "time": "2016-11-14T01:06:16+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4155,20 +4158,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14 01:06:16"
+            "time": "2016-11-14T01:06:16+00:00"
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.4.2",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/swiftmailer-bundle.git",
-                "reference": "ad751095576ce0c12a284e30e3fff80c91f27225"
+                "reference": "b59a70d03b948e29d070b6c4416b4a03af4748ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/ad751095576ce0c12a284e30e3fff80c91f27225",
-                "reference": "ad751095576ce0c12a284e30e3fff80c91f27225",
+                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/b59a70d03b948e29d070b6c4416b4a03af4748ec",
+                "reference": "b59a70d03b948e29d070b6c4416b4a03af4748ec",
                 "shasum": ""
             },
             "require": {
@@ -4190,7 +4193,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -4214,20 +4217,20 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2016-12-20 04:44:33"
+            "time": "2017-03-02T16:47:57+00:00"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.7.24",
+            "version": "v2.7.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "8a9cc9b76f77799f21e241a770664f4db482d20c"
+                "reference": "e22beacc9345866de4f859e805e3bd785d5e3291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/8a9cc9b76f77799f21e241a770664f4db482d20c",
-                "reference": "8a9cc9b76f77799f21e241a770664f4db482d20c",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e22beacc9345866de4f859e805e3bd785d5e3291",
+                "reference": "e22beacc9345866de4f859e805e3bd785d5e3291",
                 "shasum": ""
             },
             "require": {
@@ -4238,6 +4241,9 @@
                 "symfony/polyfill-apcu": "~1.1",
                 "symfony/polyfill-mbstring": "~1.1",
                 "twig/twig": "~1.28|~2.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
             },
             "replace": {
                 "symfony/asset": "self.version",
@@ -4343,7 +4349,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-02-06 12:06:15"
+            "time": "2017-03-06T01:33:53+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -4394,7 +4400,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-07-25 15:51:55"
+            "time": "2016-07-25T15:51:55+00:00"
         },
         {
             "name": "twig/extensions",
@@ -4446,33 +4452,34 @@
                 "i18n",
                 "text"
             ],
-            "time": "2016-10-25 17:34:14"
+            "time": "2016-10-25T17:34:14+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v1.31.0",
+            "version": "v1.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7"
+                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
-                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9935b662e24d6e634da88901ab534cc12e8c728f",
+                "reference": "9935b662e24d6e634da88901ab534cc12e8c728f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
             "require-dev": {
+                "psr/container": "^1.0",
                 "symfony/debug": "~2.7",
                 "symfony/phpunit-bridge": "~3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.31-dev"
+                    "dev-master": "1.32-dev"
                 }
             },
             "autoload": {
@@ -4507,25 +4514,28 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-01-11 19:36:15"
+            "time": "2017-02-27T00:07:03+00:00"
         },
         {
             "name": "vihuvac/recaptcha-bundle",
-            "version": "v2.1.5",
+            "version": "v2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vihuvac/recaptcha-bundle.git",
-                "reference": "baea7dfd272d38986f9c88333b09a0c7a714891e"
+                "reference": "706aad4cc47fdb687a4b12a676c82312974eeb57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vihuvac/recaptcha-bundle/zipball/baea7dfd272d38986f9c88333b09a0c7a714891e",
-                "reference": "baea7dfd272d38986f9c88333b09a0c7a714891e",
+                "url": "https://api.github.com/repos/vihuvac/recaptcha-bundle/zipball/706aad4cc47fdb687a4b12a676c82312974eeb57",
+                "reference": "706aad4cc47fdb687a4b12a676c82312974eeb57",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3 || ^7.0",
-                "symfony/symfony": "^2.3"
+                "symfony/symfony": "^2.3 || ^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.3"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -4562,7 +4572,7 @@
                 "google",
                 "recaptcha"
             ],
-            "time": "2017-02-02 15:02:31"
+            "time": "2017-02-26T03:47:24+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -4602,22 +4612,22 @@
                 }
             ],
             "description": "JSONP callback validator.",
-            "time": "2014-01-20 22:35:06"
+            "time": "2014-01-20T22:35:06+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "86dd55a522238211f9f3631e3361703578941d9a"
+                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/86dd55a522238211f9f3631e3361703578941d9a",
-                "reference": "86dd55a522238211f9f3631e3361703578941d9a",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
                 "shasum": ""
             },
             "require": {
@@ -4682,7 +4692,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-02-02 03:30:00"
+            "time": "2017-03-01T22:17:45+00:00"
         }
     ],
     "aliases": [],
