@@ -6,6 +6,6 @@ before_script:
 - php app/console s:i:q -e prod -f
 - php app/console s:i:r -e prod -b 2
 script:
+- vendor/bin/phpcs --standard=PSR2 --severity=error src/
 - vendor/bin/phpunit -c app/phpunit.xml
 - vendor/bin/behat
-- vendor/bin/phpcs --standard=PSR2 --severity=error src/
