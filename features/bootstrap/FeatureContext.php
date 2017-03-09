@@ -16,6 +16,7 @@ use Behat\MinkExtension\Context\MinkContext;
 
 use Symfony\Component\BrowserKit\Cookie;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 
 /**
  * @author Johnny Borg <johnny@e-active.nl>
@@ -26,6 +27,7 @@ class FeatureContext extends MinkContext implements Context
      * @Given /^I am authenticated as "([^"]*)"$/
      * @param string $username
      * @throws UnsupportedDriverActionException
+     * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
      */
     public function iAmAuthenticatedAs($username)
     {
@@ -41,15 +43,20 @@ class FeatureContext extends MinkContext implements Context
         $client = $driver->getClient();
         $client->getCookieJar()->set(new Cookie(session_name(), true));
 
-        $session = $client->getContainer()->get('session');
+        if ($user = $client->getContainer()->get('integrated_user.user.manager')->findByUsername($username)) {
 
-        $user = $client->getContainer()->get('integrated_user.user.manager')->findByUsername($username);
+            $session = $client->getContainer()->get('session');
 
-        $token = new UsernamePasswordToken($user, null, 'default', $user->getRoles());
-        $session->set('_security_default', serialize($token));
-        $session->save();
+            $token = new UsernamePasswordToken($user, null, 'default', $user->getRoles());
+            $session->set('_security_default', serialize($token));
+            $session->save();
 
-        $cookie = new Cookie($session->getName(), $session->getId());
-        $client->getCookieJar()->set($cookie);
+            $cookie = new Cookie($session->getName(), $session->getId());
+            $client->getCookieJar()->set($cookie);
+        } else {
+            throw new UsernameNotFoundException(
+                sprintf('The requested user %s is not found', $username)
+            );
+        }
     }
 }
