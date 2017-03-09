@@ -14,12 +14,12 @@ Feature: Security
       And I press "Login"
     Then I should see "Bad credentials."
 
-    Scenario: Valid Login
-      Given I am on "/admin/content"
-      When I fill in "_username" with "demo"
-        And I fill in "_password" with "demo"
-        And I press "Login"
-      Then I should not see "Bad credentials."
-        And I should see "Integrated"
-        And I should see "Home"
-        And I should see "Create new"
+  Scenario: Valid Login
+    Given I am on "/admin/content"
+    When I fill in "_username" with "demo"
+      And I fill in "_password" with "demo"
+      And I press "Login"
+    Then I should not see "Bad credentials."
+      And I should see "Integrated"
+      And I should see "Home"
+      And I should see "Create new"
