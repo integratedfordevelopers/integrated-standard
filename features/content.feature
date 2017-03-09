@@ -11,4 +11,3 @@ Feature: Security
   Scenario: New article
     Given I am authenticated as "demo"
       And I am on "/admin/content"
-    When I follow ""
