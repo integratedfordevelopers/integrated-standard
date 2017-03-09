@@ -1531,22 +1531,22 @@
         },
         {
             "name": "integrated/asset-bundle",
-            "version": "0.7.x-dev",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-asset-bundle.git",
-                "reference": "da1ac25ab3fd8efabaf2b2edce4fced0bc9481f2"
+                "reference": "5a967fe23d5b0f79cb3c767327e2c35d893dc993"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-asset-bundle/zipball/da1ac25ab3fd8efabaf2b2edce4fced0bc9481f2",
-                "reference": "da1ac25ab3fd8efabaf2b2edce4fced0bc9481f2",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-asset-bundle/zipball/5a967fe23d5b0f79cb3c767327e2c35d893dc993",
+                "reference": "5a967fe23d5b0f79cb3c767327e2c35d893dc993",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "1.*",
                 "php": ">=5.4",
-                "symfony/symfony": "~2.8",
+                "symfony/symfony": ">=2.4",
                 "twig/twig": "1.*"
             },
             "require-dev": {
@@ -1581,7 +1581,7 @@
                 "asset",
                 "asset manager"
             ],
-            "time": "2017-01-20 09:19:25"
+            "time": "2016-10-17T13:57:02+00:00"
         },
         {
             "name": "integrated/block-bundle",
@@ -1648,12 +1648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-channel-bundle.git",
-                "reference": "33d070768c6c58ba4cda70ff0c064302c0f88b9b"
+                "reference": "7f8e0927b75f48096b6ad6aa5f58e703972d6912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/33d070768c6c58ba4cda70ff0c064302c0f88b9b",
-                "reference": "33d070768c6c58ba4cda70ff0c064302c0f88b9b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/7f8e0927b75f48096b6ad6aa5f58e703972d6912",
+                "reference": "7f8e0927b75f48096b6ad6aa5f58e703972d6912",
                 "shasum": ""
             },
             "require": {
@@ -1690,7 +1690,7 @@
                 "Integrated",
                 "channel"
             ],
-            "time": "2017-01-26 13:42:23"
+            "time": "2017-03-07 17:29:25"
         },
         {
             "name": "integrated/comment-bundle",
@@ -1752,12 +1752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "73aebaee8babb857d05e28071ef363648f8ce9ff"
+                "reference": "d049d89f2ebc5649c85d9374cee055935f4642e1"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/d049d89f2ebc5649c85d9374cee055935f4642e1.zip",
-                "reference": "73aebaee8babb857d05e28071ef363648f8ce9ff",
+                "reference": "d049d89f2ebc5649c85d9374cee055935f4642e1",
                 "shasum": ""
             },
             "require": {
@@ -1773,6 +1773,7 @@
                 "integrated/asset-bundle": "~0.5",
                 "integrated/block-bundle": "~0.7",
                 "integrated/formtype-bundle": "~0.7",
+                "integrated/image-bundle": "~0.6",
                 "integrated/library": "~0.7",
                 "integrated/locking-bundle": "~0.6",
                 "integrated/menu-bundle": "~0.5",
@@ -1816,7 +1817,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-01-26 13:42:14"
+            "time": "2017-01-30 09:31:37"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -1878,16 +1879,15 @@
         {
             "name": "integrated/formtype-bundle",
             "version": "0.7.x-dev",
-            "target-dir": "Integrated/Bundle/FormTypeBundle",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "1db05bd72114352f8e2f61de0468b40fe4de9c85"
+                "reference": "fca0a2058e2c80cea9fc3dc1603d165bab53ad47"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/fca0a2058e2c80cea9fc3dc1603d165bab53ad47.zip",
-                "reference": "1db05bd72114352f8e2f61de0468b40fe4de9c85",
+                "reference": "fca0a2058e2c80cea9fc3dc1603d165bab53ad47",
                 "shasum": ""
             },
             "require": {
@@ -1911,8 +1911,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Integrated\\Bundle\\FormTypeBundle": ""
+                "psr-4": {
+                    "Integrated\\Bundle\\FormTypeBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1932,7 +1932,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-01-26 12:05:07"
+            "time": "2017-03-02 14:30:56"
         },
         {
             "name": "integrated/image-bundle",
@@ -1940,17 +1940,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
-                "reference": "bee36638f13e85eafef59dbc2d7f89d93379247d"
+                "reference": "aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/bee36638f13e85eafef59dbc2d7f89d93379247d",
-                "reference": "bee36638f13e85eafef59dbc2d7f89d93379247d",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794",
+                "reference": "aaf385d2e0ea6b4b5a7ac6e76761e7b12a206794",
                 "shasum": ""
             },
             "require": {
+                "doctrine/common": "~2",
+                "gregwar/image-bundle": "~2",
                 "integrated/content-bundle": "~0.6",
                 "integrated/library": "~0.6",
+                "integrated/storage-bundle": "~0.6",
                 "php": ">=5.4",
                 "symfony/symfony": "~2.7"
             },
@@ -1982,7 +1985,7 @@
                 "thumbnail",
                 "twig"
             ],
-            "time": "2017-01-27 10:56:38"
+            "time": "2017-03-03 11:08:57"
         },
         {
             "name": "integrated/library",
@@ -1990,12 +1993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "7afacbd5e2e1ca18f312155a8231a6be49430bbd"
+                "reference": "cb967894ecc3b9a0e54b52aa21619adc5f377bff"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-library/get/cb967894ecc3b9a0e54b52aa21619adc5f377bff.zip",
-                "reference": "7afacbd5e2e1ca18f312155a8231a6be49430bbd",
+                "reference": "cb967894ecc3b9a0e54b52aa21619adc5f377bff",
                 "shasum": ""
             },
             "require": {
@@ -2050,7 +2053,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-01-26 13:43:46"
+            "time": "2017-02-07 14:07:35"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2058,12 +2061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-locking-bundle.git",
-                "reference": "b0758f651b5fce30d8f896450b88e1083109f5f9"
+                "reference": "00482553909599e522bc912389ba5ba7ddde3f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-locking-bundle/zipball/b0758f651b5fce30d8f896450b88e1083109f5f9",
-                "reference": "b0758f651b5fce30d8f896450b88e1083109f5f9",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-locking-bundle/zipball/00482553909599e522bc912389ba5ba7ddde3f89",
+                "reference": "00482553909599e522bc912389ba5ba7ddde3f89",
                 "shasum": ""
             },
             "require": {
@@ -2098,7 +2101,7 @@
                 "Integrated",
                 "locking"
             ],
-            "time": "2017-01-23 13:08:52"
+            "time": "2017-02-27 14:13:12"
         },
         {
             "name": "integrated/menu-bundle",
@@ -2151,16 +2154,15 @@
         {
             "name": "integrated/page-bundle",
             "version": "0.7.x-dev",
-            "target-dir": "Integrated/Bundle/PageBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-page-bundle.git",
-                "reference": "72aa0a251c0dc05b1a2fb34bbb4d00450645d086"
+                "reference": "555d743cec16e278653ad86f1ed068ea40f3b01a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/72aa0a251c0dc05b1a2fb34bbb4d00450645d086",
-                "reference": "72aa0a251c0dc05b1a2fb34bbb4d00450645d086",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/555d743cec16e278653ad86f1ed068ea40f3b01a",
+                "reference": "555d743cec16e278653ad86f1ed068ea40f3b01a",
                 "shasum": ""
             },
             "require": {
@@ -2176,18 +2178,17 @@
                 "sensio/framework-extra-bundle": "~3.0",
                 "symfony/symfony": "~2.8"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "2.*"
+            },
             "suggest": {
                 "integrated/website-bundle": "Frontend block management for Integrated"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.9.9-dev"
-                }
-            },
             "autoload": {
-                "psr-0": {
-                    "Integrated\\Bundle\\PageBundle": ""
+                "psr-4": {
+                    "Integrated\\Bundle\\PageBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2200,26 +2201,26 @@
                     "homepage": "http://www.e-active.nl"
                 }
             ],
-            "description": "Integrated Page Bundle",
-            "homepage": "http://www.e-active.nl",
+            "description": "Provides the possibility for the user to create pages on Integrated websites, and front-end editing when combined with the website-bundle",
+            "homepage": "http://www.integratedfordevelopers.com",
             "keywords": [
                 "Integrated",
                 "page"
             ],
-            "time": "2017-01-20 08:39:46"
+            "time": "2017-03-02 14:30:21"
         },
         {
             "name": "integrated/puphpet",
-            "version": "0.4",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba"
+                "reference": "69c8c7f444d6711fce47a3cf13c60f725d5cec06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/e7620c02773c54e68660d86c9e5d7ab0ec454dba",
-                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/69c8c7f444d6711fce47a3cf13c60f725d5cec06",
+                "reference": "69c8c7f444d6711fce47a3cf13c60f725d5cec06",
                 "shasum": ""
             },
             "type": "library",
@@ -2240,7 +2241,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2016-03-16T21:46:08+00:00"
+            "time": "2017-02-08T13:37:13+00:00"
         },
         {
             "name": "integrated/slug-bundle",
@@ -2388,21 +2389,21 @@
         },
         {
             "name": "integrated/theme-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-theme-bundle.git",
-                "reference": "a17e96805ef0dcb6e5c90fbe4b70fe25159796ed"
+                "reference": "ddbd42516a72d37f73fa7952c8f81ea21c4977bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/a17e96805ef0dcb6e5c90fbe4b70fe25159796ed",
-                "reference": "a17e96805ef0dcb6e5c90fbe4b70fe25159796ed",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/ddbd42516a72d37f73fa7952c8f81ea21c4977bf",
+                "reference": "ddbd42516a72d37f73fa7952c8f81ea21c4977bf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4",
-                "symfony/symfony": "~2.7"
+                "symfony/symfony": "~2.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.8",
@@ -2430,20 +2431,20 @@
                 "Integrated",
                 "theme"
             ],
-            "time": "2016-10-30 22:22:17"
+            "time": "2017-03-01 15:42:43"
         },
         {
             "name": "integrated/user-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "f356853eca11f153252d20297c8f36080143204c"
+                "reference": "26d597acb99443b36ffb6e784f95f54f6b41017f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/3f5a4c4dc09859418587815008fe2adba091aeb9.zip",
-                "reference": "f356853eca11f153252d20297c8f36080143204c",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/26d597acb99443b36ffb6e784f95f54f6b41017f.zip",
+                "reference": "26d597acb99443b36ffb6e784f95f54f6b41017f",
                 "shasum": ""
             },
             "require": {
@@ -2452,7 +2453,7 @@
                 "integrated/content-bundle": "~0.5",
                 "integrated/menu-bundle": "~0.3",
                 "php": ">=5.4",
-                "symfony/symfony": "~2.7"
+                "symfony/symfony": "~2.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.2.*"
@@ -2484,20 +2485,20 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-01-27 20:37:02"
+            "time": "2017-03-02 09:09:56"
         },
         {
             "name": "integrated/website-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "200541af62c94b0243269883c02d57742877e056"
+                "reference": "5e4a6c8ff5f1264189f0382fe0519c8be1fcb791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/200541af62c94b0243269883c02d57742877e056",
-                "reference": "200541af62c94b0243269883c02d57742877e056",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/5e4a6c8ff5f1264189f0382fe0519c8be1fcb791",
+                "reference": "5e4a6c8ff5f1264189f0382fe0519c8be1fcb791",
                 "shasum": ""
             },
             "require": {
@@ -2515,7 +2516,7 @@
                 "knplabs/knp-paginator-bundle": "~2.5",
                 "php": ">=5.4",
                 "sensio/framework-extra-bundle": "~3.0",
-                "symfony/symfony": "~2.7",
+                "symfony/symfony": "~2.8",
                 "twbs/bootstrap": "~3.3"
             },
             "require-dev": {
@@ -2547,7 +2548,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2016-10-30 22:26:13"
+            "time": "2017-03-07 17:40:01"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -2555,12 +2556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle.git",
-                "reference": "3f6f26c8b431cb5d4cbcefa64a383c833c8df72b"
+                "reference": "427e00d16e2db1571800a8f5ce0ab591ad41ec3b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/427e00d16e2db1571800a8f5ce0ab591ad41ec3b.zip",
-                "reference": "3f6f26c8b431cb5d4cbcefa64a383c833c8df72b",
+                "reference": "427e00d16e2db1571800a8f5ce0ab591ad41ec3b",
                 "shasum": ""
             },
             "require": {
@@ -2571,7 +2572,7 @@
                 "integrated/user-bundle": "~0.5",
                 "knplabs/knp-paginator-bundle": "~2.5",
                 "php": ">=5.4",
-                "symfony/symfony": "~2.7"
+                "symfony/symfony": "~2.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.2.*"
@@ -2603,7 +2604,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2017-01-11 12:15:18"
+            "time": "2017-03-06 08:58:24"
         },
         {
             "name": "ircmaxell/password-compat",
