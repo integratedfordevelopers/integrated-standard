@@ -44,6 +44,7 @@ class AppKernel extends Kernel
             new Integrated\Bundle\ContentHistoryBundle\IntegratedContentHistoryBundle(),
             new Integrated\Bundle\ImageBundle\IntegratedImageBundle(),
             new Integrated\Bundle\CommentBundle\IntegratedCommentBundle(),
+            new Integrated\Bundle\ThompsonThemeBundle\IntegratedThompsonThemeBundle(),
 
             new AppBundle\AppBundle(),
         );
@@ -53,6 +54,7 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
         }
 
         return $bundles;

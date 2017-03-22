@@ -144,9 +144,12 @@ sp_bower:
         IntegratedWebsiteBundle:
             cache:
                 %kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle
-        IntegratedStorageBundle :
+        IntegratedStorageBundle:
             cache:
                 %kernel.cache_dir%/../sp_bower/IntegratedStorageBundle
+        IntegratedThompsonThemeBundle:
+            cache:
+                %kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle
     bin: %bower_bin%
     install_on_warmup: true
     assetic:
@@ -158,6 +161,9 @@ integrated_theme:
         default:
             paths:
                 - @IntegratedWebsiteBundle/Resources/views/themes/default
+        thompson:
+            paths:
+                - @IntegratedThompsonThemeBundle/Resources/views/themes/thompson
 
 vihuvac_recaptcha:
     site_key:   %recaptcha_site_key%
