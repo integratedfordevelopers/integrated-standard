@@ -17,6 +17,13 @@ For a local installation use:
     
 Please review the documentation website for using the Vagrant development environment.
 
+### Datafixtures ###
+For some test data use these commands:
+
+    $ php app/console doctrine:fixtures:load
+    $ php app/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB
+    $ php app/console solr:indexer:queue --full && php app/console solr:indexer:run --full
+    
 ### Enable the bundle ###
 * Change the content of this README.md for your project
 * Change the content of the composer.json for your project
