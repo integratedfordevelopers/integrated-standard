@@ -1,5 +1,3 @@
 vagrantfile:
     vm:
         hostname: integrated
-        memory: '8192'
-        cpus: '3'
