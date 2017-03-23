@@ -1,6 +1,6 @@
 Feature: Security
   In order to block access from anonymous users
-  As a user
+  As a publisher
   I must login to proceed so i can edit content
 
   Scenario: Login Screen

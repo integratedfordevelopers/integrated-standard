@@ -1,6 +1,6 @@
 Feature: Security
   In order to manage content search actions
-  As a user
+  As a publisher
 
   Scenario: Search selections overview
     Given I am authenticated as "demo"
