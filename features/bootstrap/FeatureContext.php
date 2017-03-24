@@ -26,6 +26,7 @@ class FeatureContext extends MinkContext implements Context
 {
     /**
      * @Given /^I am authenticated as "([^"]*)"$/
+     *
      * @param string $username
      * @throws UnsupportedDriverActionException
      * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
@@ -63,6 +64,7 @@ class FeatureContext extends MinkContext implements Context
 
     /**
      * @Given /^I am going to create a "([^"]*)"$/
+     *
      * @param string $name
      * @throws \Behat\Mink\Exception\ExpectationException
      */
@@ -98,5 +100,30 @@ class FeatureContext extends MinkContext implements Context
                 $this->getSession()->getDriver()
             );
         }
+    }
+
+    /**
+     * @When /^I am click icon "([^"]*)"$/
+     *
+     * @param string $class
+     * @throws ExpectationException
+     */
+    public function clickIcon($class)
+    {
+        /** @var Behat\Mink\Element\NodeElement $link */
+        $link = $this->getSession()->getPage()->find(
+            'xpath',
+            sprintf('//span[@class="glyphicon %s"]/parent::a', $class)
+        );
+
+        if (null === $link) {
+            // Yikes! No icon
+            throw new ExpectationException(
+                sprintf('The icon with class %s can not be found.', $class),
+                $this->getSession()->getDriver()
+            );
+        }
+
+        $link->click();
     }
 }

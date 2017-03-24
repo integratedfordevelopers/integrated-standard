@@ -16,3 +16,11 @@ Feature: Group
       And I check "integrated_user_group_form[roles][]"
       And I press "Create"
     Then I should see "The group demo is created"
+
+    Scenario: Remove group
+      Given I am authenticated as "demo"
+        And I am on "/admin/group/"
+        And I am click icon "glyphicon-remove-circle"
+      Then I should see "You are about to delete the group \"demo\", click the delete button below to confirm the action."
+      When I press "Delete"
+      Then I should see "The group demo is removed"
