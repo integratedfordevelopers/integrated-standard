@@ -10,4 +10,3 @@ Feature: Connector
       And I should see "Name"
       And I should see "Connector"
       And I should see "Actions"
-git c
