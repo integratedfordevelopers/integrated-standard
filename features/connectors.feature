@@ -10,3 +10,9 @@ Feature: Connector
       And I should see "Name"
       And I should see "Connector"
       And I should see "Actions"
+
+  Scenario: Add a new connectors
+    Given I am authenticated as "demo"
+      And I am on "/admin/connector/config/"
+      And I follow "New website configuration"
+    Then I should see "New website configuration"
