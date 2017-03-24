@@ -1,4 +1,4 @@
-Feature: Security
+Feature: Search selection
   In order to manage content search actions
   As a publisher
 
