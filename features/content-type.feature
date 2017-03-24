@@ -11,3 +11,13 @@ Feature: Content Type
       And I should see "Name"
       And I should see "Type"
       And I should see "Created"
+
+  Scenario: Edit a content type
+    Given I am authenticated as "demo"
+      And I am on "/admin/contenttype"
+      And I am click icon "glyphicon-pencil"
+    Then I should see "Name"
+      And I should see "Fields"
+      And I should see "Required"
+      And I should see "Channels"
+      And I should see "Workflow"
