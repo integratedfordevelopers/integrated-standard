@@ -1,6 +1,7 @@
-Feature: Contenttype
+Feature: Content Type
   In order to have content i must be able to manage content types
   As a administrator
+  I must be able to manage content types
 
   Scenario: See the content types
     Given I am authenticated as "demo"
