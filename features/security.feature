@@ -32,3 +32,4 @@ Feature: Security
       And I fill in "integrated_user_profile_form[password]" with "demo"
     Then I press "Save"
       Then I should see "Password will only be changed if a new password is entered"
+      And I should see "This value is too short. It should have 6 characters or more."
