@@ -1,4 +1,4 @@
-Feature: Content
+Feature: Relations
   In order to link to content i need relations
   As a publisher
   I want to manage the relations on content types
