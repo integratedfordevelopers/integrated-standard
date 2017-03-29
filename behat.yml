@@ -1,4 +1,7 @@
 default:
+    autoload:
+            "" : %paths.base%/features/bootstrap
+            "Integrated\\Behat" : %paths.base%/vendor/integrated/behat-extensions/src
     extensions:
         Behat\Symfony2Extension: ~
         Behat\MinkExtension:
