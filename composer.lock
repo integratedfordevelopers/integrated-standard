@@ -1593,12 +1593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle.git",
-                "reference": "5a8202c0f1923323b338fa44cf8fb1ba476c4ce7"
+                "reference": "b592edd491b57be2866a516f03102e58bbafcbb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/5a8202c0f1923323b338fa44cf8fb1ba476c4ce7.zip",
-                "reference": "5a8202c0f1923323b338fa44cf8fb1ba476c4ce7",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/b592edd491b57be2866a516f03102e58bbafcbb7.zip",
+                "reference": "b592edd491b57be2866a516f03102e58bbafcbb7",
                 "shasum": ""
             },
             "require": {
@@ -1644,7 +1644,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2017-01-26 11:44:51"
+            "time": "2017-04-05 13:33:26"
         },
         {
             "name": "integrated/channel-bundle",
@@ -1698,16 +1698,16 @@
         },
         {
             "name": "integrated/comment-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-comment-bundle.git",
-                "reference": "fedf39751afb8f3601d178bf8223bc9ba30ff96b"
+                "reference": "bc175136dcb573c306259d50602a5f12d7a19425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/fedf39751afb8f3601d178bf8223bc9ba30ff96b",
-                "reference": "fedf39751afb8f3601d178bf8223bc9ba30ff96b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/bc175136dcb573c306259d50602a5f12d7a19425",
+                "reference": "bc175136dcb573c306259d50602a5f12d7a19425",
                 "shasum": ""
             },
             "require": {
@@ -1748,7 +1748,7 @@
                 "Integrated",
                 "comment"
             ],
-            "time": "2017-02-16 15:19:17"
+            "time": "2017-04-04 09:08:39"
         },
         {
             "name": "integrated/content-bundle",
@@ -1756,12 +1756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "aae09c0a254babc44f0fc6674ffd6b8490ef212d"
+                "reference": "fae13ddf4f2a1bb50b0ad7ac11a65c18ced564c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4c1b2169e86c7c30a6e46dbf31582d8e758725d2.zip",
-                "reference": "aae09c0a254babc44f0fc6674ffd6b8490ef212d",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/fae13ddf4f2a1bb50b0ad7ac11a65c18ced564c3.zip",
+                "reference": "fae13ddf4f2a1bb50b0ad7ac11a65c18ced564c3",
                 "shasum": ""
             },
             "require": {
@@ -1821,11 +1821,11 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-03-21 12:09:06"
+            "time": "2017-03-31 06:34:34"
         },
         {
             "name": "integrated/content-history-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-history-bundle.git",
@@ -1886,12 +1886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "fca0a2058e2c80cea9fc3dc1603d165bab53ad47"
+                "reference": "817f246e2ac5cbb54664e3c84ff5f6e837fb5373"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/817f246e2ac5cbb54664e3c84ff5f6e837fb5373.zip",
-                "reference": "fca0a2058e2c80cea9fc3dc1603d165bab53ad47",
+                "reference": "817f246e2ac5cbb54664e3c84ff5f6e837fb5373",
                 "shasum": ""
             },
             "require": {
@@ -1936,11 +1936,11 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-03-02 14:30:56"
+            "time": "2017-03-24 12:27:34"
         },
         {
             "name": "integrated/image-bundle",
-            "version": "0.6.x-dev",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
@@ -1997,12 +1997,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "dafba720b25635eb61ccec7e46d1cd903d490751"
+                "reference": "733e66dd06e528f9a13276f56b77ab06a6b97d4c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-library/get/733e66dd06e528f9a13276f56b77ab06a6b97d4c.zip",
-                "reference": "dafba720b25635eb61ccec7e46d1cd903d490751",
+                "reference": "733e66dd06e528f9a13276f56b77ab06a6b97d4c",
                 "shasum": ""
             },
             "require": {
@@ -2057,7 +2057,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-03-09 09:23:27"
+            "time": "2017-03-28 12:51:48"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2348,12 +2348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "ca36f54bcc43f2b65111b68ae47ed3843dc244a3"
+                "reference": "af0b50a0794654174c0cdb781c82d87337302904"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/af0b50a0794654174c0cdb781c82d87337302904.zip",
-                "reference": "ca36f54bcc43f2b65111b68ae47ed3843dc244a3",
+                "reference": "af0b50a0794654174c0cdb781c82d87337302904",
                 "shasum": ""
             },
             "require": {
@@ -2393,7 +2393,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2017-03-22 09:59:47"
+            "time": "2017-03-27 12:54:41"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2447,12 +2447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "658f0effbb21912fd6a14daad2ed7acb24719d44"
+                "reference": "e702a4527bc8ad60a55b2c6c8f21e8720362badb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/e702a4527bc8ad60a55b2c6c8f21e8720362badb.zip",
-                "reference": "658f0effbb21912fd6a14daad2ed7acb24719d44",
+                "reference": "e702a4527bc8ad60a55b2c6c8f21e8720362badb",
                 "shasum": ""
             },
             "require": {
@@ -2488,7 +2488,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-03-21 12:01:50"
+            "time": "2017-03-30 05:38:14"
         },
         {
             "name": "integrated/user-bundle",
@@ -5658,7 +5658,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-03-30T14:17:10+00:00"
+            "time": "2017-03-30 14:17:10"
         },
         {
             "name": "myclabs/deep-copy",
