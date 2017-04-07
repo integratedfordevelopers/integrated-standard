@@ -13,7 +13,7 @@ Feature: File
     Then I should see "The document Image has been created"
       And I should see "Image of a City"
 
-  Scenario: Upload a pdf
+  Scenario: Upload a pdf in a image
     Given I am authenticated as "demo"
       And I am on "/admin/content"
       And I am going to create a "Image"
