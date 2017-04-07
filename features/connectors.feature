@@ -11,7 +11,7 @@ Feature: Connector
       And I should see "Connector"
       And I should see "Actions"
 
-  Scenario: Add a new connectors
+  Scenario: Add a new connector
     Given I am authenticated as "demo"
       And I am on "/admin/connector/config/"
       And I follow "New website configuration"
