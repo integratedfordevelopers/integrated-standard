@@ -1,7 +1,7 @@
 Feature: Security
   In order to block access from anonymous users
   As a publisher
-  I must login to proceed so i can edit content
+  I have a login to proceed so i can edit content
 
   Scenario: Login Screen
     Given I am on "/admin/content"
