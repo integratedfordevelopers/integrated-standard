@@ -12,6 +12,7 @@ Feature: Article
       And I press "Create"
     Then I should see "The document Article has been created"
       And I should see "Integrated article created with Behat"
+      And the page must have a paginator
 
   Scenario: Edit article
     Given I am authenticated as "demo"
@@ -37,6 +38,7 @@ Feature: Article
       And I press "Save"
     Then I should see "Integrated welcomes Behat"
       And I should not see "Integrated article created with Behat"
+      And the page must have a paginator
 
   Scenario: Delete article
     Given I am authenticated as "demo"

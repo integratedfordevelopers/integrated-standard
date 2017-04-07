@@ -6,3 +6,8 @@ Feature: Content
     Given I am authenticated as "demo"
       And I am on "/admin/content"
     Then I should not see "Login"
+      And I should see "Content types"
+      And I should see "Channels"
+      And I should see "Author"
+      And I should see "Properties"
+      And the page must have a paginator

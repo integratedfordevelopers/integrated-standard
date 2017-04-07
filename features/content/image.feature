@@ -12,6 +12,7 @@ Feature: File
       And I press "Create"
     Then I should see "The document Image has been created"
       And I should see "Image of a City"
+      And the page must have a paginator
 
   Scenario: Delete uploaded image
     Given I am authenticated as "demo"
