@@ -13,6 +13,18 @@ Feature: File
     Then I should see "The document Image has been created"
       And I should see "Image of a City"
 
+  Scenario: Delete uploaded image
+    Given I am authenticated as "demo"
+      And I am on "/admin/content"
+    Then I should see "Integrated"
+      And I should see "Home"
+      And I should see "Image of a City"
+    When I follow "Delete"
+    Then I should see "Delete Image"
+      And I should see "You are about to delete \"Image of a City\", click the delete button below to confirm the action."
+    When I press "Delete"
+    Then I should see "The document Image has been deleted"
+
   Scenario: Upload a pdf in a image
     Given I am authenticated as "demo"
       And I am on "/admin/content"
