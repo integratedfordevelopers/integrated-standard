@@ -12,7 +12,6 @@ Feature: Content
       And I should see "Channels"
       And I should see "Author"
       And I should see "Properties"
-      And I should see "Search here"
       And I should see "Sort by: date modified"
       And I should see "Search selections"
       And the page must have a paginator
