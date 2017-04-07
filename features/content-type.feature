@@ -15,7 +15,7 @@ Feature: Content Type
   Scenario: Edit a content type
     Given I am authenticated as "demo"
       And I am on "/admin/contenttype"
-      And I am click icon "glyphicon-pencil"
+      And I click the first icon "glyphicon-pencil"
     Then I should see "Name"
       And I should see "Fields"
       And I should see "Required"

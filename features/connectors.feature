@@ -25,7 +25,7 @@ Feature: Connector
     Given I am authenticated as "demo"
       And I am on "/admin/connector/config/"
     Then I should see "demo"
-    When I am click icon "glyphicon-remove-circle"
+    When I click the first icon "glyphicon-remove-circle"
       Then I should see "You are about to delete the configuration \"demo\", click the delete button below to confirm the action."
       And I press "form.actions.delete"
     Then I should see "The config demo is removed"
