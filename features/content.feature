@@ -6,8 +6,13 @@ Feature: Content
     Given I am authenticated as "demo"
       And I am on "/admin/content"
     Then I should not see "Login"
+      And I should see "Integrated"
+      And I should see "Home"
       And I should see "Content types"
       And I should see "Channels"
       And I should see "Author"
       And I should see "Properties"
+      And I should see "Search here"
+      And I should see "Sort by: date modified"
+      And I should see "Search selections"
       And the page must have a paginator
