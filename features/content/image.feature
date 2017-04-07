@@ -24,6 +24,7 @@ Feature: File
       And I should see "You are about to delete \"Image of a City\", click the delete button below to confirm the action."
     When I press "Delete"
     Then I should see "The document Image has been deleted"
+      And I should not see "Image of a City"
 
   Scenario: Upload a pdf in a image
     Given I am authenticated as "demo"
