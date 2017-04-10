@@ -31,3 +31,5 @@ parameters:
 
     recaptcha_site_key: ~
     recaptcha_secret_key: ~
+
+    bulk_action_limit: 1000
