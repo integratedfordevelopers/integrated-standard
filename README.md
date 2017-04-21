@@ -21,7 +21,7 @@ Please review the documentation website for using the Vagrant development enviro
 For some test data use these commands:
 
     $ php app/console doctrine:fixtures:load
-    $ php app/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB
+    $ php app/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/website-bundle/DataFixtures/MongoDB
     $ php app/console solr:indexer:queue --full && php app/console solr:indexer:run --full
     
 ### Enable the bundle ###

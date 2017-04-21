@@ -1656,12 +1656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-channel-bundle.git",
-                "reference": "e8966b283b5dba987e15dac9e3fdadfad79a031a"
+                "reference": "fc3d9384b92ade1888658a816486e925dceda0e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/e8966b283b5dba987e15dac9e3fdadfad79a031a",
-                "reference": "e8966b283b5dba987e15dac9e3fdadfad79a031a",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/fc3d9384b92ade1888658a816486e925dceda0e8",
+                "reference": "fc3d9384b92ade1888658a816486e925dceda0e8",
                 "shasum": ""
             },
             "require": {
@@ -1699,7 +1699,7 @@
                 "channel",
                 "multi-site"
             ],
-            "time": "2017-04-10 08:47:58"
+            "time": "2017-04-21 09:08:12"
         },
         {
             "name": "integrated/comment-bundle",
@@ -1762,12 +1762,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "75a1f1e6756a5590239525c7c052c22573a16a61"
+                "reference": "e7c92473a68e5b5f0c2f766f6101f2d448aad4fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/75a1f1e6756a5590239525c7c052c22573a16a61.zip",
-                "reference": "75a1f1e6756a5590239525c7c052c22573a16a61",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/e7c92473a68e5b5f0c2f766f6101f2d448aad4fe.zip",
+                "reference": "e7c92473a68e5b5f0c2f766f6101f2d448aad4fe",
                 "shasum": ""
             },
             "require": {
@@ -1828,7 +1828,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-04-10 08:43:54"
+            "time": "2017-04-21 09:08:12"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2264,12 +2264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-slug-bundle.git",
-                "reference": "bd3b0fa7e91068e0c34ed721bcb876521f91c397"
+                "reference": "45ed3340af821d37f6352d0b35fe8aa6edd50629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/bd3b0fa7e91068e0c34ed721bcb876521f91c397",
-                "reference": "bd3b0fa7e91068e0c34ed721bcb876521f91c397",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/45ed3340af821d37f6352d0b35fe8aa6edd50629",
+                "reference": "45ed3340af821d37f6352d0b35fe8aa6edd50629",
                 "shasum": ""
             },
             "require": {
@@ -2304,7 +2304,7 @@
                 "Integrated",
                 "slug"
             ],
-            "time": "2017-04-10 08:55:42"
+            "time": "2017-04-21 09:08:12"
         },
         {
             "name": "integrated/solr-bundle",
@@ -2359,12 +2359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "b481eefc77bbf2af5f4692ed52c73f9ae059acd8"
+                "reference": "7ca4ee7136b7621b635230ecdfcc6c00ede8ea13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/b481eefc77bbf2af5f4692ed52c73f9ae059acd8.zip",
-                "reference": "b481eefc77bbf2af5f4692ed52c73f9ae059acd8",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/7ca4ee7136b7621b635230ecdfcc6c00ede8ea13.zip",
+                "reference": "7ca4ee7136b7621b635230ecdfcc6c00ede8ea13",
                 "shasum": ""
             },
             "require": {
@@ -2405,7 +2405,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2017-04-10 08:44:33"
+            "time": "2017-04-21 09:08:12"
         },
         {
             "name": "integrated/theme-bundle",
