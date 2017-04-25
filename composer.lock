@@ -2567,12 +2567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "80772da10e05390153ba452da2ed08898a1e5b6a"
+                "reference": "14770b76b412c4d7b173910b5e3b3613b88f91b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/80772da10e05390153ba452da2ed08898a1e5b6a",
-                "reference": "80772da10e05390153ba452da2ed08898a1e5b6a",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/14770b76b412c4d7b173910b5e3b3613b88f91b3",
+                "reference": "14770b76b412c4d7b173910b5e3b3613b88f91b3",
                 "shasum": ""
             },
             "require": {
