@@ -32,7 +32,7 @@ parameters:
     recaptcha_site_key: ~
     recaptcha_secret_key: ~
 
-    consumer_key: "HvMOwtOblqW2fBCtfW3bRUJy7"
-    consumer_key_secret: "kVQFCNj6aFUhqwgSrLVRwTkuOuiaLq1jVQVlp0yDi8mwN4WKtq"
-    app_id: "187620181726348"
-    app_id_secret: "c4a8779f4036c30797da55c76f4044c8"
+    consumer_key: ~
+    consumer_key_secret: ~
+    app_id: ~
+    app_id_secret: ~
