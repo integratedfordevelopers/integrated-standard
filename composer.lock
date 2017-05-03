@@ -1084,19 +1084,20 @@
         },
         {
             "name": "doctrine/mongodb-odm-bundle",
-            "version": "3.2.1",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMongoDBBundle.git",
-                "reference": "9ad10aa1c64fe140537ebb1306fe0f4d2357f6fd"
+                "reference": "ea77a22f350022de1baa053f95b2d0ecb1e71246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMongoDBBundle/zipball/9ad10aa1c64fe140537ebb1306fe0f4d2357f6fd",
-                "reference": "9ad10aa1c64fe140537ebb1306fe0f4d2357f6fd",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMongoDBBundle/zipball/ea77a22f350022de1baa053f95b2d0ecb1e71246",
+                "reference": "ea77a22f350022de1baa053f95b2d0ecb1e71246",
                 "shasum": ""
             },
             "require": {
+                "doctrine/mongodb": "^1.4",
                 "doctrine/mongodb-odm": "^1.1",
                 "php": "^5.6 || ^7.0",
                 "psr/log": "^1.0",
@@ -1120,7 +1121,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1153,7 +1154,7 @@
                 "persistence",
                 "symfony"
             ],
-            "time": "2016-12-08T07:05:40+00:00"
+            "time": "2017-04-28T13:06:06+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -1593,12 +1594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle.git",
-                "reference": "e4f2255333b6bd1544ce6336f6bae17f698d87e4"
+                "reference": "10be264ed843f92dd9fc7f8338361f51af65f871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/e4f2255333b6bd1544ce6336f6bae17f698d87e4.zip",
-                "reference": "e4f2255333b6bd1544ce6336f6bae17f698d87e4",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/10be264ed843f92dd9fc7f8338361f51af65f871.zip",
+                "reference": "10be264ed843f92dd9fc7f8338361f51af65f871",
                 "shasum": ""
             },
             "require": {
@@ -1650,7 +1651,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2017-04-12 05:18:56"
+            "time": "2017-04-28 06:48:21"
         },
         {
             "name": "integrated/channel-bundle",
@@ -1765,12 +1766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "75afbf7651d2468ea595786882736e5ac10dbe8e"
+                "reference": "d6bfb673781a807802c8b8b49d0688a03e0bc6c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/75afbf7651d2468ea595786882736e5ac10dbe8e.zip",
-                "reference": "75afbf7651d2468ea595786882736e5ac10dbe8e",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/d6bfb673781a807802c8b8b49d0688a03e0bc6c6.zip",
+                "reference": "d6bfb673781a807802c8b8b49d0688a03e0bc6c6",
                 "shasum": ""
             },
             "require": {
@@ -1831,7 +1832,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-04-21 08:22:28"
+            "time": "2017-05-03 07:04:14"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2176,12 +2177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-page-bundle.git",
-                "reference": "230914e7b48670d75eaa83e2977e8409060349bd"
+                "reference": "12d5a6f5412e0da742e2b1e796c3f4559bcd3ef5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/230914e7b48670d75eaa83e2977e8409060349bd",
-                "reference": "230914e7b48670d75eaa83e2977e8409060349bd",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/12d5a6f5412e0da742e2b1e796c3f4559bcd3ef5",
+                "reference": "12d5a6f5412e0da742e2b1e796c3f4559bcd3ef5",
                 "shasum": ""
             },
             "require": {
@@ -2228,7 +2229,7 @@
                 "Integrated",
                 "page"
             ],
-            "time": "2017-04-19 11:33:43"
+            "time": "2017-05-03 09:14:21"
         },
         {
             "name": "integrated/puphpet",
@@ -2366,12 +2367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "808e29359bf8ea14ab565d8836a4467ba5fcb2a8"
+                "reference": "559d0a33cf901fec7ceaf4664e04a286b71e27f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/808e29359bf8ea14ab565d8836a4467ba5fcb2a8.zip",
-                "reference": "808e29359bf8ea14ab565d8836a4467ba5fcb2a8",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/559d0a33cf901fec7ceaf4664e04a286b71e27f9.zip",
+                "reference": "559d0a33cf901fec7ceaf4664e04a286b71e27f9",
                 "shasum": ""
             },
             "require": {
@@ -2414,7 +2415,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2017-04-21 08:01:55"
+            "time": "2017-05-03 06:57:59"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2522,12 +2523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "3637486c61700ca507040e117bc9ab4d8f27a336"
+                "reference": "c3affa6c782340a2c519589b6435754b034c0c26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/3637486c61700ca507040e117bc9ab4d8f27a336.zip",
-                "reference": "3637486c61700ca507040e117bc9ab4d8f27a336",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/c3affa6c782340a2c519589b6435754b034c0c26.zip",
+                "reference": "c3affa6c782340a2c519589b6435754b034c0c26",
                 "shasum": ""
             },
             "require": {
@@ -2570,7 +2571,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-04-12 05:16:06"
+            "time": "2017-05-02 10:31:58"
         },
         {
             "name": "integrated/website-bundle",
@@ -2578,12 +2579,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "136f013aaa7de569d2d4271f1c988b058bfe32a3"
+                "reference": "93b4592063d4bee86658d2d144ae566752c6491e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/136f013aaa7de569d2d4271f1c988b058bfe32a3",
-                "reference": "136f013aaa7de569d2d4271f1c988b058bfe32a3",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/93b4592063d4bee86658d2d144ae566752c6491e",
+                "reference": "93b4592063d4bee86658d2d144ae566752c6491e",
                 "shasum": ""
             },
             "require": {
@@ -2634,7 +2635,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-04-25 07:47:02"
+            "time": "2017-05-03 09:14:28"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -4801,16 +4802,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.19",
+            "version": "v2.8.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "da35163ddb6e876bfb6054f84e02947a6e0274e3"
+                "reference": "bbe1eae0c213e45da9fb0c6abb43aff415a3dcdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/da35163ddb6e876bfb6054f84e02947a6e0274e3",
-                "reference": "da35163ddb6e876bfb6054f84e02947a6e0274e3",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/bbe1eae0c213e45da9fb0c6abb43aff415a3dcdd",
+                "reference": "bbe1eae0c213e45da9fb0c6abb43aff415a3dcdd",
                 "shasum": ""
             },
             "require": {
@@ -4934,7 +4935,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-04-05T04:05:19+00:00"
+            "time": "2017-05-01T16:14:31+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -6977,16 +6978,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.2.7",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "9103d17dd57c512a3a027bb5628f6701464d6fef"
+                "reference": "00916603c524b8048906de460b7ea0dfa1651281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/9103d17dd57c512a3a027bb5628f6701464d6fef",
-                "reference": "9103d17dd57c512a3a027bb5628f6701464d6fef",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/00916603c524b8048906de460b7ea0dfa1651281",
+                "reference": "00916603c524b8048906de460b7ea0dfa1651281",
                 "shasum": ""
             },
             "require": {
@@ -7035,7 +7036,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2017-03-09T12:58:16+00:00"
+            "time": "2017-04-12T14:13:17+00:00"
         },
         {
             "name": "webmozart/assert",
