@@ -3,6 +3,7 @@ install:
 before_script:
 - php composer.phar install -n
 - php app/console d:m:f:l -n
+- php app/console d:f:l -n
 - php app/console s:i:q -e prod -f
 - php app/console s:i:r -e prod -b 2
 script:
