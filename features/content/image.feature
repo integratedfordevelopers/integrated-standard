@@ -40,4 +40,6 @@ Feature: File
     When I fill in "integrated_content[title]" with "Image"
       And I attach the file "pdf/Integrated.pdf" to "integrated_content[file][file]"
       And I press "Create"
+      And print current URL
+      And show last response
     Then I should see "The mime type of the file is invalid (\"application/pdf\"). Allowed mime types are \"image/*\"."
