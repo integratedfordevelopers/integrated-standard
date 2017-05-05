@@ -4,7 +4,7 @@ Feature: File
   I want to attach images to an article
 
   Scenario: Upload a image
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
       And I am going to create a "Image"
     When I fill in "integrated_content[title]" with "Image of a City"
@@ -15,20 +15,21 @@ Feature: File
       And the page must have a paginator
 
   Scenario: Delete uploaded image
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
     Then I should see "Integrated"
       And I should see "Home"
       And I should see "Image of a City"
-    When I follow "Delete"
+    When I follow "Delete item"
     Then I should see "Delete Image"
       And I should see "You are about to delete \"Image of a City\", click the delete button below to confirm the action."
     When I press "Delete"
-    Then I should see "The document Image has been deleted"
+    Then I should not see "The file could not be found."
+      And I should see "The document Image has been deleted"
       And I should not see "Image of a City"
 
   Scenario: Upload a pdf in a image
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
       And I am going to create a "Image"
     When I fill in "integrated_content[title]" with "Image"
