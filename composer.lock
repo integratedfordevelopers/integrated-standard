@@ -2469,12 +2469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "82e86d2d58f11cf8cbe7d7f9aa13752d6659f9aa"
+                "reference": "fe3dc060a282adfd787114243e4ffbb360c9792b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/82e86d2d58f11cf8cbe7d7f9aa13752d6659f9aa.zip",
-                "reference": "82e86d2d58f11cf8cbe7d7f9aa13752d6659f9aa",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/fe3dc060a282adfd787114243e4ffbb360c9792b.zip",
+                "reference": "fe3dc060a282adfd787114243e4ffbb360c9792b",
                 "shasum": ""
             },
             "require": {
@@ -2515,7 +2515,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-04-18 07:25:30"
+            "time": "2017-05-05 13:37:06"
         },
         {
             "name": "integrated/user-bundle",
