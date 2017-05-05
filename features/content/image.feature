@@ -54,5 +54,5 @@ Feature: File
     When I fill in "integrated_content[title]" with "Image trough the converter"
       And I attach the file "image/city.bmp" to "integrated_content[file][file]"
       And I press "Create"
-    And I should see "The document Image has been deleted"
-      And I should not see "Image trough the converter"
+    And I should see "Image trough the converter"
+      And the page must have a paginator
