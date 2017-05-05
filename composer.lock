@@ -1766,12 +1766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "e1ed9f86fd679a3dc2a09a565e853049f8bef385"
+                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/e1ed9f86fd679a3dc2a09a565e853049f8bef385.zip",
-                "reference": "e1ed9f86fd679a3dc2a09a565e853049f8bef385",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/8cab6c74cb9e191929072ae05a5993acbc4589fc.zip",
+                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +1832,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-05 10:29:15"
+            "time": "2017-05-05 12:38:51"
         },
         {
             "name": "integrated/content-history-bundle",
