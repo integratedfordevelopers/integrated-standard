@@ -2423,12 +2423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-theme-bundle.git",
-                "reference": "a3b73146363ce12ee469678fdaf011f2f6c9353c"
+                "reference": "74196209aa434830a87a11cc8a9a7c48e572856c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/a3b73146363ce12ee469678fdaf011f2f6c9353c",
-                "reference": "a3b73146363ce12ee469678fdaf011f2f6c9353c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/74196209aa434830a87a11cc8a9a7c48e572856c",
+                "reference": "74196209aa434830a87a11cc8a9a7c48e572856c",
                 "shasum": ""
             },
             "require": {
@@ -2461,7 +2461,7 @@
                 "Integrated",
                 "theme"
             ],
-            "time": "2017-04-12 14:07:39"
+            "time": "2017-05-05 12:34:19"
         },
         {
             "name": "integrated/thompson-theme-bundle",
