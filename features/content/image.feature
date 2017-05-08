@@ -40,7 +40,8 @@ Feature: File
     When I fill in "integrated_content[title]" with "Image"
       And I attach the file "php/empty.php" to "integrated_content[file][file]"
       And I press "Create"
-    Then I should see "Format php can not be converted in to png, there is not converter supporting this format."
+    Then I should see "New Image"
+      And I should see "Format php can not be converted in to png, there is not converter supporting this format."
 
   Scenario: Upload a bmp file in an image (converter passing)
     Given I am authenticated as "admin"
