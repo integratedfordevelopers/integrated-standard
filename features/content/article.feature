@@ -4,7 +4,7 @@ Feature: Article
   I must login to proceed so i can edit content
 
   Scenario: New article
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
       And I am going to create a "Article"
     When I fill in "integrated_content[title]" with "Integrated article created with Behat"
@@ -15,7 +15,7 @@ Feature: Article
       And the page must have a paginator
 
   Scenario: Edit article
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
     When I follow "Integrated article created with Behat"
     Then I should see "Edit Article"
@@ -41,7 +41,7 @@ Feature: Article
       And the page must have a paginator
 
   Scenario: Delete article
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
     When I follow "Delete item"
     Then I should see "Delete Article"

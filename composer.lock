@@ -1767,12 +1767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "d6bfb673781a807802c8b8b49d0688a03e0bc6c6"
+                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/8cab6c74cb9e191929072ae05a5993acbc4589fc.zip",
-                "reference": "d6bfb673781a807802c8b8b49d0688a03e0bc6c6",
+                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc",
                 "shasum": ""
             },
             "require": {
@@ -1833,7 +1833,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-03 07:04:14"
+            "time": "2017-05-05 12:38:51"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -1900,12 +1900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "c1117043ac61f9977af9481da015a7a2d97fea28"
+                "reference": "af70b8872d1dbed06d46d01e17e395c5107ce2cb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/af70b8872d1dbed06d46d01e17e395c5107ce2cb.zip",
-                "reference": "c1117043ac61f9977af9481da015a7a2d97fea28",
+                "reference": "af70b8872d1dbed06d46d01e17e395c5107ce2cb",
                 "shasum": ""
             },
             "require": {
@@ -1950,7 +1950,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-04-20 10:27:39"
+            "time": "2017-05-04 05:19:45"
         },
         {
             "name": "integrated/image-bundle",
@@ -2424,12 +2424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-theme-bundle.git",
-                "reference": "8b685de861d8ba037823e7e0c4b23f0640a1a3df"
+                "reference": "74196209aa434830a87a11cc8a9a7c48e572856c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/8b685de861d8ba037823e7e0c4b23f0640a1a3df",
-                "reference": "8b685de861d8ba037823e7e0c4b23f0640a1a3df",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-theme-bundle/zipball/74196209aa434830a87a11cc8a9a7c48e572856c",
+                "reference": "74196209aa434830a87a11cc8a9a7c48e572856c",
                 "shasum": ""
             },
             "require": {
@@ -2462,7 +2462,7 @@
                 "Integrated",
                 "theme"
             ],
-            "time": "2017-05-08 06:51:59"
+            "time": "2017-05-05 12:34:19"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -2470,12 +2470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "82e86d2d58f11cf8cbe7d7f9aa13752d6659f9aa"
+                "reference": "fe3dc060a282adfd787114243e4ffbb360c9792b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/fe3dc060a282adfd787114243e4ffbb360c9792b.zip",
-                "reference": "82e86d2d58f11cf8cbe7d7f9aa13752d6659f9aa",
+                "reference": "fe3dc060a282adfd787114243e4ffbb360c9792b",
                 "shasum": ""
             },
             "require": {
@@ -2516,7 +2516,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-04-18 07:25:30"
+            "time": "2017-05-05 13:37:06"
         },
         {
             "name": "integrated/user-bundle",
@@ -6901,16 +6901,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.8.1",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
                 "shasum": ""
             },
             "require": {
@@ -6975,7 +6975,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-03-01 22:17:45"
+            "time": "2017-05-03T23:30:39+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",

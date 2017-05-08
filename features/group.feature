@@ -4,23 +4,23 @@ Feature: Group
   I must be able to manage groups
 
   Scenario: Group overview
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/group/"
     Then I should see "Name"
 
   Scenario: Add group
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/group/"
     When I follow "New"
-      And I fill in "integrated_user_group_form[name]" with "demo"
+      And I fill in "integrated_user_group_form[name]" with "Behat Administrators"
       And I check "integrated_user_group_form[roles][]"
       And I press "Create"
-    Then I should see "The group demo is created"
+    Then I should see "The group Behat Administrators is created"
 
     Scenario: Remove group
-      Given I am authenticated as "demo"
+      Given I am authenticated as "admin"
         And I am on "/admin/group/"
-        And I click the first icon "glyphicon-remove-circle"
-      Then I should see "You are about to delete the group \"demo\", click the delete button below to confirm the action."
+        And I click the last icon "glyphicon-remove-circle"
+      Then I should see "You are about to delete the group \"Behat Administrators\", click the delete button below to confirm the action."
       When I press "Delete"
-      Then I should see "The group demo is removed"
+      Then I should see "The group Behat Administrators is removed"
