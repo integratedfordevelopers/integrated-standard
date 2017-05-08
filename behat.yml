@@ -5,7 +5,7 @@ default:
     extensions:
         Behat\Symfony2Extension: ~
         Behat\MinkExtension:
-            files_path: "/vagrant/features/files"
+            files_path: "features/files"
             sessions:
                 default:
                     symfony2: ~

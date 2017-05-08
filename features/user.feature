@@ -4,15 +4,15 @@ Feature: Users
   I must be able to manage accounts that have access to the backend
 
   Scenario: User overview
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/user"
-    Then I should see "demo"
+    Then I should see "admin"
       And I should see "Username"
       And I should see "Relation"
       And I should see "Actions"
 
   Scenario: Add a user
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/user"
       And I follow "New"
     Then I should see "New user"
@@ -46,7 +46,7 @@ Feature: Users
       And I should see "Create new"
 
   Scenario: Delete a user
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/user"
     Then I should see "Username"
       And I should see "Relation"

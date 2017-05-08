@@ -3,7 +3,7 @@ Feature: Content
   As a publisher
 
   Scenario: See the content navigator
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/content"
     Then I should not see "Login"
       And I should see "Integrated"

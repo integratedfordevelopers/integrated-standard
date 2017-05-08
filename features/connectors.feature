@@ -4,7 +4,7 @@ Feature: Connector
   I must be able to manage the connector configuration
 
   Scenario: See the connectors
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/connector/config/"
     Then I should see "Options"
       And I should see "Name"
@@ -12,7 +12,7 @@ Feature: Connector
       And I should see "Actions"
 
   Scenario: Add a new connector
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/connector/config/"
       And I follow "New website configuration"
     Then I should see "New website configuration"
@@ -22,7 +22,7 @@ Feature: Connector
     Then I should see "The config demo is saved"
 
   Scenario: Delete a connector
-    Given I am authenticated as "demo"
+    Given I am authenticated as "admin"
       And I am on "/admin/connector/config/"
     Then I should see "demo"
     When I click the first icon "glyphicon-remove-circle"
