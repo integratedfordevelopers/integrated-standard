@@ -1771,7 +1771,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/8cab6c74cb9e191929072ae05a5993acbc4589fc.zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/daf4eccb30b0fa664ad7e04e378af90dc877d4ad.zip",
                 "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc",
                 "shasum": ""
             },
@@ -2524,12 +2524,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "c3affa6c782340a2c519589b6435754b034c0c26"
+                "reference": "245145c076c744ed104387d97c6cd0a27f0925bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/c3affa6c782340a2c519589b6435754b034c0c26.zip",
-                "reference": "c3affa6c782340a2c519589b6435754b034c0c26",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/245145c076c744ed104387d97c6cd0a27f0925bf.zip",
+                "reference": "245145c076c744ed104387d97c6cd0a27f0925bf",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-02 10:31:58"
+            "time": "2017-05-11 09:53:42"
         },
         {
             "name": "integrated/website-bundle",
@@ -6975,7 +6975,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-05-03T23:30:39+00:00"
+            "time": "2017-05-03 23:30:39"
         },
         {
             "name": "symfony/phpunit-bridge",
