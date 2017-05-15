@@ -32,7 +32,7 @@ parameters:
     recaptcha_site_key: ~
     recaptcha_secret_key: ~
 
-    consumer_key: ~
-    consumer_key_secret: ~
-    app_id: ~
-    app_id_secret: ~
+    consumer_key: ~         #twitter
+    consumer_key_secret: ~  #twitter
+    app_id: ~               #facebook
+    app_id_secret: ~        #facebook
