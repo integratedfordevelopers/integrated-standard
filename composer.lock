@@ -1767,12 +1767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc"
+                "reference": "4ee086a53b884c7ab9198e82da511aab0d18de0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/daf4eccb30b0fa664ad7e04e378af90dc877d4ad.zip",
-                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4ee086a53b884c7ab9198e82da511aab0d18de0e.zip",
+                "reference": "4ee086a53b884c7ab9198e82da511aab0d18de0e",
                 "shasum": ""
             },
             "require": {
@@ -1833,7 +1833,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-05 12:38:51"
+            "time": "2017-05-12 07:39:07"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2528,7 +2528,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/245145c076c744ed104387d97c6cd0a27f0925bf.zip",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/7c2f379b2bb2456ee73d9d540c1f47b12211273f.zip",
                 "reference": "245145c076c744ed104387d97c6cd0a27f0925bf",
                 "shasum": ""
             },
@@ -2648,7 +2648,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/368d833619ef63699fbac0a385f4891a7249b4f1.zip",
+                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/b2aac8eb2d3d8a25dec6e7865051ef0455f3e4ff.zip",
                 "reference": "368d833619ef63699fbac0a385f4891a7249b4f1",
                 "shasum": ""
             },
