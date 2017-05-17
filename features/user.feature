@@ -11,7 +11,7 @@ Feature: Users
       And I should see "Relation"
       And I should see "Actions"
 
-  Scenario: Add a user
+  Scenario: Add an user to the Admin scope
     Given I am authenticated as "admin"
       And I am on "/admin/user"
       And I follow "New"
@@ -20,6 +20,36 @@ Feature: Users
       And I fill in "integrated_user_profile_form[password]" with "welcomeBehat!"
       And I check "integrated_user_profile_form[enabled]"
       And I check "integrated_user_profile_form[groups][]"
+      And I select "Admin" from "integrated_user_profile_form[scope]"
+      And I press "Create"
+    Then I should see "The user behat is created"
+      And I should see "Username"
+      And I should see "Relation"
+      And I should see "Actions"
+
+  Scenario: Add an existing user to the Admin scope
+    Given I am authenticated as "admin"
+      And I am on "/admin/user"
+      And I follow "New"
+      Then I should see "New user"
+    When I fill in "integrated_user_profile_form[username]" with "behat"
+      And I fill in "integrated_user_profile_form[password]" with "welcomeBehat!"
+      And I check "integrated_user_profile_form[enabled]"
+      And I check "integrated_user_profile_form[groups][]"
+      And I select "Admin" from "integrated_user_profile_form[scope]"
+      And I press "Create"
+    Then I should see "This username is already in use"
+
+  Scenario: Add an existing user to the Public scope
+    Given I am authenticated as "admin"
+      And I am on "/admin/user"
+      And I follow "New"
+      Then I should see "New user"
+    When I fill in "integrated_user_profile_form[username]" with "behat"
+      And I fill in "integrated_user_profile_form[password]" with "welcomeBehat!"
+      And I check "integrated_user_profile_form[enabled]"
+      And I check "integrated_user_profile_form[groups][]"
+      And I select "Public" from "integrated_user_profile_form[scope]"
       And I press "Create"
     Then I should see "The user behat is created"
       And I should see "Username"
