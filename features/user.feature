@@ -38,7 +38,7 @@ Feature: Users
       And I check "integrated_user_profile_form[groups][]"
       And I select "Admin" from "integrated_user_profile_form[scope]"
       And I press "Create"
-    Then I should see "This username is already in use"
+    Then I should see "This username is already in use in this scope"
 
   Scenario: Add an existing user to the Public scope
     Given I am authenticated as "admin"
