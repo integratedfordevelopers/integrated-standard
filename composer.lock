@@ -1770,7 +1770,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4ee086a53b884c7ab9198e82da511aab0d18de0e.zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/826420d23a9460c0e4763484cddd71372fb6b14e.zip",
                 "reference": "4ee086a53b884c7ab9198e82da511aab0d18de0e",
                 "shasum": ""
             },
@@ -2523,12 +2523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "b51c80556645188a1d5f12daa0deec0810014b05"
+                "reference": "bfe04be9338c512358f94f83934134188b9e38d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/b51c80556645188a1d5f12daa0deec0810014b05.zip",
-                "reference": "b51c80556645188a1d5f12daa0deec0810014b05",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/bfe04be9338c512358f94f83934134188b9e38d4.zip",
+                "reference": "bfe04be9338c512358f94f83934134188b9e38d4",
                 "shasum": ""
             },
             "require": {
@@ -2571,7 +2571,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-17 11:23:40"
+            "time": "2017-05-18 06:36:53"
         },
         {
             "name": "integrated/website-bundle",
