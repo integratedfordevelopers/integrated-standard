@@ -32,7 +32,7 @@
         "integrated/solr-bundle": "~0.7.0",
         "integrated/storage-bundle": "~0.7.0",
         "integrated/theme-bundle": "~0.6",
-        "integrated/user-bundle": "~0.6",
+        "integrated/user-bundle": "~0.7",
         "integrated/website-bundle": "~0.6",
         "integrated/workflow-bundle": "~0.7.0",
         "integrated/puphpet": "~0.4",
@@ -62,6 +62,7 @@
             "php app/console doctrine:schema:update --force",
             "php app/console init:queue --force",
             "php app/console init:locking --force",
+            "php app/console init:scope",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "php app/console cache:clear --env=prod",
             "php app/console fos:js-routing:dump --env=prod"
@@ -79,6 +80,7 @@
             "php app/console doctrine:schema:update --force",
             "php app/console init:queue --force",
             "php app/console init:locking --force",
+            "php app/console init:scope",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "php app/console cache:clear --env=prod",
             "php app/console fos:js-routing:dump --env=prod"

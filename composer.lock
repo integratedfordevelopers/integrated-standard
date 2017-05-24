@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8418f0ea03ff3a0798ed831f97c59255",
-    "content-hash": "b17c26e07e40a67a77bca0847f80cfcb",
+    "hash": "575dfe717d01c4d424bd608a28003154",
+    "content-hash": "d346f9716661d0b32744904bbeb2ba1d",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1767,12 +1767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc"
+                "reference": "4ee086a53b884c7ab9198e82da511aab0d18de0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/8cab6c74cb9e191929072ae05a5993acbc4589fc.zip",
-                "reference": "8cab6c74cb9e191929072ae05a5993acbc4589fc",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/826420d23a9460c0e4763484cddd71372fb6b14e.zip",
+                "reference": "4ee086a53b884c7ab9198e82da511aab0d18de0e",
                 "shasum": ""
             },
             "require": {
@@ -1833,7 +1833,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-05 12:38:51"
+            "time": "2017-05-12 07:39:07"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2016,7 +2016,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/6aa12db998ea3563a791673bd36e197129db1e9b.zip",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/050c0b6bbf2371748c3fdd500d25f2df255f23db.zip",
                 "reference": "6aa12db998ea3563a791673bd36e197129db1e9b",
                 "shasum": ""
             },
@@ -2474,7 +2474,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/fe3dc060a282adfd787114243e4ffbb360c9792b.zip",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/bfd23066872b9d44147bc84ad3d75d8e301fbb2b.zip",
                 "reference": "fe3dc060a282adfd787114243e4ffbb360c9792b",
                 "shasum": ""
             },
@@ -2524,12 +2524,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "c3affa6c782340a2c519589b6435754b034c0c26"
+                "reference": "7ff4fe4671399c73565b9584a26aa05207e6ad65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/c3affa6c782340a2c519589b6435754b034c0c26.zip",
-                "reference": "c3affa6c782340a2c519589b6435754b034c0c26",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/7ff4fe4671399c73565b9584a26aa05207e6ad65.zip",
+                "reference": "7ff4fe4671399c73565b9584a26aa05207e6ad65",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-02 10:31:58"
+            "time": "2017-05-18 07:39:17"
         },
         {
             "name": "integrated/website-bundle",
@@ -2648,7 +2648,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/368d833619ef63699fbac0a385f4891a7249b4f1.zip",
+                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/b2aac8eb2d3d8a25dec6e7865051ef0455f3e4ff.zip",
                 "reference": "368d833619ef63699fbac0a385f4891a7249b4f1",
                 "shasum": ""
             },
@@ -5658,12 +5658,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-behat-extensions.git",
-                "reference": "efba016af55db3f721efe60f393fb29fe922ba1b"
+                "reference": "6c418455c6037c01cdc50427bcb27643d6df4f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/efba016af55db3f721efe60f393fb29fe922ba1b",
-                "reference": "efba016af55db3f721efe60f393fb29fe922ba1b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/6c418455c6037c01cdc50427bcb27643d6df4f50",
+                "reference": "6c418455c6037c01cdc50427bcb27643d6df4f50",
                 "shasum": ""
             },
             "require": {
@@ -5694,7 +5694,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-04-10 08:49:52"
+            "time": "2017-05-19 05:37:29"
         },
         {
             "name": "myclabs/deep-copy",
@@ -6975,7 +6975,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-05-03T23:30:39+00:00"
+            "time": "2017-05-03 23:30:39"
         },
         {
             "name": "symfony/phpunit-bridge",
