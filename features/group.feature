@@ -8,6 +8,23 @@ Feature: Group
       And I am on "/admin/group/"
     Then I should see "Name"
 
+  Scenario: Add group validations
+    Given I am authenticated as "admin"
+      And I am on "/admin/group/"
+    When I follow "New"
+      And I fill in "integrated_user_group_form[name]" with "Be"
+      And I check "integrated_user_group_form[roles][]"
+      And I press "Create"
+    Then I should see "This value is too short. It should have 3 characters or more."
+
+  Scenario: Add group validations 2
+    Given I am authenticated as "admin"
+      And I am on "/admin/group/"
+    When I follow "New"
+      And I press "Create"
+    Then I should see "This value should not be blank"
+      And I should see "This collection should contain 1 element or more."
+
   Scenario: Add group
     Given I am authenticated as "admin"
       And I am on "/admin/group/"
@@ -17,10 +34,10 @@ Feature: Group
       And I press "Create"
     Then I should see "The group Behat Administrators is created"
 
-    Scenario: Remove group
-      Given I am authenticated as "admin"
-        And I am on "/admin/group/"
-        And I click the last icon "glyphicon-remove-circle"
-      Then I should see "You are about to delete the group \"Behat Administrators\", click the delete button below to confirm the action."
-      When I press "Delete"
-      Then I should see "The group Behat Administrators is removed"
+  Scenario: Remove group
+    Given I am authenticated as "admin"
+      And I am on "/admin/group/"
+      And I click the last icon "glyphicon-remove-circle"
+    Then I should see "You are about to delete the group \"Behat Administrators\", click the delete button below to confirm the action."
+    When I press "Delete"
+    Then I should see "The group Behat Administrators is removed"
