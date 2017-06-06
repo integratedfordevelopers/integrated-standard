@@ -17,14 +17,6 @@ Feature: Group
       And I press "Create"
     Then I should see "This value is too short. It should have 3 characters or more."
 
-  Scenario: Add group validations 2
-    Given I am authenticated as "admin"
-      And I am on "/admin/group/"
-    When I follow "New"
-      And I press "Create"
-    Then I should see "This value should not be blank"
-      And I should see "This collection should contain 1 element or more."
-
   Scenario: Add group
     Given I am authenticated as "admin"
       And I am on "/admin/group/"
