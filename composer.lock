@@ -1766,12 +1766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "5b8fb39d285cf7762bbcf80592dc0010f9d6ad57"
+                "reference": "15d40f144529791f608b156fe8c7ea616c525396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/5b8fb39d285cf7762bbcf80592dc0010f9d6ad57.zip",
-                "reference": "5b8fb39d285cf7762bbcf80592dc0010f9d6ad57",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/15d40f144529791f608b156fe8c7ea616c525396.zip",
+                "reference": "15d40f144529791f608b156fe8c7ea616c525396",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +1832,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-29 12:02:14"
+            "time": "2017-06-07 13:38:09"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -3086,7 +3086,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {

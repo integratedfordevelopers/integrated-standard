@@ -10,7 +10,8 @@ Feature: File
     When I fill in "integrated_content[title]" with "Image of a City"
       And I attach the file "image/city.jpg" to "integrated_content[file][file]"
       And I press "Create"
-    Then I should see "The document Image has been created"
+    Then I should not see "Format jpg can not be converted in to png, there is not converter supporting this format."
+      And I should see "The document Image has been created"
       And I should see "Image of a City"
       And the page must have a paginator
 
@@ -55,5 +56,6 @@ Feature: File
     When I fill in "integrated_content[title]" with "Image trough the converter"
       And I attach the file "image/city.bmp" to "integrated_content[file][file]"
       And I press "Create"
-    And I should see "Image trough the converter"
+    Then I should not see "Format bmp can not be converted in to png, there is not converter supporting this format."
+      And I should see "Image trough the converter"
       And the page must have a paginator
