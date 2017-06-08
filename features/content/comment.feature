@@ -46,4 +46,4 @@ Feature: Comment
       And I should see "You are about to delete \"Integrated Comment created while testing\", click the delete button below to confirm the action."
     When I press "Delete"
     Then I should see "The document Comment has been deleted"
-      And I should not see "Integrated welcomes Behat"
+      And I should not see "Integrated Comment created while testing"
