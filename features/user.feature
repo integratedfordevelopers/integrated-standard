@@ -4,7 +4,7 @@ Feature: Users
   I must be able to manage accounts that have access to the backend
 
   Scenario: User overview
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
     Then I should see "admin"
       And I should see "Username"
@@ -12,7 +12,7 @@ Feature: Users
       And I should see "Actions"
 
   Scenario: Add an user to the Admin scope
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
       And I follow "New"
     Then I should see "New user"
@@ -28,7 +28,7 @@ Feature: Users
       And I should see "Actions"
 
   Scenario: Add an existing user to the Admin scope
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
       And I follow "New"
       Then I should see "New user"
@@ -41,7 +41,7 @@ Feature: Users
     Then I should see "This username is already in use in this scope"
 
   Scenario: Add an existing user to the Public scope
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
       And I follow "New"
       Then I should see "New user"
@@ -76,7 +76,7 @@ Feature: Users
       And I should see "Create new"
 
   Scenario: Add an existing user to the Public scope
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
       And I follow "New"
     Then I should see "New user"
@@ -103,7 +103,7 @@ Feature: Users
     Then I should see "Bad credentials."
 
   Scenario: Delete a user
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/user"
     Then I should see "Username"
       And I should see "Relation"

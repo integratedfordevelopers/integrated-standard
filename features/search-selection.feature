@@ -3,7 +3,7 @@ Feature: Search selection
   As a publisher
 
   Scenario: Search selections overview
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/search-selection"
     Then I should not see "Login"
       And I should see "Search selections"
@@ -11,7 +11,7 @@ Feature: Search selection
       And I should see "Actions"
 
     Scenario: Create a search selection
-      Given I am authenticated as "admin"
+      Given I am authenticated as "admin" in firewall "default"
         And I am on "/admin/content"
         When I follow "Save current search"
       Then I should see "New Search selection"

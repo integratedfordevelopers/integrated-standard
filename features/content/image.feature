@@ -4,7 +4,7 @@ Feature: File
   I want to attach images to an article
 
   Scenario: Upload a image
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
       And I am going to create a "Image"
     When I fill in "integrated_content[title]" with "Image of a City"
@@ -16,7 +16,7 @@ Feature: File
       And the page must have a paginator
 
   Scenario: Delete uploaded image
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     Then I should see "Integrated"
       And I should see "Home"
@@ -30,7 +30,7 @@ Feature: File
       And I should not see "Image of a City"
 
   Scenario: Upload a php file in an image (converter failing)
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
       And I am going to create a "Image"
     Then I should see "New Image"
@@ -45,7 +45,7 @@ Feature: File
       And I should see "Format php can not be converted in to png, there is not converter supporting this format."
 
   Scenario: Upload a bmp file in an image (converter passing)
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
       And I am going to create a "Image"
     Then I should see "New Image"

@@ -25,7 +25,7 @@ Feature: Security
       And I should see "Create new"
 
   Scenario: Edit my credentials
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     When I follow "Edit profile"
       And I fill in "integrated_user_profile_form[username]" with "admin"
