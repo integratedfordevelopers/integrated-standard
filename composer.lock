@@ -5645,12 +5645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-behat-extensions.git",
-                "reference": "36ee18871899a5cc05bd87d1462564bbf2dac978"
+                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/36ee18871899a5cc05bd87d1462564bbf2dac978",
-                "reference": "36ee18871899a5cc05bd87d1462564bbf2dac978",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/c9f74e53f497fdfeed4a3bdadd63d895692257ff",
+                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff",
                 "shasum": ""
             },
             "require": {
@@ -5681,7 +5681,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-06-28 06:13:09"
+            "time": "2017-06-30T10:29:25+00:00"
         },
         {
             "name": "myclabs/deep-copy",
