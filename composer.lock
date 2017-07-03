@@ -1598,7 +1598,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/ff548e1dd629d5888042e787f1e4faaba906c329.zip",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/22250f4309eaafdd51cc8e2efb5d12ad21b881ac.zip",
                 "reference": "ff548e1dd629d5888042e787f1e4faaba906c329",
                 "shasum": ""
             },
@@ -1770,7 +1770,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/15d40f144529791f608b156fe8c7ea616c525396.zip",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/cee284e9f0ce7e265394fc7347220b5390f2db86.zip",
                 "reference": "15d40f144529791f608b156fe8c7ea616c525396",
                 "shasum": ""
             },
@@ -2457,7 +2457,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/0fc86be426c124597701abb05082e3f5e3dd3533.zip",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/8c4cdb90010a78e7c409185dd025133d7789b6dd.zip",
                 "reference": "3dc3670a5c0013a9ff0ba08a540e91b6842613a9",
                 "shasum": ""
             },
@@ -3086,7 +3086,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -5645,12 +5645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-behat-extensions.git",
-                "reference": "6c418455c6037c01cdc50427bcb27643d6df4f50"
+                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/6c418455c6037c01cdc50427bcb27643d6df4f50",
-                "reference": "6c418455c6037c01cdc50427bcb27643d6df4f50",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/c9f74e53f497fdfeed4a3bdadd63d895692257ff",
+                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff",
                 "shasum": ""
             },
             "require": {
@@ -5681,7 +5681,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-05-19 05:37:29"
+            "time": "2017-06-30T10:29:25+00:00"
         },
         {
             "name": "myclabs/deep-copy",

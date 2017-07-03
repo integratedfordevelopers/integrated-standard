@@ -4,7 +4,7 @@ Feature: Content Type
   I must be able to manage content types
 
   Scenario: See the content types
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/contenttype"
     Then I should not see "Login"
       And I should see "Create new"
@@ -13,7 +13,7 @@ Feature: Content Type
       And I should see "Created"
 
   Scenario: Edit a content type
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/contenttype"
       And I click the first icon "glyphicon-pencil"
     Then I should see "Name"

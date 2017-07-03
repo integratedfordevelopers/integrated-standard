@@ -4,7 +4,7 @@ Feature: Comment
   I must login to proceed so i can edit content
 
   Scenario: New comment
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
       And I am going to create a "Comment"
     When I fill in "integrated_content[title]" with "Integrated comment created with Behat"
@@ -17,7 +17,7 @@ Feature: Comment
       And the page must have a paginator
 
   Scenario: Edit comment
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     When I follow "Integrated comment created with Behat"
     Then I should see "Edit Comment"
@@ -39,7 +39,7 @@ Feature: Comment
       And the page must have a paginator
 
   Scenario: Delete comment
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     When I follow "Delete item"
     Then I should see "Delete Comment"

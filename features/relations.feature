@@ -4,7 +4,7 @@ Feature: Relations
   I want to manage the relations on content types
 
   Scenario: View relations
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/relation/"
     Then I should see "Name"
       And I should see "Type"
@@ -12,7 +12,7 @@ Feature: Relations
       And I should see "Actions"
 
   Scenario: Create a relation
-    Given I am authenticated as "admin"
+    Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/relation/new"
     Then I should see "New"
       And I should see "Name"
