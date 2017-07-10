@@ -96,6 +96,7 @@ doctrine_mongodb:
     document_managers:
         default:
             auto_mapping: true
+    auto_generate_proxy_classes: %kernel.debug%
 
 # Swiftmailer Configuration
 swiftmailer:
