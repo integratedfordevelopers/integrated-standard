@@ -4,8 +4,132 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d346f9716661d0b32744904bbeb2ba1d",
+    "content-hash": "5f8d000a6f4154d537b447169ff1b2a5",
     "packages": [
+        {
+            "name": "antimattr/mongodb-migrations",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antimattr/mongodb-migrations.git",
+                "reference": "d553f96ec588ed929ffc75c88f039b26da0d705a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antimattr/mongodb-migrations/zipball/d553f96ec588ed929ffc75c88f039b26da0d705a",
+                "reference": "d553f96ec588ed929ffc75c88f039b26da0d705a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/mongodb": "1.*",
+                "php": ">=5.3.2",
+                "symfony/console": "~2",
+                "symfony/yaml": "~2"
+            },
+            "require-dev": {
+                "antimattr/test-case": "~1.0@stable",
+                "friendsofphp/php-cs-fixer": "~1",
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "AntiMattr\\MongoDB\\Migrations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Fitzgerald",
+                    "email": "matthewfitz@gmail.com"
+                },
+                {
+                    "name": "Ryan Catlin",
+                    "email": "ryan.catlin@gmail.com"
+                },
+                {
+                    "name": "Jonathon Suggs",
+                    "email": "jsuggs@gmail.com"
+                }
+            ],
+            "description": "Managed Database Migrations for MongoDB",
+            "homepage": "http://github.com/antimattr/mongodb-migrations",
+            "keywords": [
+                "antimattr",
+                "database",
+                "doctrine",
+                "migration",
+                "mongodb"
+            ],
+            "time": "2016-09-16T17:14:51+00:00"
+        },
+        {
+            "name": "antimattr/mongodb-migrations-bundle",
+            "version": "v1.0.2",
+            "target-dir": "AntiMattr/Bundle/MongoDBMigrationsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antimattr/mongodb-migrations-bundle.git",
+                "reference": "d84d2bf3e7ae4e39b7efd0f5673d58c6605b847a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antimattr/mongodb-migrations-bundle/zipball/d84d2bf3e7ae4e39b7efd0f5673d58c6605b847a",
+                "reference": "d84d2bf3e7ae4e39b7efd0f5673d58c6605b847a",
+                "shasum": ""
+            },
+            "require": {
+                "antimattr/mongodb-migrations": "~1.0.0",
+                "doctrine/mongodb-odm": "1.*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "AntiMattr\\Bundle\\MongoDBMigrationsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Fitzgerald",
+                    "email": "matthewfitz@gmail.com"
+                },
+                {
+                    "name": "Jonathon Suggs",
+                    "email": "jsuggs@gmail.com"
+                }
+            ],
+            "description": "Symfony MongoDBMigrationsBundle",
+            "homepage": "http://github.com/antimattr/mongodb-migrations-bundle",
+            "keywords": [
+                "antimattr",
+                "database",
+                "doctrine",
+                "migration",
+                "mongodb",
+                "symfony"
+            ],
+            "time": "2016-09-16T20:06:10+00:00"
+        },
         {
             "name": "braincrafted/bootstrap-bundle",
             "version": "v2.2.0",
@@ -747,6 +871,67 @@
             "time": "2015-11-04T21:23:23+00:00"
         },
         {
+            "name": "doctrine/doctrine-migrations-bundle",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
+                "reference": "6276139e0b913a4e5120fc36bb5b0eae8ac549bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/6276139e0b913a4e5120fc36bb5b0eae8ac549bc",
+                "reference": "6276139e0b913a4e5120fc36bb5b0eae8ac549bc",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "~1.0",
+                "doctrine/migrations": "^1.1",
+                "php": ">=5.4.0",
+                "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Bundle\\MigrationsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony DoctrineMigrationsBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "dbal",
+                "migrations",
+                "schema"
+            ],
+            "time": "2016-12-05T18:36:37+00:00"
+        },
+        {
             "name": "doctrine/inflector",
             "version": "v1.1.0",
             "source": {
@@ -920,6 +1105,74 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "doctrine/migrations",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/migrations.git",
+                "reference": "6b70c2c4484c02878743929bb3cd3fdbf41193a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/6b70c2c4484c02878743929bb3cd3fdbf41193a6",
+                "reference": "6b70c2c4484c02878743929bb3cd3fdbf41193a6",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "~2.2",
+                "php": ">=5.4.0",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "dev-master",
+                "doctrine/orm": "2.*",
+                "johnkary/phpunit-speedtrap": "~1.0@dev",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "0.6.*"
+            },
+            "bin": [
+                "bin/doctrine-migrations"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "v1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\Migrations\\": "lib/Doctrine/DBAL/Migrations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Michael Simonson",
+                    "email": "contact@mikesimonson.com"
+                }
+            ],
+            "description": "Database Schema migrations using Doctrine DBAL",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "migrations"
+            ],
+            "time": "2016-01-07T21:28:50+00:00"
         },
         {
             "name": "doctrine/mongodb",
@@ -1594,12 +1847,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle.git",
-                "reference": "ff548e1dd629d5888042e787f1e4faaba906c329"
+                "reference": "22250f4309eaafdd51cc8e2efb5d12ad21b881ac"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/22250f4309eaafdd51cc8e2efb5d12ad21b881ac.zip",
-                "reference": "ff548e1dd629d5888042e787f1e4faaba906c329",
+                "reference": "22250f4309eaafdd51cc8e2efb5d12ad21b881ac",
                 "shasum": ""
             },
             "require": {
@@ -1651,7 +1904,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2017-05-30 07:58:02"
+            "time": "2017-06-27 12:34:13"
         },
         {
             "name": "integrated/channel-bundle",
@@ -1659,12 +1912,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-channel-bundle.git",
-                "reference": "6f2c36386b3ad1c54d6d5fe5047e239502eb4dd4"
+                "reference": "86291e2c8e12ccce3965beacfce4c15ae6622246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/6f2c36386b3ad1c54d6d5fe5047e239502eb4dd4",
-                "reference": "6f2c36386b3ad1c54d6d5fe5047e239502eb4dd4",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/86291e2c8e12ccce3965beacfce4c15ae6622246",
+                "reference": "86291e2c8e12ccce3965beacfce4c15ae6622246",
                 "shasum": ""
             },
             "require": {
@@ -1702,7 +1955,7 @@
                 "channel",
                 "multi-site"
             ],
-            "time": "2017-04-21 08:40:01"
+            "time": "2017-06-21 10:07:44"
         },
         {
             "name": "integrated/comment-bundle",
@@ -1710,12 +1963,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-comment-bundle.git",
-                "reference": "d5a5542d1f7488d8723fe476dda9095d0324e031"
+                "reference": "eff3f7c20fef5c442b68bcd121477f4f699c268c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/d5a5542d1f7488d8723fe476dda9095d0324e031",
-                "reference": "d5a5542d1f7488d8723fe476dda9095d0324e031",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/eff3f7c20fef5c442b68bcd121477f4f699c268c",
+                "reference": "eff3f7c20fef5c442b68bcd121477f4f699c268c",
                 "shasum": ""
             },
             "require": {
@@ -1758,7 +2011,7 @@
                 "Integrated",
                 "comment"
             ],
-            "time": "2017-05-24 14:35:01"
+            "time": "2017-07-06 13:42:30"
         },
         {
             "name": "integrated/content-bundle",
@@ -1766,12 +2019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "15d40f144529791f608b156fe8c7ea616c525396"
+                "reference": "7f009a36d2a21d7444c34a83d21161460b6c9cf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/cee284e9f0ce7e265394fc7347220b5390f2db86.zip",
-                "reference": "15d40f144529791f608b156fe8c7ea616c525396",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/7f009a36d2a21d7444c34a83d21161460b6c9cf9.zip",
+                "reference": "7f009a36d2a21d7444c34a83d21161460b6c9cf9",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +2085,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-06-07 13:38:09"
+            "time": "2017-07-11 12:19:29"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2011,12 +2264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "25e0fd8e79126b83f54efa3209050f1b11fb1928"
+                "reference": "fe44114176227d19e742d60c3204fdf9cf7f4ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/25e0fd8e79126b83f54efa3209050f1b11fb1928.zip",
-                "reference": "25e0fd8e79126b83f54efa3209050f1b11fb1928",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/fe44114176227d19e742d60c3204fdf9cf7f4ba7.zip",
+                "reference": "fe44114176227d19e742d60c3204fdf9cf7f4ba7",
                 "shasum": ""
             },
             "require": {
@@ -2026,6 +2279,7 @@
                 "php": ">=5.5",
                 "psr/log": "~1.0",
                 "solarium/solarium": "~3.7",
+                "symfony/security-acl": "~2.8 || ~3.0",
                 "symfony/symfony": "~2.8 || ~3.0"
             },
             "require-dev": {
@@ -2056,7 +2310,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-28 12:07:03"
+            "time": "2017-07-11 12:13:41"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2161,12 +2415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-page-bundle.git",
-                "reference": "68a8dd1e40537a835c0901e6c6147563a5956c65"
+                "reference": "c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/68a8dd1e40537a835c0901e6c6147563a5956c65",
-                "reference": "68a8dd1e40537a835c0901e6c6147563a5956c65",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c",
+                "reference": "c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c",
                 "shasum": ""
             },
             "require": {
@@ -2213,7 +2467,7 @@
                 "Integrated",
                 "page"
             ],
-            "time": "2017-05-30 13:55:02"
+            "time": "2017-07-12 06:44:49"
         },
         {
             "name": "integrated/puphpet",
@@ -2255,12 +2509,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-slug-bundle.git",
-                "reference": "b45d1aa69888020ead21e66510c4d95e1c947f82"
+                "reference": "38782e1a332a68ececaa385a16424f31f08633a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/b45d1aa69888020ead21e66510c4d95e1c947f82",
-                "reference": "b45d1aa69888020ead21e66510c4d95e1c947f82",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/38782e1a332a68ececaa385a16424f31f08633a7",
+                "reference": "38782e1a332a68ececaa385a16424f31f08633a7",
                 "shasum": ""
             },
             "require": {
@@ -2295,7 +2549,7 @@
                 "Integrated",
                 "slug"
             ],
-            "time": "2017-04-21 08:39:53"
+            "time": "2017-06-13 09:36:51"
         },
         {
             "name": "integrated/solr-bundle",
@@ -2453,12 +2707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "3dc3670a5c0013a9ff0ba08a540e91b6842613a9"
+                "reference": "4eb9ce2ad0e0b934a4f7160c849a11f3bc72bfaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/8c4cdb90010a78e7c409185dd025133d7789b6dd.zip",
-                "reference": "3dc3670a5c0013a9ff0ba08a540e91b6842613a9",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/4eb9ce2ad0e0b934a4f7160c849a11f3bc72bfaa.zip",
+                "reference": "4eb9ce2ad0e0b934a4f7160c849a11f3bc72bfaa",
                 "shasum": ""
             },
             "require": {
@@ -2499,7 +2753,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-05-31 19:30:40"
+            "time": "2017-07-12 09:10:05"
         },
         {
             "name": "integrated/user-bundle",
@@ -2563,12 +2817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "241fcbc1aa374a60542a3dfcff04bd076eca4c78"
+                "reference": "2d6585676ea984682fccdb7dbb2c53721fdb9900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/241fcbc1aa374a60542a3dfcff04bd076eca4c78",
-                "reference": "241fcbc1aa374a60542a3dfcff04bd076eca4c78",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/2d6585676ea984682fccdb7dbb2c53721fdb9900",
+                "reference": "2d6585676ea984682fccdb7dbb2c53721fdb9900",
                 "shasum": ""
             },
             "require": {
@@ -2619,7 +2873,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-05-30 07:58:14"
+            "time": "2017-07-05 07:22:14"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -3086,7 +3340,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -5645,12 +5899,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-behat-extensions.git",
-                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff"
+                "reference": "2f43a363896b8dbfc59721cab5fe0530e2dd913a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/c9f74e53f497fdfeed4a3bdadd63d895692257ff",
-                "reference": "c9f74e53f497fdfeed4a3bdadd63d895692257ff",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-behat-extensions/zipball/2f43a363896b8dbfc59721cab5fe0530e2dd913a",
+                "reference": "2f43a363896b8dbfc59721cab5fe0530e2dd913a",
                 "shasum": ""
             },
             "require": {
@@ -5681,7 +5935,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-06-30T10:29:25+00:00"
+            "time": "2017-07-05T12:12:15+00:00"
         },
         {
             "name": "myclabs/deep-copy",
