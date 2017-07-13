@@ -2019,12 +2019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "7f009a36d2a21d7444c34a83d21161460b6c9cf9"
+                "reference": "4ac97c1e1e295b776458a6eb8d6a4a2d6814f477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/7f009a36d2a21d7444c34a83d21161460b6c9cf9.zip",
-                "reference": "7f009a36d2a21d7444c34a83d21161460b6c9cf9",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4ac97c1e1e295b776458a6eb8d6a4a2d6814f477.zip",
+                "reference": "4ac97c1e1e295b776458a6eb8d6a4a2d6814f477",
                 "shasum": ""
             },
             "require": {
@@ -2085,7 +2085,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-07-11 12:19:29"
+            "time": "2017-07-12 12:44:44"
         },
         {
             "name": "integrated/content-history-bundle",
