@@ -25,6 +25,8 @@ class AppKernel extends Kernel
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle(),
             new Gregwar\ImageBundle\GregwarImageBundle(),
+            new AntiMattr\Bundle\MongoDBMigrationsBundle\MongoDBMigrationsBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
 
             new Integrated\Bundle\AssetBundle\IntegratedAssetBundle(),
             new Integrated\Bundle\ContentBundle\IntegratedContentBundle(),
