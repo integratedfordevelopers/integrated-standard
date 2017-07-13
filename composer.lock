@@ -1766,12 +1766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "15d40f144529791f608b156fe8c7ea616c525396"
+                "reference": "4ac97c1e1e295b776458a6eb8d6a4a2d6814f477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/cee284e9f0ce7e265394fc7347220b5390f2db86.zip",
-                "reference": "15d40f144529791f608b156fe8c7ea616c525396",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4ac97c1e1e295b776458a6eb8d6a4a2d6814f477.zip",
+                "reference": "4ac97c1e1e295b776458a6eb8d6a4a2d6814f477",
                 "shasum": ""
             },
             "require": {
@@ -1832,7 +1832,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-06-07 13:38:09"
+            "time": "2017-07-12 12:44:44"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2011,12 +2011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "25e0fd8e79126b83f54efa3209050f1b11fb1928"
+                "reference": "fe44114176227d19e742d60c3204fdf9cf7f4ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/25e0fd8e79126b83f54efa3209050f1b11fb1928.zip",
-                "reference": "25e0fd8e79126b83f54efa3209050f1b11fb1928",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/fe44114176227d19e742d60c3204fdf9cf7f4ba7.zip",
+                "reference": "fe44114176227d19e742d60c3204fdf9cf7f4ba7",
                 "shasum": ""
             },
             "require": {
@@ -2026,6 +2026,7 @@
                 "php": ">=5.5",
                 "psr/log": "~1.0",
                 "solarium/solarium": "~3.7",
+                "symfony/security-acl": "~2.8 || ~3.0",
                 "symfony/symfony": "~2.8 || ~3.0"
             },
             "require-dev": {
@@ -2056,7 +2057,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-05-28 12:07:03"
+            "time": "2017-07-11 12:13:41"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2457,7 +2458,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/8c4cdb90010a78e7c409185dd025133d7789b6dd.zip",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/e5f00e36583d94720a9567d1c9f24677937f6f2f.zip",
                 "reference": "3dc3670a5c0013a9ff0ba08a540e91b6842613a9",
                 "shasum": ""
             },
@@ -3086,7 +3087,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -5681,7 +5682,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-06-30T10:29:25+00:00"
+            "time": "2017-06-30 10:29:25"
         },
         {
             "name": "myclabs/deep-copy",
