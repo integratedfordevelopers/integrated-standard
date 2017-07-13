@@ -14,6 +14,14 @@ use Integrated\Bundle\ContentBundle\Document\Content\Content;
 class Version20170712125412 extends AbstractMigration
 {
     /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return "INTEGRATED-1190: Add slug to all content that doesn't have a slug yet";
+    }
+
+    /**
      * @param Database $db
      */
     public function up(Database $db)

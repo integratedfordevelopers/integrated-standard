@@ -12,13 +12,6 @@ use AntiMattr\MongoDB\Migrations;
  */
 abstract class AbstractMigration extends Migrations\AbstractMigration implements ContainerAwareInterface
 {
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-        return "";
-    }
 
     /**
      * @var ContainerInterface
