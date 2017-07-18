@@ -55,7 +55,6 @@ class Version20170712125412 extends AbstractMigration
         return $this->getDocumentManager()->createQueryBuilder(Content::class)
             ->field('slug')->exists(false)
             ->getQuery()
-            ->execute()
-            ->toArray();
+            ->execute();
     }
 }
