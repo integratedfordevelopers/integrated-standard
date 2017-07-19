@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f8d000a6f4154d537b447169ff1b2a5",
+    "content-hash": "d7bb5cf11d804653cfcac4889f31e1bd",
     "packages": [
         {
             "name": "antimattr/mongodb-migrations",
@@ -2019,12 +2019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "7926539446260f43dc868183ca30e038f3b499b9"
+                "reference": "d550ede37560decd55e28a02a4265aeb5370ee98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/4ac97c1e1e295b776458a6eb8d6a4a2d6814f477.zip",
-                "reference": "7926539446260f43dc868183ca30e038f3b499b9",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/d550ede37560decd55e28a02a4265aeb5370ee98.zip",
+                "reference": "d550ede37560decd55e28a02a4265aeb5370ee98",
                 "shasum": ""
             },
             "require": {
@@ -2085,7 +2085,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-07-12 12:44:44"
+            "time": "2017-07-19 11:58:53"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2711,7 +2711,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/4eb9ce2ad0e0b934a4f7160c849a11f3bc72bfaa.zip",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/ce5f3b2b776f16a2074f5a0ed5ab3c16f08b1792.zip",
                 "reference": "4eb9ce2ad0e0b934a4f7160c849a11f3bc72bfaa",
                 "shasum": ""
             },
@@ -5935,7 +5935,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-07-05T12:12:15+00:00"
+            "time": "2017-07-05 12:12:15"
         },
         {
             "name": "myclabs/deep-copy",
