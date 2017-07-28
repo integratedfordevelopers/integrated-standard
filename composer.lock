@@ -2019,12 +2019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "d550ede37560decd55e28a02a4265aeb5370ee98"
+                "reference": "d2b144f3234bb7825d10846e16e005301124893d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/6f78da3ffc026ef828368556a30634ae06741b12.zip",
-                "reference": "d550ede37560decd55e28a02a4265aeb5370ee98",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/d2b144f3234bb7825d10846e16e005301124893d.zip",
+                "reference": "d2b144f3234bb7825d10846e16e005301124893d",
                 "shasum": ""
             },
             "require": {
@@ -2085,7 +2085,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-07-19 11:58:53"
+            "time": "2017-07-28 12:05:12"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2268,7 +2268,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/04bab9ed1d0724975e54dde18da72068fd939f51.zip",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/c42c454dc3d01fdcb5fffbb66543589e30d6c60c.zip",
                 "reference": "04bab9ed1d0724975e54dde18da72068fd939f51",
                 "shasum": ""
             },
@@ -3340,7 +3340,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
