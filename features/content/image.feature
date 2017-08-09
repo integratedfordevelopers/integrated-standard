@@ -44,7 +44,7 @@ Feature: File
     Then I should see "New Image"
       And I should see "Format php can not be converted in to png, there is not converter supporting this format."
 
-  Scenario: Upload a bmp file in an image (converter passing)
+  Scenario: Upload a jpg file in an image (converter passing)
     Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
       And I am going to create a "Image"
@@ -54,8 +54,8 @@ Feature: File
       And I should see "Description"
       And I should see "Publish time"
     When I fill in "integrated_content[title]" with "Image trough the converter"
-      And I attach the file "image/city.bmp" to "integrated_content[file][file]"
+      And I attach the file "image/city.jpg" to "integrated_content[file][file]"
       And I press "Create"
-    Then I should not see "Format bmp can not be converted in to png, there is not converter supporting this format."
+    Then I should not see "Format jpg can not be converted in to png, there is not converter supporting this format."
       And I should see "Image trough the converter"
       And the page must have a paginator
