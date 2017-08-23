@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ac1d7bc0d021ca14292746533489719",
+    "content-hash": "3b87df72c604bf3ac93882e5fe91a24c",
     "packages": [
         {
             "name": "antimattr/mongodb-migrations",
@@ -235,6 +235,55 @@
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
             "time": "2014-10-11T11:50:53+00:00"
+        },
+        {
+            "name": "darsyn/ip",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darsyn/ip.git",
+                "reference": "cbd2f7ec59f34b6fe698486cad7e460e2ab33ee9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darsyn/ip/zipball/cbd2f7ec59f34b6fe698486cad7e460e2ab33ee9",
+                "reference": "cbd2f7ec59f34b6fe698486cad7e460e2ab33ee9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "suggest": {
+                "doctrine/dbal": "to use IP as a column type"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Darsyn\\IP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zander Baldwin",
+                    "email": "hello@zanderbaldwin.com",
+                    "homepage": "http://zanderbaldwin.com"
+                }
+            ],
+            "description": "An immutable IP Address value object that provides several different notations, including helper functions.",
+            "homepage": "https://github.com/darsyn/ip",
+            "keywords": [
+                "IP",
+                "immutable",
+                "ipv4",
+                "ipv6",
+                "library",
+                "value-object"
+            ],
+            "time": "2017-08-03T13:09:45+00:00"
         },
         {
             "name": "doctrine/annotations",
