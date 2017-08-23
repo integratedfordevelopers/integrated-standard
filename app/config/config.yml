@@ -72,6 +72,8 @@ braincrafted_bootstrap:
 # Doctrine Configuration
 doctrine:
     dbal:
+        types:
+            ip: Darsyn\IP\Doctrine\IpType
         driver:   %database_driver%
         host:     %database_host%
         port:     %database_port%
