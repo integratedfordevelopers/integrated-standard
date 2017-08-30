@@ -6,7 +6,7 @@ Feature: News
   Scenario: Add content type
     Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/contenttype/new?class=Integrated\Bundle\ContentBundle\Document\Content\News"
-    Then I should see "Nieuw"
+    Then I should see "New"
     When I fill in "integrated_content_type[name]" with "newstest"
       And I check "integrated_content_form_company_disabled"
       And I check "integrated_content_type_fields_default_content_enabled"
