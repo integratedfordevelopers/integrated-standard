@@ -8,7 +8,7 @@ Feature: News
       And I am on "/admin/contenttype/new?class=Integrated\Bundle\ContentBundle\Document\Content\News"
     Then I should see "New"
     When I fill in "integrated_content_type[name]" with "newstest"
-      And I check "integrated_content_form_company_disabled"
+      And I check "integrated_content_type_fields_default_title_enabled"
       And I check "integrated_content_type_fields_default_content_enabled"
       And I press "Save"
     Then I should see "Item created"
