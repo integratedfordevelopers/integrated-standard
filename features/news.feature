@@ -17,7 +17,6 @@ Feature: News
 
   Scenario: Add content
     Given I am on "/admin/content/new?type=newstest"
-    Then I should see "New newstest"
     When I fill in "integrated_content[title]" with "newstest test"
       And I fill in "integrated_content[content]" with "Some text to test the newstest"
       And I press "create"
