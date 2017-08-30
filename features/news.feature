@@ -16,7 +16,8 @@ Feature: News
       Then I should see "newstest"
 
   Scenario: Add content
-    Given I am on "/admin/content/new?type=newstest"
+    Given I am authenticated as "admin" in firewall "default"
+      And I am on "/admin/content/new?type=newstest"
     When I fill in "integrated_content[title]" with "newstest test"
       And I fill in "integrated_content[content]" with "Some text to test the newstest"
       And I press "create"
