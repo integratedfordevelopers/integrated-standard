@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "97fb2461ab5018e839e3549ee46fb7f34c8f9c03"
+                "reference": "3e66e048308b1fff852316e4f490e4d65fee5b8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/97fb2461ab5018e839e3549ee46fb7f34c8f9c03.zip",
-                "reference": "97fb2461ab5018e839e3549ee46fb7f34c8f9c03",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/3e66e048308b1fff852316e4f490e4d65fee5b8b.zip",
+                "reference": "3e66e048308b1fff852316e4f490e4d65fee5b8b",
                 "shasum": ""
             },
             "require": {
@@ -2140,7 +2140,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-08-03 21:15:24"
+            "time": "2017-08-30 08:28:46"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2323,7 +2323,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/c42c454dc3d01fdcb5fffbb66543589e30d6c60c.zip",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/9e8841d70bfa8dced5d4dfbf47fda52939a2a713.zip",
                 "reference": "c42c454dc3d01fdcb5fffbb66543589e30d6c60c",
                 "shasum": ""
             },
@@ -2815,12 +2815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "6202d8846383b1b74d835bdf912358512d43b7db"
+                "reference": "e84e000d43cd19f0b59dfe17582bf42d0c844372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/6202d8846383b1b74d835bdf912358512d43b7db.zip",
-                "reference": "6202d8846383b1b74d835bdf912358512d43b7db",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/e84e000d43cd19f0b59dfe17582bf42d0c844372.zip",
+                "reference": "e84e000d43cd19f0b59dfe17582bf42d0c844372",
                 "shasum": ""
             },
             "require": {
@@ -2861,7 +2861,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-08-23 09:53:50"
+            "time": "2017-08-30 10:09:15"
         },
         {
             "name": "integrated/user-bundle",
@@ -2925,12 +2925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "e013d184021636f08590cdb347022b16b7c7aebb"
+                "reference": "b8882e105cce0ae03761d4e56f2280b52b4c68b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/e013d184021636f08590cdb347022b16b7c7aebb",
-                "reference": "e013d184021636f08590cdb347022b16b7c7aebb",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/b8882e105cce0ae03761d4e56f2280b52b4c68b6",
+                "reference": "b8882e105cce0ae03761d4e56f2280b52b4c68b6",
                 "shasum": ""
             },
             "require": {
@@ -2981,7 +2981,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-08-15 13:37:32"
+            "time": "2017-08-30 10:09:31"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -3448,7 +3448,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -4393,6 +4393,7 @@
                 "bower manager",
                 "dependencies"
             ],
+            "abandoned": true,
             "time": "2014-07-14T08:51:16+00:00"
         },
         {
