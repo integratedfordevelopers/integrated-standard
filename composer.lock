@@ -1894,7 +1894,7 @@
                 "asset",
                 "asset manager"
             ],
-            "time": "2017-04-18 08:56:22"
+            "time": "2017-04-18T08:56:22+00:00"
         },
         {
             "name": "integrated/block-bundle",
@@ -1959,7 +1959,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2017-07-24 07:05:46"
+            "time": "2017-07-24T07:05:46+00:00"
         },
         {
             "name": "integrated/channel-bundle",
@@ -2010,7 +2010,7 @@
                 "channel",
                 "multi-site"
             ],
-            "time": "2017-06-21 10:07:44"
+            "time": "2017-06-21T10:07:44+00:00"
         },
         {
             "name": "integrated/comment-bundle",
@@ -2018,12 +2018,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-comment-bundle.git",
-                "reference": "eff3f7c20fef5c442b68bcd121477f4f699c268c"
+                "reference": "c337cb937040d4bf94674ade767db0931a522f5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/eff3f7c20fef5c442b68bcd121477f4f699c268c",
-                "reference": "eff3f7c20fef5c442b68bcd121477f4f699c268c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-comment-bundle/zipball/c337cb937040d4bf94674ade767db0931a522f5d",
+                "reference": "c337cb937040d4bf94674ade767db0931a522f5d",
                 "shasum": ""
             },
             "require": {
@@ -2066,7 +2066,7 @@
                 "Integrated",
                 "comment"
             ],
-            "time": "2017-07-06 13:42:30"
+            "time": "2017-09-04T12:39:33+00:00"
         },
         {
             "name": "integrated/content-bundle",
@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "97fb2461ab5018e839e3549ee46fb7f34c8f9c03"
+                "reference": "bc9b297d325bb8de876246bafbad76cea1e33bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/97fb2461ab5018e839e3549ee46fb7f34c8f9c03.zip",
-                "reference": "97fb2461ab5018e839e3549ee46fb7f34c8f9c03",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/bc9b297d325bb8de876246bafbad76cea1e33bf4.zip",
+                "reference": "bc9b297d325bb8de876246bafbad76cea1e33bf4",
                 "shasum": ""
             },
             "require": {
@@ -2140,7 +2140,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-08-03 21:15:24"
+            "time": "2017-09-06T10:11:43+00:00"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2199,7 +2199,7 @@
                 "content",
                 "history"
             ],
-            "time": "2017-04-12 05:18:09"
+            "time": "2017-04-12T05:18:09+00:00"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -2257,7 +2257,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-05-24 14:33:31"
+            "time": "2017-05-24T14:33:31+00:00"
         },
         {
             "name": "integrated/image-bundle",
@@ -2265,12 +2265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-image-bundle.git",
-                "reference": "0f600cdf24824ccb2039ff3e870351bc763f7d56"
+                "reference": "da0f93fb374666021c5cfad9027e5b9447c9a3ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/0f600cdf24824ccb2039ff3e870351bc763f7d56",
-                "reference": "0f600cdf24824ccb2039ff3e870351bc763f7d56",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-image-bundle/zipball/da0f93fb374666021c5cfad9027e5b9447c9a3ba",
+                "reference": "da0f93fb374666021c5cfad9027e5b9447c9a3ba",
                 "shasum": ""
             },
             "require": {
@@ -2311,7 +2311,7 @@
                 "thumbnail",
                 "twig"
             ],
-            "time": "2017-04-12 13:47:10"
+            "time": "2017-09-04T13:24:20+00:00"
         },
         {
             "name": "integrated/library",
@@ -2319,12 +2319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "c42c454dc3d01fdcb5fffbb66543589e30d6c60c"
+                "reference": "9e8841d70bfa8dced5d4dfbf47fda52939a2a713"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/c42c454dc3d01fdcb5fffbb66543589e30d6c60c.zip",
-                "reference": "c42c454dc3d01fdcb5fffbb66543589e30d6c60c",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/9e8841d70bfa8dced5d4dfbf47fda52939a2a713.zip",
+                "reference": "9e8841d70bfa8dced5d4dfbf47fda52939a2a713",
                 "shasum": ""
             },
             "require": {
@@ -2365,7 +2365,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-07-28 07:37:25"
+            "time": "2017-07-28T08:00:15+00:00"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2413,7 +2413,7 @@
                 "Integrated",
                 "locking"
             ],
-            "time": "2017-04-12 06:29:14"
+            "time": "2017-04-12T06:29:14+00:00"
         },
         {
             "name": "integrated/menu-bundle",
@@ -2462,7 +2462,7 @@
                 "Integrated",
                 "menu"
             ],
-            "time": "2017-04-12 13:30:32"
+            "time": "2017-04-12T13:30:32+00:00"
         },
         {
             "name": "integrated/page-bundle",
@@ -2470,12 +2470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-page-bundle.git",
-                "reference": "c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c"
+                "reference": "3c4d53a03087e9d4f04c5163186994d1fe0213e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c",
-                "reference": "c2d60e737be05e761b9c993aa95f9a3d4a7d0a0c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/3c4d53a03087e9d4f04c5163186994d1fe0213e6",
+                "reference": "3c4d53a03087e9d4f04c5163186994d1fe0213e6",
                 "shasum": ""
             },
             "require": {
@@ -2522,7 +2522,7 @@
                 "Integrated",
                 "page"
             ],
-            "time": "2017-07-12 06:44:49"
+            "time": "2017-09-06T09:34:58+00:00"
         },
         {
             "name": "integrated/poll-bundle",
@@ -2530,12 +2530,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-poll-bundle.git",
-                "reference": "379a9e3641983e1ca5e7d1afd928a5a64d8e75ae"
+                "reference": "d71bad3cae4bbf3e84aebe906459345b9634d580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-poll-bundle/zipball/379a9e3641983e1ca5e7d1afd928a5a64d8e75ae",
-                "reference": "379a9e3641983e1ca5e7d1afd928a5a64d8e75ae",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-poll-bundle/zipball/d71bad3cae4bbf3e84aebe906459345b9634d580",
+                "reference": "d71bad3cae4bbf3e84aebe906459345b9634d580",
                 "shasum": ""
             },
             "require": {
@@ -2575,7 +2575,7 @@
                 "Integrated",
                 "poll"
             ],
-            "time": "2017-08-23 10:03:54"
+            "time": "2017-08-24T07:37:39+00:00"
         },
         {
             "name": "integrated/puphpet",
@@ -2617,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-slug-bundle.git",
-                "reference": "78560cee2079d315da27aa6cabcc5324a6c1fb0c"
+                "reference": "e10438cc945d15ce164ac26a04942357b776b085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/78560cee2079d315da27aa6cabcc5324a6c1fb0c",
-                "reference": "78560cee2079d315da27aa6cabcc5324a6c1fb0c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-slug-bundle/zipball/e10438cc945d15ce164ac26a04942357b776b085",
+                "reference": "e10438cc945d15ce164ac26a04942357b776b085",
                 "shasum": ""
             },
             "require": {
@@ -2657,7 +2657,7 @@
                 "Integrated",
                 "slug"
             ],
-            "time": "2017-07-20 13:59:02"
+            "time": "2017-08-29T12:22:34+00:00"
         },
         {
             "name": "integrated/solr-bundle",
@@ -2705,7 +2705,7 @@
                 "Integrated",
                 "solr"
             ],
-            "time": "2017-07-27 12:44:52"
+            "time": "2017-07-27T12:44:52+00:00"
         },
         {
             "name": "integrated/storage-bundle",
@@ -2761,7 +2761,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2017-05-03 06:57:59"
+            "time": "2017-05-03T06:57:59+00:00"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2807,7 +2807,7 @@
                 "Integrated",
                 "theme"
             ],
-            "time": "2017-05-10 08:12:26"
+            "time": "2017-05-10T08:12:26+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -2815,12 +2815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "6202d8846383b1b74d835bdf912358512d43b7db"
+                "reference": "c82ee0c8ed398ba2d42525fbe27fd98aeeebc362"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/6202d8846383b1b74d835bdf912358512d43b7db.zip",
-                "reference": "6202d8846383b1b74d835bdf912358512d43b7db",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/c82ee0c8ed398ba2d42525fbe27fd98aeeebc362.zip",
+                "reference": "c82ee0c8ed398ba2d42525fbe27fd98aeeebc362",
                 "shasum": ""
             },
             "require": {
@@ -2861,7 +2861,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-08-23 09:53:50"
+            "time": "2017-09-05T11:00:00+00:00"
         },
         {
             "name": "integrated/user-bundle",
@@ -2917,7 +2917,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-06-06 05:47:34"
+            "time": "2017-06-06T05:47:34+00:00"
         },
         {
             "name": "integrated/website-bundle",
@@ -2925,12 +2925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "e013d184021636f08590cdb347022b16b7c7aebb"
+                "reference": "c4236445b6679cc3626b47ceb245fd990cd73553"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/e013d184021636f08590cdb347022b16b7c7aebb",
-                "reference": "e013d184021636f08590cdb347022b16b7c7aebb",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/c4236445b6679cc3626b47ceb245fd990cd73553",
+                "reference": "c4236445b6679cc3626b47ceb245fd990cd73553",
                 "shasum": ""
             },
             "require": {
@@ -2981,7 +2981,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-08-15 13:37:32"
+            "time": "2017-09-06T09:33:40+00:00"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -3038,7 +3038,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2017-05-24 07:12:01"
+            "time": "2017-05-24T07:12:01+00:00"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -4393,6 +4393,7 @@
                 "bower manager",
                 "dependencies"
             ],
+            "abandoned": true,
             "time": "2014-07-14T08:51:16+00:00"
         },
         {
@@ -6216,7 +6217,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-08-15 07:45:50"
+            "time": "2017-08-15T07:45:50+00:00"
         },
         {
             "name": "myclabs/deep-copy",
