@@ -22,5 +22,3 @@ Feature: News
       And I fill in "integrated_content[content]" with "Some text to test the newstest"
       And I press "Create"
     Then I should see "The document newstest has been created"
-    Given I am on "/content/newstest/newstest-test"
-      Then I should see "Some text to test the newstest"
