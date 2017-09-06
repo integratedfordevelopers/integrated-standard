@@ -2470,12 +2470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-page-bundle.git",
-                "reference": "3c4d53a03087e9d4f04c5163186994d1fe0213e6"
+                "reference": "a1a8640c2b5af2ef6e2f7806fcffa7009bb5294e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/3c4d53a03087e9d4f04c5163186994d1fe0213e6",
-                "reference": "3c4d53a03087e9d4f04c5163186994d1fe0213e6",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-page-bundle/zipball/a1a8640c2b5af2ef6e2f7806fcffa7009bb5294e",
+                "reference": "a1a8640c2b5af2ef6e2f7806fcffa7009bb5294e",
                 "shasum": ""
             },
             "require": {
@@ -3448,7 +3448,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
