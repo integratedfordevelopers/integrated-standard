@@ -1894,7 +1894,7 @@
                 "asset",
                 "asset manager"
             ],
-            "time": "2017-04-18T08:56:22+00:00"
+            "time": "2017-04-18 08:56:22"
         },
         {
             "name": "integrated/block-bundle",
@@ -1959,7 +1959,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2017-07-24T07:05:46+00:00"
+            "time": "2017-07-24 07:05:46"
         },
         {
             "name": "integrated/channel-bundle",
@@ -2010,7 +2010,7 @@
                 "channel",
                 "multi-site"
             ],
-            "time": "2017-06-21T10:07:44+00:00"
+            "time": "2017-06-21 10:07:44"
         },
         {
             "name": "integrated/comment-bundle",
@@ -2066,7 +2066,7 @@
                 "Integrated",
                 "comment"
             ],
-            "time": "2017-09-04T12:39:33+00:00"
+            "time": "2017-09-04 12:39:33"
         },
         {
             "name": "integrated/content-bundle",
@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "bc9b297d325bb8de876246bafbad76cea1e33bf4"
+                "reference": "0188de0c896ea6ac9b37c16ddf778cc4bb078e93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/bc9b297d325bb8de876246bafbad76cea1e33bf4.zip",
-                "reference": "bc9b297d325bb8de876246bafbad76cea1e33bf4",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/0188de0c896ea6ac9b37c16ddf778cc4bb078e93.zip",
+                "reference": "0188de0c896ea6ac9b37c16ddf778cc4bb078e93",
                 "shasum": ""
             },
             "require": {
@@ -2140,7 +2140,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-09-06T10:11:43+00:00"
+            "time": "2017-09-21 13:18:41"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2199,7 +2199,7 @@
                 "content",
                 "history"
             ],
-            "time": "2017-04-12T05:18:09+00:00"
+            "time": "2017-04-12 05:18:09"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -2257,7 +2257,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2017-05-24T14:33:31+00:00"
+            "time": "2017-05-24 14:33:31"
         },
         {
             "name": "integrated/image-bundle",
@@ -2311,7 +2311,7 @@
                 "thumbnail",
                 "twig"
             ],
-            "time": "2017-09-04T13:24:20+00:00"
+            "time": "2017-09-04 13:24:20"
         },
         {
             "name": "integrated/library",
@@ -2365,7 +2365,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-07-28T08:00:15+00:00"
+            "time": "2017-07-28 08:00:15"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2413,7 +2413,7 @@
                 "Integrated",
                 "locking"
             ],
-            "time": "2017-04-12T06:29:14+00:00"
+            "time": "2017-04-12 06:29:14"
         },
         {
             "name": "integrated/menu-bundle",
@@ -2462,7 +2462,7 @@
                 "Integrated",
                 "menu"
             ],
-            "time": "2017-04-12T13:30:32+00:00"
+            "time": "2017-04-12 13:30:32"
         },
         {
             "name": "integrated/page-bundle",
@@ -2522,7 +2522,7 @@
                 "Integrated",
                 "page"
             ],
-            "time": "2017-09-06T09:34:58+00:00"
+            "time": "2017-09-06 11:57:01"
         },
         {
             "name": "integrated/poll-bundle",
@@ -2575,7 +2575,7 @@
                 "Integrated",
                 "poll"
             ],
-            "time": "2017-08-24T07:37:39+00:00"
+            "time": "2017-08-24 07:37:39"
         },
         {
             "name": "integrated/puphpet",
@@ -2657,7 +2657,7 @@
                 "Integrated",
                 "slug"
             ],
-            "time": "2017-08-29T12:22:34+00:00"
+            "time": "2017-08-29 12:22:34"
         },
         {
             "name": "integrated/solr-bundle",
@@ -2705,7 +2705,7 @@
                 "Integrated",
                 "solr"
             ],
-            "time": "2017-07-27T12:44:52+00:00"
+            "time": "2017-07-27 12:44:52"
         },
         {
             "name": "integrated/storage-bundle",
@@ -2713,12 +2713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "559d0a33cf901fec7ceaf4664e04a286b71e27f9"
+                "reference": "ad61cabfe05a086a24921e97bc7d3710d1345668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/559d0a33cf901fec7ceaf4664e04a286b71e27f9.zip",
-                "reference": "559d0a33cf901fec7ceaf4664e04a286b71e27f9",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/ad61cabfe05a086a24921e97bc7d3710d1345668.zip",
+                "reference": "ad61cabfe05a086a24921e97bc7d3710d1345668",
                 "shasum": ""
             },
             "require": {
@@ -2761,7 +2761,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2017-05-03T06:57:59+00:00"
+            "time": "2017-09-12 08:53:46"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2807,7 +2807,7 @@
                 "Integrated",
                 "theme"
             ],
-            "time": "2017-05-10T08:12:26+00:00"
+            "time": "2017-05-10 08:12:26"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -2861,7 +2861,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-09-05T11:00:00+00:00"
+            "time": "2017-09-05 11:00:00"
         },
         {
             "name": "integrated/user-bundle",
@@ -2917,7 +2917,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-06-06T05:47:34+00:00"
+            "time": "2017-06-06 05:47:34"
         },
         {
             "name": "integrated/website-bundle",
@@ -2981,7 +2981,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-09-06T09:33:40+00:00"
+            "time": "2017-09-06 09:33:40"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -3038,7 +3038,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2017-05-24T07:12:01+00:00"
+            "time": "2017-05-24 07:12:01"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -6217,7 +6217,7 @@
                 }
             ],
             "description": "Integrated Behat extensions for FeatureContext files",
-            "time": "2017-08-15T07:45:50+00:00"
+            "time": "2017-08-15 07:45:50"
         },
         {
             "name": "myclabs/deep-copy",
