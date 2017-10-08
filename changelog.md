@@ -1,3 +1,118 @@
+# Changelog Integrated version 0.6 #
+
+## Highlights ##
+- Autosuggest for search bar
+- Content history
+- Drag/drop file upload
+- New way of adding relations
+- Allow inline images in content
+- Comments on content for easier collaboration
+- Allow set primary channel
+
+## New Features ##
+- [a INTEGRATED-43](https://eactive.atlassian.net/browse/INTEGRATED-43) Implement autosuggest for search bar
+- [a INTEGRATED-61](https://eactive.atlassian.net/browse/INTEGRATED-61) Content history
+- [a INTEGRATED-134](https://eactive.atlassian.net/browse/INTEGRATED-134) Relations with select2: autosuggest on part of word
+- [a INTEGRATED-149](https://eactive.atlassian.net/browse/INTEGRATED-149) Drag/drop file upload (storage file upload form type)
+- [a INTEGRATED-212](https://eactive.atlassian.net/browse/INTEGRATED-212) Select image from computer or server when inserting image into editor
+- [a INTEGRATED-301](https://eactive.atlassian.net/browse/INTEGRATED-301) Easily get all content types that are instanceof a class
+- [a INTEGRATED-370](https://eactive.atlassian.net/browse/INTEGRATED-370) Implement new edit page linking with select2
+- [a INTEGRATED-416](https://eactive.atlassian.net/browse/INTEGRATED-416) Allow adding of inline images in editor
+- [a INTEGRATED-423](https://eactive.atlassian.net/browse/INTEGRATED-423) Add features to "add block" modal
+- [a INTEGRATED-543](https://eactive.atlassian.net/browse/INTEGRATED-543) [content-bundle] ContentType changes for dynamic fields
+- [a INTEGRATED-544](https://eactive.atlassian.net/browse/INTEGRATED-544) [content-bundle] Move ContentBundle mapping to XML
+- [a INTEGRATED-548](https://eactive.atlassian.net/browse/INTEGRATED-548) [library] Content changes for custom fields
+- [a INTEGRATED-678](https://eactive.atlassian.net/browse/INTEGRATED-678) Convert unsupported image formats
+- [a INTEGRATED-740](https://eactive.atlassian.net/browse/INTEGRATED-740) [comment-bundle] Comments on content for easier collaboration
+- [a INTEGRATED-757](https://eactive.atlassian.net/browse/INTEGRATED-757) Allow back button when content has not been changed, but unlock content item
+- [a INTEGRATED-807](https://eactive.atlassian.net/browse/INTEGRATED-807) [content-bundle] Channel domain validation does not allow localhost
+- [a INTEGRATED-871](https://eactive.atlassian.net/browse/INTEGRATED-871) Set primary channel for content item
+- [a INTEGRATED-878](https://eactive.atlassian.net/browse/INTEGRATED-878) Allow adding a company to a person (jobs)
+- [a INTEGRATED-882](https://eactive.atlassian.net/browse/INTEGRATED-882) Improve block overview
+- [a INTEGRATED-893](https://eactive.atlassian.net/browse/INTEGRATED-893) Select2 for relations: show images when adding an image
+- [a INTEGRATED-894](https://eactive.atlassian.net/browse/INTEGRATED-894) Select2 for relations: previous content types are added to add new
+- [a INTEGRATED-895](https://eactive.atlassian.net/browse/INTEGRATED-895) Get content history ready for 0.6
+- [a INTEGRATED-896](https://eactive.atlassian.net/browse/INTEGRATED-896) Show content history changes
+- [a INTEGRATED-904](https://eactive.atlassian.net/browse/INTEGRATED-904) Author drop down layout is not OK
+- [a INTEGRATED-909](https://eactive.atlassian.net/browse/INTEGRATED-909) Fixes for update to 0.6
+- [a INTEGRATED-910](https://eactive.atlassian.net/browse/INTEGRATED-910) Correct solr/content.xml for storage objects
+- [a INTEGRATED-935](https://eactive.atlassian.net/browse/INTEGRATED-935) Add __toString to Content document
+- [a INTEGRATED-940](https://eactive.atlassian.net/browse/INTEGRATED-940) Synchronize minimum versions in all Integrated bundles
+- [a INTEGRATED-942](https://eactive.atlassian.net/browse/INTEGRATED-942) Cherry pick INTEGRATED-941 for 0.6
+- [a INTEGRATED-946](https://eactive.atlassian.net/browse/INTEGRATED-946) Implement INTEGRATED-945 in 0.6
+- [a INTEGRATED-948](https://eactive.atlassian.net/browse/INTEGRATED-948) Implement INTEGRATED-947 in 0.6
+- [a INTEGRATED-952](https://eactive.atlassian.net/browse/INTEGRATED-952) Don't autosuggest items when the user does not have permission
+- [a INTEGRATED-960](https://eactive.atlassian.net/browse/INTEGRATED-960) Finish IntegratedCommentBundle
+- [a INTEGRATED-974](https://eactive.atlassian.net/browse/INTEGRATED-974) Automatically create menu when it does not exists
+- [a INTEGRATED-998](https://eactive.atlassian.net/browse/INTEGRATED-998) [storage-bundle] Make the Storage compatible with Metadata
+- [a INTEGRATED-1005](https://eactive.atlassian.net/browse/INTEGRATED-1005) Add content history to skeleton
+- [a INTEGRATED-1027](https://eactive.atlassian.net/browse/INTEGRATED-1027) Show more options in relations drop down
+- [a INTEGRATED-1050](https://eactive.atlassian.net/browse/INTEGRATED-1050) Index the storage object as json for the company logo instead of the image url
+- [a INTEGRATED-1055](https://eactive.atlassian.net/browse/INTEGRATED-1055) Allow custom rendering of inline images
+- [a INTEGRATED-1056](https://eactive.atlassian.net/browse/INTEGRATED-1056) Allow inline images to be the cover / allow inline video to be embedded
+- [a INTEGRATED-1079](https://eactive.atlassian.net/browse/INTEGRATED-1079) [export-bundle] Add job to person export
+
+## Bug Fixes ##
+- [a INTEGRATED-241](https://eactive.atlassian.net/browse/INTEGRATED-241) Required relation
+- [a INTEGRATED-242](https://eactive.atlassian.net/browse/INTEGRATED-242) [Edit image page] File doesn't stay selected after uploading
+- [a INTEGRATED-276](https://eactive.atlassian.net/browse/INTEGRATED-276) 500 error after editing workflow states
+- [a INTEGRATED-686](https://eactive.atlassian.net/browse/INTEGRATED-686) [storage-bundle] storage:filesystem:redistribute and storage:filesystem:clear commands do not work
+- [a INTEGRATED-870](https://eactive.atlassian.net/browse/INTEGRATED-870) Setting Required for an Image does not work
+- [a INTEGRATED-887](https://eactive.atlassian.net/browse/INTEGRATED-887) [content-bundle] Wrong merge made
+- [a INTEGRATED-892](https://eactive.atlassian.net/browse/INTEGRATED-892) Solr indexer unit test are broken
+- [a INTEGRATED-901](https://eactive.atlassian.net/browse/INTEGRATED-901) File/image drag&drop spelling fix
+- [a INTEGRATED-907](https://eactive.atlassian.net/browse/INTEGRATED-907) Solr unit tests are broken after updating content interface
+- [a INTEGRATED-926](https://eactive.atlassian.net/browse/INTEGRATED-926) When adding a new relation item without image, "undefined is added"
+- [a INTEGRATED-927](https://eactive.atlassian.net/browse/INTEGRATED-927) Drag/drop does not work in default install
+- [a INTEGRATED-938](https://eactive.atlassian.net/browse/INTEGRATED-938) [content-bundle] ContentBundle unit test fix
+- [a INTEGRATED-939](https://eactive.atlassian.net/browse/INTEGRATED-939) [library] Library is not compatible with solarium 3.7
+- [a INTEGRATED-987](https://eactive.atlassian.net/browse/INTEGRATED-987) XML mapping is missing for FeaturedItemsBlock and ContentItemsBlock
+- [a INTEGRATED-989](https://eactive.atlassian.net/browse/INTEGRATED-989) Autosuggest fails with a big index
+- [a INTEGRATED-991](https://eactive.atlassian.net/browse/INTEGRATED-991) Storage routing is missing in default install
+- [a INTEGRATED-992](https://eactive.atlassian.net/browse/INTEGRATED-992) XML mapping for embedded storage not OK
+- [a INTEGRATED-1003](https://eactive.atlassian.net/browse/INTEGRATED-1003) Workflow facetfilter is missing in content navigator
+- [a INTEGRATED-1004](https://eactive.atlassian.net/browse/INTEGRATED-1004) Incorrect index on title
+- [a INTEGRATED-1006](https://eactive.atlassian.net/browse/INTEGRATED-1006) Popup does not close after add new
+- [a INTEGRATED-1007](https://eactive.atlassian.net/browse/INTEGRATED-1007) "Class '' does not exist" error in SearchContentReferenced
+- [a INTEGRATED-1008](https://eactive.atlassian.net/browse/INTEGRATED-1008) Insert image / video dialog bugs
+- [a INTEGRATED-1009](https://eactive.atlassian.net/browse/INTEGRATED-1009) Assignee shows logged in user when other user is selected
+- [a INTEGRATED-1015](https://eactive.atlassian.net/browse/INTEGRATED-1015) Slug is not generated as unique in 0.6
+- [a INTEGRATED-1016](https://eactive.atlassian.net/browse/INTEGRATED-1016) Solr cover images are broken
+- [a INTEGRATED-1017](https://eactive.atlassian.net/browse/INTEGRATED-1017) Cancel button does not work when adding a new content item from a relation
+- [a INTEGRATED-1019](https://eactive.atlassian.net/browse/INTEGRATED-1019) 500 error when canceling image edit
+- [a INTEGRATED-1034](https://eactive.atlassian.net/browse/INTEGRATED-1034) Fallback image fails in the first pageview after upgrading to 0.6
+- [a INTEGRATED-1051](https://eactive.atlassian.net/browse/INTEGRATED-1051) URL is not active after creation
+- [a INTEGRATED-1052](https://eactive.atlassian.net/browse/INTEGRATED-1052) Default theme fallbacks to default theme
+- [a INTEGRATED-1054](https://eactive.atlassian.net/browse/INTEGRATED-1054) Add comment does not always disappear
+- [a INTEGRATED-1076](https://eactive.atlassian.net/browse/INTEGRATED-1076) Use Integrated jQuery.filer
+- [a INTEGRATED-1084](https://eactive.atlassian.net/browse/INTEGRATED-1084) Label for Jobs is wrong
+- [a INTEGRATED-1088](https://eactive.atlassian.net/browse/INTEGRATED-1088) Remove examples and PHP files from integrated-jquery.filer
+- [a INTEGRATED-1089](https://eactive.atlassian.net/browse/INTEGRATED-1089) Long titles hide the delete cross in relation select2 boxes
+- [a INTEGRATED-1131](https://eactive.atlassian.net/browse/INTEGRATED-1131) Can't edit an selected image because of 'Add a Comment' function
+- [a INTEGRATED-1132](https://eactive.atlassian.net/browse/INTEGRATED-1132) When a format is selected, it's not highlighted.
+
+## Package versions ##
+- integrated-asset-bundle       0.5
+- integrated-block-bundle       0.6
+- integrated-channel-bundle     0.6
+- integrated-comment-bundle     0.6
+- integrated-content-bundle     0.6
+- integrated-content-history-bundle0.6
+- integrated-formtype-bundle    0.6
+- integrated-image-bundle       0.6
+- integrated-library            0.6
+- integrated-locking-bundle     0.6
+- integrated-menu-bundle        0.6
+- integrated-page-bundle        0.6
+- integrated-puphpet            0.5
+- integrated-slug-bundle        0.6
+- integrated-solr-bundle        0.6
+- integrated-storage-bundle     0.6
+- integrated-theme-bundle       0.6
+- integrated-user-bundle        0.6
+- integrated-website-bundle     0.6
+- integrated-workflow-bundle    0.6
+
 # Changelog Integrated version 0.5 #
 
 ## Highlights ##

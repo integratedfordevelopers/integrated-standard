@@ -1,4 +1,4 @@
 vagrantfile:
     vm:
-        hostname: integrated
+        hostname: integrated07release
         memory: '3072'
