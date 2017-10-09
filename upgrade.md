@@ -1,5 +1,70 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.6 ##
+- Add to your config.yml:
+
+    framework:
+        serializer:
+            enabled: true
+
+    assetic:
+        filters:
+            uglifyjs2: ~
+- add {{ integrated_stylesheets() }} and  {{ integrated_javascripts() }} to base template (not necessary for GIM)
+- Add to your app/kernel.php the following line: new Integrated\Bundle\ImageBundle\IntegratedImageBundle(),
+- Add to AppKernel.php:
+            new Integrated\Bundle\CommentBundle\IntegratedCommentBundle(),
+
+Add to routing.yml:
+    integrated_comment:
+        resource: "@IntegratedCommentBundle/Resources/config/routing.xml"
+        prefix: "/admin"
+
+Add to composer.json:
+        "integrated/comment-bundle": "~0.6.0"
+- asset config "integrated_js" should not contain an other version of select2 (for example @AppBundle/Resources/public/js/select2.js)
+- Each document that extends directly from the Content document needs to implement a __toString() function.
+- Add to AppKernel.php:
+            new Integrated\Bundle\ContentHistoryBundle\IntegratedContentHistoryBundle(),
+
+Add to routing:
+integrated_content_history:
+     resource: "@IntegratedContentHistoryBundle/Resources/config/routing.xml"
+     prefix: "/admin"
+
+Add to composer.json:
+        "integrated/content-history-bundle": "~0.6",
+
+- php app/console c:c && php app/console c:c -e prod
+php app/console s:i:q -e prod -f
+php app/console s:i:r -e prod 2
+
+## Upgrade to Integrated version 0.5 ##
+- Update some settings from https://github.com/integratedfordevelopers/integrated/blob/0.5/app/config/config.yml:
+- Add sass filter to assetic
+- Update integrated_css assets
+- Update braincrafted_bootstrap configuration
+- field property changes from string to array of embedded document. Needs to be changed in mongo.
+In the view this also should be fixed for old sites (loop over the fields)
+- Don't has images has been renamed to Doesn't have images. Search selected that use this need to be edited.
+- AssetBundle required in AppKernel:
+new Integrated\Bundle\AssetBundle\IntegratedAssetBundle(),
+
+Remove from config.yml:
+- @IntegratedFormTypeBundle/Resources/public/components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js
+- @IntegratedFormTypeBundle/Resources/public/js/datetimepicker.js
+
+- Add roles to database and add to user groups which you want to give access
+
+INSERT INTO `security_roles` (`id`, `name`, `label`, `description`, `hidden`) VALUES (NULL, 'ROLE_USER_MANAGER', 'User manager', NULL, ''), (NULL, 'ROLE_BLOCK_MANAGER', 'Block manager', NULL, ''), (NULL, 'ROLE_PAGE_MANAGER', 'Page manager', NULL, ''), (NULL, 'ROLE_WORKFLOW_MANAGER', 'Workflow manager', NULL, ''), (NULL, 'ROLE_CHANNEL_MANAGER', 'Channel manager', NULL, '');
+- This service should be added in the config.yml.
+
+services:
+    twig.extension.text:
+        class: Twig_Extensions_Extension_Text
+        tags:
+            - { name: twig.extension }
+
 ## Upgrade to Integrated version 0.4 ##
 Add to config.yml:
 
