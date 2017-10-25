@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f27448d8679a91fa4b2f7aad387d200",
+    "content-hash": "84d6b8bf6a83f163e506447afd5f31c0",
     "packages": [
         {
             "name": "antimattr/mongodb-migrations",
@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "843e71df0a93b90ebd725aca9458a885c3fe2fa4"
+                "reference": "ee3b859949cd594da3980bf0acb708ac57062701"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/843e71df0a93b90ebd725aca9458a885c3fe2fa4.zip",
-                "reference": "843e71df0a93b90ebd725aca9458a885c3fe2fa4",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/ee3b859949cd594da3980bf0acb708ac57062701.zip",
+                "reference": "ee3b859949cd594da3980bf0acb708ac57062701",
                 "shasum": ""
             },
             "require": {
@@ -2140,7 +2140,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-10-25T07:02:17+00:00"
+            "time": "2017-10-25T11:08:19+00:00"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2148,12 +2148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-history-bundle.git",
-                "reference": "a899fef0ed3680a6f4e6e20ea831ce3f812142c7"
+                "reference": "0c387b426159f77e01f1d4840d46984c1bd862cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/a899fef0ed3680a6f4e6e20ea831ce3f812142c7.zip",
-                "reference": "a899fef0ed3680a6f4e6e20ea831ce3f812142c7",
+                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/0c387b426159f77e01f1d4840d46984c1bd862cb.zip",
+                "reference": "0c387b426159f77e01f1d4840d46984c1bd862cb",
                 "shasum": ""
             },
             "require": {
@@ -2199,7 +2199,7 @@
                 "content",
                 "history"
             ],
-            "time": "2017-04-12T05:18:09+00:00"
+            "time": "2017-10-25T11:13:09+00:00"
         },
         {
             "name": "integrated/formtype-bundle",
