@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "ee3b859949cd594da3980bf0acb708ac57062701"
+                "reference": "422493b6c13b8715e13849ac7ccb3cedb418a64e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/ee3b859949cd594da3980bf0acb708ac57062701.zip",
-                "reference": "ee3b859949cd594da3980bf0acb708ac57062701",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/422493b6c13b8715e13849ac7ccb3cedb418a64e.zip",
+                "reference": "422493b6c13b8715e13849ac7ccb3cedb418a64e",
                 "shasum": ""
             },
             "require": {
@@ -2140,7 +2140,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-10-25T11:08:19+00:00"
+            "time": "2017-10-30T14:29:13+00:00"
         },
         {
             "name": "integrated/content-history-bundle",
@@ -2819,7 +2819,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/71c4b72e023ddd407217fbbb7fa2e309deed0c05.zip",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/28a119558ce68ebe9f3899ea368405e93f58855d.zip",
                 "reference": "c82ee0c8ed398ba2d42525fbe27fd98aeeebc362",
                 "shasum": ""
             },
