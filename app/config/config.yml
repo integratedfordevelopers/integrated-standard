@@ -51,7 +51,8 @@ assetic:
         cssrewrite: ~
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
-        uglifyjs2: ~
+        uglifyjs2:
+          bin: %uglify_bin%
 
     assets:
         integrated_css:
@@ -63,7 +64,6 @@ assetic:
         integrated_js:
             inputs:
                 ~
-
 
 # Bootstrap Configuration
 braincrafted_bootstrap:
