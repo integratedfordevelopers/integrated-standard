@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f27448d8679a91fa4b2f7aad387d200",
+    "content-hash": "84d6b8bf6a83f163e506447afd5f31c0",
     "packages": [
         {
             "name": "antimattr/mongodb-migrations",
@@ -2072,12 +2072,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "38f65dccc9df6d21f224f91ca76fde77f67b3bc2"
+                "reference": "422493b6c13b8715e13849ac7ccb3cedb418a64e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/38f65dccc9df6d21f224f91ca76fde77f67b3bc2.zip",
-                "reference": "38f65dccc9df6d21f224f91ca76fde77f67b3bc2",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/422493b6c13b8715e13849ac7ccb3cedb418a64e.zip",
+                "reference": "422493b6c13b8715e13849ac7ccb3cedb418a64e",
                 "shasum": ""
             },
             "require": {
@@ -2138,20 +2138,20 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2017-10-19 05:21:01"
+            "time": "2017-10-30 14:29:13"
         },
         {
             "name": "integrated/content-history-bundle",
-            "version": "0.6",
+            "version": "0.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-history-bundle.git",
-                "reference": "42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a"
+                "reference": "0c387b426159f77e01f1d4840d46984c1bd862cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a.zip",
-                "reference": "42aac2db1a2f4983dc3f3c99aba78e9fb2089d5a",
+                "url": "https://bitbucket.org/eactive/integrated-content-history-bundle/get/0c387b426159f77e01f1d4840d46984c1bd862cb.zip",
+                "reference": "0c387b426159f77e01f1d4840d46984c1bd862cb",
                 "shasum": ""
             },
             "require": {
@@ -2159,13 +2159,15 @@
                 "doctrine/mongodb-odm": "*",
                 "doctrine/mongodb-odm-bundle": "~3.0",
                 "ext-mongo": "~1.2",
-                "integrated/content-bundle": "~0.5",
+                "integrated/content-bundle": "~0.7",
+                "integrated/library": "~0.7",
                 "php": ">=5.4",
                 "symfony/framework-bundle": "~2.2",
-                "symfony/symfony": "~2.7"
+                "symfony/symfony": "~2.8 || ~3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.4.*"
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^2.8"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2195,7 +2197,7 @@
                 "content",
                 "history"
             ],
-            "time": "2017-03-06T15:31:05+00:00"
+            "time": "2017-10-25 11:13:09"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -2811,12 +2813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "71c4b72e023ddd407217fbbb7fa2e309deed0c05"
+                "reference": "28a119558ce68ebe9f3899ea368405e93f58855d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/71c4b72e023ddd407217fbbb7fa2e309deed0c05.zip",
-                "reference": "71c4b72e023ddd407217fbbb7fa2e309deed0c05",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/28a119558ce68ebe9f3899ea368405e93f58855d.zip",
+                "reference": "28a119558ce68ebe9f3899ea368405e93f58855d",
                 "shasum": ""
             },
             "require": {
@@ -2857,7 +2859,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2017-10-23 11:02:24"
+            "time": "2017-10-30 13:43:36"
         },
         {
             "name": "integrated/user-bundle",
@@ -2921,12 +2923,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "c4236445b6679cc3626b47ceb245fd990cd73553"
+                "reference": "d53534b83fa5bd8231bb2f191e193bac8a1e393e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/c4236445b6679cc3626b47ceb245fd990cd73553",
-                "reference": "c4236445b6679cc3626b47ceb245fd990cd73553",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/d53534b83fa5bd8231bb2f191e193bac8a1e393e",
+                "reference": "d53534b83fa5bd8231bb2f191e193bac8a1e393e",
                 "shasum": ""
             },
             "require": {
@@ -2977,7 +2979,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2017-09-06 09:33:40"
+            "time": "2017-10-30 12:26:39"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -3444,7 +3446,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
