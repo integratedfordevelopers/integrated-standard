@@ -60,15 +60,7 @@
             "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "php app/console assetic:dump web",
-            "php app/console doctrine:mongodb:schema:update",
-            "php app/console doctrine:schema:update --force",
-            "php app/console init:queue --force",
-            "php app/console init:locking --force",
-            "php app/console init:scope",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "php app/console cache:clear --env=prod",
-            "php app/console fos:js-routing:dump --env=prod"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -77,16 +69,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "php app/console braincrafted:bootstrap:install",
-            "php app/console assetic:dump web",
-            "php app/console doctrine:mongodb:schema:create",
-            "php app/console doctrine:schema:update --force",
-            "php app/console init:queue --force",
-            "php app/console init:locking --force",
-            "php app/console init:scope",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "php app/console cache:clear --env=prod",
-            "php app/console fos:js-routing:dump --env=prod"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ]
     },
     "minimum-stability": "dev",

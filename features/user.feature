@@ -70,7 +70,7 @@ Feature: Users
       And I fill in "_password" with "welcomeBehat!"
       And I press "Login"
     Then I should see "Integrated"
-      And I should see "Home"
+      And I should see "Content navigator"
       And I should see "Content types"
       And I should see "Channels"
       And I should see "Create new"

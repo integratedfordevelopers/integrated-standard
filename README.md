@@ -10,6 +10,19 @@ Skeleton for a new Integrated based application, which includes the use of all c
 ## Installation ##
 This bundle can be installed following these steps:
 
+### Execute commands ###
+Execute the following commands to set up the project:
+
+    $ php app/console braincrafted:bootstrap:install
+    $ php app/console assetic:dump web
+    $ php app/console doctrine:mongodb:schema:update
+    $ php app/console doctrine:schema:update --force
+    $ php app/console init:queue --force
+    $ php app/console init:locking --force
+    $ php app/console init:scope
+    $ php app/console cache:clear --env=prod
+    $ php app/console fos:js-routing:dump --env=prod
+
 ### Install using composer ###
 For a local installation use:
 

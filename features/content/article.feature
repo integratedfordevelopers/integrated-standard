@@ -18,7 +18,7 @@ Feature: Article
     Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     When I follow "Integrated article created with Behat"
-    Then I should see "Edit Article"
+    Then I should see "Edit"
       And I should see "History"
       And I should see "Title"
       And I should see "Slug"

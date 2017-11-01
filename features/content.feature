@@ -7,7 +7,7 @@ Feature: Content
       And I am on "/admin/content"
     Then I should not see "Login"
       And I should see "Integrated"
-      And I should see "Home"
+      And I should see "Content navigator"
       And I should see "Content types"
       And I should see "Channels"
       And I should see "Author"
