@@ -21,7 +21,7 @@ Feature: Security
       And I press "Login"
     Then I should not see "Bad credentials."
       And I should see "Integrated"
-      And I should see "Home"
+      And I should see "Content navigator"
       And I should see "Create new"
 
   Scenario: Edit my credentials

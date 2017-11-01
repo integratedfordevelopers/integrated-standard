@@ -20,7 +20,7 @@ Feature: Comment
     Given I am authenticated as "admin" in firewall "default"
       And I am on "/admin/content"
     When I follow "Integrated comment created with Behat"
-    Then I should see "Edit Comment"
+    Then I should see "Edit"
       And I should see "Title"
       And I should see "Name"
       And I should see "Email"
