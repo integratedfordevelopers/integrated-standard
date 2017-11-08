@@ -30,7 +30,7 @@ security:
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED }
+        - { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED, allow_if: 'integrated_scope().isAdmin() == true' }
 
     access_decision_manager:
         strategy: unanimous
