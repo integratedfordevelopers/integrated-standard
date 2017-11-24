@@ -1,5 +1,5 @@
 {
-    "name": "integrated/integrated",
+    "name": "integrated/integrated-standard",
     "license": "MIT",
     "type": "project",
     "description": "Skeleton for a new Integrated based application, which includes the use of all core bundles",
