@@ -1,3 +1,145 @@
+# Changelog Integrated version 0.7 #
+
+## Highlights ##
+- Introduced user scopes
+- Added bulk actions
+- Added poll
+- More options for form block and related content block
+- New document types
+- Many improvements and additions in Thompson Theme
+- JSON-LD schema.org implementation
+- Upgrade to Symfony 2.8
+
+## New Features ##
+- [a INTEGRATED-252](https://eactive.atlassian.net/browse/INTEGRATED-252) Disable submit button after submit
+- [a INTEGRATED-421](https://eactive.atlassian.net/browse/INTEGRATED-421) [website-bundle] HTML block to allow javascript to be used in blocks
+- [a INTEGRATED-428](https://eactive.atlassian.net/browse/INTEGRATED-428) [content-bundle] Show block in edit mode
+- [a INTEGRATED-515](https://eactive.atlassian.net/browse/INTEGRATED-515) Use json instead of form for block editing
+- [a INTEGRATED-572](https://eactive.atlassian.net/browse/INTEGRATED-572) [website-bundle] URL and breadcrumb resolver
+- [a INTEGRATED-620](https://eactive.atlassian.net/browse/INTEGRATED-620) Multiple/bulk actions in the content navigator
+- [a INTEGRATED-634](https://eactive.atlassian.net/browse/INTEGRATED-634) Upgrade to Symfony 2.8 first 4 bundles
+- [a INTEGRATED-789](https://eactive.atlassian.net/browse/INTEGRATED-789) Make workflow routing consistent with other bundles
+- [a INTEGRATED-860](https://eactive.atlassian.net/browse/INTEGRATED-860) Don't store document field information configured in code in database
+- [a INTEGRATED-884](https://eactive.atlassian.net/browse/INTEGRATED-884) Allow all persons to be chosen as author
+- [a INTEGRATED-954](https://eactive.atlassian.net/browse/INTEGRATED-954) Upgrade to Symfony 2.8 4-8 bundles
+- [a INTEGRATED-955](https://eactive.atlassian.net/browse/INTEGRATED-955) Upgrade to Symfony 2.8 8-12 bundles
+- [a INTEGRATED-956](https://eactive.atlassian.net/browse/INTEGRATED-956) Upgrade to Symfony 2.8 12-16 bundles
+- [a INTEGRATED-958](https://eactive.atlassian.net/browse/INTEGRATED-958) Ability to add logo and color for channel
+- [a INTEGRATED-965](https://eactive.atlassian.net/browse/INTEGRATED-965) [solr-bundle] Update autoloader Integrated Solr bundle from PSR-0 to PSR-4
+- [a INTEGRATED-967](https://eactive.atlassian.net/browse/INTEGRATED-967) Thompson theme is not displayed correctly
+- [a INTEGRATED-968](https://eactive.atlassian.net/browse/INTEGRATED-968) Implement navigation in Thompson theme
+- [a INTEGRATED-969](https://eactive.atlassian.net/browse/INTEGRATED-969) Implement "tiled" content block in Thompson theme
+- [a INTEGRATED-970](https://eactive.atlassian.net/browse/INTEGRATED-970) Use logo, main logo and name from channel in Thompson theme
+- [a INTEGRATED-971](https://eactive.atlassian.net/browse/INTEGRATED-971) PSR-0 to PSR-4 autoloader for all Integrated bundles
+- [a INTEGRATED-983](https://eactive.atlassian.net/browse/INTEGRATED-983) Social connector: Twitter
+- [a INTEGRATED-984](https://eactive.atlassian.net/browse/INTEGRATED-984) Social connector: Facebook
+- [a INTEGRATED-1000](https://eactive.atlassian.net/browse/INTEGRATED-1000) Change of title, subtitle, etc. isn't seen as a change when editing content
+- [a INTEGRATED-1002](https://eactive.atlassian.net/browse/INTEGRATED-1002) Update bundles to 0.7
+- [a INTEGRATED-1021](https://eactive.atlassian.net/browse/INTEGRATED-1021) Insert image / video dialog improvements
+- [a INTEGRATED-1025](https://eactive.atlassian.net/browse/INTEGRATED-1025) Add Behat, PHPUnit and PHPCS to .travis.yml file
+- [a INTEGRATED-1028](https://eactive.atlassian.net/browse/INTEGRATED-1028) Relation box on one line
+- [a INTEGRATED-1031](https://eactive.atlassian.net/browse/INTEGRATED-1031) Website search - search results page in datafixtures
+- [a INTEGRATED-1036](https://eactive.atlassian.net/browse/INTEGRATED-1036) "Remember me" is not remembered
+- [a INTEGRATED-1037](https://eactive.atlassian.net/browse/INTEGRATED-1037) User scopes - Manage scopes
+- [a INTEGRATED-1040](https://eactive.atlassian.net/browse/INTEGRATED-1040) Allow a user to have a scope
+- [a INTEGRATED-1041](https://eactive.atlassian.net/browse/INTEGRATED-1041) Login to the Integrated scope
+- [a INTEGRATED-1042](https://eactive.atlassian.net/browse/INTEGRATED-1042) Do not use autofill when editing a user
+- [a INTEGRATED-1043](https://eactive.atlassian.net/browse/INTEGRATED-1043) Allow a channel to have a user scope
+- [a INTEGRATED-1044](https://eactive.atlassian.net/browse/INTEGRATED-1044) Nicely allign checkboxes
+- [a INTEGRATED-1061](https://eactive.atlassian.net/browse/INTEGRATED-1061) Thompson theme: implement facet block view
+- [a INTEGRATED-1062](https://eactive.atlassian.net/browse/INTEGRATED-1062) Thompson theme: implement "search-results" content block view
+- [a INTEGRATED-1063](https://eactive.atlassian.net/browse/INTEGRATED-1063) Thompson theme: implement commercial content block view
+- [a INTEGRATED-1064](https://eactive.atlassian.net/browse/INTEGRATED-1064) Feature items block text/editor
+- [a INTEGRATED-1065](https://eactive.atlassian.net/browse/INTEGRATED-1065) Thompson theme: implement article detail view
+- [a INTEGRATED-1069](https://eactive.atlassian.net/browse/INTEGRATED-1069) Spike: JSON-LD schema.org implementation
+- [a INTEGRATED-1072](https://eactive.atlassian.net/browse/INTEGRATED-1072) Thompson theme: implement carousel content block view
+- [a INTEGRATED-1073](https://eactive.atlassian.net/browse/INTEGRATED-1073) Thompson theme: implement list content block view
+- [a INTEGRATED-1074](https://eactive.atlassian.net/browse/INTEGRATED-1074) Thompson theme: implement feature content block view
+- [a INTEGRATED-1075](https://eactive.atlassian.net/browse/INTEGRATED-1075) Thompson theme: implement taxonomy content block view
+- [a INTEGRATED-1078](https://eactive.atlassian.net/browse/INTEGRATED-1078) JSON-LD schema.org implementation
+- [a INTEGRATED-1107](https://eactive.atlassian.net/browse/INTEGRATED-1107) Improve using scopes for user commands
+- [a INTEGRATED-1115](https://eactive.atlassian.net/browse/INTEGRATED-1115) Allow adding text to pages with one click
+- [a INTEGRATED-1116](https://eactive.atlassian.net/browse/INTEGRATED-1116) Edit blocks in modal window
+- [a INTEGRATED-1121](https://eactive.atlassian.net/browse/INTEGRATED-1121) Add new blocks in modal window
+- [a INTEGRATED-1122](https://eactive.atlassian.net/browse/INTEGRATED-1122) Block management in controllers other than in PageBundle
+- [a INTEGRATED-1135](https://eactive.atlassian.net/browse/INTEGRATED-1135) Improve logo view in Thompson theme
+- [a INTEGRATED-1136](https://eactive.atlassian.net/browse/INTEGRATED-1136) Implement feature items block in Thompson theme
+- [a INTEGRATED-1143](https://eactive.atlassian.net/browse/INTEGRATED-1143) News document type
+- [a INTEGRATED-1146](https://eactive.atlassian.net/browse/INTEGRATED-1146) Comment document type
+- [a INTEGRATED-1148](https://eactive.atlassian.net/browse/INTEGRATED-1148) Thompson theme: style form block
+- [a INTEGRATED-1149](https://eactive.atlassian.net/browse/INTEGRATED-1149) Thompson theme: update event detail page view with date fields
+- [a INTEGRATED-1152](https://eactive.atlassian.net/browse/INTEGRATED-1152) Thompson theme: implement comment related content view
+- [a INTEGRATED-1169](https://eactive.atlassian.net/browse/INTEGRATED-1169) Redirection / 404 / 500 strategy
+- [a INTEGRATED-1170](https://eactive.atlassian.net/browse/INTEGRATED-1170) Add channel when adding content item with form block
+- [a INTEGRATED-1171](https://eactive.atlassian.net/browse/INTEGRATED-1171) Allow to link a content item created by a form block to the content document
+- [a INTEGRATED-1172](https://eactive.atlassian.net/browse/INTEGRATED-1172) Add "Show items linked by the current document" option to related content block
+- [a INTEGRATED-1173](https://eactive.atlassian.net/browse/INTEGRATED-1173) Add "Text after submit" option to form block, but keep redirect URL
+- [a INTEGRATED-1179](https://eactive.atlassian.net/browse/INTEGRATED-1179) Do not allow users in other scopes on /admin 
+- [a INTEGRATED-1180](https://eactive.atlassian.net/browse/INTEGRATED-1180) Support for firewall in integrated-behat-extensions
+- [a INTEGRATED-1188](https://eactive.atlassian.net/browse/INTEGRATED-1188) Add Dutch translations to Thompson Theme
+
+## Bug Fixes ##
+- [a INTEGRATED-170](https://eactive.atlassian.net/browse/INTEGRATED-170) Sorting is lost while filtering in content navigator
+- [a INTEGRATED-292](https://eactive.atlassian.net/browse/INTEGRATED-292) [website-bundle] Allow blocks with javascript to be added
+- [a INTEGRATED-312](https://eactive.atlassian.net/browse/INTEGRATED-312) [workflow-bundle] Reading content doens't work without write rights
+- [a INTEGRATED-566](https://eactive.atlassian.net/browse/INTEGRATED-566) [sitemap-bundle] Sitemap crashes with large number of documents
+- [a INTEGRATED-975](https://eactive.atlassian.net/browse/INTEGRATED-975) Fix unit test for AssetBundle
+- [a INTEGRATED-981](https://eactive.atlassian.net/browse/INTEGRATED-981) [library] Integrated library tests are failing
+- [a INTEGRATED-996](https://eactive.atlassian.net/browse/INTEGRATED-996) [locking-bundle] Clean up code locking bundle config
+- [a INTEGRATED-1018](https://eactive.atlassian.net/browse/INTEGRATED-1018) ThemeManager fails when removing a theme
+- [a INTEGRATED-1033](https://eactive.atlassian.net/browse/INTEGRATED-1033) Datafixtures are broken
+- [a INTEGRATED-1035](https://eactive.atlassian.net/browse/INTEGRATED-1035) [workflow-bundle] The ContentSubscriber has a error in the preUpdate
+- [a INTEGRATED-1038](https://eactive.atlassian.net/browse/INTEGRATED-1038) Content type creation is broken
+- [a INTEGRATED-1039](https://eactive.atlassian.net/browse/INTEGRATED-1039) Creation of content block is broken
+- [a INTEGRATED-1045](https://eactive.atlassian.net/browse/INTEGRATED-1045) integrated_image formtype is broken in 0.7
+- [a INTEGRATED-1049](https://eactive.atlassian.net/browse/INTEGRATED-1049) Cherry-pick INTEGRATED-1048 to 0.7
+- [a INTEGRATED-1080](https://eactive.atlassian.net/browse/INTEGRATED-1080) AssetBundle PSR-2 errors
+- [a INTEGRATED-1091](https://eactive.atlassian.net/browse/INTEGRATED-1091) [user-bundle] Could not load type "user_profile"
+- [a INTEGRATED-1092](https://eactive.atlassian.net/browse/INTEGRATED-1092) Adding a group fails when no data is entered
+- [a INTEGRATED-1094](https://eactive.atlassian.net/browse/INTEGRATED-1094) Behat tests fail in Integrated repository
+- [a INTEGRATED-1095](https://eactive.atlassian.net/browse/INTEGRATED-1095) Image cannot be deleted in 0.7 install
+- [a INTEGRATED-1105](https://eactive.atlassian.net/browse/INTEGRATED-1105) Workflow rights are not applied on the content edit page
+- [a INTEGRATED-1128](https://eactive.atlassian.net/browse/INTEGRATED-1128) Workflow form is indented
+- [a INTEGRATED-1134](https://eactive.atlassian.net/browse/INTEGRATED-1134) Feature items block is broken
+- [a INTEGRATED-1155](https://eactive.atlassian.net/browse/INTEGRATED-1155) Error when saving channel
+- [a INTEGRATED-1156](https://eactive.atlassian.net/browse/INTEGRATED-1156) Block with error disappears
+- [a INTEGRATED-1157](https://eactive.atlassian.net/browse/INTEGRATED-1157) Content detail page is broken
+- [a INTEGRATED-1159](https://eactive.atlassian.net/browse/INTEGRATED-1159) Edit of content type page is broken
+- [a INTEGRATED-1164](https://eactive.atlassian.net/browse/INTEGRATED-1164) Disappearing block 
+- [a INTEGRATED-1166](https://eactive.atlassian.net/browse/INTEGRATED-1166) Add block filters are broken after upgrade to 0.7
+- [a INTEGRATED-1174](https://eactive.atlassian.net/browse/INTEGRATED-1174) New content type page URL per channel is not injected in Solr
+- [a INTEGRATED-1175](https://eactive.atlassian.net/browse/INTEGRATED-1175) New content type page URL is not used in view in Thompson theme and default Theme
+- [a INTEGRATED-1185](https://eactive.atlassian.net/browse/INTEGRATED-1185) Spike: solr:worker:run crashes and fills the queue infinitely
+- [a INTEGRATED-1186](https://eactive.atlassian.net/browse/INTEGRATED-1186) Can't switch to second channel when viewing pages
+- [a INTEGRATED-1187](https://eactive.atlassian.net/browse/INTEGRATED-1187) Comment feature should not be shown in form block
+
+## Other Changes ##
+- [a INTEGRATED-951](https://eactive.atlassian.net/browse/INTEGRATED-951) Try an embedded document approach for INTEGRATED-219
+
+## Package versions ##
+- integrated-asset-bundle       0.7
+- integrated-block-bundle       0.7
+- integrated-channel-bundle     0.7
+- integrated-comment-bundle     0.7
+- integrated-content-bundle     0.7
+- integrated-content-history-bundle0.7
+- integrated-formtype-bundle    0.7
+- integrated-image-bundle       0.7
+- integrated-library            0.7
+- integrated-locking-bundle     0.7
+- integrated-menu-bundle        0.7
+- integrated-page-bundle        0.7
+- integrated-puphpet            0.7
+- integrated-slug-bundle        0.7
+- integrated-social-bundle      0.7
+- integrated-solr-bundle        0.7
+- integrated-storage-bundle     0.7
+- integrated-theme-bundle       0.7
+- integrated-thompson-theme-bundle0.7
+- integrated-user-bundle        0.7
+- integrated-website-bundle     0.7
+- integrated-workflow-bundle    0.7
+
 # Changelog Integrated version 0.6 #
 
 ## Highlights ##

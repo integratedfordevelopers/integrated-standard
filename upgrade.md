@@ -1,5 +1,59 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.7 ##
+- remove javascripts (also jquery ui) from base view (are now loaded with asset manager)
+
+{% javascripts output='js/scripts.js'
+            '@IntegratedWebsiteBundle/Resources/public/js/page.js'
+            '@IntegratedWebsiteBundle/Resources/public/js/menu.js'
+            '@IntegratedWebsiteBundle/Resources/public/js/grid.js' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+Remove edit form
+
+Add handlebars:
+
+{% if integrated_block_edit|default %}
+    {{ include('@IntegratedWebsite/handlebars/grid.html.twig') }}
+{% endif %}
+
+{% if integrated_menu_edit|default %}
+    {{ include('@IntegratedWebsite/handlebars/menu.html.twig') }}
+{% endif %}
+
+Remove template 'IntegratedWebsiteBundle:Form:form_div_layout.html.twig' from config.yml
+- - Edit and save a content type so the content type page URLs are generated
+- Verify the generated content type page URLs and maybe change them back to the old ones for backwards compatibility
+- Update views to use the integrated_url Twig function for URLs, to fully support the new URLs
+- In order to enable the remember me the security.yml must be changed with the following for the default/main firewall:
+                remember_me:
+                    secret:   '%secret%'
+                    lifetime: 2592000 # 30 days
+                    path:     /	
+- Call the following commands:
+doctrine:schema:update command
+init:scope command
+- put content block around base template grid
+{% block content %}
+   {{ integrated_grid('main') }}
+{% endblock %}
+
+integrated block and menu edit variables become request variables
+
+integrated_block_edit|default -> app.request.attributes.get('integrated_block_edit')
+
+integrated_menu_edit|default -> app.request.attributes.get('integrated_menu_edit')
+- Update security.yml with:
+
+- { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED, allow_if: 'integrated_scope().isAdmin() == true' }
+- Verify app/config/security.yml:
+
+    access_decision_manager:
+        strategy: unanimous
+- run: 
+- composer install
+
 ## Upgrade to Integrated version 0.6 ##
 - Add to your config.yml:
 
