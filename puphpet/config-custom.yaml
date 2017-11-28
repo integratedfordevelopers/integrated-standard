@@ -1,4 +1,0 @@
-vagrantfile:
-    vm:
-        hostname: integrated07release
-        memory: '3072'

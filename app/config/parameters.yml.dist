@@ -1,3 +1,6 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
@@ -13,7 +16,7 @@ parameters:
     mailer_from:       ~
     mailer_name:       ~
 
-    locale:            en
+    # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     mongodb_server:    mongodb://localhost:27017
@@ -26,9 +29,6 @@ parameters:
     solr_password:     choose-a-password
     solr_core:         choose-a-core-name
     solr_timeout:      30
-
-    bower_bin:         /usr/local/bin/bower
-    uglify_bin:        /usr/local/bin/uglifyjs
 
     recaptcha_site_key: ~
     recaptcha_secret_key: ~
