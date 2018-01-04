@@ -14,16 +14,16 @@ Remove edit form
 
 Add handlebars:
 
-{% if integrated_block_edit|default %}
+{% if app.request.attributes.get('integrated_block_edit') %}
     {{ include('@IntegratedWebsite/handlebars/grid.html.twig') }}
 {% endif %}
 
-{% if integrated_menu_edit|default %}
+{% if app.request.attributes.get('integrated_menu_edit') %}
     {{ include('@IntegratedWebsite/handlebars/menu.html.twig') }}
 {% endif %}
 
 Remove template 'IntegratedWebsiteBundle:Form:form_div_layout.html.twig' from config.yml
-- - Edit and save a content type so the content type page URLs are generated
+- Edit and save a content type so the content type page URLs are generated
 - Verify the generated content type page URLs and maybe change them back to the old ones for backwards compatibility
 - Update views to use the integrated_url Twig function for URLs, to fully support the new URLs
 - In order to enable the remember me the security.yml must be changed with the following for the default/main firewall:
@@ -44,15 +44,11 @@ integrated block and menu edit variables become request variables
 integrated_block_edit|default -> app.request.attributes.get('integrated_block_edit')
 
 integrated_menu_edit|default -> app.request.attributes.get('integrated_menu_edit')
-- Update security.yml with:
 
-- { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED, allow_if: 'integrated_scope().isAdmin() == true' }
 - Verify app/config/security.yml:
-
     access_decision_manager:
         strategy: unanimous
-- run: 
-- composer install
+- run: composer install
 
 ## Upgrade to Integrated version 0.6 ##
 - Add to your config.yml:
