@@ -74,7 +74,6 @@
 - [a INTEGRATED-1171](https://eactive.atlassian.net/browse/INTEGRATED-1171) Allow to link a content item created by a form block to the content document
 - [a INTEGRATED-1172](https://eactive.atlassian.net/browse/INTEGRATED-1172) Add "Show items linked by the current document" option to related content block
 - [a INTEGRATED-1173](https://eactive.atlassian.net/browse/INTEGRATED-1173) Add "Text after submit" option to form block, but keep redirect URL
-- [a INTEGRATED-1179](https://eactive.atlassian.net/browse/INTEGRATED-1179) Do not allow users in other scopes on /admin 
 - [a INTEGRATED-1180](https://eactive.atlassian.net/browse/INTEGRATED-1180) Support for firewall in integrated-behat-extensions
 - [a INTEGRATED-1188](https://eactive.atlassian.net/browse/INTEGRATED-1188) Add Dutch translations to Thompson Theme
 
