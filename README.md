@@ -13,15 +13,15 @@ This bundle can be installed following these steps:
 ### Execute commands ###
 Execute the following commands to set up the project:
 
-    $ php app/console braincrafted:bootstrap:install
-    $ php app/console assetic:dump web
-    $ php app/console doctrine:mongodb:schema:update
-    $ php app/console doctrine:schema:update --force
-    $ php app/console init:queue --force
-    $ php app/console init:locking --force
-    $ php app/console init:scope
-    $ php app/console cache:clear --env=prod
-    $ php app/console fos:js-routing:dump --env=prod
+    $ php bin/console braincrafted:bootstrap:install
+    $ php bin/console assetic:dump web
+    $ php bin/console doctrine:mongodb:schema:update
+    $ php bin/console doctrine:schema:update --force
+    $ php bin/console init:queue --force
+    $ php bin/console init:locking --force
+    $ php bin/console init:scope
+    $ php bin/console cache:clear --env=prod
+    $ php bin/console fos:js-routing:dump --env=prod
 
 ### Install using composer ###
 For a local installation use:
@@ -33,9 +33,9 @@ Please review the documentation website for using the Vagrant development enviro
 ### Datafixtures ###
 For some test data use these commands:
 
-    $ php app/console doctrine:fixtures:load
-    $ php app/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/website-bundle/DataFixtures/MongoDB
-    $ php app/console solr:indexer:queue --full && php app/console solr:indexer:run --full
+    $ php bin/console doctrine:fixtures:load
+    $ php bin/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/website-bundle/DataFixtures/MongoDB
+    $ php bin/console solr:indexer:queue --full && php bin/console solr:indexer:run --full
     
 ### Enable the bundle ###
 * Change the content of this README.md for your project
