@@ -39,6 +39,22 @@
         "squizlabs/php_codesniffer": "^3.1",
         "symfony/phpunit-bridge": "^4.0"
     },
+    "scripts": {
+        "symfony-scripts": [
+          "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+          "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+          "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall",
+          "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+          "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+          "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ],
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts"
+        ]
+    },
     "provide": {
         "ext-mongo": "*"
     },

@@ -1,5 +1,18 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.8 ##
+Integrated 0.8 ships with Symfony 3.4. Follow the upgrade guides from Symfony when upgrading your code from Symfony 2.8 to 3.4:
+* https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.0.md
+* https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.1.md
+* https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.2.md
+* https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.3.md
+* https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.4.md
+* https://symfony.com/doc/3.4/setup/upgrade_major.html
+
+Other changes are:
+* The Integrated bundles are combined in one repository
+* The view directories within Integrated are now lowercase (following the Symfony best practices)
+
 ## Upgrade to Integrated version 0.7 ##
 - remove javascripts (also jquery ui) from base view (are now loaded with asset manager)
 

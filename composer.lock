@@ -1988,12 +1988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated.git",
-                "reference": "54f56483ac4c42fdd60bead23f17c29801edcc18"
+                "reference": "37e32f021b7497445ebe7762e760e36d8b5d0c16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated/zipball/54f56483ac4c42fdd60bead23f17c29801edcc18",
-                "reference": "54f56483ac4c42fdd60bead23f17c29801edcc18",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated/zipball/37e32f021b7497445ebe7762e760e36d8b5d0c16",
+                "reference": "37e32f021b7497445ebe7762e760e36d8b5d0c16",
                 "shasum": ""
             },
             "require": {
@@ -2009,9 +2009,9 @@
                 "friendsofsymfony/jsrouting-bundle": "~2.0",
                 "gregwar/image-bundle": "~2.1",
                 "jms/metadata": "~1.6",
-                "knplabs/knp-gaufrette-bundle": "~0.4",
-                "knplabs/knp-menu-bundle": "~2.1",
-                "knplabs/knp-paginator-bundle": "~2.6",
+                "knplabs/knp-gaufrette-bundle": "~0.5",
+                "knplabs/knp-menu-bundle": "~2.2",
+                "knplabs/knp-paginator-bundle": "~2.7",
                 "nelmio/alice": "~3.1",
                 "php": ">=7.1",
                 "sensio/framework-extra-bundle": "~5.0",
@@ -2048,8 +2048,9 @@
                 "integrated/workflow-bundle": "self.version"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^2.8"
+                "friendsofphp/php-cs-fixer": "^2.8",
+                "phpunit/phpunit": "^6.4",
+                "squizlabs/php_codesniffer": "^3.1"
             },
             "type": "library",
             "extra": {
@@ -2082,7 +2083,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2017-11-23T13:31:58+00:00"
+            "time": "2018-01-16T12:59:53+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
