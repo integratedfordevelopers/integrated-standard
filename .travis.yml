@@ -1,7 +1,7 @@
 install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
-- rm -rf app/cache/*
+- rm -rf var/cache/*
 - php7.1 composer.phar install -n --ansi
 - php7.1 app/console sp:bower:install -e prod -n
 - php7.1 app/console fos:js-routing:dump -e prod
