@@ -6,7 +6,7 @@ before_script:
 - php7.1 app/console sp:bower:install -e prod -n
 - php7.1 app/console fos:js-routing:dump -e prod
 - php7.1 app/console assetic:dump web -e prod
-- rm -rf app/cache/*
+- rm -rf var/cache/*
 - php7.1 app/console d:m:f:l -n
 - php7.1 app/console d:f:l -n
 - php7.1 app/console s:i:q -e prod -f
