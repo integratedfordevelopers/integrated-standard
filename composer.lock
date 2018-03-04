@@ -2971,16 +2971,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "f17bb23cd0c6d152771807c738c916e062f54523"
+                "reference": "2744351a5252e7b10329b26af01a04088e63b1ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/f17bb23cd0c6d152771807c738c916e062f54523",
-                "reference": "f17bb23cd0c6d152771807c738c916e062f54523",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/2744351a5252e7b10329b26af01a04088e63b1ad",
+                "reference": "2744351a5252e7b10329b26af01a04088e63b1ad",
                 "shasum": ""
             },
             "require": {
@@ -3046,7 +3046,7 @@
                 "faker",
                 "test"
             ],
-            "time": "2018-02-23T09:43:36+00:00"
+            "time": "2018-03-03T11:44:28+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -4712,16 +4712,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.4",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d2117ec118c1ff3d28ccddca8212d82787a4809f",
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f",
                 "shasum": ""
             },
             "require": {
@@ -4774,7 +4774,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-09-27T18:10:31+00:00"
+            "time": "2018-03-03T16:23:01+00:00"
         },
         {
             "name": "vihuvac/recaptcha-bundle",
@@ -5440,12 +5440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "94a30ba9205683f6d779937f0e158bfedd09741c"
+                "reference": "fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/94a30ba9205683f6d779937f0e158bfedd09741c",
-                "reference": "94a30ba9205683f6d779937f0e158bfedd09741c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e",
+                "reference": "fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e",
                 "shasum": ""
             },
             "type": "library",
@@ -5466,7 +5466,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-02-23T12:52:19+00:00"
+            "time": "2018-03-04T14:40:01+00:00"
         },
         {
             "name": "phar-io/manifest",
