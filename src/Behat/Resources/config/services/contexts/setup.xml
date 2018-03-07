@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="integrated.behat.context.setup.admin_security" class="Integrated\Behat\Context\Setup\AdminSecurityContext">
+            <argument type="service" id="mink.default_session" />
+            <argument type="service" id="__symfony__.integrated_user.user.manager" />
+            <argument type="service" id="__symfony__.integrated_user.role.manager" />
+            <argument type="service" id="__symfony__.security.encoder_factory" />
+            <tag name="fob.context_service" />
+        </service>
+
+        <service id="integrated.behat.context.setup.content_type" class="Integrated\Behat\Context\Setup\ContentTypeContext">
+            <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
+            <tag name="fob.context_service" />
+        </service>
+
+    </services>
+</container>

@@ -1,0 +1,13 @@
+default:
+    suites:
+        content_type:
+            contexts_services:
+                - integrated.behat.context.hook.doctrine_odm_context
+                - integrated.behat.context.hook.doctrine_orm_context
+
+                - integrated.behat.context.setup.admin_security
+                - integrated.behat.context.setup.content_type
+
+                - integrated.behat.context.ui.admin.managing_content_type_context
+            filters:
+                tags: "@content_type"

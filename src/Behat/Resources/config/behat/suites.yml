@@ -1,0 +1,3 @@
+imports:
+    - suites/channel.yml
+    - suites/content_type.yml
