@@ -1,16 +1,16 @@
 install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
-- rm -rf app/cache/*
+- rm -rf var/cache/*
 - php7.1 composer.phar install -n --ansi
-- php7.1 app/console sp:bower:install -e prod -n
-- php7.1 app/console fos:js-routing:dump -e prod
-- php7.1 app/console assetic:dump web -e prod
-- rm -rf app/cache/*
-- php7.1 app/console d:m:f:l -n
-- php7.1 app/console d:f:l -n
-- php7.1 app/console s:i:q -e prod -f
-- php7.1 app/console s:i:r -e prod
+- php7.1 bin/console sp:bower:install -e prod -n
+- php7.1 bin/console fos:js-routing:dump -e prod
+- php7.1 bin/console assetic:dump web -e prod
+- rm -rf var/cache/*
+- php7.1 bin/console d:m:f:l -n
+- php7.1 bin/console d:f:l -n
+- php7.1 bin/console s:i:q -e prod -f
+- php7.1 bin/console s:i:r -e prod
 script:
 - php7.1 vendor/bin/phpcs
 - php7.1 vendor/bin/phpunit -c app/phpunit.xml.dist
