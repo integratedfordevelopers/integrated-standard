@@ -13,6 +13,7 @@ namespace Integrated\Behat\Context\Ui\Admin;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Tester\Exception\PendingException;
+use Behat\Mink\Element\NodeElement;
 use Behat\Mink\Session;
 use PHPUnit\Framework\Assert;
 
@@ -52,6 +53,12 @@ class ManagingContentTypeContext implements Context
      */
     public function theContentTypeShouldBeInTheList($type)
     {
-        throw new PendingException();
+        $list = [];
+        /** @var NodeElement $element */
+        foreach ($this->session->getPage()->findAll('css', 'table tbody tr td:nth-child(2) a') as $element) {
+            $list[] = $element->getText();
+        }
+
+        Assert::assertContains($type, $list);
     }
 }

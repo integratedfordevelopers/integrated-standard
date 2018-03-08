@@ -13,4 +13,4 @@ Feature: Viewing content types
     When I want to view content types
     Then I should see "2" content types in the list
     And the content type "Article" should be in the list
-
+    And the content type "Keyword" should be in the list
