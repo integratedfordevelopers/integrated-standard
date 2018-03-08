@@ -14,6 +14,7 @@ namespace Integrated\Behat\Context\Ui\Admin;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Mink\Element\NodeElement;
+use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Mink\Session;
 use PHPUnit\Framework\Assert;
 
@@ -41,7 +42,17 @@ class ManagingContentTypeContext implements Context
     }
 
     /**
+     * @When I want to view content type :type
+     * @param string $type
+     */
+    public function iWantToViewContentType($type)
+    {
+        $this->session->visit(sprintf('/admin/contenttype/%s/show', strtolower($type)));
+    }
+
+    /**
      * @Then I should see :number content types in the list
+     * @param int $number
      */
     public function iShouldSeeContentTypesInTheList($number)
     {
@@ -50,6 +61,7 @@ class ManagingContentTypeContext implements Context
 
     /**
      * @Then the content type :type should be in the list
+     * @param string $type
      */
     public function theContentTypeShouldBeInTheList($type)
     {
@@ -60,5 +72,27 @@ class ManagingContentTypeContext implements Context
         }
 
         Assert::assertContains($type, $list);
+    }
+
+    /**
+     * @Then I should see the name :name
+     * @param string $name
+     * @throws ElementNotFoundException
+     */
+    public function iShouldSeeTheName($name)
+    {
+        if (!$element = $this->session->getPage()->find('xpath', '//dt[contains(., "Name")]/following::dd')) {
+            throw new ElementNotFoundException($this->session->getDriver(), 'dd');
+        }
+
+        Assert::assertSame($name, $element->getText());
+    }
+
+    /**
+     * @Then I should see the field :arg1
+     */
+    public function iShouldSeeTheField($arg1)
+    {
+        throw new PendingException();
     }
 }
