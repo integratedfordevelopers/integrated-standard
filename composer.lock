@@ -4451,16 +4451,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.4.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "8a023e125a68c0bce08d2a8c72d67e07f0d74cab"
+                "reference": "874d4d659774d7bab90538072c83ed532dd17dc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/8a023e125a68c0bce08d2a8c72d67e07f0d74cab",
-                "reference": "8a023e125a68c0bce08d2a8c72d67e07f0d74cab",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/874d4d659774d7bab90538072c83ed532dd17dc5",
+                "reference": "874d4d659774d7bab90538072c83ed532dd17dc5",
                 "shasum": ""
             },
             "require": {
@@ -4601,7 +4601,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-03-01T19:24:09+00:00"
+            "time": "2018-03-05T20:02:01+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -5440,12 +5440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e"
+                "reference": "548adfe607f76c2ce3c3ee4505100f625b1d8b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e",
-                "reference": "fcb0f6185c5d6b7642880c0b19547dc55bc4eb9e",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/548adfe607f76c2ce3c3ee4505100f625b1d8b21",
+                "reference": "548adfe607f76c2ce3c3ee4505100f625b1d8b21",
                 "shasum": ""
             },
             "type": "library",
@@ -5466,7 +5466,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-04T14:40:01+00:00"
+            "time": "2018-03-06T22:01:49+00:00"
         },
         {
             "name": "phar-io/manifest",
