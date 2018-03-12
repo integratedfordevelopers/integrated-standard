@@ -59,7 +59,7 @@ assetic:
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
         uglifyjs2:
-            bin: '/usr/bin/uglifyjs'
+            bin: '%uglifyjs_bin%'
     assets:
         integrated_css:
             inputs:
@@ -150,7 +150,7 @@ sp_bower:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedStorageBundle'
         IntegratedThompsonThemeBundle:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle'
-    bin: %bower_bin%
+    bin: '%bower_bin%'
     install_on_warmup: true
     assetic:
         enabled: false
