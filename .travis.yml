@@ -3,7 +3,6 @@ install:
 before_script:
 - rm -rf var/cache/*
 - php7.1 composer.phar install -n --ansi
-- php7.1 bin/console sp:bower:install -e prod -n
 - php7.1 bin/console fos:js-routing:dump -e prod
 - php7.1 bin/console assetic:dump web -e prod
 - rm -rf var/cache/*
