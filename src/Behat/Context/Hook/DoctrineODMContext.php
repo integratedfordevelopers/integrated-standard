@@ -12,10 +12,9 @@
 namespace Integrated\Behat\Context\Hook;
 
 use Behat\Behat\Context\Context;
+use Doctrine\Common\DataFixtures\Purger\MongoDBPurger;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Integrated\Bundle\ContentBundle\Document\Content\Content;
-use Integrated\Bundle\ContentBundle\Document\ContentType\ContentType;
 
 class DoctrineODMContext implements Context
 {
@@ -34,11 +33,12 @@ class DoctrineODMContext implements Context
 
     /**
      * @BeforeScenario
-     * @throws \Doctrine\ODM\MongoDB\MongoDBException
      */
     public function purgeDatabase()
     {
-        $this->documentManager->getDocumentCollection(Content::class)->drop();
-        $this->documentManager->getDocumentCollection(ContentType::class)->drop();
+        $this->documentManager->getConnection()->getConfiguration()->setLoggerCallable(null);
+        $purger = new MongoDBPurger($this->documentManager);
+        $purger->purge();
+        $this->documentManager->clear();
     }
 }
