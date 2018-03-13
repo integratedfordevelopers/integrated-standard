@@ -30,18 +30,22 @@ class ContentTypeContext implements Context
      */
     private $contentTypes;
 
+    /**
+     * @param DocumentManager $documentManager
+     */
     public function __construct(DocumentManager $documentManager)
     {
         $this->documentManager = $documentManager;
 
         $this->contentTypes = [
-            'Article' => [
+            'article' => [
                 'class' => Content\Article::class,
                 'fields' => [
-                    (new Field)->setName('Title')->setOptions(['label' => 'Title', 'required' => true])
+                    (new Field)->setName('title')->setOptions(['label' => 'Title', 'required' => true]),
+                    (new Field)->setName('description')->setOptions(['label' => 'Description', 'required' => false])
                 ]
             ],
-            'Taxonomy' => [
+            'taxonomy' => [
                 'class' => Content\Taxonomy::class,
                 'fields' => [
                     (new Field)->setName('Title')->setOptions(['label' => 'Title', 'required' => true])

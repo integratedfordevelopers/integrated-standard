@@ -6,6 +6,7 @@ default:
                 - integrated.behat.context.hook.doctrine_orm_context
 
                 - integrated.behat.context.setup.admin_security
+                - integrated.behat.context.setup.content
                 - integrated.behat.context.setup.content_type
 
                 - integrated.behat.context.ui.admin.managing_content_type_context

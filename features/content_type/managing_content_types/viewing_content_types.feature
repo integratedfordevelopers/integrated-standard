@@ -6,11 +6,11 @@ Feature: Viewing content types
 
   Background:
     Given I am logged in as an administrator
-    And there is a content type "Article" named "Article"
-    And there is a content type "Taxonomy" named "Keyword"
+    And there is a content type "article" named "Article"
+    And there is a content type "taxonomy" named "Keyword"
 
   Scenario: Viewing content types
-    When I want to view content types
+    When I view the content types
     Then I should see "2" content types in the list
-    And the content type "Article" should be in the list
-    And the content type "Keyword" should be in the list
+    And the content type named "Article" should be in the list
+    And the content type named "Keyword" should be in the list
