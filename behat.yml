@@ -1,15 +1,3 @@
 imports:
     - src/Behat/Resources/config/behat/profiles.yml
     - src/Behat/Resources/config/behat/suites.yml
-#
-#default:
-#    autoload:
-#            "" : %paths.base%/features/bootstrap
-#            "Integrated\\Behat" : %paths.base%/vendor/integrated/behat-extensions/src
-#    extensions:
-#        Behat\Symfony2Extension: ~
-#        Behat\MinkExtension:
-#            files_path: "features/files"
-#            sessions:
-#                default:
-#                    symfony2: ~
