@@ -13,5 +13,4 @@
             <factory service="__behat__.mink" method="getSession" />
         </service>
     </services>
-
 </container>

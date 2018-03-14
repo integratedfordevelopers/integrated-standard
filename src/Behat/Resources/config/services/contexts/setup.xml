@@ -11,16 +11,13 @@
             <argument type="service" id="__symfony__.security.encoder_factory" />
             <tag name="fob.context_service" />
         </service>
-
         <service id="integrated.behat.context.setup.content" class="Integrated\Behat\Context\Setup\ContentContext">
             <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
             <tag name="fob.context_service" />
         </service>
-
         <service id="integrated.behat.context.setup.content_type" class="Integrated\Behat\Context\Setup\ContentTypeContext">
             <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
             <tag name="fob.context_service" />
         </service>
-
     </services>
 </container>
