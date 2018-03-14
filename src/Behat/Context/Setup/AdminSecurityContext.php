@@ -101,7 +101,7 @@ class AdminSecurityContext implements Context
         $user = $this->userManager->create();
 
         $user->setUsername('integrated');
-        $user->setEmail('integrated2@example.com');
+        $user->setEmail('integrated@example.com');
         $user->setSalt(base64_encode(random_bytes(72)));
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
         $user->addRole($this->getAdminRole());

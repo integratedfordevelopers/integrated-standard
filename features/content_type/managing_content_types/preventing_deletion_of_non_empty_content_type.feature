@@ -7,7 +7,7 @@ Feature: Deleting content type
   Background:
     Given I am logged in as an administrator
     And there is a content type "article" named "Article"
-    And there is a content "Article"
+    And there is a content "Article" of content type "article"
 
   Scenario: Content type with content can not be deleted
     When I try to delete content type "article"

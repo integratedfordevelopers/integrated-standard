@@ -36,22 +36,25 @@ class ContentContext implements Context
         $this->documentManager = $documentManager;
 
         $this->content = [
-            'Article' =>  (new Content\Article)->setContentType('article')
+            'article' => [
+                'Article' =>  (new Content\Article)->setContentType('article')
+            ]
         ];
     }
 
     /**
-     * @Given there is a content :type
+     * @Given there is a content :content of content type :type
+     * @param string $content
      * @param string $type
      * @throws Exception
      */
-    public function createContentType($type)
+    public function createContentType($content, $type)
     {
-        if (!isset($this->content[$type])) {
+        if (!isset($this->content[$type][$content])) {
             throw new Exception('There is no implementation for this type of content');
         }
 
-        $this->documentManager->persist($this->content[$type]);
+        $this->documentManager->persist($this->content[$type][$content]);
         $this->documentManager->flush();
     }
 }
