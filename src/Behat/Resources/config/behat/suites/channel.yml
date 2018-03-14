@@ -1,7 +1,0 @@
-default:
-    suites:
-        ui_address_book:
-            contexts_services:
-                - integrated.behat.context.setup.admin_security
-            filters:
-                tags: "@channel"
