@@ -1,17 +1,14 @@
 install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
-- rm -rf app/cache/*
 - php7.1 composer.phar install -n --ansi
-- php7.1 app/console sp:bower:install -e prod -n
-- php7.1 app/console fos:js-routing:dump -e prod
-- php7.1 app/console assetic:dump web -e prod
-- rm -rf app/cache/*
-- php7.1 app/console d:m:f:l -n
-- php7.1 app/console d:f:l -n
-- php7.1 app/console s:i:q -e prod -f
-- php7.1 app/console s:i:r -e prod
+- php7.1 bin/console cache:clear --no-warmup -e test
+- php7.1 bin/console cache:warmup -e test
+- php7.1 bin/console doctrine:mongodb:schema:create -e test
+- php7.1 bin/console doctrine:schema:update --force -e test
+- php7.1 bin/console init:queue --force -e test
+- php7.1 bin/console init:locking --force -e test
+
 script:
 - php7.1 vendor/bin/phpcs
-- php7.1 vendor/bin/phpunit -c app/phpunit.xml.dist
-- php7.1 vendor/bin/behat --colors
+- php7.1 vendor/bin/phpunit
