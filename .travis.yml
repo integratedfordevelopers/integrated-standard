@@ -12,3 +12,4 @@ before_script:
 script:
 - php7.1 vendor/bin/phpcs
 - php7.1 vendor/bin/phpunit
+- php7.1 vendor/bin/behat --colors
