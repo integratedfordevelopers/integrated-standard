@@ -15,7 +15,7 @@ use Behat\Mink\Exception\ElementNotFoundException;
 use Integrated\Behat\Page\Exception\MissingParamException;
 use Integrated\Behat\Page\Page;
 
-class UpdatePage extends Page
+class EditPage extends Page
 {
     /**
      * @param string $name

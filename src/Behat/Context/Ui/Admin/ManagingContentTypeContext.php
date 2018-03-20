@@ -15,7 +15,7 @@ use Behat\Behat\Context\Context;
 use Behat\Mink\Exception\ElementNotFoundException;
 use Integrated\Behat\Page\Admin\ContentType\IndexPage;
 use Integrated\Behat\Page\Admin\ContentType\ShowPage;
-use Integrated\Behat\Page\Admin\ContentType\UpdatePage;
+use Integrated\Behat\Page\Admin\ContentType\EditPage;
 use PHPUnit\Framework\Assert;
 
 class ManagingContentTypeContext implements Context
@@ -31,20 +31,20 @@ class ManagingContentTypeContext implements Context
     private $showPage;
 
     /**
-     * @var UpdatePage
+     * @var EditPage
      */
-    private $updatePage;
+    private $editPage;
 
     /**
      * @param IndexPage $indexPage
      * @param ShowPage $showPage
-     * @param UpdatePage $updatePage
+     * @param EditPage $editPage
      */
-    public function __construct(IndexPage $indexPage, ShowPage $showPage, UpdatePage $updatePage)
+    public function __construct(IndexPage $indexPage, ShowPage $showPage, EditPage $editPage)
     {
         $this->indexPage = $indexPage;
         $this->showPage = $showPage;
-        $this->updatePage = $updatePage;
+        $this->editPage = $editPage;
     }
 
     /**
@@ -70,7 +70,7 @@ class ManagingContentTypeContext implements Context
      */
     public function iWantToEditContentType($name)
     {
-        $this->updatePage->open(['name' => $name]);
+        $this->editPage->open(['name' => $name]);
     }
 
     /**
@@ -92,7 +92,7 @@ class ManagingContentTypeContext implements Context
      */
     public function iRenameItTo($name)
     {
-        $this->updatePage->rename($name);
+        $this->editPage->rename($name);
     }
 
     /**
@@ -102,7 +102,7 @@ class ManagingContentTypeContext implements Context
      */
     public function iSelectTheFieldAsOptional($field)
     {
-        $this->updatePage->enableField($field);
+        $this->editPage->enableField($field);
     }
 
     /**
@@ -112,7 +112,7 @@ class ManagingContentTypeContext implements Context
      */
     public function iSelectTheFieldAsRequired($field)
     {
-        $this->updatePage->enableField($field, true);
+        $this->editPage->enableField($field, true);
     }
 
     /**
@@ -121,7 +121,7 @@ class ManagingContentTypeContext implements Context
      */
     public function iSaveMyChanges()
     {
-        $this->updatePage->save();
+        $this->editPage->save();
     }
 
     /**
