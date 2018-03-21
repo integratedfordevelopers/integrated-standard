@@ -26,7 +26,7 @@ Execute the following commands to set up the project:
 ### Install using composer ###
 For a local installation use:
 
-    $ php composer.phar create-project integrated/integrated path/ "~0.4"
+    $ php composer.phar create-project integrated/integrated-standard path/ "~0.8"
     
 Please review the documentation website for using the Vagrant development environment.
 
@@ -34,7 +34,7 @@ Please review the documentation website for using the Vagrant development enviro
 For some test data use these commands:
 
     $ php bin/console doctrine:fixtures:load
-    $ php bin/console doctrine:mongodb:fixtures:load --fixtures=vendor/integrated/content-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/storage-bundle/DataFixtures/MongoDB --fixtures=vendor/integrated/website-bundle/DataFixtures/MongoDB
+    $ php bin/console doctrine:mongodb:fixtures:load
     $ php bin/console solr:indexer:queue --full && php bin/console solr:indexer:run --full
     
 ### Enable the bundle ###
