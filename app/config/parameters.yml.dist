@@ -33,4 +33,4 @@ parameters:
     recaptcha_site_key: ~
     recaptcha_secret_key: ~
 
-    bower_bin:         /usr/bin/bower
+    bower_bin:         /usr/local/bin/bower
