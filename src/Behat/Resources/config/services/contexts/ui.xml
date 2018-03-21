@@ -7,7 +7,7 @@
         <service id="integrated.behat.context.ui.admin.managing_content_type_context" class="Integrated\Behat\Context\Ui\Admin\ManagingContentTypeContext">
             <argument type="service" id="integrated.behat.page.admin.content_type.index" />
             <argument type="service" id="integrated.behat.page.admin.content_type.show" />
-            <argument type="service" id="integrated.behat.page.admin.content_type.update" />
+            <argument type="service" id="integrated.behat.page.admin.content_type.edit" />
             <argument type="service" id="mink.default_session" />
             <tag name="fob.context_service" />
         </service>

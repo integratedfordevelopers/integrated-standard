@@ -6,6 +6,6 @@
     <services>
         <service id="integrated.behat.page.admin.content_type.index" class="Integrated\Behat\Page\Admin\ContentType\IndexPage" parent="integrated.behat.page" public="false" />
         <service id="integrated.behat.page.admin.content_type.show" class="Integrated\Behat\Page\Admin\ContentType\ShowPage" parent="integrated.behat.page" public="false" />
-        <service id="integrated.behat.page.admin.content_type.update" class="Integrated\Behat\Page\Admin\ContentType\EditPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.content_type.edit" class="Integrated\Behat\Page\Admin\ContentType\EditPage" parent="integrated.behat.page" public="false" />
     </services>
 </container>
