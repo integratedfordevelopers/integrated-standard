@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d34bfc0834186e3d2e3f7d216b13d890",
+    "content-hash": "3dd30a5da0e052e67f349e910df5d4bb",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1989,16 +1989,16 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "dev-master",
+            "version": "dev-release/0.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "db6615fb684cad94303c730c01991695ad5d649d"
+                "reference": "65a786f613104aaaa6316d39607bd67b438e89e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/db6615fb684cad94303c730c01991695ad5d649d.zip",
-                "reference": "db6615fb684cad94303c730c01991695ad5d649d",
+                "url": "https://bitbucket.org/eactive/integrated/get/c50ee6db141d86931ad2839c55223739683204a7.zip",
+                "reference": "65a786f613104aaaa6316d39607bd67b438e89e5",
                 "shasum": ""
             },
             "require": {
@@ -2060,7 +2060,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.8-dev"
+                    "dev-release/0.8": "0.8-dev",
+                    "dev-release/0.9": "0.9-dev"
                 }
             },
             "autoload": {
@@ -2088,7 +2089,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-03-13T12:01:30+00:00"
+            "time": "2018-03-22T08:38:44+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
