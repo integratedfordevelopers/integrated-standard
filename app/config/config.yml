@@ -1,118 +1,122 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
 
 framework:
-    #esi:             ~
-    #translator:      { fallback: %locale% }
-    secret:          %secret%
+    #esi: ~
+    #translator: { fallbacks: ['%locale%'] }
+    secret: '%secret%'
     router:
-        resource: "%kernel.root_dir%/config/routing.yml"
+        resource: '%kernel.project_dir%/app/config/routing.yml'
         strict_requirements: ~
-    form:            ~
+    form: ~
     csrf_protection: ~
-    validation:      { enable_annotations: true }
+    validation: { enable_annotations: true }
+    serializer: { enable_annotations: true }
     templating:
         engines: ['twig']
-        #assets_version: SomeVersionScheme
-    default_locale:  "%locale%"
-    trusted_proxies: ~
+    default_locale: '%locale%'
+    trusted_hosts: ~
     session:
-        # handler_id set to null will use default session handler from php.ini
-        handler_id:  ~
-        save_path:   ~
-    fragments:       ~
+        # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id: session.handler.native_file
+        save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
+    fragments: ~
     http_method_override: true
-    serializer:
-        enabled: true
+    assets: ~
+    php_errors:
+        log: true
 
 # Twig Configuration
 twig:
-    debug:            %kernel.debug%
-    strict_variables: %kernel.debug%
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
     form_themes:
         - 'VihuvacRecaptchaBundle:Form:vihuvac_recaptcha_widget.html.twig'
 
 services:
     twig.extension.intl:
-        class: Twig_Extensions_Extension_Intl
+        class: 'Twig_Extensions_Extension_Intl'
         tags:
             - { name: twig.extension }
 
 # Assetic Configuration
 assetic:
-    debug:          %kernel.debug%
+    debug: '%kernel.debug%'
     use_controller: true
     filters:
         less:
-            node_paths: [/usr/local/lib/node_modules]
+            node_paths: ['/usr/local/lib/node_modules', '/usr/lib/node_modules']
             compress: true
-            apply_to: "\.less$"
+            apply_to: '\.less$'
         cssrewrite: ~
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
         uglifyjs2:
-          bin: %uglify_bin%
-
+            bin: '/usr/bin/uglifyjs'
     assets:
         integrated_css:
             inputs:
-                - @IntegratedContentBundle/Resources/public/sass/main.scss
+                - '@IntegratedContentBundle/Resources/public/sass/main.scss'
             filters:
-                - scssphp
-            output: css/main.css
+                - 'scssphp'
+            output: 'css/main.css'
         integrated_js:
-            inputs:
-                ~
-
-# Bootstrap Configuration
-braincrafted_bootstrap:
-    jquery_path: %kernel.root_dir%/../vendor/components/jquery/jquery.js
+            inputs: ~
 
 # Doctrine Configuration
 doctrine:
     dbal:
-        types:
-            ip: Darsyn\IP\Doctrine\IpType
-        driver:   %database_driver%
-        host:     %database_host%
-        port:     %database_port%
-        dbname:   %database_name%
-        user:     %database_user%
-        password: %database_password%
-        charset:  UTF8
-        # if using pdo_sqlite as your database driver, add the path in parameters.yml
-        # e.g. database_path: %kernel.root_dir%/data/data.db3
-        # path:     %database_path%
+        driver: pdo_mysql
+        host: '%database_host%'
+        port: '%database_port%'
+        dbname: '%database_name%'
+        user: '%database_user%'
+        password: '%database_password%'
+        charset: UTF8
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: '%kernel.project_dir%/var/data/data.sqlite'
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #path: '%database_path%'
 
     orm:
-        auto_generate_proxy_classes: %kernel.debug%
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
+# Doctrine MongoDB Configuration
 doctrine_mongodb:
     connections:
         default:
-            server: %mongodb_server%
-            options: %mongodb_options%
-    default_database: %mongodb_database%
+            server: '%mongodb_server%'
+            options: '%mongodb_options%'
+    default_database: '%mongodb_database%'
     document_managers:
         default:
             auto_mapping: true
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: %mailer_transport%
-    host:      %mailer_host%
-    username:  %mailer_user%
-    password:  %mailer_password%
-    spool:     { type: memory }
+    transport: '%mailer_transport%'
+    host: '%mailer_host%'
+    username: '%mailer_user%'
+    password: '%mailer_password%'
+    spool: { type: memory }
 
 # Storage Configuration
 knp_gaufrette:
     adapters:
         local:
             local:
-                directory: %kernel.root_dir%/../web/files
+                directory: '%kernel.root_dir%/../web/files'
     filesystems:
         integrated:
             adapter: local
@@ -120,62 +124,53 @@ knp_gaufrette:
 integrated_storage:
     resolver:
         integrated:
-            public: /files
+            public: '/files'
 
 # Solr Configuration
 integrated_solr:
     endpoints:
         default:
-            host: %solr_host%
-            port: %solr_port%
-            username: %solr_username%
-            password: %solr_password%
-            core: %solr_core%
-            timeout: %solr_timeout%
+            host: '%solr_host%'
+            port: '%solr_port%'
+            username: '%solr_username%'
+            password: '%solr_password%'
+            core: '%solr_core%'
+            timeout: '%solr_timeout%'
 
 # Bower Configuration
 sp_bower:
     bundles:
         IntegratedContentBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedContentBundle
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedContentBundle'
         IntegratedFormTypeBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedFormTypeBundle
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedFormTypeBundle'
         IntegratedWebsiteBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle'
         IntegratedStorageBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedStorageBundle
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedStorageBundle'
         IntegratedThompsonThemeBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle'
     bin: %bower_bin%
     install_on_warmup: true
     assetic:
         enabled: false
+
+# Bootstrap Configuration
+braincrafted_bootstrap:
+    jquery_path: '%kernel.root_dir%/../vendor/integrated/integrated/src/Bundle/ContentBundle/Resources/public/components/jquery/dist/jquery.js'
 
 # Theme Configuration
 integrated_theme:
     themes:
         default:
             paths:
-                - @IntegratedWebsiteBundle/Resources/views/themes/default
+                - '@IntegratedWebsiteBundle/Resources/views/themes/default'
         thompson:
             paths:
-                - @IntegratedThompsonThemeBundle/Resources/views/themes/thompson
+                - '@IntegratedThompsonThemeBundle/Resources/views/themes/thompson'
 
 vihuvac_recaptcha:
-    site_key:   %recaptcha_site_key%
-    secret_key: %recaptcha_secret_key%
+    site_key:   '%recaptcha_site_key%'
+    secret_key: '%recaptcha_secret_key%'
     enabled:    true
     locale_key: kernel.default_locale
-
-mongo_db_migrations:
-    collection_name: "migration_versions"
-    database_name: %mongodb_database%
-    dir_name: "%kernel.root_dir%/Migrations/MongoDB"
-    script_dir_name: "%kernel.root_dir%/Migrations/MongoDB/scripts"
-    name: "Integrated MongoDB Migrations"
-    namespace: "Application\Migrations\MongoDB"

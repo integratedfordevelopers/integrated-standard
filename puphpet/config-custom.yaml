@@ -1,4 +1,7 @@
 vagrantfile:
     vm:
-        hostname: integrated07release
-        memory: '3072'
+        provider:
+            local:
+                machines:
+                    vflm_zt1jolgy2kuu:
+                        hostname: integrated

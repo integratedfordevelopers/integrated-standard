@@ -1,6 +1,8 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
 security:
     encoders:
-        Integrated\Bundle\UserBundle\Model\User: sha512
+        Integrated\Bundle\UserBundle\Model\User: bcrypt
 
     providers:
         integrated_user:
@@ -8,18 +10,16 @@ security:
 
     firewalls:
         dev:
-            pattern:    ^/(_(profiler|wdt|configurator)|css|images|js)/
-            security:   false
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
 
         default:
             pattern:  ^/
-            anonymous: ~
             form_login:
-                csrf_provider: form.csrf_provider
-
                 login_path:    integrated_user_login
                 check_path:    integrated_user_check
-
+                csrf_token_generator: security.csrf.token_manager
+                remember_me: true
             logout:
                 path:   integrated_user_logout
                 target: /
@@ -27,6 +27,8 @@ security:
                 secret:   '%secret%'
                 lifetime: 2592000 # 30 days
                 path:     /
+            anonymous: ~
+            logout_on_user_change: true
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
