@@ -29,6 +29,7 @@ security:
                 path:     /
             anonymous: ~
             logout_on_user_change: true
+            scope: ~
 
     access_control:
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
