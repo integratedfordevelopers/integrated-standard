@@ -104,17 +104,20 @@ class AdminSecurityContext implements Context
         $user->setEmail('integrated@example.com');
         $user->setSalt(base64_encode(random_bytes(72)));
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
-        $user->addRole($this->getAdminRole());
+
+        $user->addRole($this->getRole('ROLE_ADMIN'));
+        $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
 
         return $user;
     }
 
     /**
+     * @param string $id
      * @return \Integrated\Bundle\UserBundle\Model\RoleInterface
      */
-    private function getAdminRole()
+    private function getRole($id)
     {
-        $this->roleManager->persist($role = $this->roleManager->create('ROLE_ADMIN'));
+        $this->roleManager->persist($role = $this->roleManager->create($id));
         return $role;
     }
 }
