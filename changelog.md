@@ -1,3 +1,35 @@
+# Changelog Integrated version 0.8 #
+
+## Highlights ##
+- Repositories have been merged into integrated/integrated
+- Upgrade to Symfony 3.4
+- Require PHP 7.1
+
+## New Features ##
+- [a INTEGRATED-1253](https://eactive.atlassian.net/browse/INTEGRATED-1253) Fixen built errors jenkins - alle repositories
+- [a INTEGRATED-1275](https://eactive.atlassian.net/browse/INTEGRATED-1275) Merge repositories into one
+- [a INTEGRATED-1276](https://eactive.atlassian.net/browse/INTEGRATED-1276) Dirty code: SolrType
+- [a INTEGRATED-1277](https://eactive.atlassian.net/browse/INTEGRATED-1277) Spike: dirty code: Documents
+- [a INTEGRATED-1280](https://eactive.atlassian.net/browse/INTEGRATED-1280) Upgrade to Symfony 3.4
+- [a INTEGRATED-1296](https://eactive.atlassian.net/browse/INTEGRATED-1296) Drag / drop easyness decreased after upgrade from 0.6 to 0.7
+- [a INTEGRATED-1298](https://eactive.atlassian.net/browse/INTEGRATED-1298) Merge INTEGRATED-1293 0.8 (Throw events in form block)
+- [a INTEGRATED-1314](https://eactive.atlassian.net/browse/INTEGRATED-1314) Behat: improve content type feature
+- [a INTEGRATED-1323](https://eactive.atlassian.net/browse/INTEGRATED-1323) Upgrade integrated/puphpet for PHP 7.1
+- [a INTEGRATED-1330](https://eactive.atlassian.net/browse/INTEGRATED-1330) Save sessions in server defined location by default
+
+## Bug Fixes ##
+- [a INTEGRATED-1304](https://eactive.atlassian.net/browse/INTEGRATED-1304) Datafixtures are broken since Symfony upgrade to 3.4
+- [a INTEGRATED-1306](https://eactive.atlassian.net/browse/INTEGRATED-1306) All exceptions in Integrated are redirected to /admin/content (which is weird).
+- [a INTEGRATED-1324](https://eactive.atlassian.net/browse/INTEGRATED-1324) Bugs after Symfony 3.4 upgrade
+- [a INTEGRATED-1326](https://eactive.atlassian.net/browse/INTEGRATED-1326) [page-bundle] Cannot access protected method Integrated\Bundle\PageBundle\EventListener\ContentTypeChangedListener::contentTypeDeleted()
+- [a INTEGRATED-1327](https://eactive.atlassian.net/browse/INTEGRATED-1327) Some collection forms are broken after Symfony 3.4 upgrade
+- [a INTEGRATED-1329](https://eactive.atlassian.net/browse/INTEGRATED-1329) Improve locking
+
+## Other Changes ##
+- [a INTEGRATED-980](https://eactive.atlassian.net/browse/INTEGRATED-980) [page-bundle] Spike: deleting routing from cache directory
+- [a INTEGRATED-1278](https://eactive.atlassian.net/browse/INTEGRATED-1278) Spike: fix testing with merged repositories
+- [a INTEGRATED-1279](https://eactive.atlassian.net/browse/INTEGRATED-1279) Require PHP 7.1
+
 # Changelog Integrated version 0.7 #
 
 ## Highlights ##
