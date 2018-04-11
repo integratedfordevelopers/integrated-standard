@@ -1993,12 +1993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "d0b68926b2a61dd76f36bd3f2115f878ca65a671"
+                "reference": "59a67d2c483c201a845d1d467b019c959f98052f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/d0b68926b2a61dd76f36bd3f2115f878ca65a671.zip",
-                "reference": "d0b68926b2a61dd76f36bd3f2115f878ca65a671",
+                "url": "https://bitbucket.org/eactive/integrated/get/59a67d2c483c201a845d1d467b019c959f98052f.zip",
+                "reference": "59a67d2c483c201a845d1d467b019c959f98052f",
                 "shasum": ""
             },
             "require": {
@@ -2089,7 +2089,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-03-28T08:12:21+00:00"
+            "time": "2018-04-10T06:04:04+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -5628,13 +5628,13 @@
             "version": "dev-release/0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "e37e48d69f37c436faebf1a22cfe9651544264af"
+                "url": "https://bitbucket.org/eactive/integrated-puphpet.git",
+                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/e37e48d69f37c436faebf1a22cfe9651544264af",
-                "reference": "e37e48d69f37c436faebf1a22cfe9651544264af",
+                "url": "https://bitbucket.org/eactive/integrated-puphpet/get/b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1.zip",
+                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1",
                 "shasum": ""
             },
             "type": "library",
@@ -5660,7 +5660,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-15T07:55:16+00:00"
+            "time": "2018-03-21T12:09:59+00:00"
         },
         {
             "name": "phar-io/manifest",
