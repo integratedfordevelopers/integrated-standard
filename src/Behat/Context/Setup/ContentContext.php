@@ -36,8 +36,8 @@ class ContentContext implements Context
         $this->documentManager = $documentManager;
 
         $this->content = [
-            'article' => [
-                'Article' =>  (new Content\Article)->setContentType('article')
+            'magazine' => [
+                'Magazine' =>  (new Content\Article)->setContentType('magazine')
             ]
         ];
     }
