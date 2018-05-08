@@ -23,13 +23,13 @@ class ChannelContext implements Context
     }
 
     /**
-     * @Given there is a channel :name with the domains :domains and the color :color
+     * @Given there is a channel :id named :name with the domains :domains and the color :color
      * @param string $name
      * @param string $domains
      * @param string $color
      * @throws Exception
      */
-    public function createChannels($name, $domains, $color)
+    public function createChannel($id, $name, $domains, $color)
     {
         if (!is_string($name)) {
             throw new Exception('String expected for :name');
@@ -44,6 +44,8 @@ class ChannelContext implements Context
         }
 
         $channel = new Channel();
+
+        $channel->setId($id);
         $channel->setName($name);
         $channel->setDomains(explode(',', $domains));
         $channel->setColor($color);

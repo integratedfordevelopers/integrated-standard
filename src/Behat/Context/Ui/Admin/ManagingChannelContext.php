@@ -13,7 +13,10 @@ namespace Integrated\Behat\Context\Ui\Admin;
 
 use Behat\Behat\Context\Context;
 use Behat\Mink\Exception\ElementNotFoundException;
+use Integrated\Behat\Page\Admin\Channel\EditPage;
 use Integrated\Behat\Page\Admin\Channel\IndexPage;
+use Integrated\Behat\Page\Admin\Channel\NewPage;
+use Integrated\Behat\Page\Admin\Channel\ShowPage;
 use PHPUnit\Framework\Assert;
 
 class ManagingChannelContext implements Context
@@ -24,11 +27,32 @@ class ManagingChannelContext implements Context
     private $indexPage;
 
     /**
-     * @param IndexPage $indexPage
+     * @var ShowPage
      */
-    public function __construct(IndexPage $indexPage)
+    private $showPage;
+
+    /**
+     * @var NewPage
+     */
+    private $newPage;
+
+    /**
+     * @var EditPage
+     */
+    private $editPage;
+
+    /**
+     * @param IndexPage $indexPage
+     * @param ShowPage $showPage
+     * @param NewPage $newPage
+     * @param EditPage $editPage
+     */
+    public function __construct(IndexPage $indexPage, ShowPage $showPage, NewPage $newPage, EditPage $editPage)
     {
         $this->indexPage = $indexPage;
+        $this->showPage = $showPage;
+        $this->newPage = $newPage;
+        $this->editPage = $editPage;
     }
 
     /**
@@ -40,12 +64,36 @@ class ManagingChannelContext implements Context
     }
 
     /**
+     * @When I create a channel
+     */
+    public function iWantToCreateChannel()
+    {
+        $this->newPage->open();
+    }
+
+    /**
+     * @When I delete channel :id
+     */
+    public function iWantToDeleteChannel($id)
+    {
+        $this->showPage->open(['id' => $id]);
+        $this->showPage->delete();
+    }
+
+    /**
+     * @When I edit channel :id
+     */
+    public function iWantToEditChannel($id)
+    {
+        $this->editPage->open(['id' => $id]);
+    }
+
+    /**
      * @Then I should see :number channels in the list
      * @param int $number
      */
     public function iShouldSeeChannelsInTheList($number)
     {
-        var_dump($this->indexPage->getChannels());
         Assert::assertCount((int) $number, $this->indexPage->getChannels());
     }
 

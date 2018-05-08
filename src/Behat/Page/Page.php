@@ -11,6 +11,7 @@
 
 namespace Integrated\Behat\Page;
 
+use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Mink\Session;
 use Integrated\Behat\Page\Exception\InvalidResponseException;
 
@@ -36,6 +37,14 @@ abstract class Page implements PageInterface
     {
         $this->session-> visit($this->getUrl($params));
         $this->verify();
+    }
+
+    /**
+     * @throws ElementNotFoundException
+     */
+    public function delete()
+    {
+        $this->getSession()->getPage()->pressButton('Delete');
     }
 
     /**

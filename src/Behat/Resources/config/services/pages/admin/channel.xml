@@ -5,5 +5,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <service id="integrated.behat.page.admin.channel.index" class="Integrated\Behat\Page\Admin\Channel\IndexPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.channel.show" class="Integrated\Behat\Page\Admin\Channel\ShowPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.channel.new" class="Integrated\Behat\Page\Admin\Channel\NewPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.channel.edit" class="Integrated\Behat\Page\Admin\Channel\EditPage" parent="integrated.behat.page" public="false" />
     </services>
 </container>
