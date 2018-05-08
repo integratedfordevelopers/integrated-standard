@@ -1993,12 +1993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "d0356b1af9d7fe64ba9c34670f89c0b43ac269f4"
+                "reference": "0b56a276499da564756cd44a690ec1907dfd3848"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://bitbucket.org/eactive/integrated/get/d0356b1af9d7fe64ba9c34670f89c0b43ac269f4.zip",
-                "reference": "d0356b1af9d7fe64ba9c34670f89c0b43ac269f4",
+                "reference": "0b56a276499da564756cd44a690ec1907dfd3848",
                 "shasum": ""
             },
             "require": {
