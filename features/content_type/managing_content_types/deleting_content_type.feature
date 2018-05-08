@@ -6,9 +6,9 @@ Feature: Deleting content type
 
   Background:
     Given I am logged in as an administrator
-    And there is a content type "article" named "Article"
+    And there is a content type "magazine" named "Magazine"
 
   Scenario: Delete content type
-    When I delete content type "article"
+    When I delete content type "magazine"
     Then I should be notified that the item is deleted
-    And the content type named "Article" should be deleted
+    And the content type named "Magazine" should be deleted
