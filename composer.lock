@@ -1993,12 +1993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "523f7bd4fb4723f5343e2a25773ff253f1a4068f"
+                "reference": "0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/523f7bd4fb4723f5343e2a25773ff253f1a4068f.zip",
-                "reference": "523f7bd4fb4723f5343e2a25773ff253f1a4068f",
+                "url": "https://bitbucket.org/eactive/integrated/get/0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e.zip",
+                "reference": "0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e",
                 "shasum": ""
             },
             "require": {
@@ -2089,7 +2089,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-05-11T07:20:42+00:00"
+            "time": "2018-05-16 06:35:19"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -3858,6 +3858,7 @@
                 "compression",
                 "minification"
             ],
+            "abandoned": "symfony/webpack-encore-pack",
             "time": "2017-07-14T07:26:46+00:00"
         },
         {
@@ -5660,7 +5661,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-21T12:09:59+00:00"
+            "time": "2018-03-21 12:09:59"
         },
         {
             "name": "phar-io/manifest",
