@@ -35,7 +35,7 @@ abstract class Page implements PageInterface
      */
     public function open(array $params = [])
     {
-        $this->session-> visit($this->getUrl($params));
+        $this->session->visit($this->getUrl($params));
         $this->verify();
     }
 

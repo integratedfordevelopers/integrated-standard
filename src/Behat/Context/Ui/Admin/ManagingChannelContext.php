@@ -72,6 +72,53 @@ class ManagingChannelContext implements Context
     }
 
     /**
+     * @When I name it :name
+     * @param string $name
+     * @throws ElementNotFoundException
+     */
+    public function iNameIt($name)
+    {
+        $this->newPage->name($name);
+    }
+    /**
+     * @When I rename it to :name
+     * @param string $name
+     * @throws ElementNotFoundException
+     */
+    public function iRenameItTo($name)
+    {
+        $this->editPage->rename($name);
+    }
+
+    /**
+     * @When I define its color as :color
+     * @param string $name
+     * @throws ElementNotFoundException
+     */
+    public function iDefineItsColorAs($color)
+    {
+        $this->newPage->color($color);
+    }
+
+    /**
+     * @When I add it
+     * @throws ElementNotFoundException
+     */
+    public function iAddIt()
+    {
+        $this->newPage->save();
+    }
+
+    /**
+     * @When I save my changes
+     * @throws ElementNotFoundException
+     */
+    public function iSaveMyChanges()
+    {
+        $this->editPage->save();
+    }
+
+    /**
      * @When I delete channel :id
      */
     public function iWantToDeleteChannel($id)
@@ -107,12 +154,30 @@ class ManagingChannelContext implements Context
     }
 
     /**
+     * @Then I should be notified that the item is created
+     * @throws ElementNotFoundException
+     */
+    public function iShouldBeNotifiedThatTheItemIsCreated()
+    {
+        Assert::assertContains('Item created', $this->showPage->getAlert());
+    }
+
+    /**
      * @Then the channel named :name should be deleted
      * @param string $name
      */
     public function theChannelNamedShouldBeDeleted($name)
     {
         Assert::assertNotContains($name, $this->indexPage->getChannels());
+    }
+
+    /**
+     * @Then I should be notified that the item is updated
+     * @throws ElementNotFoundException
+     */
+    public function iShouldBeNotifiedThatTheItemIsUpdated()
+    {
+        Assert::assertContains('Item updated', $this->showPage->getAlert());
     }
 
     /**
@@ -125,21 +190,20 @@ class ManagingChannelContext implements Context
     }
 
     /**
-     * @Then I should be notified that the channel is in not empty and can not be deleted
-     * @throws ElementNotFoundException
-     */
-    public function iShouldBeNotifiedThatTheChannelIsInNotEmptyAndCanNotBeDeleted()
-    {
-        Assert::assertContains('Unable te delete, Channel is not empty', $this->indexPage->getAlert('danger'));
-    }
-
-    /**
      * @Then the channel named :name should still exist
      * @param string $name
      */
     public function theChannelShouldStillExist($name)
     {
-        $this->iWantToViewChannels();
         $this->theChannelNamedShouldBeInTheList($name);
+    }
+
+    /**
+     * @Then I should see an required field error
+     * @throws ElementNotFoundException
+     */
+    public function iShouldSeeAnErrorMessage()
+    {
+        Assert::assertSame('This value should not be blank.', $this->newPage->getMessage());
     }
 }

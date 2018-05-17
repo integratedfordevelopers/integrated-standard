@@ -11,16 +11,21 @@
 
 namespace Integrated\Behat\Page\Admin\Channel;
 
+use Integrated\Behat\Page\Admin\Alert\Alert;
 use Integrated\Behat\Page\Page;
 
 class IndexPage extends Page
 {
+    use Alert;
+
     /**
      * @return string[]
      */
     public function getChannels()
     {
+        $this->open();
         $list = [];
+
         foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2)') as $element) {
             $list[] = $element->getText();
         }

@@ -11,11 +11,29 @@
 
 namespace Integrated\Behat\Page\Admin\Channel;
 
+use Behat\Mink\Exception\ElementNotFoundException;
 use Integrated\Behat\Page\Exception\MissingParamException;
 use Integrated\Behat\Page\Page;
 
 class EditPage extends Page
 {
+    /**
+     * @param string $name
+     * @throws ElementNotFoundException
+     */
+    public function rename($name)
+    {
+        $this->getSession()->getPage()->fillField('channel[name]', $name);
+    }
+
+    /**
+     * @throws ElementNotFoundException
+     */
+    public function save()
+    {
+        $this->getSession()->getPage()->pressButton('Save');
+    }
+
     /**
      * {@inheritdoc}
      */

@@ -10,3 +10,5 @@ Feature: Deleting channels
 
   Scenario: Deleting channel
     When I delete channel "test"
+    Then I should be notified that the item is deleted
+    And the channel named "Test" should be deleted

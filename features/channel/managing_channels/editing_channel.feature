@@ -10,3 +10,7 @@ Feature: Editing channels
 
   Scenario: Editing channel
     When I edit channel "test"
+    And I rename it to "Integrated"
+    And I save my changes
+    Then I should be notified that the item is updated
+    And the channel named "Integrated" should be in the list

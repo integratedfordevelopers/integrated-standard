@@ -11,11 +11,14 @@
 
 namespace Integrated\Behat\Page\Admin\Channel;
 
+use Integrated\Behat\Page\Admin\Alert\Alert;
 use Integrated\Behat\Page\Exception\MissingParamException;
 use Integrated\Behat\Page\Page;
 
 class ShowPage extends Page
 {
+    use Alert;
+
     /**
      * {@inheritdoc}
      */
