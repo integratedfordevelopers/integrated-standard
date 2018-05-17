@@ -19,5 +19,9 @@
             <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
             <tag name="fob.context_service" />
         </service>
+        <service id="integrated.behat.context.setup.connector" class="Integrated\Behat\Context\Setup\ConnectorContext">
+            <argument type="service" id="__symfony__.doctrine.orm.entity_manager" />
+            <tag name="fob.context_service" />
+        </service>
     </services>
 </container>

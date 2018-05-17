@@ -1,2 +1,3 @@
 imports:
     - suites/content_type.yml
+    - suites/connector.yml
