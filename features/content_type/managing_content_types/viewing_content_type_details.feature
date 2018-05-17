@@ -6,10 +6,10 @@ Feature: Viewing content type details
 
   Background:
     Given I am logged in as an administrator
-    And there is a content type "article" named "Article"
+    And there is a content type "magazine" named "Magazine"
 
   Scenario: Viewing content type Article
-    When I view content type "article"
-    Then I should see the name "Article"
+    When I view content type "magazine"
+    Then I should see the name "Magazine"
     And I should see the required field "Title"
     And I should see the optional field "Description"

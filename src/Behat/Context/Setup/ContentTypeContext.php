@@ -38,7 +38,7 @@ class ContentTypeContext implements Context
         $this->documentManager = $documentManager;
 
         $this->contentTypes = [
-            'article' => [
+            'magazine' => [
                 'class' => Content\Article::class,
                 'fields' => [
                     (new Field)->setName('title')->setOptions(['label' => 'Title', 'required' => true]),
