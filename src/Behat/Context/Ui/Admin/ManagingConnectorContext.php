@@ -165,7 +165,7 @@ class ManagingConnectorContext implements Context
      * @When I try to edit connector :name
      * @param string $name
      */
-    public function iWantToEditConnector($name)
+    public function iEditConnector($name)
     {
         $this->editPage->open(['name' => $name]);
     }
@@ -210,19 +210,9 @@ class ManagingConnectorContext implements Context
      * @param string $name
      * @throws ElementNotFoundException
      */
-    public function iWantToDeleteConnector($name)
+    public function iDeleteConnector($name)
     {
         $this->deletePage->open(['name' => $name]);
         $this->deletePage->delete();
-    }
-
-    /**
-     * @Then the connector named :name should still exist
-     * @param string $name
-     */
-    public function theConnectorShouldStillExist($name)
-    {
-        $this->iWantToViewConnectors();
-        $this->theConnectorNamedShouldBeInTheList($name);
     }
 }
