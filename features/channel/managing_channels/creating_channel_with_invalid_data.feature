@@ -2,7 +2,7 @@
 Feature: Creating channels
   In order to manage my channels
   As an administrator
-  I cannot not create a channel with invalid data
+  I cannot create a channel with invalid data
 
   Background:
     Given I am logged in as an administrator
