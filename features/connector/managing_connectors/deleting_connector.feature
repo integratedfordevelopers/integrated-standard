@@ -1,6 +1,6 @@
 @connector
 Feature: Deleting connector
-  In order to clean my connectors
+  In order to manage my connectors
   As an administrator
   I want to be able to delete a connector
 

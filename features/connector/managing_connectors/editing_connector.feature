@@ -1,6 +1,6 @@
 @connector
 Feature: Editing connector
-  In order to edit a connector
+  In order to manage my connectors
   As an administrator
   I want to be able to edit a connector
 
@@ -13,3 +13,4 @@ Feature: Editing connector
     And I rename it to "Edited Connector"
     And I save my changes
     Then I should be notified that the changes to connector "Edited Connector" are saved
+    And the connector named "Integrated" should be in the list

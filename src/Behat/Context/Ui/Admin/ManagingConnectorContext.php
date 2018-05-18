@@ -58,7 +58,7 @@ class ManagingConnectorContext implements Context
     /**
      * @When I view the connectors
      */
-    public function iWantToViewConnectors()
+    public function iViewConnectors()
     {
         $this->indexPage->open();
     }
@@ -107,11 +107,11 @@ class ManagingConnectorContext implements Context
     }
 
     /**
-     * @When I create a new connector
-     * @When I try to create a new connector
+     * @When I create a connector
+     * @When I try to create a connector
      * @throws ElementNotFoundException
      */
-    public function iCreateANewConnector()
+    public function iCreateAConnector()
     {
         $this->createPage->open();
     }
@@ -136,10 +136,10 @@ class ManagingConnectorContext implements Context
     }
 
     /**
-     * @Then I should see an error message
+     * @Then I should see a required field error
      * @throws ElementNotFoundException
      */
-    public function iShouldSeeAnErrorMessage()
+    public function iShouldSeeARequiredFieldError()
     {
         Assert::assertSame("This value should not be blank.", $this->createPage->getMessage());
     }
