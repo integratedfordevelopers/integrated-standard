@@ -58,7 +58,7 @@ class ManagingChannelContext implements Context
     /**
      * @When I view the channels
      */
-    public function iWantToViewChannels()
+    public function iViewTheChannels()
     {
         $this->indexPage->open();
     }
@@ -66,7 +66,7 @@ class ManagingChannelContext implements Context
     /**
      * @When I create a channel
      */
-    public function iWantToCreateChannel()
+    public function iCreateAChannel()
     {
         $this->newPage->open();
     }
@@ -121,7 +121,7 @@ class ManagingChannelContext implements Context
     /**
      * @When I delete channel :id
      */
-    public function iWantToDeleteChannel($id)
+    public function iDeleteChannel($id)
     {
         $this->showPage->open(['id' => $id]);
         $this->showPage->delete();
@@ -130,7 +130,7 @@ class ManagingChannelContext implements Context
     /**
      * @When I edit channel :id
      */
-    public function iWantToEditChannel($id)
+    public function iEditChannel($id)
     {
         $this->editPage->open(['id' => $id]);
     }
@@ -190,19 +190,10 @@ class ManagingChannelContext implements Context
     }
 
     /**
-     * @Then the channel named :name should still exist
-     * @param string $name
-     */
-    public function theChannelShouldStillExist($name)
-    {
-        $this->theChannelNamedShouldBeInTheList($name);
-    }
-
-    /**
-     * @Then I should see an required field error
+     * @Then I should see a required field error
      * @throws ElementNotFoundException
      */
-    public function iShouldSeeAnErrorMessage()
+    public function iShouldSeeARequiredFieldError()
     {
         Assert::assertSame('This value should not be blank.', $this->newPage->getMessage());
     }

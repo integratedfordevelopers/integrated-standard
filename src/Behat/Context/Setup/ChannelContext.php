@@ -36,7 +36,7 @@ class ChannelContext implements Context
         }
 
         if (!is_string($domains)) {
-            throw new Exception('String or array expected for :domains');
+            throw new Exception('String expected for :domains');
         }
 
         if (!is_string($color)) {

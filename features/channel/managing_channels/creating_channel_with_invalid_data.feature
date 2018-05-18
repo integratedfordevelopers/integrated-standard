@@ -2,7 +2,7 @@
 Feature: Creating channels
   In order to manage my channels
   As an administrator
-  I want to be able to create a channel
+  I cannot not create a channel with invalid data
 
   Background:
     Given I am logged in as an administrator
@@ -10,5 +10,5 @@ Feature: Creating channels
   Scenario: Creating channel
     When I create a channel
     And I add it
-    Then I should see an required field error
+    Then I should see a required field error
     And I should see "0" channels in the list
