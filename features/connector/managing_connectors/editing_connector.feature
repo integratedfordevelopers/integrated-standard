@@ -13,4 +13,4 @@ Feature: Editing connector
     And I rename it to "Edited Connector"
     And I save my changes
     Then I should be notified that the changes to connector "Edited Connector" are saved
-    And the connector named "Integrated" should be in the list
+    And the connector named "Edited Connector" should be in the list
