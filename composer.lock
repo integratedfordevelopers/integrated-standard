@@ -3858,6 +3858,7 @@
                 "compression",
                 "minification"
             ],
+            "abandoned": "symfony/webpack-encore-pack",
             "time": "2017-07-14T07:26:46+00:00"
         },
         {
@@ -5660,7 +5661,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-21T12:09:59+00:00"
+            "time": "2018-03-21 12:09:59"
         },
         {
             "name": "phar-io/manifest",
