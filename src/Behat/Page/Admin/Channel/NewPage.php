@@ -43,11 +43,14 @@ class NewPage extends Page
     }
 
     /**
+     * @param string $name
      * @return string
      */
-    public function getMessage()
+    public function getMessage($name)
     {
-        return $this->getSession()->getPage()->find('xpath', '//ul[@class="help-block"]//li')->getText();
+        $xpath = sprintf('//input[@name="channel[%s]"]/following-sibling::ul[@class="help-block"]//li', $name);
+
+        return $this->getSession()->getPage()->find('xpath', $xpath)->getText();
     }
 
     /**

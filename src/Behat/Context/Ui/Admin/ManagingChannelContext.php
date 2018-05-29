@@ -65,6 +65,7 @@ class ManagingChannelContext implements Context
 
     /**
      * @When I create a channel
+     * @When I try to create a channel
      */
     public function iCreateAChannel()
     {
@@ -190,11 +191,11 @@ class ManagingChannelContext implements Context
     }
 
     /**
-     * @Then I should see a required field error
+     * @Then I should see a required error for the :name field
      * @throws ElementNotFoundException
      */
-    public function iShouldSeeARequiredFieldError()
+    public function iShouldSeeARequiredErrorForTheField($name)
     {
-        Assert::assertSame('This value should not be blank.', $this->newPage->getMessage());
+        Assert::assertSame('This value should not be blank.', $this->newPage->getMessage($name));
     }
 }
