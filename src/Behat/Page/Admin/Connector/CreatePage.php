@@ -37,11 +37,12 @@ class CreatePage extends Page
     }
 
     /**
+     * @param string $name
      * @return string
      */
-    public function getMessage()
+    public function getMessage($name)
     {
-        return $this->getSession()->getPage()->find('xpath', '//ul[@class="help-block"]//li')->getText();
+        return $this->getSession()->getPage()->find('xpath', '//input[@name="integrated_channel_config['.$name.']"]/following-sibling::ul[@class="help-block"]//li')->getText();
     }
 
     /**

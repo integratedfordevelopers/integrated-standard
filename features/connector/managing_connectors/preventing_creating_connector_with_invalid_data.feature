@@ -10,5 +10,5 @@ Feature: Prevent creating connector with invalid data
   Scenario: Preventing from creating a connector with invalid data
     When I try to create a connector
     And I add it
-    Then I should see a required field error
+    Then I should see a required error for the name field
     And I should see "0" connectors in the list

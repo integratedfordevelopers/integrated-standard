@@ -136,12 +136,12 @@ class ManagingConnectorContext implements Context
     }
 
     /**
-     * @Then I should see a required field error
+     * @Then I should see a required error for the :name field
      * @throws ElementNotFoundException
      */
-    public function iShouldSeeARequiredFieldError()
+    public function iShouldSeeARequiredErrorForTheField($name)
     {
-        Assert::assertSame("This value should not be blank.", $this->createPage->getMessage());
+        Assert::assertSame("This value should not be blank.", $this->createPage->getMessage($name));
     }
 
     /**
