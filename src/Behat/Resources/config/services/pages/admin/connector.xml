@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="integrated.behat.page.admin.connector.index" class="Integrated\Behat\Page\Admin\Connector\IndexPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.connector.create" class="Integrated\Behat\Page\Admin\Connector\CreatePage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.connector.edit" class="Integrated\Behat\Page\Admin\Connector\EditPage" parent="integrated.behat.page" public="false" />
+        <service id="integrated.behat.page.admin.connector.delete" class="Integrated\Behat\Page\Admin\Connector\DeletePage" parent="integrated.behat.page" public="false" />
+    </services>
+</container>
