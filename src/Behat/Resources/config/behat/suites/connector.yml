@@ -1,0 +1,13 @@
+default:
+    suites:
+        connector:
+            contexts_services:
+                - integrated.behat.context.hook.doctrine_orm_context
+
+                - integrated.behat.context.setup.admin_security
+                - integrated.behat.context.setup.content
+                - integrated.behat.context.setup.connector
+
+                - integrated.behat.context.ui.admin.managing_connector_context
+            filters:
+                tags: "@connector"
