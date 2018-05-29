@@ -1993,12 +1993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e"
+                "reference": "46e40525ec8af4a0f721436d83078e6770913190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e.zip",
-                "reference": "0c7121fa2b4aa336a9e1b3fb5ebc0cf2f70b151e",
+                "url": "https://bitbucket.org/eactive/integrated/get/46e40525ec8af4a0f721436d83078e6770913190.zip",
+                "reference": "46e40525ec8af4a0f721436d83078e6770913190",
                 "shasum": ""
             },
             "require": {
@@ -2089,7 +2089,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-05-16 06:35:19"
+            "time": "2018-05-28T12:45:53+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -5661,7 +5661,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-21 12:09:59"
+            "time": "2018-03-21T12:09:59+00:00"
         },
         {
             "name": "phar-io/manifest",
