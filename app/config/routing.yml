@@ -41,5 +41,8 @@ integrated_comment:
     resource: "@IntegratedCommentBundle/Resources/config/routing.xml"
     prefix: "/admin"
 
+integrated_sitemap:
+    resource: "@IntegratedSitemapBundle/Resources/config/routing.xml"
+
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
