@@ -10,6 +10,7 @@
     <services>
         <service id="integrated.behat.page" class="Integrated\Behat\Page\Page" abstract="true" public="false">
             <argument type="service" id="mink.default_session" />
+            <argument>%__behat__.mink.parameters%</argument>
         </service>
     </services>
 </container>
