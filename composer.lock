@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "3dd30a5da0e052e67f349e910df5d4bb",
@@ -2000,12 +2000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "18398931cdc46457e32599a19576941b4cad322d"
+                "reference": "0f35daa0377ad72e72074e6f08dda76264362397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/18398931cdc46457e32599a19576941b4cad322d.zip",
-                "reference": "18398931cdc46457e32599a19576941b4cad322d",
+                "url": "https://bitbucket.org/eactive/integrated/get/0f35daa0377ad72e72074e6f08dda76264362397.zip",
+                "reference": "0f35daa0377ad72e72074e6f08dda76264362397",
                 "shasum": ""
             },
             "require": {
@@ -2096,7 +2096,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-06-14T09:05:59+00:00"
+            "time": "2018-06-18T05:41:00+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
