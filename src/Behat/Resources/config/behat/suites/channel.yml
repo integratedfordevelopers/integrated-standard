@@ -5,7 +5,7 @@ default:
                 - integrated.behat.context.hook.doctrine_odm_context
                 - integrated.behat.context.hook.doctrine_orm_context
 
-                - integrated.behat.context.setup.admin_security
+                - integrated.behat.context.setup.admin
                 - integrated.behat.context.setup.channel
 
                 - integrated.behat.context.ui.admin.managing_channel_context

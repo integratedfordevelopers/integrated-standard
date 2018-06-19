@@ -4,8 +4,8 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="integrated.behat.context.setup.admin_security" class="Integrated\Behat\Context\Setup\AdminSecurityContext">
-            <argument type="service" id="mink.default_session" />
+        <service id="integrated.behat.context.setup.admin" class="Integrated\Behat\Context\Setup\AdminContext">
+            <argument type="service" id="integrated.behat.context.setup.security" />
             <argument type="service" id="__symfony__.integrated_user.user.manager" />
             <argument type="service" id="__symfony__.integrated_user.role.manager" />
             <argument type="service" id="__symfony__.security.encoder_factory" />
@@ -25,6 +25,18 @@
         </service>
         <service id="integrated.behat.context.setup.channel" class="Integrated\Behat\Context\Setup\ChannelContext">
             <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
+            <tag name="fob.context_service" />
+        </service>
+        <service id="integrated.behat.context.setup.security" class="Integrated\Behat\Context\Setup\SecurityContext">
+            <argument type="service" id="mink.default_session" />
+            <tag name="fob.context_service" />
+        </service>
+        <service id="integrated.behat.context.setup.user" class="Integrated\Behat\Context\Setup\UserContext">
+            <argument type="service" id="integrated.behat.context.setup.security" />
+            <argument type="service" id="__symfony__.integrated_user.user.manager" />
+            <argument type="service" id="__symfony__.integrated_user.scope.manager" />
+            <argument type="service" id="__symfony__.integrated_user.role.manager" />
+            <argument type="service" id="__symfony__.security.encoder_factory"/>
             <tag name="fob.context_service" />
         </service>
     </services>
