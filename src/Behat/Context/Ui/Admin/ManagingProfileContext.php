@@ -103,5 +103,4 @@ class ManagingProfileContext implements Context
     {
         Assert::assertContains('This value should not be blank.', $this->profilePage->errors());
     }
-
 }
