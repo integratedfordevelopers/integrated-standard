@@ -95,4 +95,13 @@ class ManagingProfileContext implements Context
     {
         Assert::assertContains('This value is not valid.', $this->profilePage->errors());
     }
+
+    /**
+     * @Then I should be notified that my password is empty
+     */
+    public function iShouldBeNotifiedThatMyPasswordIsEmpty()
+    {
+        Assert::assertContains('This value should not be blank.', $this->profilePage->errors());
+    }
+
 }

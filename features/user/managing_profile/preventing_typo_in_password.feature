@@ -1,7 +1,7 @@
 @user
 Feature: Preventing short password
   In order to enhance the security of my account
-  As a user
+  As an user
   I want to be prevented from typos in my password
 
   Background:
