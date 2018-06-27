@@ -82,7 +82,6 @@ class AdminContext implements Context
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
 
         $user->addRole($this->getRole('ROLE_ADMIN'));
-        $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
 
         return $user;
     }
