@@ -70,7 +70,11 @@ class AdminSecurityContext implements Context
     {
         $this->userManager->persist($user = $this->createAdminUser());
 
-        $token = new UsernamePasswordToken($user, $user->getPassword(), 'randomstringbutnotnull', $user->getRoles());
+        $roles = $user->getRoles();
+
+        array_push($roles, 'ROLE_SCOPE_INTEGRATED');
+
+        $token = new UsernamePasswordToken($user, $user->getPassword(), 'randomstringbutnotnull', $roles);
 
         $driver = $this->session->getDriver();
         if (!$driver instanceof BrowserKitDriver) {
@@ -106,7 +110,6 @@ class AdminSecurityContext implements Context
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
 
         $user->addRole($this->getRole('ROLE_ADMIN'));
-        $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
 
         return $user;
     }
