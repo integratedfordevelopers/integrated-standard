@@ -38,6 +38,6 @@ class IndexPage extends Page
      */
     public function getUrl(array $params)
     {
-        return '/admin/channel';
+        return '/admin/channel/';
     }
 }

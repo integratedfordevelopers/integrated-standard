@@ -11,9 +11,9 @@
 
 namespace Integrated\Behat\Page;
 
-use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Mink\Session;
 use Integrated\Behat\Page\Exception\InvalidResponseException;
+use Integrated\Behat\Page\Exception\UnexpectedUrlException;
 
 abstract class Page implements PageInterface
 {
@@ -23,11 +23,18 @@ abstract class Page implements PageInterface
     private $session;
 
     /**
-     * @param Session $session
+     * @var array
      */
-    public function __construct(Session $session)
+    private $parameters;
+
+    /**
+     * @param Session $session
+     * @param array $parameters
+     */
+    public function __construct(Session $session, array $parameters = [])
     {
         $this->session = $session;
+        $this->parameters = $parameters;
     }
 
     /**
@@ -35,22 +42,25 @@ abstract class Page implements PageInterface
      */
     public function open(array $params = [])
     {
-        $this->session->visit($this->getUrl($params));
-        $this->verify();
-    }
-
-    /**
-     * @throws ElementNotFoundException
-     */
-    public function delete()
-    {
-        $this->getSession()->getPage()->pressButton('Delete');
+        $this->session->visit($this->makePathAbsolute($this->getUrl($params)));
+        $this->verify($params);
     }
 
     /**
      * {@inheritdoc}
+     * @throws InvalidResponseException
+     * @throws UnexpectedUrlException
      */
-    public function verify()
+    public function verify(array $params = [])
+    {
+        $this->verifyStatusCode();
+        $this->verifyUrl($params);
+    }
+
+    /**
+     * @throws InvalidResponseException
+     */
+    protected function verifyStatusCode()
     {
         $statusCode = $this->getSession()->getStatusCode();
 
@@ -66,10 +76,46 @@ abstract class Page implements PageInterface
     }
 
     /**
+     * @param array $params
+     * @throws UnexpectedUrlException
+     */
+    protected function verifyUrl(array $params = [])
+    {
+        if ($this->getSession()->getCurrentUrl() !== $this->makePathAbsolute($this->getUrl($params))) {
+            throw new UnexpectedUrlException(
+                sprintf(
+                    'Expected to be on "%s" but found "%s" instead',
+                    $this->makePathAbsolute($this->getUrl($params)),
+                    $this->getSession()->getCurrentUrl()
+                )
+            );
+        }
+    }
+
+    /**
      * @return Session
      */
     protected function getSession()
     {
         return $this->session;
+    }
+
+    /**
+     * @param $name
+     * @return mixed|null
+     */
+    protected function getParameter($name)
+    {
+        return $this->parameters[$name] ?? null;
+    }
+
+    /**
+     * @param string $path
+     * @return string
+     */
+    protected function makePathAbsolute($path)
+    {
+        $baseUrl = rtrim($this->getParameter('base_url'), '/') . '/';
+        return 0 !== strpos($path, 'http') ? $baseUrl . ltrim($path, '/') : $path;
     }
 }

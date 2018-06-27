@@ -36,6 +36,6 @@ class IndexPage extends Page
      */
     public function getUrl(array $params)
     {
-        return '/admin/contenttype';
+        return '/admin/contenttype/';
     }
 }

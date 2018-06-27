@@ -11,6 +11,7 @@
 
 namespace Integrated\Behat\Page\Admin\Channel;
 
+use Behat\Mink\Exception\ElementNotFoundException;
 use Integrated\Behat\Page\Admin\Alert\Alert;
 use Integrated\Behat\Page\Exception\MissingParamException;
 use Integrated\Behat\Page\Page;
@@ -29,5 +30,13 @@ class ShowPage extends Page
         }
 
         return sprintf('/admin/channel/%s', $params['id']);
+    }
+
+    /**
+     * @throws ElementNotFoundException
+     */
+    public function delete()
+    {
+        $this->getSession()->getPage()->pressButton('Delete');
     }
 }

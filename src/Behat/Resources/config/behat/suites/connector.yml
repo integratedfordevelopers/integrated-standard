@@ -4,7 +4,7 @@ default:
             contexts_services:
                 - integrated.behat.context.hook.doctrine_orm_context
 
-                - integrated.behat.context.setup.admin_security
+                - integrated.behat.context.setup.admin
                 - integrated.behat.context.setup.content
                 - integrated.behat.context.setup.connector
 

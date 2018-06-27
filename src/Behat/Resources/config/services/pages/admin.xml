@@ -7,5 +7,6 @@
         <import resource="admin/content_type.xml"/>
         <import resource="admin/connector.xml"/>
         <import resource="admin/channel.xml"/>
+        <import resource="admin/user.xml"/>
     </imports>
 </container>

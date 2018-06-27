@@ -2,3 +2,4 @@ imports:
     - suites/content_type.yml
     - suites/connector.yml
     - suites/channel.yml
+    - suites/user.yml
