@@ -9,17 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Integrated\Behat\Context\Setup;
+namespace Integrated\Behat\Context\Setup\Admin;
 
-use Behat\Behat\Context\Context;
+use Behat\Behat\Context\Context as ContextInterface;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
-use Behat\Mink\Session;
 use Integrated\Bundle\UserBundle\Model\RoleManagerInterface;
 use Integrated\Bundle\UserBundle\Model\UserInterface;
 use Integrated\Bundle\UserBundle\Model\UserManagerInterface;
 use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
 
-class AdminContext implements Context
+class Context implements ContextInterface
 {
     /**
      * @var SecurityContext
@@ -42,7 +41,7 @@ class AdminContext implements Context
     private $encoderFactory;
 
     /**
-     * @param Session $session
+     * @param SecurityContext $securityContext
      * @param UserManagerInterface $userManager
      * @param RoleManagerInterface $roleManager
      * @param EncoderFactoryInterface $encoderFactory

@@ -40,7 +40,6 @@ class SecurityContext implements Context
      */
     public function login(UserInterface $user)
     {
-        $token = new UsernamePasswordToken($user, $user->getPassword(), 'randomstringbutnotnull', $user->getRoles());
         $driver = $this->session->getDriver();
         if (!$driver instanceof BrowserKitDriver) {
             throw new UnsupportedDriverActionException(
@@ -55,10 +54,20 @@ class SecurityContext implements Context
 
         $session = $client->getContainer()->get('session');
 
-        $session->set(sprintf('_security_%s', 'default'), serialize($token));
+        $session->set(sprintf('_security_%s', 'default'), serialize($this->createToken($user, $user->getRoles())));
         $session->save();
 
         $cookie = new Cookie($session->getName(), $session->getId());
         $client->getCookieJar()->set($cookie);
+    }
+
+    /**
+     * @param UserInterface $user
+     * @param array $roles
+     * @return UsernamePasswordToken
+     */
+    protected function createToken(UserInterface $user, array $roles = [])
+    {
+        return new UsernamePasswordToken($user, $user->getPassword(), 'randomstringbutnotnull', $roles);
     }
 }
