@@ -35,7 +35,7 @@ parameters:
 
     bower_bin:         /usr/local/bin/bower
 
-    twitter_consumer_key: ~
-    twitter_consumer_secret: ~
+    twitter_consumer_key: "twitter_consumer_key"
+    twitter_consumer_secret: "twitter_consumer_secret"
     facebook_app_id: ~
     facebook_app_secret: ~
