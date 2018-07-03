@@ -47,6 +47,7 @@ class AppKernel extends Kernel
             new Integrated\Bundle\CommentBundle\IntegratedCommentBundle(),
             new Integrated\Bundle\ThompsonThemeBundle\IntegratedThompsonThemeBundle(),
             new Integrated\Bundle\SitemapBundle\IntegratedSitemapBundle(),
+            new Integrated\Bundle\SocialBundle\IntegratedSocialBundle(),
 
             new AppBundle\AppBundle(),
         ];

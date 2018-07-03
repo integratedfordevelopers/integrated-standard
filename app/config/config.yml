@@ -137,6 +137,15 @@ integrated_solr:
             core: '%solr_core%'
             timeout: '%solr_timeout%'
 
+# Social configuration
+integrated_social:
+    facebook:
+        app_id: '%facebook_app_id%'
+        app_secret: '%facebook_app_secret%'
+    twitter:
+        consumer_key: '%twitter_consumer_key%'
+        consumer_secret: '%twitter_consumer_secret%'
+
 # Bower Configuration
 sp_bower:
     bundles:
