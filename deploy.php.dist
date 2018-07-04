@@ -1,0 +1,38 @@
+<?php
+namespace Deployer;
+
+require 'recipe/symfony3.php';
+
+// Project name
+set('application', '');
+
+// Project repository
+set('repository', '');
+
+// Project home
+set('deploy_path', '~');
+
+// [Optional] Allocate tty for git clone. Default value is false.
+set('git_tty', true);
+
+// Enable assetic
+set('dump_assets', true);
+
+// Shared files/dirs between deploys 
+add('shared_files', []);
+add('shared_dirs', []);
+
+// Writable dirs by web server 
+add('writable_dirs', []);
+
+// Tasks
+
+task('deploy:assets:download', function () {
+    run('{{env_vars}} {{bin/php}} {{bin/console}} sp:bower:install --interactive=0 {{console_options}}');
+    run('{{env_vars}} {{bin/php}} {{bin/console}} braincrafted:bootstrap:install {{console_options}}');
+})->desc('Download bundle assets');
+
+before('deploy:assets:install', 'deploy:assets:download');
+
+// [Optional] if deploy fails automatically unlock.
+after('deploy:failed', 'deploy:unlock');
