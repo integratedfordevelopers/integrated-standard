@@ -3,11 +3,11 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
     database_driver:   pdo_mysql
-    database_host:     127.0.0.1
-    database_port:     ~
-    database_name:     integrated
-    database_user:     integrated
-    database_password: integrated
+    database_host:     integrated-mysql
+    database_port:     3306
+    database_name:     docker
+    database_user:     docker
+    database_password: docker
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
@@ -19,9 +19,9 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    mongodb_server:    mongodb://localhost:27017
-    mongodb_database:  integrated
-    mongodb_options:   {db: integrated}
+    mongodb_server:    mongodb://integrated-mongodb:27017
+    mongodb_database:  docker
+    mongodb_options:   {db: docker}
 
     solr_host:         solr.integratedcloudhosting.com
     solr_port:         80
