@@ -20,8 +20,8 @@ services:
             MYSQL_USER: docker
             MYSQL_PASSWORD: docker
 
-    mongodb:
-        container_name: integrated-mongodb
+    mongo:
+        container_name: integrated-mongo
         image: 'mongo:3.4'
         ports:
             - '27017:27017'

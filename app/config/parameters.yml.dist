@@ -19,7 +19,7 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    mongodb_server:    mongodb://integrated-mongodb:27017
+    mongodb_server:    mongodb://integrated-mongo:27017
     mongodb_database:  docker
     mongodb_options:   {db: docker}
 
