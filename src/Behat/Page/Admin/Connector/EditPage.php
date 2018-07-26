@@ -38,14 +38,32 @@ class EditPage extends Page
     }
 
     /**
-     * {@inheritdoc}
+     * @param array $params
+     * @throws ElementNotFoundException
+     * @throws MissingParamException
      */
-    public function getUrl(array $params)
+    public function open(array $params = [])
     {
         if (!isset($params['name'])) {
             throw new MissingParamException('No param name provided');
         }
 
-        return sprintf('/admin/connector/config/%s', $params['name']);
+        parent::open();
+
+        $locator = sprintf('//table/tbody/tr/td[contains(text(), "%s")]/..//td[3]/a[1]', $params['name']);
+        foreach ($this->getSession()->getPage()->findAll('xpath', $locator) as $element) {
+            $element->click();
+            return;
+        }
+
+        throw new ElementNotFoundException($this->getSession()->getDriver(), 'xpath', null, $locator);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getUrl(array $params)
+    {
+        return '/admin/connector/config/';
     }
 }
