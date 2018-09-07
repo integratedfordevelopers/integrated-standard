@@ -41,5 +41,9 @@ integrated_comment:
     resource: "@IntegratedCommentBundle/Resources/config/routing.xml"
     prefix: "/admin"
 
+integrated_import:
+    resource: "@IntegratedImportBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

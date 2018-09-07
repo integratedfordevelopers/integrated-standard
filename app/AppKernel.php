@@ -45,6 +45,7 @@ class AppKernel extends Kernel
             new Integrated\Bundle\ContentHistoryBundle\IntegratedContentHistoryBundle(),
             new Integrated\Bundle\ImageBundle\IntegratedImageBundle(),
             new Integrated\Bundle\CommentBundle\IntegratedCommentBundle(),
+            new Integrated\Bundle\ImportBundle\IntegratedImportBundle(),
             new Integrated\Bundle\ThompsonThemeBundle\IntegratedThompsonThemeBundle(),
 
             new AppBundle\AppBundle(),
