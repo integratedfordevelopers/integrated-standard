@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Integrated\Behat\Page\Admin\ContentType;
+namespace Integrated\Behat\Page\Admin\Channel;
 
 use Integrated\Behat\Page\Admin\Alert\Alert;
 use Integrated\Behat\Page\Page;
@@ -21,10 +21,12 @@ class IndexPage extends Page
     /**
      * @return string[]
      */
-    public function getContentTypes()
+    public function getChannels()
     {
+        $this->open();
         $list = [];
-        foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2) a') as $element) {
+
+        foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2)') as $element) {
             $list[] = $element->getText();
         }
 
@@ -36,6 +38,6 @@ class IndexPage extends Page
      */
     public function getUrl(array $params)
     {
-        return '/admin/contenttype/';
+        return '/admin/channel/';
     }
 }

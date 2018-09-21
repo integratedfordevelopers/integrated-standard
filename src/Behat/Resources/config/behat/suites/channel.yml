@@ -1,14 +1,13 @@
 default:
     suites:
-        content_type:
+        channel:
             contexts_services:
                 - integrated.behat.context.hook.doctrine_odm_context
                 - integrated.behat.context.hook.doctrine_orm_context
 
                 - integrated.behat.context.setup.admin
-                - integrated.behat.context.setup.content
-                - integrated.behat.context.setup.content_type
+                - integrated.behat.context.setup.channel
 
-                - integrated.behat.context.ui.admin.managing_content_type_context
+                - integrated.behat.context.ui.admin.managing_channel_context
             filters:
-                tags: "@content_type"
+                tags: "@channel"

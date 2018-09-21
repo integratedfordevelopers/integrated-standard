@@ -11,5 +11,29 @@
             <argument type="service" id="mink.default_session" />
             <tag name="fob.context_service" />
         </service>
+
+        <service id="integrated.behat.context.ui.admin.managing_connector_context" class="Integrated\Behat\Context\Ui\Admin\ManagingConnectorContext">
+            <argument type="service" id="integrated.behat.page.admin.connector.index" />
+            <argument type="service" id="integrated.behat.page.admin.connector.create" />
+            <argument type="service" id="integrated.behat.page.admin.connector.edit" />
+            <argument type="service" id="integrated.behat.page.admin.connector.delete" />
+            <argument type="service" id="mink.default_session" />
+            <tag name="fob.context_service" />
+        </service>
+
+        <service id="integrated.behat.context.ui.admin.managing_channel_context" class="Integrated\Behat\Context\Ui\Admin\ManagingChannelContext">
+            <argument type="service" id="integrated.behat.page.admin.channel.index" />
+            <argument type="service" id="integrated.behat.page.admin.channel.show" />
+            <argument type="service" id="integrated.behat.page.admin.channel.new" />
+            <argument type="service" id="integrated.behat.page.admin.channel.edit" />
+            <argument type="service" id="mink.default_session" />
+            <tag name="fob.context_service" />
+        </service>
+
+        <service id="integrated.behat.context.ui.admin.managing_profile_context" class="Integrated\Behat\Context\Ui\Admin\ManagingProfileContext">
+            <argument type="service" id="integrated.behat.page.admin.user.profile" />
+            <argument type="service" id="mink.default_session" />
+            <tag name="fob.context_service" />
+        </service>
     </services>
 </container>

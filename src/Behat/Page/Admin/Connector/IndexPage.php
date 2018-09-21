@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Integrated\Behat\Page\Admin\ContentType;
+namespace Integrated\Behat\Page\Admin\Connector;
 
 use Integrated\Behat\Page\Admin\Alert\Alert;
 use Integrated\Behat\Page\Page;
@@ -21,10 +21,10 @@ class IndexPage extends Page
     /**
      * @return string[]
      */
-    public function getContentTypes()
+    public function getConnectors()
     {
         $list = [];
-        foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2) a') as $element) {
+        foreach ($this->getSession()->getPage()->findAll('xpath', '//table//tbody//tr//td[1]') as $element) {
             $list[] = $element->getText();
         }
 
@@ -36,6 +36,6 @@ class IndexPage extends Page
      */
     public function getUrl(array $params)
     {
-        return '/admin/contenttype/';
+        return '/admin/connector/config/';
     }
 }

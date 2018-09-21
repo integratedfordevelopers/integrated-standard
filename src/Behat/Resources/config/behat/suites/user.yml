@@ -1,0 +1,11 @@
+default:
+    suites:
+        user:
+            contexts_services:
+                - integrated.behat.context.hook.doctrine_orm_context
+
+                - integrated.behat.context.setup.user
+
+                - integrated.behat.context.ui.admin.managing_profile_context
+            filters:
+                tags: "@user"

@@ -9,25 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Integrated\Behat\Context\Setup;
+namespace Integrated\Behat\Context\Setup\Admin;
 
-use Behat\Behat\Context\Context;
-use Behat\Mink\Driver\BrowserKitDriver;
+use Behat\Behat\Context\Context as ContextInterface;
 use Behat\Mink\Exception\UnsupportedDriverActionException;
-use Behat\Mink\Session;
 use Integrated\Bundle\UserBundle\Model\RoleManagerInterface;
 use Integrated\Bundle\UserBundle\Model\UserInterface;
 use Integrated\Bundle\UserBundle\Model\UserManagerInterface;
-use Symfony\Component\BrowserKit\Cookie;
-use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
 
-class AdminSecurityContext implements Context
+class Context implements ContextInterface
 {
     /**
-     * @var Session
+     * @var SecurityContext
      */
-    private $session;
+    private $securityContext;
 
     /**
      * @var UserManagerInterface
@@ -45,18 +41,18 @@ class AdminSecurityContext implements Context
     private $encoderFactory;
 
     /**
-     * @param Session $session
+     * @param SecurityContext $securityContext
      * @param UserManagerInterface $userManager
      * @param RoleManagerInterface $roleManager
      * @param EncoderFactoryInterface $encoderFactory
      */
     public function __construct(
-        Session $session,
+        SecurityContext $securityContext,
         UserManagerInterface $userManager,
         RoleManagerInterface $roleManager,
         EncoderFactoryInterface $encoderFactory
     ) {
-        $this->session = $session;
+        $this->securityContext = $securityContext;
         $this->userManager = $userManager;
         $this->roleManager = $roleManager;
         $this->encoderFactory = $encoderFactory;
@@ -69,28 +65,7 @@ class AdminSecurityContext implements Context
     public function iAmLoggedInAsAnAdministrator()
     {
         $this->userManager->persist($user = $this->createAdminUser());
-
-        $token = new UsernamePasswordToken($user, $user->getPassword(), 'randomstringbutnotnull', $user->getRoles());
-
-        $driver = $this->session->getDriver();
-        if (!$driver instanceof BrowserKitDriver) {
-            throw new UnsupportedDriverActionException(
-                'This step is only supported by the BrowserKitDriver (given: $s)',
-                $driver
-            );
-        }
-
-        /** @var \Symfony\Bundle\FrameworkBundle\Client $client */
-        $client = $driver->getClient();
-        $client->getCookieJar()->set(new Cookie(session_name(), true));
-
-        $session = $client->getContainer()->get('session');
-
-        $session->set(sprintf('_security_%s', 'default'), serialize($token));
-        $session->save();
-
-        $cookie = new Cookie($session->getName(), $session->getId());
-        $client->getCookieJar()->set($cookie);
+        $this->securityContext->login($user);
     }
 
     /**
@@ -106,7 +81,6 @@ class AdminSecurityContext implements Context
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
 
         $user->addRole($this->getRole('ROLE_ADMIN'));
-        $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
 
         return $user;
     }
