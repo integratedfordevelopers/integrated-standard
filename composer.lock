@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27b18bd1830dc8781fe2f361d2eac1e8",
+    "content-hash": "db966a54baa04faa70c5a8978af0b4a4",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1439,12 +1439,12 @@
             "version": "v2.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
+                "url": "https://github.com/doctrine/orm.git",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/87ee409783a4a322b5597ebaae558661404055a7",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/87ee409783a4a322b5597ebaae558661404055a7",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7",
                 "shasum": ""
             },
@@ -1996,16 +1996,16 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "dev-release/0.9",
+            "version": "dev-release/0.11",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "6148b66c4ee275dbe90cb1403dcfe7f2c18370c7"
+                "reference": "b1909fb20e8ed675e1b8a70ce471def6812bcee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/6148b66c4ee275dbe90cb1403dcfe7f2c18370c7.zip",
-                "reference": "6148b66c4ee275dbe90cb1403dcfe7f2c18370c7",
+                "url": "https://bitbucket.org/eactive/integrated/get/b1909fb20e8ed675e1b8a70ce471def6812bcee2.zip",
+                "reference": "b1909fb20e8ed675e1b8a70ce471def6812bcee2",
                 "shasum": ""
             },
             "require": {
@@ -2017,6 +2017,7 @@
                 "doctrine/mongodb-odm-bundle": "~3.4",
                 "doctrine/orm": "~2.5",
                 "ext-intl": "*",
+                "ext-json": "*",
                 "facebook/graph-sdk": "~5.0",
                 "friendsofsymfony/jsrouting-bundle": "~2.0",
                 "gregwar/image-bundle": "~2.1",
@@ -2067,8 +2068,10 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-release/0.8": "0.8-dev",
-                    "dev-release/0.9": "0.9-dev"
+                    "dev-release/0.8": "0.8.x-dev",
+                    "dev-release/0.9": "0.9.x-dev",
+                    "dev-release/0.10": "0.10.x-dev",
+                    "dev-release/0.11": "0.11.x-dev"
                 }
             },
             "autoload": {
@@ -2096,7 +2099,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-08-02T13:08:06+00:00"
+            "time": "2019-02-28T08:54:10+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -4038,7 +4041,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -6551,6 +6554,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-05-29T13:50:43+00:00"
         },
         {
