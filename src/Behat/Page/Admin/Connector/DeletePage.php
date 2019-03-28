@@ -25,7 +25,7 @@ class DeletePage extends Page
      */
     public function delete()
     {
-        $this->getSession()->getPage()->pressButton('form.actions.delete');
+        $this->getSession()->getPage()->pressButton('Delete');
     }
 
     /**

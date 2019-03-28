@@ -33,7 +33,7 @@ class CreatePage extends Page
      */
     public function add()
     {
-        $this->getSession()->getPage()->pressButton('form.actions.create');
+        $this->getSession()->getPage()->pressButton('Create configuration');
     }
 
     /**

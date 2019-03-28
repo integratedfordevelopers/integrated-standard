@@ -34,7 +34,7 @@ class EditPage extends Page
      */
     public function save()
     {
-        $this->getSession()->getPage()->pressButton('form.actions.save');
+        $this->getSession()->getPage()->pressButton('Save');
     }
 
     /**
