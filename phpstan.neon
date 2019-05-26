@@ -1,0 +1,16 @@
+includes:
+  - vendor/phpstan/phpstan-doctrine/extension.neon
+  - vendor/phpstan/phpstan-symfony/extension.neon
+parameters:
+  ignoreErrors:
+    - '#Instantiated class Imagick not found#'
+    -
+      message: '#does not call parent constructor#'
+      path: */ContainerAware*
+  level: 1
+  paths:
+    - src/
+    - vendor/integrated/integrated/
+    - vendor/integrated/thompson-theme-bundle/
+  symfony:
+    container_xml_path: %rootDir%/../../../var/cache/dev/appDevDebugProjectContainer.xml

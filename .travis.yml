@@ -13,3 +13,5 @@ script:
 - php7.1 vendor/bin/phpcs
 - php7.1 vendor/bin/phpunit
 - php7.1 vendor/bin/behat --colors
+- php7.1 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
+- php7.1 bin/console lint:twig vendor/integrated/ -e test
