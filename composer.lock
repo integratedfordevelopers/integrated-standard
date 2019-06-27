@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f7919ca167f163b8a83584652376bde",
+    "content-hash": "924b8e8a22a1bd95ceeb301c6b14b7a9",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2264,12 +2264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "d200597d43b7cb37d47de382e0307cd1584a5ce2"
+                "reference": "90266448145363b97eccaeaa2a9c53760c57903e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/d200597d43b7cb37d47de382e0307cd1584a5ce2.zip",
-                "reference": "d200597d43b7cb37d47de382e0307cd1584a5ce2",
+                "url": "https://bitbucket.org/eactive/integrated/get/90266448145363b97eccaeaa2a9c53760c57903e.zip",
+                "reference": "90266448145363b97eccaeaa2a9c53760c57903e",
                 "shasum": ""
             },
             "require": {
@@ -2289,10 +2289,12 @@
                 "knplabs/knp-gaufrette-bundle": "~0.5",
                 "knplabs/knp-menu-bundle": "~2.2",
                 "knplabs/knp-paginator-bundle": "~2.7",
+                "monolog/monolog": "~1.22",
                 "nelmio/alice": "~3.1",
                 "php": ">=7.1",
                 "sensio/framework-extra-bundle": "~5.0",
                 "solarium/solarium": "~3.8",
+                "swiftmailer/swiftmailer": "~6.1",
                 "symfony/polyfill-iconv": "~1.6",
                 "symfony/security-acl": "~2.8 || ~3.0",
                 "symfony/symfony": "~2.8 || ~3.0",
@@ -2326,6 +2328,8 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.8",
+                "phpstan/phpstan": "~0.11",
+                "phpstan/phpstan-doctrine": "~0.11",
                 "phpunit/phpunit": "^6.4",
                 "squizlabs/php_codesniffer": "^3.1"
             },
@@ -2363,7 +2367,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2019-05-22T11:37:53+00:00"
+            "time": "2019-06-27T05:12:11+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -6140,7 +6144,6 @@
                 }
             ],
             "description": "Makes possible to inject services and parameters from other containers.",
-            "abandoned": "friends-of-behat/symfony-extension",
             "time": "2018-02-13T17:55:39+00:00"
         },
         {
