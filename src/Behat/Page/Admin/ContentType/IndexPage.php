@@ -24,7 +24,7 @@ class IndexPage extends Page
     public function getContentTypes()
     {
         $list = [];
-        foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2) a') as $element) {
+        foreach ($this->getSession()->getPage()->findAll('css', 'table tbody tr td:nth-child(2)') as $element) {
             $list[] = $element->getText();
         }
 
