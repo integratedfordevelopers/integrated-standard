@@ -173,6 +173,7 @@ integrated_theme:
         default:
             paths:
                 - '@IntegratedWebsiteBundle/Resources/views/themes/default'
+            fallback: ~
         thompson:
             paths:
                 - '@IntegratedThompsonThemeBundle/Resources/views/themes/thompson'
