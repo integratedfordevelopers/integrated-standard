@@ -1439,12 +1439,12 @@
             "version": "v2.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
+                "url": "https://github.com/doctrine/orm.git",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/87ee409783a4a322b5597ebaae558661404055a7",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/87ee409783a4a322b5597ebaae558661404055a7",
                 "reference": "87ee409783a4a322b5597ebaae558661404055a7",
                 "shasum": ""
             },
@@ -1996,16 +1996,16 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "dev-release/0.9",
+            "version": "0.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "6148b66c4ee275dbe90cb1403dcfe7f2c18370c7"
+                "reference": "1c0e764c61a5962b84051ec6ada4b59ef51b0eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/6148b66c4ee275dbe90cb1403dcfe7f2c18370c7.zip",
-                "reference": "6148b66c4ee275dbe90cb1403dcfe7f2c18370c7",
+                "url": "https://bitbucket.org/eactive/integrated/get/1c0e764c61a5962b84051ec6ada4b59ef51b0eeb.zip",
+                "reference": "1c0e764c61a5962b84051ec6ada4b59ef51b0eeb",
                 "shasum": ""
             },
             "require": {
@@ -2096,24 +2096,24 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-08-02T13:08:06+00:00"
+            "time": "2018-11-23T10:32:03+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
-            "version": "0.8.1",
+            "version": "0.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "aafd2fd4f7391167f6b57f926ba11d78dcfa4512"
+                "reference": "d1de7a515198f4db8beaed0af167adb9a7be0117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/aafd2fd4f7391167f6b57f926ba11d78dcfa4512.zip",
-                "reference": "aafd2fd4f7391167f6b57f926ba11d78dcfa4512",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/d1de7a515198f4db8beaed0af167adb9a7be0117.zip",
+                "reference": "d1de7a515198f4db8beaed0af167adb9a7be0117",
                 "shasum": ""
             },
             "require": {
-                "integrated/website-bundle": "~0.7",
+                "integrated/integrated": "~0.9",
                 "php": ">=5.4",
                 "symfony/framework-bundle": ">=2.2",
                 "symfony/symfony": "~2.8 || ~3.0"
@@ -2150,7 +2150,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2018-05-06T18:13:05+00:00"
+            "time": "2019-02-07T10:40:48+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2788,6 +2788,7 @@
                 "scss",
                 "stylesheet"
             ],
+            "abandoned": "scssphp/scssphp",
             "time": "2018-05-24T02:18:53+00:00"
         },
         {
@@ -3040,7 +3041,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Théo Fidry",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -4994,6 +4995,7 @@
                 "code",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2017-10-20T15:21:32+00:00"
         },
         {
@@ -5048,6 +5050,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -5501,6 +5504,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -5658,6 +5662,7 @@
                 }
             ],
             "description": "Allows to declare and use contexts services in scenario scoped container.",
+            "abandoned": "friends-of-behat/symfony-extension",
             "time": "2018-02-13T18:49:22+00:00"
         },
         {
@@ -5706,6 +5711,7 @@
                 }
             ],
             "description": "Makes possible to inject services and parameters from other containers.",
+            "abandoned": "friends-of-behat/symfony-extension",
             "time": "2018-02-13T17:55:39+00:00"
         },
         {
@@ -6551,6 +6557,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-05-29T13:50:43+00:00"
         },
         {
@@ -7214,6 +7221,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
+            "abandoned": "symfony/maker-bundle",
             "time": "2017-12-07T15:36:41+00:00"
         },
         {
