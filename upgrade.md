@@ -1,5 +1,28 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.9 ##
+- DEPRECATED: _theme global. Use integrated_active_theme() function instead.
+- Change in security.yml:
+
+ { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED }
+
+To:
+
+ { path: ^/admin, roles: [IS_AUTHENTICATED_REMEMBERED, ROLE_SCOPE_INTEGRATED] }
+
+
+- Add in security.yml:
+
+firewalls:
+
+        default:
+
+            scope: ~
+
+- Moved PublishTime::DATE_MAX to PublishTimeInterface::DATE_MAX 
+- Added PublishTimeInterface
+- Added PublishableInterface
+
 ## Upgrade to Integrated version 0.8 ##
 - Integrated 0.8 ships with Symfony 3.4. Follow the upgrade guides from Symfony when upgrading your code from Symfony 2.8 to 3.4:
 * https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.0.md
