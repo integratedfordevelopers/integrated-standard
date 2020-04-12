@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27b18bd1830dc8781fe2f361d2eac1e8",
+    "content-hash": "84e8c95493991141d300926a8c7ead2b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1996,16 +1996,16 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "0.9",
+            "version": "0.10",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "1c0e764c61a5962b84051ec6ada4b59ef51b0eeb"
+                "reference": "186336ba671a804c98390550a443c083c2fa5510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/1c0e764c61a5962b84051ec6ada4b59ef51b0eeb.zip",
-                "reference": "1c0e764c61a5962b84051ec6ada4b59ef51b0eeb",
+                "url": "https://bitbucket.org/eactive/integrated/get/186336ba671a804c98390550a443c083c2fa5510.zip",
+                "reference": "186336ba671a804c98390550a443c083c2fa5510",
                 "shasum": ""
             },
             "require": {
@@ -2067,8 +2067,9 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-release/0.8": "0.8-dev",
-                    "dev-release/0.9": "0.9-dev"
+                    "dev-release/0.8": "0.8.x-dev",
+                    "dev-release/0.9": "0.9.x-dev",
+                    "dev-release/0.10": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -2096,7 +2097,7 @@
                 "content store",
                 "publishing"
             ],
-            "time": "2018-11-23T10:32:03+00:00"
+            "time": "2020-01-29T12:55:28+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -3041,7 +3042,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo Fidry",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -5504,7 +5505,6 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -5813,22 +5813,22 @@
         },
         {
             "name": "integrated/puphpet",
-            "version": "0.8",
+            "version": "0.10",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-puphpet.git",
-                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1"
+                "reference": "445aa4cb21328ac1c93393d68395289e8e482d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-puphpet/get/b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1.zip",
-                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1",
+                "url": "https://bitbucket.org/eactive/integrated-puphpet/get/445aa4cb21328ac1c93393d68395289e8e482d37.zip",
+                "reference": "445aa4cb21328ac1c93393d68395289e8e482d37",
                 "shasum": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-release/0.8": "0.8-dev"
+                    "dev-release/0.10": "0.10.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5848,7 +5848,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2018-03-21T12:09:59+00:00"
+            "time": "2019-03-13T12:03:33+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -7221,7 +7221,6 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "abandoned": "symfony/maker-bundle",
             "time": "2017-12-07T15:36:41+00:00"
         },
         {
@@ -7440,5 +7439,6 @@
     "platform": {
         "php": ">=7.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

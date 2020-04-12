@@ -1,3 +1,37 @@
+# Changelog Integrated version 0.10 #
+
+## Highlights ##
+- Added Products to content model
+- Lot of bug fixes
+
+## New Features ##
+- [INTEGRATED-530](https://eactive.atlassian.net/browse/INTEGRATED-530) Redirect to primary domain name in channel activator
+- [INTEGRATED-1384](https://eactive.atlassian.net/browse/INTEGRATED-1384) Add Product document
+- [INTEGRATED-1395](https://eactive.atlassian.net/browse/INTEGRATED-1395) Allow company logo as cover
+- [INTEGRATED-1397](https://eactive.atlassian.net/browse/INTEGRATED-1397) Improve consistency in backend styles
+- [INTEGRATED-1398](https://eactive.atlassian.net/browse/INTEGRATED-1398) Upgrade Vagrant for for PHP 7.2 + MongoDB 4 (+multidb)
+- [INTEGRATED-1401](https://eactive.atlassian.net/browse/INTEGRATED-1401) Integrated slug redirect should support URL's with slash
+- [INTEGRATED-1426](https://eactive.atlassian.net/browse/INTEGRATED-1426) Allow override history block
+- [INTEGRATED-1427](https://eactive.atlassian.net/browse/INTEGRATED-1427) Gravatar not using https url
+- [INTEGRATED-1435](https://eactive.atlassian.net/browse/INTEGRATED-1435) Enable redirect to primary domain per channel
+- [INTEGRATED-1436](https://eactive.atlassian.net/browse/INTEGRATED-1436) Remove index on identifier for Embedded\Storage
+- [INTEGRATED-1453](https://eactive.atlassian.net/browse/INTEGRATED-1453) Support webpath gregwar
+- [INTEGRATED-1556](https://eactive.atlassian.net/browse/INTEGRATED-1556) Carry over parameters on lock
+
+## Bug Fixes ##
+- [INTEGRATED-1090](https://eactive.atlassian.net/browse/INTEGRATED-1090) Long filenames in relation box strech the selection box
+- [INTEGRATED-1405](https://eactive.atlassian.net/browse/INTEGRATED-1405) Don't display validation groups for locked items
+- [INTEGRATED-1407](https://eactive.atlassian.net/browse/INTEGRATED-1407) Delete label shown twice (should be once)
+- [INTEGRATED-1409](https://eactive.atlassian.net/browse/INTEGRATED-1409) Password edit form can't be cancelled because of browser html validation
+- [INTEGRATED-1410](https://eactive.atlassian.net/browse/INTEGRATED-1410) Bulk actions sometimes fail with new permissions
+- [INTEGRATED-1411](https://eactive.atlassian.net/browse/INTEGRATED-1411) Do not create facet for empty title
+- [INTEGRATED-1413](https://eactive.atlassian.net/browse/INTEGRATED-1413) Queue runner with multiple threads is broken
+- [INTEGRATED-1429](https://eactive.atlassian.net/browse/INTEGRATED-1429) Spinning Pinwheel Of Death after cancelling Integrated form
+- [INTEGRATED-1431](https://eactive.atlassian.net/browse/INTEGRATED-1431) Integrated displays duplicate error messages in user form
+- [INTEGRATED-1433](https://eactive.atlassian.net/browse/INTEGRATED-1433) Creating user with existing username, gives 500 error
+- [INTEGRATED-1566](https://eactive.atlassian.net/browse/INTEGRATED-1566) Cursor not found exception in solr:indexer:queue
+- [INTEGRATED-1580](https://eactive.atlassian.net/browse/INTEGRATED-1580) File deletion in storage bundle implemented incorrectly
+
 # Changelog Integrated version 0.9 #
 
 ## Highlights ##

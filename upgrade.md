@@ -1,5 +1,8 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.10 ##
+- Just upgrade the integrated* packages
+
 ## Upgrade to Integrated version 0.9 ##
 - DEPRECATED: _theme global. Use integrated_active_theme() function instead.
 - Change in security.yml:
