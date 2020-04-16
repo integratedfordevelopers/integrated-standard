@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "924b8e8a22a1bd95ceeb301c6b14b7a9",
+    "content-hash": "c502bdfc15e8ae6a9d9265db09437197",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2218,7 +2218,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/db69d6e875e61a0acf8f486f9d7a924984dfc2af.zip",
+                "url": "https://bitbucket.org/eactive/integrated/get/1eedc444bec8c41764fb40148369462562c94364.zip",
                 "reference": "db69d6e875e61a0acf8f486f9d7a924984dfc2af",
                 "shasum": ""
             },
@@ -2321,20 +2321,20 @@
         },
         {
             "name": "integrated/thompson-theme-bundle",
-            "version": "0.8.1",
+            "version": "0.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "aafd2fd4f7391167f6b57f926ba11d78dcfa4512"
+                "reference": "d1de7a515198f4db8beaed0af167adb9a7be0117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/aafd2fd4f7391167f6b57f926ba11d78dcfa4512.zip",
-                "reference": "aafd2fd4f7391167f6b57f926ba11d78dcfa4512",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/d1de7a515198f4db8beaed0af167adb9a7be0117.zip",
+                "reference": "d1de7a515198f4db8beaed0af167adb9a7be0117",
                 "shasum": ""
             },
             "require": {
-                "integrated/website-bundle": "~0.7",
+                "integrated/integrated": "~0.9",
                 "php": ">=5.4",
                 "symfony/framework-bundle": ">=2.2",
                 "symfony/symfony": "~2.8 || ~3.0"
@@ -2371,7 +2371,7 @@
                 "theme",
                 "thompson"
             ],
-            "time": "2018-05-06T18:13:05+00:00"
+            "time": "2019-02-07T10:40:48+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -3007,6 +3007,7 @@
                 "scss",
                 "stylesheet"
             ],
+            "abandoned": "scssphp/scssphp",
             "time": "2019-04-24T18:10:10+00:00"
         },
         {
@@ -3266,7 +3267,7 @@
                     "email": "shelburt02@gmail.com"
                 },
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Théo Fidry",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -5584,6 +5585,7 @@
                 "code",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2018-08-13T20:36:59+00:00"
         },
         {
@@ -5638,6 +5640,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -6130,6 +6133,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -6437,45 +6441,6 @@
             ],
             "description": "Integrates Behat with Symfony.",
             "time": "2018-12-19T14:42:27+00:00"
-        },
-        {
-            "name": "integrated/puphpet",
-            "version": "0.8",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/eactive/integrated-puphpet.git",
-                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-puphpet/get/b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1.zip",
-                "reference": "b9fd809f094ece1bbeec14dfb9e6ded1a9230fa1",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-release/0.8": "0.8-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "e-Active",
-                    "homepage": "http://www.e-active.nl"
-                }
-            ],
-            "description": "Provides a Vagrant box for Integrated applications, based on PuPHPet",
-            "homepage": "http://www.integratedfordevelopers.com",
-            "keywords": [
-                "Integrated",
-                "puphpet",
-                "vagrant"
-            ],
-            "time": "2018-03-21T12:09:59+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -8727,6 +8692,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
+            "abandoned": "symfony/maker-bundle",
             "time": "2017-12-07T15:36:41+00:00"
         },
         {
