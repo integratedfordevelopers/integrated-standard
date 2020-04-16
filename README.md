@@ -33,9 +33,11 @@ Start docker-compose and run all manual installation actions with (supported on 
 ## Manual installation ##
 This application can be installed following these steps:
 
+Set up the required services (as in docker-compose.yml)
+
 Clone the project using Composer:
 
-    $ php composer.phar create-project integrated/integrated-standard path/ "~0.11" --no-scripts
+    $ php composer.phar create-project integrated/integrated-standard path/ "~0.11"
 
 Execute the following commands to set up the project:
 
