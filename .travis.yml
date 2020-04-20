@@ -1,17 +1,17 @@
 install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
-- php7.1 composer.phar install -n --ansi
-- php7.1 bin/console cache:clear --no-warmup -e test
-- php7.1 bin/console cache:warmup -e test
-- php7.1 bin/console doctrine:mongodb:schema:create -e test
-- php7.1 bin/console doctrine:schema:update --force -e test
-- php7.1 bin/console init:queue --force -e test
-- php7.1 bin/console init:locking --force -e test
+- php7.2 composer.phar install -n --ansi
+- php7.2 bin/console cache:clear --no-warmup -e test
+- php7.2 bin/console cache:warmup -e test
+- php7.2 bin/console doctrine:mongodb:schema:create -e test
+- php7.2 bin/console doctrine:schema:update --force -e test
+- php7.2 bin/console init:queue --force -e test
+- php7.2 bin/console init:locking --force -e test
 
 script:
-- php7.1 vendor/bin/phpcs
-- php7.1 vendor/bin/phpunit
-- php7.1 vendor/bin/behat --colors
-- php7.1 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
-- php7.1 bin/console lint:twig vendor/integrated/ -e test
+- php7.2 vendor/bin/phpcs
+- php7.2 vendor/bin/phpunit
+- php7.2 vendor/bin/behat --colors
+- php7.2 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
+- php7.2 bin/console lint:twig vendor/integrated/ -e test

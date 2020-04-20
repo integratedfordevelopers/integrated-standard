@@ -1,0 +1,92 @@
+version: '3.7'
+
+services:
+
+  httpd:
+    build: docker/httpd
+    depends_on:
+      - php
+      - phpmyadmin
+      - mongo-express
+      - mail
+    volumes:
+      - ./web:/var/www/html/web:ro
+      - ./docker/httpd/sites:/etc/apache2/sites-enabled:ro
+    ports:
+      - '80:80'
+      - '443:443'
+
+  php:
+    hostname: php
+    build: docker/php
+    depends_on:
+      - mysql
+      - mongo
+      - mail
+      - solr
+    environment:
+      - SSH_AUTH_SOCK
+    volumes:
+      - ./:/var/www/html/
+      - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
+
+  mysql:
+    image: 'mariadb:10.1'
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./docker/mysql:/docker-entrypoint-initdb.d
+      - mysql:/var/lib/mysql
+
+  mongo:
+    hostname: mongo
+    image: 'mongo:4.0'
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - ./docker/mongo:/docker-entrypoint-initdb.d
+      - mongo:/data/db
+
+  solr:
+      hostname: solr
+      image: 'eactive/integrated-solr:8.4'
+      ports:
+          - '8983:8983'
+      volumes:
+          - ./docker/solr:/docker-entrypoint-initdb.d
+          - solr:/var/solr
+
+  phpmyadmin:
+    image: 'phpmyadmin/phpmyadmin:latest'
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root
+
+  mongo-express:
+    image: mongo-express
+    depends_on:
+      - mongo
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
+
+  mail:
+    image: 'mailhog/mailhog:latest'
+    ports:
+      - '8025:8025'
+
+networks:
+  default:
+
+volumes:
+  mysql:
+  mongo:
+  solr:
