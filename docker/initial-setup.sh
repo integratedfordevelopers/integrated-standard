@@ -31,11 +31,7 @@ fi
 
 docker-compose exec php composer install
 
-docker-compose exec php php bin/console sp:bower:install
-docker-compose exec php php bin/console braincrafted:bootstrap:install
-docker-compose exec php php bin/console assets:install
-docker-compose exec php php bin/console fos:js-routing:dump
-docker-compose exec php php bin/console assetic:dump
+docker-compose exec php php bin/console integrated:install
 
 docker-compose exec php php bin/console init:queue --force
 docker-compose exec php php bin/console init:locking --force
