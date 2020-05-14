@@ -1,7 +1,0 @@
-vagrantfile:
-    vm:
-        provider:
-            local:
-                machines:
-                    vflm_zt1jolgy2kuu:
-                        hostname: integrated

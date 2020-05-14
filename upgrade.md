@@ -1,7 +1,33 @@
 # Update instructions #
 
+## Upgrade to Integrated version 0.10 ##
+- Just upgrade the integrated* packages
+
+## Upgrade to Integrated version 0.9 ##
+- DEPRECATED: _theme global. Use integrated_active_theme() function instead.
+- Change in security.yml:
+
+ { path: ^/admin, roles: IS_AUTHENTICATED_REMEMBERED }
+
+To:
+
+ { path: ^/admin, roles: [IS_AUTHENTICATED_REMEMBERED, ROLE_SCOPE_INTEGRATED] }
+
+
+- Add in security.yml:
+
+firewalls:
+
+        default:
+
+            scope: ~
+
+- Moved PublishTime::DATE_MAX to PublishTimeInterface::DATE_MAX 
+- Added PublishTimeInterface
+- Added PublishableInterface
+
 ## Upgrade to Integrated version 0.8 ##
-Integrated 0.8 ships with Symfony 3.4. Follow the upgrade guides from Symfony when upgrading your code from Symfony 2.8 to 3.4:
+- Integrated 0.8 ships with Symfony 3.4. Follow the upgrade guides from Symfony when upgrading your code from Symfony 2.8 to 3.4:
 * https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.0.md
 * https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.1.md
 * https://github.com/symfony/symfony/blob/3.4/UPGRADE-3.2.md
@@ -10,8 +36,14 @@ Integrated 0.8 ships with Symfony 3.4. Follow the upgrade guides from Symfony wh
 * https://symfony.com/doc/3.4/setup/upgrade_major.html
 
 Other changes are:
-* The Integrated bundles are combined in one repository
+* The Integrated bundles are combined in one repository. Load integrated/integrated as composer package
 * The view directories within Integrated are now lowercase (following the Symfony best practices)
+* For mongodb_options in parameters.yml you might need to replace "db" with "authSource" to specify the authentication database
+* Uglyfyjs is not required any more, becuase of future Webpack migration
+* Make sure jquery UI is in the template:
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+* Update your /Vagrantfile and puphpet/config-custom.yaml from the integrated/puphpet package
+* Your application needs to be PHP 7.1 compatible
 
 ## Upgrade to Integrated version 0.7 ##
 - remove javascripts (also jquery ui) from base view (are now loaded with asset manager)
