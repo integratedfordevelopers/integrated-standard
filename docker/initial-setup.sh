@@ -32,12 +32,3 @@ fi
 docker-compose exec php composer install
 
 docker-compose exec php php bin/console integrated:install
-
-docker-compose exec php php bin/console init:queue --force
-docker-compose exec php php bin/console init:locking --force
-docker-compose exec php php bin/console doctrine:schema:update --force
-docker-compose exec php php bin/console doctrine:mongodb:schema:create
-docker-compose exec php php bin/console init:scope
-
-docker-compose exec php php bin/console cache:clear
-docker-compose exec php php bin/console cache:clear -e prod
