@@ -178,3 +178,17 @@ vihuvac_recaptcha:
     secret_key: '%recaptcha_secret_key%'
     enabled:    true
     locale_key: kernel.default_locale
+
+doctrine_migrations:
+    dir_name: '%kernel.root_dir%/Migrations/MySQL'
+    namespace: 'Application\Migrations\Doctrine'
+    table_name: 'migration_versions'
+    name: 'MySQL Migrations'
+
+mongo_db_migrations:
+    collection_name: 'migration_versions'
+    database_name: '%mongodb_database%'
+    dir_name: '%kernel.root_dir%/Migrations/MongoDB'
+    script_dir_name: '%kernel.root_dir%/Migrations/MongoDB/scripts'
+    name: 'MongoDB Migrations'
+    namespace: 'Application\Migrations\MongoDB'

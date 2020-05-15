@@ -19,6 +19,7 @@
         "doctrine/doctrine-bundle": "~1.8",
         "doctrine/doctrine-migrations-bundle": "^1.2",
         "doctrine/orm": "~2.5",
+        "doesntmattr/mongodb-migrations-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "~2.1",
         "integrated/integrated": "0.11.*",
         "integrated/thompson-theme-bundle": "~0.9",

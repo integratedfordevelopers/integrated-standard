@@ -17,6 +17,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new AntiMattr\Bundle\MongoDBMigrationsBundle\MongoDBMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Sp\BowerBundle\SpBowerBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
