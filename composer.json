@@ -17,7 +17,7 @@
     "require": {
         "php": ">=7.2",
         "doctrine/doctrine-bundle": "~1.8",
-        "doctrine/doctrine-migrations-bundle": "^1.2",
+        "doctrine/doctrine-migrations-bundle": "~2.1",
         "doctrine/orm": "~2.5",
         "doesntmattr/mongodb-migrations-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "~2.1",
