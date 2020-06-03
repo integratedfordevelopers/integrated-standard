@@ -34,6 +34,10 @@ integrated_storage:
     resource: "@IntegratedStorageBundle/Resources/config/routing/storage.xml"
     prefix: "/"
 
+integrated_theme:
+    resource: "@IntegratedThemeBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
 integrated_website:
     resource: "@IntegratedWebsiteBundle/Resources/config/routing.xml"
 
