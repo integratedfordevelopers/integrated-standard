@@ -2,7 +2,7 @@ install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
 - php7.2 composer.phar install -n --ansi
-- php7.2 bin/console integrated:install --force -e test
+- php7.2 bin/console integrated:install -e test
 
 script:
 - php7.2 vendor/bin/phpcs
