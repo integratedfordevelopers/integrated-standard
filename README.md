@@ -43,6 +43,10 @@ Execute the following commands to set up the project:
 
     $ php bin/console integrated:install
 
+After installation you need to create a user:
+
+    $ php bin/console user:create admin yourpassword Integrated ROLE_ADMIN
+
 ## Datafixtures ##
 For some test data use these commands:
 
