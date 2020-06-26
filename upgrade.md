@@ -1,5 +1,17 @@
 # Update instructions #
 
+Starting Integrated 0.11 you always need to run the new Integrated installer after upgrading:
+
+php bin/console integrated:install
+
+If you want to run asset install and cache clear manually you can use the installer for migrations only: 
+
+php bin/console integrated:install --steps migrations
+
+Please note that the init:* commands (like init:queue) have been replaced by migrations.
+
+To upgrade to 0.11, please do all version upgraded to 0.10 first.
+
 ## Upgrade to Integrated version 0.10 ##
 - Just upgrade the integrated* packages
 

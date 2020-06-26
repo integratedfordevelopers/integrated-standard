@@ -41,17 +41,11 @@ Clone the project using Composer:
 
 Execute the following commands to set up the project:
 
-    $ php bin/console sp:bower:install
-    $ php bin/console braincrafted:bootstrap:install
-    $ php bin/console assets:install
-    $ php bin/console assetic:dump web
-    $ php bin/console init:queue --force
-    $ php bin/console init:locking --force
-    $ php bin/console doctrine:schema:update --force
-    $ php bin/console doctrine:mongodb:schema:create
-    $ php bin/console init:scope
-    $ php bin/console cache:clear --env=prod
-    $ php bin/console fos:js-routing:dump --env=prod
+    $ php bin/console integrated:install
+
+After installation you need to create a user:
+
+    $ php bin/console user:create admin yourpassword Integrated ROLE_ADMIN
 
 ## Datafixtures ##
 For some test data use these commands:

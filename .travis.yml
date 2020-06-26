@@ -2,12 +2,7 @@ install:
 - curl -sS https://getcomposer.org/installer | php
 before_script:
 - php7.2 composer.phar install -n --ansi
-- php7.2 bin/console cache:clear --no-warmup -e test
-- php7.2 bin/console cache:warmup -e test
-- php7.2 bin/console doctrine:mongodb:schema:create -e test
-- php7.2 bin/console doctrine:schema:update --force -e test
-- php7.2 bin/console init:queue --force -e test
-- php7.2 bin/console init:locking --force -e test
+- php7.2 bin/console integrated:install -e test
 
 script:
 - php7.2 vendor/bin/phpcs
