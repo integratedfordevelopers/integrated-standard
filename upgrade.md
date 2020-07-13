@@ -1,5 +1,7 @@
 # Update instructions #
 
+To upgrade to 0.11, please do all version upgraded to 0.10 first.
+
 Starting Integrated 0.11 you always need to run the new Integrated installer after upgrading:
 
 php bin/console integrated:install
@@ -10,7 +12,36 @@ php bin/console integrated:install --steps migrations
 
 Please note that the init:* commands (like init:queue) have been replaced by migrations.
 
-To upgrade to 0.11, please do all version upgraded to 0.10 first.
+These additional steps are required:
+
+Load in AppKernel.php:
+
+* {{new AntiMattr\Bundle\MongoDBMigrationsBundle\MongoDBMigrationsBundle(),}}
+* {{new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),}}
+* {{new Integrated\Bundle\InstallerBundle\IntegratedInstallerBundle()}},
+
+
+
+Add to config.yml:
+
+{noformat}doctrine:
+    dbal:
+        schema_filter: '/^(?!queue|locks).*$/'
+
+doctrine_migrations:
+    dir_name: '%kernel.root_dir%/Migrations/MySQL'
+    namespace: 'Application\Migrations\Doctrine'
+    table_name: 'migration_versions'
+    name: 'MySQL Migrations'
+
+mongo_db_migrations:
+    collection_name: 'migration_versions'
+    database_name: '%mongodb_database%'
+    dir_name: '%kernel.root_dir%/Migrations/MongoDB'
+    script_dir_name: '%kernel.root_dir%/Migrations/MongoDB/scripts'
+    name: 'MongoDB Migrations'
+    namespace: 'Application\Migrations\MongoDB'{noformat}
+
 
 ## Upgrade to Integrated version 0.10 ##
 - Just upgrade the integrated* packages

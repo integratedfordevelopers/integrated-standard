@@ -1,3 +1,80 @@
+# Changelog Integrated version 0.11 #
+
+## New Features ##
+- [INTEGRATED-264](https://eactive.atlassian.net/browse/INTEGRATED-264) Youtube shortcode support
+- [INTEGRATED-526](https://eactive.atlassian.net/browse/INTEGRATED-526) Preview before publishing on website
+- [INTEGRATED-809](https://eactive.atlassian.net/browse/INTEGRATED-809) [puphpet] Replace Vagrant with Docker + require PHP 7.2
+- [INTEGRATED-1147](https://eactive.atlassian.net/browse/INTEGRATED-1147) Form document type
+- [INTEGRATED-1200](https://eactive.atlassian.net/browse/INTEGRATED-1200) Do not export articles with publication date before connector configuration date
+- [INTEGRATED-1254](https://eactive.atlassian.net/browse/INTEGRATED-1254) Add a hidden relation for authors
+- [INTEGRATED-1383](https://eactive.atlassian.net/browse/INTEGRATED-1383) Add installer
+- [INTEGRATED-1396](https://eactive.atlassian.net/browse/INTEGRATED-1396) Make sure content can't be viewed on the wrong channel
+- [INTEGRATED-1418](https://eactive.atlassian.net/browse/INTEGRATED-1418) Display conflicting content type page URL -settings
+- [INTEGRATED-1440](https://eactive.atlassian.net/browse/INTEGRATED-1440) Cover image inladen
+- [INTEGRATED-1441](https://eactive.atlassian.net/browse/INTEGRATED-1441) Exclude future executed items from queue count
+- [INTEGRATED-1444](https://eactive.atlassian.net/browse/INTEGRATED-1444) Change content type with bulk action
+- [INTEGRATED-1446](https://eactive.atlassian.net/browse/INTEGRATED-1446) Canonical with multiple channels + source URL
+- [INTEGRATED-1458](https://eactive.atlassian.net/browse/INTEGRATED-1458) Allow to add a channel dependent block
+- [INTEGRATED-1465](https://eactive.atlassian.net/browse/INTEGRATED-1465) No delete button on the index page for content types. 
+- [INTEGRATED-1478](https://eactive.atlassian.net/browse/INTEGRATED-1478) Small improvements in user section
+- [INTEGRATED-1483](https://eactive.atlassian.net/browse/INTEGRATED-1483) Channel usability improvements
+- [INTEGRATED-1485](https://eactive.atlassian.net/browse/INTEGRATED-1485) Player button in video still
+- [INTEGRATED-1487](https://eactive.atlassian.net/browse/INTEGRATED-1487) Improve relation usability
+- [INTEGRATED-1493](https://eactive.atlassian.net/browse/INTEGRATED-1493) Add phpstan to improve code quality
+- [INTEGRATED-1496](https://eactive.atlassian.net/browse/INTEGRATED-1496) Bulk change channels
+- [INTEGRATED-1500](https://eactive.atlassian.net/browse/INTEGRATED-1500) Allow copying pages
+- [INTEGRATED-1505](https://eactive.atlassian.net/browse/INTEGRATED-1505) Allow to sort content
+- [INTEGRATED-1515](https://eactive.atlassian.net/browse/INTEGRATED-1515) Contenttype page for person
+- [INTEGRATED-1518](https://eactive.atlassian.net/browse/INTEGRATED-1518) Add support for superscript and subscript
+- [INTEGRATED-1520](https://eactive.atlassian.net/browse/INTEGRATED-1520) Allow storage of credits and copyright restrictions
+- [INTEGRATED-1524](https://eactive.atlassian.net/browse/INTEGRATED-1524) Fallback to default.html.twig when view cannot be located
+- [INTEGRATED-1526](https://eactive.atlassian.net/browse/INTEGRATED-1526) Support SolrDocument in getUsedBy
+- [INTEGRATED-1527](https://eactive.atlassian.net/browse/INTEGRATED-1527) Do not crash on missing references
+- [INTEGRATED-1530](https://eactive.atlassian.net/browse/INTEGRATED-1530) Add integrated_breadcrumb Twig function
+- [INTEGRATED-1532](https://eactive.atlassian.net/browse/INTEGRATED-1532) Allow HTML and text block to be dependent of content item
+- [INTEGRATED-1534](https://eactive.atlassian.net/browse/INTEGRATED-1534) Improve user section
+- [INTEGRATED-1535](https://eactive.atlassian.net/browse/INTEGRATED-1535) Improve relation Solr indexing
+- [INTEGRATED-1537](https://eactive.atlassian.net/browse/INTEGRATED-1537) Support publishedTitle and intro text field for form block
+- [INTEGRATED-1550](https://eactive.atlassian.net/browse/INTEGRATED-1550) Improve author select
+- [INTEGRATED-1554](https://eactive.atlassian.net/browse/INTEGRATED-1554) Edit button is sometimes hidden in the back of other elements
+- [INTEGRATED-1557](https://eactive.atlassian.net/browse/INTEGRATED-1557) More sort options for related content block
+- [INTEGRATED-1559](https://eactive.atlassian.net/browse/INTEGRATED-1559) Add integrated_document twig function
+- [INTEGRATED-1560](https://eactive.atlassian.net/browse/INTEGRATED-1560) Form block improvements
+- [INTEGRATED-1562](https://eactive.atlassian.net/browse/INTEGRATED-1562) Do not duplicate local storage as cache
+- [INTEGRATED-1567](https://eactive.atlassian.net/browse/INTEGRATED-1567) Allow to use a search selection as navigation menu
+- [INTEGRATED-1573](https://eactive.atlassian.net/browse/INTEGRATED-1573) Too few results in bulk action relation select boxes
+- [INTEGRATED-1577](https://eactive.atlassian.net/browse/INTEGRATED-1577) Solve ODM deprecations
+- [INTEGRATED-1578](https://eactive.atlassian.net/browse/INTEGRATED-1578) Bulk action: delete
+- [INTEGRATED-1581](https://eactive.atlassian.net/browse/INTEGRATED-1581) Allow sort by publication time for search queries
+
+## Bug Fixes ##
+- [INTEGRATED-1245](https://eactive.atlassian.net/browse/INTEGRATED-1245) Item cannot be deleted after doing a bulk action
+- [INTEGRATED-1424](https://eactive.atlassian.net/browse/INTEGRATED-1424) Facebook connection broken after Facebook updates
+- [INTEGRATED-1449](https://eactive.atlassian.net/browse/INTEGRATED-1449) Google Sitemap bugfixes
+- [INTEGRATED-1451](https://eactive.atlassian.net/browse/INTEGRATED-1451) Content navigator crashes with high number of facets
+- [INTEGRATED-1459](https://eactive.atlassian.net/browse/INTEGRATED-1459) Content type workflow rights are not respected in assignee list
+- [INTEGRATED-1461](https://eactive.atlassian.net/browse/INTEGRATED-1461) Workflow status is not explicit when workflow is newly added
+- [INTEGRATED-1464](https://eactive.atlassian.net/browse/INTEGRATED-1464) ContentTypeController doesn’t meet the Symfony 4 requirements.
+- [INTEGRATED-1466](https://eactive.atlassian.net/browse/INTEGRATED-1466) There is no button that allows you to return to the overview of the content types when you see more information about a content type.
+- [INTEGRATED-1467](https://eactive.atlassian.net/browse/INTEGRATED-1467) Content types should filter on alphabet.
+- [INTEGRATED-1468](https://eactive.atlassian.net/browse/INTEGRATED-1468) Make a button to get more information about a content type.
+- [INTEGRATED-1488](https://eactive.atlassian.net/browse/INTEGRATED-1488) Related content block sometimes disrespects channel
+- [INTEGRATED-1492](https://eactive.atlassian.net/browse/INTEGRATED-1492) Symfony requires form type to configure 'multiple' if data is array
+- [INTEGRATED-1501](https://eactive.atlassian.net/browse/INTEGRATED-1501) Assignee list is buggy
+- [INTEGRATED-1507](https://eactive.atlassian.net/browse/INTEGRATED-1507) Permission check for assigned user is incorrect
+- [INTEGRATED-1513](https://eactive.atlassian.net/browse/INTEGRATED-1513) Content type pages not deleted by channel
+- [INTEGRATED-1541](https://eactive.atlassian.net/browse/INTEGRATED-1541) Redirect not found exceptions only
+- [INTEGRATED-1543](https://eactive.atlassian.net/browse/INTEGRATED-1543) Cannonical URL triggers on empty source URL
+- [INTEGRATED-1545](https://eactive.atlassian.net/browse/INTEGRATED-1545) Saving a page with a column loses page content
+- [INTEGRATED-1547](https://eactive.atlassian.net/browse/INTEGRATED-1547) Avoid false CircularFallbackException
+- [INTEGRATED-1552](https://eactive.atlassian.net/browse/INTEGRATED-1552) Drag/drop does not work with newer jQuery version
+- [INTEGRATED-1564](https://eactive.atlassian.net/browse/INTEGRATED-1564) Do not double escape CDATA in RSS
+- [INTEGRATED-1585](https://eactive.atlassian.net/browse/INTEGRATED-1585) Long open time for PDF files each pageview
+- [INTEGRATED-1595](https://eactive.atlassian.net/browse/INTEGRATED-1595) Workflow assign select box is very slow in some cases
+
+## Other Changes ##
+- [INTEGRATED-751](https://eactive.atlassian.net/browse/INTEGRATED-751) Unit test with prefer-lowest
+
 # Changelog Integrated version 0.10 #
 
 ## Highlights ##
