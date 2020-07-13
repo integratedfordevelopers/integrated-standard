@@ -37,6 +37,10 @@ integrated_storage:
 integrated_website:
     resource: "@IntegratedWebsiteBundle/Resources/config/routing.xml"
 
+integrated_theme:
+    resource: "@IntegratedThemeBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
 integrated_comment:
     resource: "@IntegratedCommentBundle/Resources/config/routing.xml"
     prefix: "/admin"
