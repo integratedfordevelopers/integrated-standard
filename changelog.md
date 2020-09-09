@@ -1,3 +1,13 @@
+# Changelog Integrated version 0.12 #
+
+## New Features ##
+- [INTEGRATED-1594](https://eactive.atlassian.net/browse/INTEGRATED-1594) Add scraper page module
+- [INTEGRATED-1606](https://eactive.atlassian.net/browse/INTEGRATED-1606) Allow block permissions
+
+## Bug Fixes ##
+- [INTEGRATED-1602](https://eactive.atlassian.net/browse/INTEGRATED-1602) Scraper page doesn't refresh after update
+- [INTEGRATED-1604](https://eactive.atlassian.net/browse/INTEGRATED-1604) Scraper page cache does not always refresh
+
 # Changelog Integrated version 0.11 #
 
 ## New Features ##

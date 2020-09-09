@@ -1,4 +1,26 @@
-# Update instructions #
+## Upgrade to Integrated version 0.12 ##
+- Enable twig text extension:
+
+    twig.extension.text:
+        class: 'Twig_Extensions_Extension_Text'
+        tags:
+            - { name: twig.extension }
+
+Add integrated_theme routing:
+
+integrated_theme:
+    resource: "@IntegratedThemeBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
+Add cron:
+
+php bin/console scraper:run
+
+Run the Integrated installer:
+
+php bin/console integrated:install
+
+## Upgrade to Integrated version 0.11 ##
 
 To upgrade to 0.11, please do all version upgraded to 0.10 first.
 
