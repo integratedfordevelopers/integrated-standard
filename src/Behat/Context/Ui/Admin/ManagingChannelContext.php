@@ -13,6 +13,7 @@ namespace Integrated\Behat\Context\Ui\Admin;
 
 use Behat\Behat\Context\Context;
 use Behat\Mink\Exception\ElementNotFoundException;
+use Integrated\Behat\Page\Admin\Channel\DeletePage;
 use Integrated\Behat\Page\Admin\Channel\EditPage;
 use Integrated\Behat\Page\Admin\Channel\IndexPage;
 use Integrated\Behat\Page\Admin\Channel\NewPage;
@@ -42,17 +43,24 @@ class ManagingChannelContext implements Context
     private $editPage;
 
     /**
-     * @param IndexPage $indexPage
-     * @param ShowPage $showPage
-     * @param NewPage $newPage
-     * @param EditPage $editPage
+     * @var DeletePage
      */
-    public function __construct(IndexPage $indexPage, ShowPage $showPage, NewPage $newPage, EditPage $editPage)
+    private $deletePage;
+
+    /**
+     * @param IndexPage  $indexPage
+     * @param ShowPage   $showPage
+     * @param NewPage    $newPage
+     * @param EditPage   $editPage
+     * @param DeletePage $deletePage
+     */
+    public function __construct(IndexPage $indexPage, ShowPage $showPage, NewPage $newPage, EditPage $editPage, DeletePage $deletePage)
     {
         $this->indexPage = $indexPage;
         $this->showPage = $showPage;
         $this->newPage = $newPage;
         $this->editPage = $editPage;
+        $this->deletePage = $deletePage;
     }
 
     /**
@@ -124,8 +132,8 @@ class ManagingChannelContext implements Context
      */
     public function iDeleteChannel($id)
     {
-        $this->showPage->open(['id' => $id]);
-        $this->showPage->delete();
+        $this->deletePage->open(['id' => $id]);
+        $this->deletePage->delete();
     }
 
     /**
@@ -187,7 +195,7 @@ class ManagingChannelContext implements Context
      */
     public function iShouldBeNotifiedThatTheItemIsDeleted()
     {
-        Assert::assertContains('Item deleted', $this->indexPage->getAlert());
+        Assert::assertContains('Channel deleted', $this->indexPage->getAlert());
     }
 
     /**
