@@ -21,7 +21,7 @@
         "doctrine/orm": "~2.5",
         "doesntmattr/mongodb-migrations-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "~2.1",
-        "integrated/integrated": "0.12.*",
+        "integrated/integrated": "0.13.*",
         "integrated/thompson-theme-bundle": "~0.11",
         "leafo/scssphp": "^0.7.4",
         "sensio/distribution-bundle": "~5.0",

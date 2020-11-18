@@ -12,7 +12,7 @@ Skeleton for a new Integrated based application, which includes the use of all c
 
 Clone the project using Composer:
 
-    $ php composer.phar create-project integrated/integrated-standard path/ "~0.12" --no-scripts
+    $ php composer.phar create-project integrated/integrated-standard path/ "~0.13" --no-scripts
 
 Start docker-compose and run all manual installation actions with (supported on Linux only): 
 

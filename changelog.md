@@ -1,3 +1,16 @@
+# Changelog Integrated version 0.13 #
+
+## New Features ##
+- [INTEGRATED-1613](https://eactive.atlassian.net/browse/INTEGRATED-1613) Add storage clean command
+- [INTEGRATED-1615](https://eactive.atlassian.net/browse/INTEGRATED-1615) Deletion and usability improvements
+- [INTEGRATED-1619](https://eactive.atlassian.net/browse/INTEGRATED-1619) Improve pages usability
+- [INTEGRATED-1621](https://eactive.atlassian.net/browse/INTEGRATED-1621) Image browser display improvements
+- [INTEGRATED-1625](https://eactive.atlassian.net/browse/INTEGRATED-1625) Show parent path in selection select box
+
+## Bug Fixes ##
+- [INTEGRATED-1617](https://eactive.atlassian.net/browse/INTEGRATED-1617) User when using same username on Integrated scope and other scope
+- [INTEGRATED-1627](https://eactive.atlassian.net/browse/INTEGRATED-1627) Don't crash deletion reference display on objects without __toString()
+
 # Changelog Integrated version 0.12 #
 
 ## New Features ##

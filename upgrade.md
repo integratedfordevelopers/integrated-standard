@@ -1,3 +1,9 @@
+## Upgrade to Integrated version 0.11 ##
+
+Run the Integrated installer:
+
+php bin/console integrated:install
+
 ## Upgrade to Integrated version 0.12 ##
 - Enable twig text extension:
 
