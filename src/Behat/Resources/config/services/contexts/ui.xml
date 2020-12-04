@@ -26,6 +26,7 @@
             <argument type="service" id="integrated.behat.page.admin.channel.show" />
             <argument type="service" id="integrated.behat.page.admin.channel.new" />
             <argument type="service" id="integrated.behat.page.admin.channel.edit" />
+            <argument type="service" id="integrated.behat.page.admin.channel.delete" />
             <argument type="service" id="mink.default_session" />
             <tag name="fob.context_service" />
         </service>
