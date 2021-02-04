@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7e5b517215f256a4d4824fd87e02554",
+    "content-hash": "4810374f3d0670d5d7a3c833a8c5ce60",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -9432,16 +9432,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v4.4.16",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03"
+                "reference": "587f2b6bbcda8c473b91c18165958ffbb8af3c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03",
-                "reference": "d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/587f2b6bbcda8c473b91c18165958ffbb8af3c4c",
+                "reference": "587f2b6bbcda8c473b91c18165958ffbb8af3c4c",
                 "shasum": ""
             },
             "require": {
@@ -9449,6 +9449,10 @@
             },
             "conflict": {
                 "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0|<6.4,>=6.0|9.1.2"
+            },
+            "require-dev": {
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/error-handler": "^4.4|^5.0"
             },
             "suggest": {
                 "symfony/error-handler": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
@@ -9488,10 +9492,10 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony PHPUnit Bridge",
+            "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v4.4.16"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.3"
             },
             "funding": [
                 {
@@ -9507,7 +9511,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:35:18+00:00"
+            "time": "2021-01-25T13:54:05+00:00"
         },
         {
             "name": "theseer/tokenizer",
