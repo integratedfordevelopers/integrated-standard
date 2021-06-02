@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7e5b517215f256a4d4824fd87e02554",
+    "content-hash": "93ed70dd50d2a3143419ef33c641d8e4",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -269,6 +269,60 @@
                 }
             ],
             "time": "2020-11-11T10:22:58+00:00"
+        },
+        {
+            "name": "darsyn/ip",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darsyn/ip.git",
+                "reference": "36db5b2160190de65ea66db4eedf38b3cfaa4d94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darsyn/ip/zipball/36db5b2160190de65ea66db4eedf38b3cfaa4d94",
+                "reference": "36db5b2160190de65ea66db4eedf38b3cfaa4d94",
+                "shasum": ""
+            },
+            "require": {
+                "php-64bit": ">=5.6",
+                "php-ipv6": ">=5.6"
+            },
+            "suggest": {
+                "doctrine/dbal": "to use IP as a column type"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Darsyn\\IP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zan Baldwin",
+                    "email": "hello@zanbaldwin.com",
+                    "homepage": "https://zanbaldwin.com"
+                }
+            ],
+            "description": "An immutable IP Address value object that provides several different notations, including helper functions.",
+            "homepage": "https://github.com/darsyn/ip",
+            "keywords": [
+                "IP",
+                "immutable",
+                "ipv4",
+                "ipv6",
+                "library",
+                "value-object"
+            ],
+            "support": {
+                "issues": "https://github.com/darsyn/ip/issues",
+                "source": "https://github.com/darsyn/ip/tree/4.0.0"
+            },
+            "time": "2018-06-15T13:45:56+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -2812,22 +2866,23 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "0.13",
+            "version": "dev-release/0.14",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "c8dc17fa03dc34190b61e8547d040e59cfda50dc"
+                "reference": "5c2254649239727dadaf76561dcffd4bb93a012c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/c8dc17fa03dc34190b61e8547d040e59cfda50dc.zip",
-                "reference": "c8dc17fa03dc34190b61e8547d040e59cfda50dc",
+                "url": "https://bitbucket.org/eactive/integrated/get/5c2254649239727dadaf76561dcffd4bb93a012c.zip",
+                "reference": "5c2254649239727dadaf76561dcffd4bb93a012c",
                 "shasum": ""
             },
             "require": {
                 "abraham/twitteroauth": "^0.7.4",
                 "alcaeus/mongo-php-adapter": "~1.1",
                 "braincrafted/bootstrap-bundle": "~2.2",
+                "darsyn/ip": "^4.0",
                 "doctrine/doctrine-bundle": "~1.12,>=1.12.10",
                 "doctrine/doctrine-fixtures-bundle": "~2.4",
                 "doctrine/migrations": "~2.2",
@@ -2928,22 +2983,22 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/c8dc17fa03dc34190b61e8547d040e59cfda50dc/?at=0.13"
+                "source": "https://bitbucket.org/eactive/integrated/src/5c2254649239727dadaf76561dcffd4bb93a012c/?at=release/0.14"
             },
-            "time": "2020-11-18T09:48:44+00:00"
+            "time": "2021-06-02T13:05:00+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
-            "version": "0.11",
+            "version": "dev-release/0.14",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "39653387af23c594b0ef83a9452116b0ec8fad81"
+                "reference": "94198bc6008578ee585096d6670110510482744d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/39653387af23c594b0ef83a9452116b0ec8fad81.zip",
-                "reference": "39653387af23c594b0ef83a9452116b0ec8fad81",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/94198bc6008578ee585096d6670110510482744d.zip",
+                "reference": "94198bc6008578ee585096d6670110510482744d",
                 "shasum": ""
             },
             "require": {
@@ -2959,7 +3014,8 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.9.9-dev"
+                    "dev-release/0.14": "0.14.x-dev",
+                    "dev-release/0.15": "0.15.x-dev"
                 }
             },
             "autoload": {
@@ -2985,9 +3041,9 @@
                 "thompson"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/src/39653387af23c594b0ef83a9452116b0ec8fad81/?at=0.11"
+                "source": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/src/94198bc6008578ee585096d6670110510482744d/?at=release/0.14"
             },
-            "time": "2020-02-12T09:37:37+00:00"
+            "time": "2021-03-19T08:38:37+00:00"
         },
         {
             "name": "jdorn/sql-formatter",

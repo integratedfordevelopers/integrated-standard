@@ -84,6 +84,8 @@ doctrine:
         password: '%database_password%'
         charset: UTF8
         schema_filter: '/^(?!queue|locks).*$/'
+        types:
+            ip: Darsyn\IP\Doctrine\MultiType
 
     orm:
         auto_generate_proxy_classes: '%kernel.debug%'
@@ -151,8 +153,6 @@ sp_bower:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedContentBundle'
         IntegratedFormTypeBundle:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedFormTypeBundle'
-        IntegratedWebsiteBundle:
-            cache: '%kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle'
         IntegratedStorageBundle:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedStorageBundle'
         IntegratedThompsonThemeBundle:
