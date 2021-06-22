@@ -1,3 +1,24 @@
+# Changelog Integrated version 0.14 #
+
+## Highlights ##
+- Frontend editing has been improved a lot
+
+## New Features ##
+- [INTEGRATED-1118](https://eactive.atlassian.net/browse/INTEGRATED-1118) Improve front end editing
+- [INTEGRATED-1263](https://eactive.atlassian.net/browse/INTEGRATED-1263) Lost password
+- [INTEGRATED-1631](https://eactive.atlassian.net/browse/INTEGRATED-1631) Improve page URL display and validation
+- [INTEGRATED-1633](https://eactive.atlassian.net/browse/INTEGRATED-1633) Improve website toolbar view
+- [INTEGRATED-1635](https://eactive.atlassian.net/browse/INTEGRATED-1635) Don't display Solr lock exceptions in non-verbose mode
+- [INTEGRATED-1638](https://eactive.atlassian.net/browse/INTEGRATED-1638) Improve content type page URL generation performance
+- [INTEGRATED-1642](https://eactive.atlassian.net/browse/INTEGRATED-1642) Support upload of TIF and EPS
+- [INTEGRATED-1648](https://eactive.atlassian.net/browse/INTEGRATED-1648) IP list and protection
+- [INTEGRATED-1652](https://eactive.atlassian.net/browse/INTEGRATED-1652) Show description in IP list
+
+## Bug Fixes ##
+- [INTEGRATED-1390](https://eactive.atlassian.net/browse/INTEGRATED-1390) Relation-linked companies are shown as ID instead of name
+- [INTEGRATED-1629](https://eactive.atlassian.net/browse/INTEGRATED-1629) Storage clean doesn't find all items
+- [INTEGRATED-1640](https://eactive.atlassian.net/browse/INTEGRATED-1640) Don't crash json-ld on channel without domain
+
 # Changelog Integrated version 0.13 #
 
 ## New Features ##

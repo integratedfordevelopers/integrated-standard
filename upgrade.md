@@ -1,3 +1,12 @@
+# Upgrade to Integrated version 0.14 #
+-  @IntegratedWebsiteBundle/Resources/less/styles.less can be removed from client themes
+- Less is not required any more
+- Add to your config.yml:
+
+    doctrine:
+        types:
+            ip: Darsyn\IP\Doctrine\MultiType
+
 ## Upgrade to Integrated version 0.11 ##
 
 Run the Integrated installer:
