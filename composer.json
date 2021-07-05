@@ -78,8 +78,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-release/0.12": "0.12-dev",
-            "dev-release/0.13": "0.13-dev",
+            "dev-release/0.15": "0.15-dev",
             "dev-release/0.20": "0.20-dev"
         }
     }
