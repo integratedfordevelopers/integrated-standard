@@ -126,6 +126,18 @@ integrated_storage:
         integrated:
             public: '/files'
 
+# Two Factor Auth Configuration
+scheb_two_factor:
+    google:
+        enabled: true
+        issuer: 'Integrated'
+        template: '@IntegratedUser/security/two_factor.html.twig'
+
+integrated_user:
+    two_factor:
+        firewall:
+            default: ~
+
 # Solr Configuration
 integrated_solr:
     endpoints:

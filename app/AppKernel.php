@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new AntiMattr\Bundle\MongoDBMigrationsBundle\MongoDBMigrationsBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Sp\BowerBundle\SpBowerBundle(),
+            new Scheb\TwoFactorBundle\SchebTwoFactorBundle(),
+            new Endroid\QrCodeBundle\EndroidQrCodeBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
