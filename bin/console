@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+use App\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
@@ -22,6 +23,8 @@ if ($debug) {
     Debug::enable();
 }
 
-$kernel = new AppKernel($env, $debug);
+(new \Symfony\Component\Dotenv\Dotenv())->load(dirname(__DIR__).'/.env', dirname(__DIR__).'/.env.test', dirname(__DIR__).'/.env.local');
+
+$kernel = new Kernel($env, $debug);
 $application = new Application($kernel);
 $application->run($input);

@@ -1,0 +1,14 @@
+sp_bower:
+    bundles:
+        IntegratedContentBundle:
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedContentBundle'
+        IntegratedFormTypeBundle:
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedFormTypeBundle'
+        IntegratedStorageBundle:
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedStorageBundle'
+        IntegratedThompsonThemeBundle:
+            cache: '%kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle'
+    bin: /usr/bin/bower
+    install_on_warmup: true
+    assetic:
+        enabled: false

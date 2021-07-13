@@ -1,0 +1,19 @@
+# see https://symfony.com/doc/current/reference/configuration/framework.html
+framework:
+    secret: '%env(APP_SECRET)%'
+    router:
+        strict_requirements: ~
+    form: ~
+    csrf_protection: ~
+    validation: { enable_annotations: true }
+    serializer: { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale: '%env(LOCALE)%'
+    trusted_hosts: ~
+    session:
+        handler_id: ~
+    http_method_override: true
+    assets: ~
+    php_errors:
+        log: true

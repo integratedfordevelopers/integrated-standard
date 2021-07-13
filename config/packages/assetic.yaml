@@ -1,0 +1,23 @@
+assetic:
+    debug: '%kernel.debug%'
+    use_controller: true
+    write_to: '%kernel.project_dir%/public'
+    filters:
+        less:
+            node_paths: ['/usr/local/lib/node_modules', '/usr/lib/node_modules']
+            compress: true
+            apply_to: '\.less$'
+        cssrewrite: ~
+        scssphp:
+            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+        uglifyjs2:
+            bin: '/usr/bin/uglifyjs'
+    assets:
+        integrated_css:
+            inputs:
+                - '@IntegratedContentBundle/Resources/public/sass/main.scss'
+            filters:
+                - 'scssphp'
+            output: 'css/main.css'
+        integrated_js:
+            inputs: ~
