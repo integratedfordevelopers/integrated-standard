@@ -79,6 +79,8 @@ class Context implements ContextInterface
         $user->setEmail('integrated@example.com');
         $user->setSalt(base64_encode(random_bytes(72)));
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
+        $user->setGoogleAuthenticatorSecret('secret');
+        $user->setGoogleAuthenticatorEnabled(true);
 
         $user->addRole($this->getRole('ROLE_ADMIN'));
 

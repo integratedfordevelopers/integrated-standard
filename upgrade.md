@@ -1,3 +1,11 @@
+# Upgrade to Integrated version 0.15 #
+Load in AppKernel.php:
+
+* {{new Scheb\TwoFactorBundle\SchebTwoFactorBundle(),}}
+* {{new Endroid\QrCodeBundle\EndroidQrCodeBundle(),}}
+
+Optionally enable two factor authentication: https://bitbucket.org/eactive/integrated-standard/commits/6cba8c9b13c80eaa106329526995947636d2357d
+
 # Upgrade to Integrated version 0.14 #
 -  @IntegratedWebsiteBundle/Resources/less/styles.less can be removed from client themes
 - Less is not required any more

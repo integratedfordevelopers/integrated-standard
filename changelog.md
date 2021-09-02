@@ -1,3 +1,16 @@
+# Changelog Integrated version 0.15 #
+
+## Highlights ##
+- Two factor authentication (optional)
+
+## New Features ##
+- [INTEGRATED-1651](https://eactive.atlassian.net/browse/INTEGRATED-1651) Allow two factor authentication with Google Authenticator
+- [INTEGRATED-1654](https://eactive.atlassian.net/browse/INTEGRATED-1654) Dutch translations for authenticator messages
+
+## Bug Fixes ##
+- [INTEGRATED-1655](https://eactive.atlassian.net/browse/INTEGRATED-1655) User list is slow with many users
+- [INTEGRATED-1657](https://eactive.atlassian.net/browse/INTEGRATED-1657) Small bundle fixes
+
 # Changelog Integrated version 0.14 #
 
 ## Highlights ##

@@ -84,6 +84,8 @@ class UserContext implements Context
         $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword($password, $salt));
         $user->setSalt($salt);
         $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
+        $user->setGoogleAuthenticatorSecret('secret');
+        $user->setGoogleAuthenticatorEnabled(true);
         $user->setScope($this->getScope('Integrated'));
 
         $this->userManager->persist($user);
