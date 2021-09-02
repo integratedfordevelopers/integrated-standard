@@ -23,7 +23,19 @@ if ($debug) {
     Debug::enable();
 }
 
-(new \Symfony\Component\Dotenv\Dotenv())->load(dirname(__DIR__).'/.env', dirname(__DIR__).'/.env.test', dirname(__DIR__).'/.env.local');
+$envFiles = [
+    '/.env',
+    '/.env.local',
+    '/.env.test'
+];
+
+$dotEnv = new \Symfony\Component\Dotenv\Dotenv();
+
+foreach($envFiles as $file) {
+    if(file_exists(dirname(__DIR__).$file)) {
+        $dotEnv->load(dirname(__DIR__).$file);
+    }
+}
 
 $kernel = new Kernel($env, $debug);
 $application = new Application($kernel);

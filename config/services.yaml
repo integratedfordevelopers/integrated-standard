@@ -6,6 +6,8 @@
 parameters:
     env(MONGODB_URL): ''
     env(MONGODB_DB): ''
+    mailer_from: '%env(resolve:MAILER_FROM)%'
+    mailer_name: '%env(resolve:MAILER_FROM)%'
 
 services:
     # default configuration for services in *this* file

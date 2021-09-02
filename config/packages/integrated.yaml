@@ -3,14 +3,6 @@ integrated_storage:
         integrated:
             public: '/files'
 
-integrated_content:
-    mailer_from: '%env(resolve:mailer_from)%'
-    mailer_name: '%env(resolve:mailer_name)%'
-
-integrated_user:
-    mailer_from: '%env(resolve:mailer_from)%'
-    mailer_name: '%env(resolve:mailer_name)%'
-
 integrated_solr:
     endpoints:
         default:
