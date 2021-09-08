@@ -1,3 +1,7 @@
+default:
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            env_file: '.env.local'
 imports:
     - src/Behat/Resources/config/behat/profiles.yml
     - src/Behat/Resources/config/behat/suites.yml
