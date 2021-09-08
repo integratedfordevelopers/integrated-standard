@@ -7,6 +7,7 @@ doctrine_mongodb:
             options:
                 username: '%env(resolve:MONGODB_USERNAME)%'
                 password: '%env(resolve:MONGODB_PASSWORD)%'
+                authSource: '%env(resolve:MONGODB_DB)%'
     default_database: '%env(resolve:MONGODB_DB)%'
     document_managers:
         default:
