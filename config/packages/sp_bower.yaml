@@ -8,7 +8,7 @@ sp_bower:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedStorageBundle'
         IntegratedThompsonThemeBundle:
             cache: '%kernel.cache_dir%/../sp_bower/IntegratedThompsonThemeBundle'
-    bin: /usr/bin/bower
+    bin: '%env(resolve:BOWER_BIN)%'
     install_on_warmup: true
     assetic:
         enabled: false
