@@ -126,7 +126,6 @@
                 "database",
                 "mongodb"
             ],
-            "time": "2021-07-08T11:24:49+00:00"
             "support": {
                 "issues": "https://github.com/alcaeus/mongo-php-adapter/issues",
                 "source": "https://github.com/alcaeus/mongo-php-adapter/tree/1.2.1"

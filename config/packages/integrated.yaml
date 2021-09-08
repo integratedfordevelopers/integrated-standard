@@ -20,3 +20,8 @@ integrated_social:
     twitter:
         consumer_key: '%env(resolve:TWITTER_CONSUMER_KEY)%'
         consumer_secret: '%env(resolve:TWITTER_CONSUMER_SECRET)%'
+
+integrated_user:
+    two_factor:
+        firewall:
+            default: ~
