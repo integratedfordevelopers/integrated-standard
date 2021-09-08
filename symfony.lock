@@ -5,6 +5,12 @@
     "alcaeus/mongo-php-adapter": {
         "version": "1.2.0"
     },
+    "bacon/bacon-qr-code": {
+        "version": "2.0.4"
+    },
+    "beberlei/assert": {
+        "version": "v3.3.1"
+    },
     "behat/behat": {
         "version": "v3.7.0"
     },
@@ -34,6 +40,9 @@
     },
     "darsyn/ip": {
         "version": "4.0.0"
+    },
+    "dasprid/enum": {
+        "version": "1.0.3"
     },
     "deployer/deployer": {
         "version": "v6.8.0"
@@ -158,6 +167,15 @@
     "egulias/email-validator": {
         "version": "3.1.1"
     },
+    "endroid/installer": {
+        "version": "1.2.3"
+    },
+    "endroid/qr-code": {
+        "version": "3.9.6"
+    },
+    "endroid/qr-code-bundle": {
+        "version": "3.4.3"
+    },
     "facebook/graph-sdk": {
         "version": "5.7.0"
     },
@@ -200,6 +218,9 @@
     "gregwar/image-bundle": {
         "version": "v2.2.4"
     },
+    "incenteev/composer-parameter-handler": {
+        "version": "v2.1.4"
+    },
     "integrated/integrated": {
         "version": "0.14"
     },
@@ -214,6 +235,9 @@
     },
     "jms/metadata": {
         "version": "1.7.0"
+    },
+    "khanamiryan/qrcode-detector-decoder": {
+        "version": "1.0.5.2"
     },
     "knplabs/gaufrette": {
         "version": "v0.9.0"
@@ -236,6 +260,9 @@
     "kriswallsmith/assetic": {
         "version": "v1.4.0"
     },
+    "lcobucci/jwt": {
+        "version": "3.4.5"
+    },
     "leafo/scssphp": {
         "version": "v0.7.8"
     },
@@ -247,6 +274,9 @@
     },
     "myclabs/deep-copy": {
         "version": "1.10.2"
+    },
+    "myclabs/php-enum": {
+        "version": "1.7.7"
     },
     "nelmio/alice": {
         "version": "3.2",
@@ -263,6 +293,9 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.2.3"
+    },
+    "paragonie/constant_time_encoding": {
+        "version": "v2.4.0"
     },
     "phar-io/manifest": {
         "version": "2.0.1"
@@ -344,6 +377,15 @@
     "rct567/dom-query": {
         "version": "v0.8"
     },
+    "scheb/two-factor-bundle": {
+        "version": "3.16",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.16",
+            "ref": "b5789cd9710e2ee555bf361079b991068a0f640b"
+        }
+    },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.2"
     },
@@ -415,6 +457,9 @@
     },
     "sp/bower-bundle": {
         "version": "v0.12"
+    },
+    "spomky-labs/otphp": {
+        "version": "v10.0.1"
     },
     "squizlabs/php_codesniffer": {
         "version": "3.6",
@@ -558,6 +603,9 @@
     },
     "symfony/symfony": {
         "version": "v3.4.49"
+    },
+    "thecodingmachine/safe": {
+        "version": "v1.3.3"
     },
     "theseer/tokenizer": {
         "version": "1.2.0"

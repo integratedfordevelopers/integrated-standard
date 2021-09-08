@@ -22,7 +22,6 @@ return [
     FOS\JsRoutingBundle\FOSJsRoutingBundle::class => ['all' => true],
     Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle::class => ['all' => true],
     Gregwar\ImageBundle\GregwarImageBundle::class => ['all' => true],
-
     Integrated\Bundle\AssetBundle\IntegratedAssetBundle::class => ['all' => true],
     Integrated\Bundle\ContentBundle\IntegratedContentBundle::class => ['all' => true],
     Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle::class => ['all' => true],
@@ -45,11 +44,11 @@ return [
     Integrated\Bundle\ThompsonThemeBundle\IntegratedThompsonThemeBundle::class => ['all' => true],
     Integrated\Bundle\SitemapBundle\IntegratedSitemapBundle::class => ['all' => true],
     Integrated\Bundle\SocialBundle\IntegratedSocialBundle::class => ['all' => true],
-
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true],
     Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true],
     Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle::class => ['dev' => true, 'test' => true],
     Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle::class => ['dev' => true, 'test' => true],
-    Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev']
+    Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['0' => 'dev'],
+    Endroid\QrCodeBundle\EndroidQrCodeBundle::class => ['all' => true],
 ];
