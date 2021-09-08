@@ -51,4 +51,5 @@ return [
     Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['0' => 'dev'],
     Endroid\QrCodeBundle\EndroidQrCodeBundle::class => ['all' => true],
+    Scheb\TwoFactorBundle\SchebTwoFactorBundle::class => ['all' => true],
 ];
