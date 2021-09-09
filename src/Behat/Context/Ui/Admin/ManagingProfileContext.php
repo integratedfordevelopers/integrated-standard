@@ -85,7 +85,6 @@ class ManagingProfileContext implements Context
      */
     public function iShouldBeNotifiedThatMyPasswordIsTooShort()
     {
-        var_dump($this->profilePage->errors());
         Assert::assertContains('This value is too short. It should have 6 characters or more.', $this->profilePage->errors());
     }
 
