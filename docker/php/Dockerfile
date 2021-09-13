@@ -22,6 +22,7 @@ RUN set -eux; \
     chown docker:docker /home/docker/.bashrc
 
 RUN set -eux; \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -; \
     apt-get update; \
     apt-get install -y --no-install-recommends ssmtp; \
     rm -rf /var/lib/apt/lists/*; \

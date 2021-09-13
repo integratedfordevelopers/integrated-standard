@@ -10,7 +10,7 @@ services:
       - mongo-express
       - mail
     volumes:
-      - ./web:/var/www/html/web:ro
+      - ./public:/var/www/html/public:ro
       - ./docker/httpd/sites:/etc/apache2/sites-enabled:ro
     ports:
       - '80:80'

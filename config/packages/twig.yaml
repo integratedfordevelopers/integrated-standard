@@ -1,0 +1,3 @@
+twig:
+    default_path: '%kernel.root_dir%/templates'
+

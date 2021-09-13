@@ -1,0 +1,5 @@
+vihuvac_recaptcha:
+    site_key: '%env(resolve:VIHUVAC_SITE_KEY)%'
+    secret_key: '%env(resolve:VIHUVAC_SECRET_KEY)%'
+    enabled: true
+    #locale_keys: kernel.default_locale
