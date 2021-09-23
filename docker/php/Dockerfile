@@ -1,4 +1,4 @@
-FROM thecodingmachine/php:7.2-v3-fpm-node8
+FROM thecodingmachine/php:7.2-v4-fpm-node10
 
 ENV PHP_EXTENSION_INTL=1 \
     PHP_EXTENSION_GD=1 \
@@ -13,8 +13,6 @@ RUN set -eux; \
     apt-get update; \
     apt-get install -y --no-install-recommends bash-completion;\
     rm -rf /var/lib/apt/lists/*
-
-RUN mv /usr/local/bin/real_composer /usr/local/bin/composer
 
 RUN set -eux; \
     curl https://bitbucket.org/eactive/docker-utils/raw/master/bash/.bashrc --output /root/.bashrc; \
