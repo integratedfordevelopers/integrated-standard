@@ -1,0 +1,5 @@
+ewz_recaptcha:
+    version: 2
+    public_key: '%env(resolve:RECAPTCHA_SITE_KEY)%'
+    private_key: '%env(resolve:RECAPTCHA_SECRET_KEY)%'
+    locale_key:  '%kernel.default_locale%'
