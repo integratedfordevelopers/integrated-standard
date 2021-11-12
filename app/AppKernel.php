@@ -26,7 +26,6 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle(),
             new Gregwar\ImageBundle\GregwarImageBundle(),
 

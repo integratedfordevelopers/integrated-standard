@@ -47,6 +47,3 @@ integrated_comment:
 
 integrated_sitemap:
     resource: "@IntegratedSitemapBundle/Resources/config/routing.xml"
-
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
