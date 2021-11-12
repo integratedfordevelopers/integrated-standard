@@ -1,4 +1,4 @@
-FROM thecodingmachine/php:7.2-v4-fpm-node10
+FROM thecodingmachine/php:7.3-v4-fpm-node10
 
 ENV PHP_EXTENSION_INTL=1 \
     PHP_EXTENSION_GD=1 \
@@ -45,7 +45,7 @@ RUN set -eux; \
     curl https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -; \
     echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list; \
     apt-get update; \
-    apt-get install -y --no-install-recommends mongodb-org-tools mariadb-client-10.1;\
+    apt-get install -y --no-install-recommends mongodb-org-tools mariadb-client-10.3;\
     apt-get install -y --no-install-recommends zip;\
     rm -rf /var/lib/apt/lists/*
 

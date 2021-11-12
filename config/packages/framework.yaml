@@ -1,8 +1,6 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
     secret: '%env(APP_SECRET)%'
-    router:
-        strict_requirements: ~
     form: ~
     csrf_protection: ~
     validation: { enable_annotations: true }

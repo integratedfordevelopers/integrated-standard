@@ -17,15 +17,18 @@ services:
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
-#    AppBundle\:
-#        resource: '../src/AppBundle'
-#        exclude:
-#            - '../src/AppBundleDependencyInjection/'
-#            - '../src/AppBundleEntity/'
-#            - '../src/AppBundle/Tests/'
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Behat/'
+            - '../src/Entity/'
+            - '../src/Document/'
+            - '../src/Kernel.php'
+            - '../src/Tests/'
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
-
-    App\Controller\DefaultController:
-        tags: ['controller.service_arguments']
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller/'
+        tags: [ 'controller.service_arguments' ]

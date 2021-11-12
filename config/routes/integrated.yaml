@@ -1,0 +1,3 @@
+#integrated:
+#    resource: "@IntegratedIntegratedBundle/Resources/config/routing.xml"
+#    prefix: "/admin"
