@@ -1,0 +1,9 @@
+set -e
+curl -sS https://getcomposer.org/installer | php
+php7.2 composer.phar install -n --ansi
+php7.2 bin/console integrated:install -e test
+php7.2 vendor/bin/phpcs
+php7.2 vendor/bin/phpunit
+php7.2 vendor/bin/behat --colors
+php7.2 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
+php7.2 bin/console lint:twig vendor/integrated/ -e test
