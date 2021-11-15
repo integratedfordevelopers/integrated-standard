@@ -36,7 +36,6 @@ class DoctrineODMContext implements Context
      */
     public function purgeDatabase()
     {
-        $this->documentManager->getConnection()->getConfiguration()->setLoggerCallable(null);
         $purger = new MongoDBPurger($this->documentManager);
         $purger->purge();
         $this->documentManager->clear();
