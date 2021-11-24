@@ -19,6 +19,7 @@ return [
     Integrated\Bundle\AssetBundle\IntegratedAssetBundle::class => ['all' => true],
     Integrated\Bundle\ContentBundle\IntegratedContentBundle::class => ['all' => true],
     Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle::class => ['all' => true],
+    Integrated\Bundle\IntegratedBundle\IntegratedIntegratedBundle::class => ['all' => true],
     Integrated\Bundle\SolrBundle\IntegratedSolrBundle::class => ['all' => true],
     Integrated\Bundle\StorageBundle\IntegratedStorageBundle::class => ['all' => true],
     Integrated\Bundle\UserBundle\IntegratedUserBundle::class => ['all' => true],
