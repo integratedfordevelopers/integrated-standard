@@ -44,7 +44,8 @@
         "symfony/phpunit-bridge": "^4.0",
         "deployer/deployer": "^6.2",
         "phpstan/phpstan-doctrine": "~0.12",
-        "phpstan/phpstan-symfony": "~0.12"
+        "phpstan/phpstan-symfony": "~0.12",
+        "symfony/maker-bundle": "^1.36"
     },
     "scripts": {
         "symfony-scripts": [
