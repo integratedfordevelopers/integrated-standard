@@ -75,6 +75,7 @@ services:
     depends_on:
       - mongo
     environment:
+      ME_CONFIG_MONGODB_URL: 'mongodb://integrated:integrated@mongo:27017/integrated'
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: root
 
