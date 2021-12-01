@@ -1,0 +1,7 @@
+integrated:
+    resource: "@IntegratedIntegratedBundle/Resources/config/routing.xml"
+    prefix: "/admin"
+
+integrated_website:
+    resource: "@IntegratedIntegratedBundle/Resources/config/routing.website.xml"
+    prefix: "/"
