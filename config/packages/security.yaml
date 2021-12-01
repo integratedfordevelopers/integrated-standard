@@ -31,7 +31,6 @@ security:
                 auth_form_path: integrated_user_two_factor
                 check_path: integrated_user_two_factor_check
             anonymous: ~
-            logout_on_user_change: true
             scope: ~
 
     access_control:
