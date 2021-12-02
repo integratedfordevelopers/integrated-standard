@@ -836,16 +836,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.13.5",
+            "version": "2.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "d92ddb260547c2a7b650ff140f744eb6f395d8fc"
+                "reference": "67ef6d0327ccbab1202b39e0222977a47ed3ef2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d92ddb260547c2a7b650ff140f744eb6f395d8fc",
-                "reference": "d92ddb260547c2a7b650ff140f744eb6f395d8fc",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/67ef6d0327ccbab1202b39e0222977a47ed3ef2f",
+                "reference": "67ef6d0327ccbab1202b39e0222977a47ed3ef2f",
                 "shasum": ""
             },
             "require": {
@@ -858,13 +858,13 @@
             "require-dev": {
                 "doctrine/coding-standard": "9.0.0",
                 "jetbrains/phpstorm-stubs": "2021.1",
-                "phpstan/phpstan": "1.1.1",
+                "phpstan/phpstan": "1.2.0",
                 "phpunit/phpunit": "^7.5.20|^8.5|9.5.10",
                 "psalm/plugin-phpunit": "0.16.1",
                 "squizlabs/php_codesniffer": "3.6.1",
                 "symfony/cache": "^4.4",
                 "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
-                "vimeo/psalm": "4.12.0"
+                "vimeo/psalm": "4.13.0"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -925,7 +925,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/2.13.5"
+                "source": "https://github.com/doctrine/dbal/tree/2.13.6"
             },
             "funding": [
                 {
@@ -941,7 +941,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-11T16:27:36+00:00"
+            "time": "2021-11-26T20:11:05+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -3077,12 +3077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "e63e9ccf40346530e6ba9948cd82198963ee58db"
+                "reference": "1d77a812e4bb9d8bfed36d977396775c85faea54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/e63e9ccf40346530e6ba9948cd82198963ee58db.zip",
-                "reference": "e63e9ccf40346530e6ba9948cd82198963ee58db",
+                "url": "https://bitbucket.org/eactive/integrated/get/1d77a812e4bb9d8bfed36d977396775c85faea54.zip",
+                "reference": "1d77a812e4bb9d8bfed36d977396775c85faea54",
                 "shasum": ""
             },
             "require": {
@@ -3195,9 +3195,9 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/e63e9ccf40346530e6ba9948cd82198963ee58db/?at=release/0.20"
+                "source": "https://bitbucket.org/eactive/integrated/src/1d77a812e4bb9d8bfed36d977396775c85faea54/?at=release/0.20"
             },
-            "time": "2021-11-26T07:35:51+00:00"
+            "time": "2021-11-29T07:32:05+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -3205,12 +3205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle.git",
-                "reference": "f0b4b2e8b67b488d9e45e78613ea54894a7b034b"
+                "reference": "522ff225eed0c2954aa78127b35ceb8ee55df241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/f0b4b2e8b67b488d9e45e78613ea54894a7b034b.zip",
-                "reference": "f0b4b2e8b67b488d9e45e78613ea54894a7b034b",
+                "url": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/get/522ff225eed0c2954aa78127b35ceb8ee55df241.zip",
+                "reference": "522ff225eed0c2954aa78127b35ceb8ee55df241",
                 "shasum": ""
             },
             "require": {
@@ -3257,9 +3257,9 @@
                 "thompson"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/src/f0b4b2e8b67b488d9e45e78613ea54894a7b034b/?at=release/0.20"
+                "source": "https://bitbucket.org/eactive/integrated-thompson-theme-bundle/src/522ff225eed0c2954aa78127b35ceb8ee55df241/?at=release/0.20"
             },
-            "time": "2021-11-03T15:48:11+00:00"
+            "time": "2021-11-29T12:32:31+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -6011,16 +6011,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.17.5",
+            "version": "v1.17.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "3f0dc66dcddff035a2ab98ed7e666dfd478b2712"
+                "reference": "7a79135e1dc66b30042b4d968ecba0908f9374bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/3f0dc66dcddff035a2ab98ed7e666dfd478b2712",
-                "reference": "3f0dc66dcddff035a2ab98ed7e666dfd478b2712",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/7a79135e1dc66b30042b4d968ecba0908f9374bc",
+                "reference": "7a79135e1dc66b30042b4d968ecba0908f9374bc",
                 "shasum": ""
             },
             "require": {
@@ -6056,7 +6056,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.17.5"
+                "source": "https://github.com/symfony/flex/tree/v1.17.6"
             },
             "funding": [
                 {
@@ -6072,7 +6072,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-23T11:08:47+00:00"
+            "time": "2021-11-29T15:39:37+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
