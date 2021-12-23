@@ -14,7 +14,6 @@ return [
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
     Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
     Knp\Bundle\GaufretteBundle\KnpGaufretteBundle::class => ['all' => true],
-    Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle::class => ['all' => true],
     Gregwar\ImageBundle\GregwarImageBundle::class => ['all' => true],
     Integrated\Bundle\AssetBundle\IntegratedAssetBundle::class => ['all' => true],
     Integrated\Bundle\ContentBundle\IntegratedContentBundle::class => ['all' => true],

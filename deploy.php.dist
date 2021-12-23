@@ -19,18 +19,17 @@ set('git_tty', true);
 // Enable assetic
 set('dump_assets', true);
 
-// Shared files/dirs between deploys 
+// Shared files/dirs between deploys
 add('shared_files', []);
 add('shared_dirs', []);
 
-// Writable dirs by web server 
+// Writable dirs by web server
 add('writable_dirs', []);
 
 // Tasks
 
 task('deploy:assets:download', function () {
     run('{{env_vars}} {{bin/php}} {{bin/console}} sp:bower:install --interactive=0 {{console_options}}');
-    run('{{env_vars}} {{bin/php}} {{bin/console}} braincrafted:bootstrap:install {{console_options}}');
 })->desc('Download bundle assets');
 
 before('deploy:assets:install', 'deploy:assets:download');
