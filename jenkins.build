@@ -3,8 +3,8 @@ set -e
 curl -sS https://getcomposer.org/installer | php
 php7.3 composer.phar install -n --ansi
 php7.3 bin/console integrated:install -e test
-php7.3 vendor/bin/phpcs
-php7.3 vendor/bin/phpunit
-php7.3 vendor/bin/behat --colors
-php7.3 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
+php7.3 bin/phpcs
+php7.3 bin/phpunit
+php7.3 bin/behat --colors
+php7.3 bin/phpstan analyse --no-progress -c phpstan.test.neon
 php7.3 bin/console lint:twig vendor/integrated/ -e test
