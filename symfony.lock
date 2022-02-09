@@ -720,6 +720,9 @@
     "symfony/property-access": {
         "version": "v5.4.3"
     },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.4.37"
+    },
     "symfony/routing": {
         "version": "4.4",
         "recipe": {
