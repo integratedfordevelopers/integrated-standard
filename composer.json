@@ -18,7 +18,7 @@
         "doctrine/doctrine-migrations-bundle": "~2.1",
         "doctrine/orm": "~2.5",
         "incenteev/composer-parameter-handler": "~2.1",
-        "integrated/integrated": "0.20.*",
+        "integrated/integrated": "0.25.*",
         "integrated/thompson-theme-bundle": "^0.20",
         "leafo/scssphp": "^0.7.4",
         "symfony/monolog-bundle": "^3.1",
