@@ -1,5 +1,6 @@
 set -e
 
+rm -Rf vendor
 curl -sS https://getcomposer.org/installer | php
 php7.3 composer.phar install -n --ansi
 php7.3 bin/console integrated:install -e test
