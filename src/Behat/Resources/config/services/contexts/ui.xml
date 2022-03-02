@@ -4,37 +4,33 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="integrated.behat.context.ui.admin.managing_content_type_context" class="Integrated\Behat\Context\Ui\Admin\ManagingContentTypeContext">
+        <service id="integrated.behat.context.ui.admin.managing_content_type_context" class="Integrated\Behat\Context\Ui\Admin\ManagingContentTypeContext" public="true">
             <argument type="service" id="integrated.behat.page.admin.content_type.index" />
             <argument type="service" id="integrated.behat.page.admin.content_type.show" />
             <argument type="service" id="integrated.behat.page.admin.content_type.edit" />
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+            <argument type="service" id="behat.mink.default_session" />
         </service>
 
-        <service id="integrated.behat.context.ui.admin.managing_connector_context" class="Integrated\Behat\Context\Ui\Admin\ManagingConnectorContext">
+        <service id="integrated.behat.context.ui.admin.managing_connector_context" class="Integrated\Behat\Context\Ui\Admin\ManagingConnectorContext" public="true">
             <argument type="service" id="integrated.behat.page.admin.connector.index" />
             <argument type="service" id="integrated.behat.page.admin.connector.create" />
             <argument type="service" id="integrated.behat.page.admin.connector.edit" />
             <argument type="service" id="integrated.behat.page.admin.connector.delete" />
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+            <argument type="service" id="behat.mink.default_session" />
         </service>
 
-        <service id="integrated.behat.context.ui.admin.managing_channel_context" class="Integrated\Behat\Context\Ui\Admin\ManagingChannelContext">
+        <service id="integrated.behat.context.ui.admin.managing_channel_context" class="Integrated\Behat\Context\Ui\Admin\ManagingChannelContext" public="true">
             <argument type="service" id="integrated.behat.page.admin.channel.index" />
             <argument type="service" id="integrated.behat.page.admin.channel.show" />
             <argument type="service" id="integrated.behat.page.admin.channel.new" />
             <argument type="service" id="integrated.behat.page.admin.channel.edit" />
             <argument type="service" id="integrated.behat.page.admin.channel.delete" />
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+            <argument type="service" id="behat.mink.default_session" />
         </service>
 
-        <service id="integrated.behat.context.ui.admin.managing_profile_context" class="Integrated\Behat\Context\Ui\Admin\ManagingProfileContext">
+        <service id="integrated.behat.context.ui.admin.managing_profile_context" class="Integrated\Behat\Context\Ui\Admin\ManagingProfileContext" public="true">
             <argument type="service" id="integrated.behat.page.admin.user.profile" />
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+            <argument type="service" id="behat.mink.default_session" />
         </service>
     </services>
 </container>

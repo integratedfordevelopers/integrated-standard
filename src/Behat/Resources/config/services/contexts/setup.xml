@@ -6,51 +6,43 @@
 
     <services>
 
-        <service id="integrated.behat.context.setup.admin" class="Integrated\Behat\Context\Setup\Admin\Context">
+        <service id="integrated.behat.context.setup.admin" class="Integrated\Behat\Context\Setup\Admin\Context" public="true">
             <argument type="service" id="integrated.behat.context.setup.admin.security" />
-            <argument type="service" id="__symfony__.integrated_user.user.manager" />
-            <argument type="service" id="__symfony__.integrated_user.role.manager" />
-            <argument type="service" id="__symfony__.test.security.encoder_factory" />
-            <tag name="fob.context_service" />
+            <argument type="service" id="integrated_user.user.manager" />
+            <argument type="service" id="integrated_user.role.manager" />
+            <argument type="service" id="test.security.encoder_factory" />
         </service>
 
-        <service id="integrated.behat.context.setup.admin.security" class="Integrated\Behat\Context\Setup\Admin\SecurityContext">
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.admin.security" class="Integrated\Behat\Context\Setup\Admin\SecurityContext" public="true">
+            <argument type="service" id="behat.mink.default_session" />
         </service>
 
-        <service id="integrated.behat.context.setup.content" class="Integrated\Behat\Context\Setup\ContentContext">
-            <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.content" class="Integrated\Behat\Context\Setup\ContentContext" public="true">
+            <argument type="service" id="doctrine_mongodb.odm.document_manager" />
         </service>
 
-        <service id="integrated.behat.context.setup.content_type" class="Integrated\Behat\Context\Setup\ContentTypeContext">
-            <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.content_type" class="Integrated\Behat\Context\Setup\ContentTypeContext" public="true">
+            <argument type="service" id="doctrine_mongodb.odm.document_manager" />
         </service>
 
-        <service id="integrated.behat.context.setup.connector" class="Integrated\Behat\Context\Setup\ConnectorContext">
-            <argument type="service" id="__symfony__.doctrine.orm.entity_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.connector" class="Integrated\Behat\Context\Setup\ConnectorContext" public="true">
+            <argument type="service" id="doctrine.orm.entity_manager" />
         </service>
 
-        <service id="integrated.behat.context.setup.channel" class="Integrated\Behat\Context\Setup\ChannelContext">
-            <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.channel" class="Integrated\Behat\Context\Setup\ChannelContext" public="true">
+            <argument type="service" id="doctrine_mongodb.odm.document_manager" />
         </service>
 
-        <service id="integrated.behat.context.setup.security" class="Integrated\Behat\Context\Setup\SecurityContext">
-            <argument type="service" id="mink.default_session" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.setup.security" class="Integrated\Behat\Context\Setup\SecurityContext" public="true">
+            <argument type="service" id="behat.mink.default_session" />
         </service>
 
-        <service id="integrated.behat.context.setup.user" class="Integrated\Behat\Context\Setup\UserContext">
+        <service id="integrated.behat.context.setup.user" class="Integrated\Behat\Context\Setup\UserContext" public="true">
             <argument type="service" id="integrated.behat.context.setup.security" />
-            <argument type="service" id="__symfony__.integrated_user.user.manager" />
-            <argument type="service" id="__symfony__.integrated_user.scope.manager" />
-            <argument type="service" id="__symfony__.integrated_user.role.manager" />
-            <argument type="service" id="__symfony__.test.security.encoder_factory"/>
-            <tag name="fob.context_service" />
+            <argument type="service" id="integrated_user.user.manager" />
+            <argument type="service" id="integrated_user.scope.manager" />
+            <argument type="service" id="integrated_user.role.manager" />
+            <argument type="service" id="test.security.encoder_factory"/>
         </service>
 
     </services>

@@ -1,7 +1,9 @@
 default:
     extensions:
         FriendsOfBehat\SymfonyExtension:
-            env_file: '.env.test.local'
+            kernel:
+                environment: test
+            bootstrap: tests/bootstrap.php
         Behat\MinkExtension:
             base_url: 'https://localhost.e-active.nl'
 imports:

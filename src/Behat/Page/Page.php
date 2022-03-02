@@ -11,6 +11,7 @@
 
 namespace Integrated\Behat\Page;
 
+use ArrayAccess;
 use Behat\Mink\Session;
 use Integrated\Behat\Page\Exception\InvalidResponseException;
 use Integrated\Behat\Page\Exception\UnexpectedUrlException;
@@ -23,15 +24,15 @@ abstract class Page implements PageInterface
     private $session;
 
     /**
-     * @var array
+     * @var ArrayAccess
      */
     private $parameters;
 
     /**
      * @param Session $session
-     * @param array $parameters
+     * @param ArrayAccess $parameters
      */
-    public function __construct(Session $session, array $parameters = [])
+    public function __construct(Session $session, $parameters)
     {
         $this->session = $session;
         $this->parameters = $parameters;
