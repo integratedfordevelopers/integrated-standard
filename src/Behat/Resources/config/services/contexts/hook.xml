@@ -4,13 +4,11 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="integrated.behat.context.hook.doctrine_odm_context" class="Integrated\Behat\Context\Hook\DoctrineODMContext">
-            <argument type="service" id="__symfony__.doctrine_mongodb.odm.document_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.hook.doctrine_odm_context" class="Integrated\Behat\Context\Hook\DoctrineODMContext" public="true">
+            <argument type="service" id="doctrine_mongodb.odm.document_manager" />
         </service>
-        <service id="integrated.behat.context.hook.doctrine_orm_context" class="Integrated\Behat\Context\Hook\DoctrineORMContext">
-            <argument type="service" id="__symfony__.doctrine.orm.entity_manager" />
-            <tag name="fob.context_service" />
+        <service id="integrated.behat.context.hook.doctrine_orm_context" class="Integrated\Behat\Context\Hook\DoctrineORMContext" public="true">
+            <argument type="service" id="doctrine.orm.entity_manager" />
         </service>
     </services>
 </container>

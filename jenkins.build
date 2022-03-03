@@ -1,5 +1,6 @@
 set -e
 
+rm -Rf vendor
 curl -sS https://getcomposer.org/installer | php
 php8.1 composer.phar install -n --ansi
 php8.1 bin/console integrated:install -e test

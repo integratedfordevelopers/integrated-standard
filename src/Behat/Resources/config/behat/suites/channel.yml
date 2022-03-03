@@ -1,7 +1,7 @@
 default:
     suites:
         channel:
-            contexts_services:
+            contexts:
                 - integrated.behat.context.hook.doctrine_odm_context
                 - integrated.behat.context.hook.doctrine_orm_context
 
