@@ -9,8 +9,8 @@
 
     <services>
         <service id="integrated.behat.page" class="Integrated\Behat\Page\Page" abstract="true" public="false">
-            <argument type="service" id="mink.default_session" />
-            <argument>%__behat__.mink.parameters%</argument>
+            <argument type="service" id="behat.mink.default_session" />
+            <argument type="service" id="behat.mink.parameters" />
         </service>
     </services>
 </container>

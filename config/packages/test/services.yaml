@@ -1,0 +1,6 @@
+services:
+    Integrated\Behat\:
+        resource: '../../../src/Behat/*'
+
+imports:
+    - { resource: '../../../src/Behat/Resources/config/services.xml' }
