@@ -3178,12 +3178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "c2dbdfaba4a966993db12ac1b07cdaa60e661ee8"
+                "reference": "b53487059f1a0fd062bfdc2ba99d49e286ae42d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/c2dbdfaba4a966993db12ac1b07cdaa60e661ee8.zip",
-                "reference": "c2dbdfaba4a966993db12ac1b07cdaa60e661ee8",
+                "url": "https://bitbucket.org/eactive/integrated/get/b53487059f1a0fd062bfdc2ba99d49e286ae42d9.zip",
+                "reference": "b53487059f1a0fd062bfdc2ba99d49e286ae42d9",
                 "shasum": ""
             },
             "require": {
@@ -3317,9 +3317,9 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/c2dbdfaba4a966993db12ac1b07cdaa60e661ee8/?at=release/0.25"
+                "source": "https://bitbucket.org/eactive/integrated/src/b53487059f1a0fd062bfdc2ba99d49e286ae42d9/?at=release/0.25"
             },
-            "time": "2022-03-02T15:10:17+00:00"
+            "time": "2022-03-03T11:50:43+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -4353,16 +4353,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.3",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "c6a951b75d684fd43fbbd69617488e1e2e8924ba"
+                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/c6a951b75d684fd43fbbd69617488e1e2e8924ba",
-                "reference": "c6a951b75d684fd43fbbd69617488e1e2e8924ba",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/14daed4296fae74d9e3201d2c4925d1acb7aa614",
+                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614",
                 "shasum": ""
             },
             "require": {
@@ -4400,7 +4400,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.3"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.0"
             },
             "funding": [
                 {
@@ -4408,7 +4408,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-02T14:16:47+00:00"
+            "time": "2022-03-03T13:19:32+00:00"
         },
         {
             "name": "myclabs/php-enum",
