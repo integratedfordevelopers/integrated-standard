@@ -18,13 +18,13 @@
         "doctrine/doctrine-migrations-bundle": "~2.1",
         "doctrine/orm": "~2.5",
         "incenteev/composer-parameter-handler": "~2.1",
-        "integrated/integrated": "0.25.*",
+        "integrated/integrated": "dev-INTEGRATED-1704 as 0.25",
         "integrated/thompson-theme-bundle": "^0.20",
         "leafo/scssphp": "^0.7.4",
-        "symfony/monolog-bundle": "^3.1",
-        "symfony/flex": "^1.3.1",
-        "symfony/dotenv": "^5.4",
         "symfony/apache-pack": "^1.0",
+        "symfony/dotenv": "^5.4",
+        "symfony/flex": "^1.3.1",
+        "symfony/monolog-bundle": "^3.1",
         "symfony/proxy-manager-bridge": "5.4.*"
     },
     "require-dev": {

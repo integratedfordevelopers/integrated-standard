@@ -1,5 +1,0 @@
-scheb_two_factor:
-    google:
-        enabled: true
-        issuer: 'Integrated'
-        template: '@IntegratedUser/security/two_factor.html.twig'
