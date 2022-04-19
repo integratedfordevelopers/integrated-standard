@@ -1,5 +1,6 @@
 set -e
-curl -sS https://getcomposer.org/installer | php
+curl -sS https://getcomposer.org/installer | php7.2
+php7.2 composer.phar self-update 2.2.9 # Required until fix is available or upgraded to Symfony 4 https://github.com/composer/composer/issues/10671
 php7.2 composer.phar install -n --ansi
 php7.2 bin/console integrated:install -e test
 php7.2 vendor/bin/phpcs
