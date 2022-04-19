@@ -1,3 +1,12 @@
+# Changelog Integrated version 0.16 #
+
+## New Features ##
+- [INTEGRATED-1572](https://eactive.atlassian.net/browse/INTEGRATED-1572) Upgrade to jenkins.build
+- [INTEGRATED-1662](https://eactive.atlassian.net/browse/INTEGRATED-1662) Remove FOSJsRoutingBundle dependency
+
+## Bug Fixes ##
+- [INTEGRATED-1661](https://eactive.atlassian.net/browse/INTEGRATED-1661) Poll bundle bug
+
 # Changelog Integrated version 0.15 #
 
 ## Highlights ##
