@@ -1,8 +1,18 @@
+# Upgrade to Integrated version 0.16 #
+- If you use the PollBundle, the ‘poll_ip’ table needs to be updated by using the following query:
+
+    ALTER TABLE poll_ip ADD id INT AUTO_INCREMENT NOT NULL, ADD PRIMARY KEY (id);
+    CREATE UNIQUE INDEX UNIQ_264EA87284BCFA45A5E3B32D ON poll_ip (poll, ip);
+
+Either create a migration in the project that includes this package or run it manually.
+
+- Remove FOSJsRoutingBundle in your AppKernel, or require it in your composer.json if your application uses it
+
 # Upgrade to Integrated version 0.15 #
 Load in AppKernel.php:
 
-* {{new Scheb\TwoFactorBundle\SchebTwoFactorBundle(),}}
-* {{new Endroid\QrCodeBundle\EndroidQrCodeBundle(),}}
+* new Scheb\TwoFactorBundle\SchebTwoFactorBundle(),
+* new Endroid\QrCodeBundle\EndroidQrCodeBundle(),
 
 Optionally enable two factor authentication: https://bitbucket.org/eactive/integrated-standard/commits/6cba8c9b13c80eaa106329526995947636d2357d
 
