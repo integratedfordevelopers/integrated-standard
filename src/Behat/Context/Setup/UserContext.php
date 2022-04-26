@@ -17,8 +17,8 @@ use Exception;
 use Integrated\Bundle\UserBundle\Model\RoleManagerInterface;
 use Integrated\Bundle\UserBundle\Model\ScopeManagerInterface;
 use Integrated\Bundle\UserBundle\Model\UserManagerInterface;
-use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
-use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
+use Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
+use Symfony\Component\Security\Core\Exception\UserNotFoundException;
 
 class UserContext implements Context
 {
@@ -43,29 +43,29 @@ class UserContext implements Context
     private $roleManager;
 
     /**
-     * @var EncoderFactoryInterface
+     * @var PasswordHasherFactoryInterface
      */
-    private $encoderFactory;
+    private $hasherFactory;
 
     /**
      * @param SecurityContext $securityContext
      * @param UserManagerInterface $userManager
      * @param ScopeManagerInterface $scopeManager
      * @param RoleManagerInterface $roleManager
-     * @param EncoderFactoryInterface $encoderFactory
+     * @param PasswordHasherFactoryInterface $hasherFactory
      */
     public function __construct(
         SecurityContext $securityContext,
         UserManagerInterface $userManager,
         ScopeManagerInterface $scopeManager,
         RoleManagerInterface $roleManager,
-        EncoderFactoryInterface $encoderFactory
+        PasswordHasherFactoryInterface $hasherFactory
     ) {
         $this->securityContext = $securityContext;
         $this->userManager = $userManager;
         $this->scopeManager = $scopeManager;
         $this->roleManager = $roleManager;
-        $this->encoderFactory = $encoderFactory;
+        $this->hasherFactory = $hasherFactory;
     }
 
     /**
@@ -76,13 +76,10 @@ class UserContext implements Context
      */
     public function createUserWithIntegratedScope($email, $password)
     {
-        $salt = base64_encode(random_bytes(72));
-
         $user = $this->userManager->create();
         $user->setUsername($email);
         $user->setEmail($email);
-        $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword($password, $salt));
-        $user->setSalt($salt);
+        $user->setPassword($this->hasherFactory->getPasswordHasher($user)->hash($password));
         $user->addRole($this->getRole('ROLE_SCOPE_INTEGRATED'));
         $user->setGoogleAuthenticatorSecret('secret');
         $user->setGoogleAuthenticatorEnabled(true);
@@ -99,7 +96,7 @@ class UserContext implements Context
     public function iAmLoggedInAs($email)
     {
         if (!$user = $this->userManager->findByEmail($email)) {
-            throw new UsernameNotFoundException(sprintf('No user found with e-mail "%s"', $email));
+            throw new UserNotFoundException(sprintf('No user found with e-mail "%s"', $email));
         }
 
         $this->securityContext->login($user);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f09afb4a2bef223d0abed331af4fbe0",
+    "content-hash": "d39853a3e8161fda16527c9e3f0a5854",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3177,12 +3177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "7b289260182b8572d8734b047bf0740c826d1f0d"
+                "reference": "3c62fd8d0a1e07243efe25670729ba5b1cb443cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/7b289260182b8572d8734b047bf0740c826d1f0d.zip",
-                "reference": "7b289260182b8572d8734b047bf0740c826d1f0d",
+                "url": "https://bitbucket.org/eactive/integrated/get/3c62fd8d0a1e07243efe25670729ba5b1cb443cc.zip",
+                "reference": "3c62fd8d0a1e07243efe25670729ba5b1cb443cc",
                 "shasum": ""
             },
             "require": {
@@ -3212,7 +3212,8 @@
                 "php": ">=7.3",
                 "psr/simple-cache": "^1.0",
                 "ramsey/uuid": "^4.2",
-                "scheb/two-factor-bundle": "^4.18",
+                "scheb/2fa-bundle": "^6.0",
+                "scheb/2fa-google-authenticator": "^6.0",
                 "sensio/framework-extra-bundle": "~5.0",
                 "solarium/solarium": "^6.2",
                 "swiftmailer/swiftmailer": "~6.1",
@@ -3271,7 +3272,7 @@
                 "phpstan/phpstan": "^1",
                 "phpstan/phpstan-deprecation-rules": "^1",
                 "phpstan/phpstan-doctrine": "^1",
-                "phpunit/phpunit": "~8.5",
+                "phpunit/phpunit": "^8.5.26",
                 "squizlabs/php_codesniffer": "^3.1"
             },
             "type": "library",
@@ -3316,9 +3317,9 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/7b289260182b8572d8734b047bf0740c826d1f0d/?at=release/0.25"
+                "source": "https://bitbucket.org/eactive/integrated/src/3c62fd8d0a1e07243efe25670729ba5b1cb443cc/?at=release/0.25"
             },
-            "time": "2022-03-17T08:53:55+00:00"
+            "time": "2022-04-26T10:43:48+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -4075,68 +4076,6 @@
                 }
             ],
             "time": "2021-12-19T18:06:55+00:00"
-        },
-        {
-            "name": "lcobucci/jwt",
-            "version": "3.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/82be04b4753f8b7693b62852b7eab30f97524f9b",
-                "reference": "82be04b4753f8b7693b62852b7eab30f97524f9b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "mdanter/ecc": "~0.3.1",
-                "mikey179/vfsstream": "~1.5",
-                "phpmd/phpmd": "~2.2",
-                "phpunit/php-invoker": "~1.1",
-                "phpunit/phpunit": "~4.5",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "suggest": {
-                "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\JWT\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Otávio Cobucci Oblonczyk",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
-            "keywords": [
-                "JWS",
-                "jwt"
-            ],
-            "support": {
-                "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/3.2"
-            },
-            "time": "2018-11-11T12:22:26+00:00"
         },
         {
             "name": "leafo/scssphp",
@@ -5216,52 +5155,47 @@
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
-            "name": "scheb/two-factor-bundle",
-            "version": "v4.18.4",
+            "name": "scheb/2fa-bundle",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/scheb/two-factor-bundle.git",
-                "reference": "78f5832d59ec49491ef27edc0fa03a3110139f5c"
+                "url": "https://github.com/scheb/2fa-bundle.git",
+                "reference": "bf509e13d6dd891e46f5914c57a8ee3c9e1d5e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scheb/two-factor-bundle/zipball/78f5832d59ec49491ef27edc0fa03a3110139f5c",
-                "reference": "78f5832d59ec49491ef27edc0fa03a3110139f5c",
+                "url": "https://api.github.com/repos/scheb/2fa-bundle/zipball/bf509e13d6dd891e46f5914c57a8ee3c9e1d5e0c",
+                "reference": "bf509e13d6dd891e46f5914c57a8ee3c9e1d5e0c",
                 "shasum": ""
             },
             "require": {
-                "lcobucci/jwt": "^3.2",
-                "paragonie/constant_time_encoding": "^2.2",
-                "php": ">=7.1.3",
-                "spomky-labs/otphp": "^9.1|^10.0",
-                "symfony/config": "^3.4|^4.0|^5.0",
-                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/event-dispatcher": "^3.4|^4.0|^5.0",
-                "symfony/framework-bundle": "^3.4|^4.0|^5.0",
-                "symfony/http-foundation": "^3.4|^4.0|^5.0",
-                "symfony/http-kernel": "^3.4|^4.0|^5.0",
-                "symfony/property-access": "^3.4|^4.0|^5.0",
-                "symfony/security-bundle": "^3.4|^4.0|^5.0",
-                "symfony/twig-bundle": "^3.4|^4.0|^5.0"
+                "ext-json": "*",
+                "php": "~8.0.0 || ~8.1.0",
+                "symfony/config": "^5.4 || ^6.0",
+                "symfony/dependency-injection": "^5.4 || ^6.0",
+                "symfony/event-dispatcher": "^5.4 || ^6.0",
+                "symfony/framework-bundle": "^5.4 || ^6.0",
+                "symfony/http-foundation": "^5.4 || ^6.0",
+                "symfony/http-kernel": "^5.4 || ^6.0",
+                "symfony/property-access": "^5.4 || ^6.0",
+                "symfony/security-bundle": "^5.4 || ^6.0",
+                "symfony/twig-bundle": "^5.4 || ^6.0"
             },
-            "require-dev": {
-                "doctrine/persistence": "^1.3|^2.0",
-                "escapestudios/symfony2-coding-standard": "^3.9",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0",
-                "squizlabs/php_codesniffer": "^3.5",
-                "swiftmailer/swiftmailer": "^6.0",
-                "symfony/polyfill-php80": "^1.15",
-                "symfony/yaml": "^3.4|^4.0|^5.0",
-                "vimeo/psalm": "^3.11"
+            "conflict": {
+                "scheb/two-factor-bundle": "*"
+            },
+            "suggest": {
+                "scheb/2fa-backup-code": "Emergency codes when you have no access to other methods",
+                "scheb/2fa-email": "Send codes by email",
+                "scheb/2fa-google-authenticator": "Google Authenticator support",
+                "scheb/2fa-totp": "Temporary one-time password (TOTP) support (Google Authenticator compatible)",
+                "scheb/2fa-trusted-device": "Trusted devices support"
             },
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
                     "Scheb\\TwoFactorBundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5273,8 +5207,8 @@
                     "email": "me@christianscheb.de"
                 }
             ],
-            "description": "Provides two-factor authentication for Symfony applications",
-            "homepage": "https://github.com/scheb/two-factor-bundle",
+            "description": "A generic interface to implement two-factor authentication in Symfony applications",
+            "homepage": "https://github.com/scheb/2fa",
             "keywords": [
                 "2fa",
                 "Authentication",
@@ -5283,11 +5217,60 @@
                 "two-step"
             ],
             "support": {
-                "issues": "https://github.com/scheb/two-factor-bundle/issues",
-                "source": "https://github.com/scheb/two-factor-bundle/tree/v4.18.4"
+                "source": "https://github.com/scheb/2fa-bundle/tree/v6.0.1"
             },
-            "abandoned": "scheb/2fa-bundle",
-            "time": "2020-10-30T19:24:18+00:00"
+            "time": "2022-01-18T18:57:15+00:00"
+        },
+        {
+            "name": "scheb/2fa-google-authenticator",
+            "version": "v6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scheb/2fa-google-authenticator.git",
+                "reference": "91928e31655dea49ed9114ff5c79cec157b72970"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scheb/2fa-google-authenticator/zipball/91928e31655dea49ed9114ff5c79cec157b72970",
+                "reference": "91928e31655dea49ed9114ff5c79cec157b72970",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/constant_time_encoding": "^2.4",
+                "php": "~8.0.0 || ~8.1.0",
+                "scheb/2fa-bundle": "self.version",
+                "spomky-labs/otphp": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scheb\\TwoFactorBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Scheb",
+                    "email": "me@christianscheb.de"
+                }
+            ],
+            "description": "Extends scheb/2fa-bundle with two-factor authentication using Google Authenticator",
+            "homepage": "https://github.com/scheb/2fa",
+            "keywords": [
+                "2fa",
+                "Authentication",
+                "google-authenticator",
+                "symfony",
+                "two-factor",
+                "two-step"
+            ],
+            "support": {
+                "source": "https://github.com/scheb/2fa-google-authenticator/tree/v6.0.1"
+            },
+            "time": "2022-01-03T10:16:52+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -11169,26 +11152,26 @@
         },
         {
             "name": "thecodingmachine/safe",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "e19610c7bb1f829bf0886f5a94a21924141212de"
+                "reference": "c4919cde04a0974e81340c3ed62bd27c1889005b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/e19610c7bb1f829bf0886f5a94a21924141212de",
-                "reference": "e19610c7bb1f829bf0886f5a94a21924141212de",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/c4919cde04a0974e81340c3ed62bd27c1889005b",
+                "reference": "c4919cde04a0974e81340c3ed62bd27c1889005b",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^1.5",
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.2",
-                "thecodingmachine/phpstan-strict-rules": "^0.12"
+                "thecodingmachine/phpstan-strict-rules": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -11301,9 +11284,9 @@
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
             "support": {
                 "issues": "https://github.com/thecodingmachine/safe/issues",
-                "source": "https://github.com/thecodingmachine/safe/tree/v2.1.2"
+                "source": "https://github.com/thecodingmachine/safe/tree/v2.1.3"
             },
-            "time": "2022-02-01T21:08:44+00:00"
+            "time": "2022-03-30T09:48:08+00:00"
         },
         {
             "name": "twig/extra-bundle",
@@ -15236,5 +15219,5 @@
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
