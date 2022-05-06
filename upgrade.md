@@ -1,3 +1,7 @@
+# Upgrade to Integrated version 0.17 #
+
+-
+
 # Upgrade to Integrated version 0.16 #
 - If you use the PollBundle, the ‘poll_ip’ table needs to be updated by using the following query:
 
