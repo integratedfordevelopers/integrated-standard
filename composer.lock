@@ -3177,12 +3177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "3c62fd8d0a1e07243efe25670729ba5b1cb443cc"
+                "reference": "390c7b26c74e06d9371ebf92a6a28cfc6af2ae77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/3c62fd8d0a1e07243efe25670729ba5b1cb443cc.zip",
-                "reference": "3c62fd8d0a1e07243efe25670729ba5b1cb443cc",
+                "url": "https://bitbucket.org/eactive/integrated/get/390c7b26c74e06d9371ebf92a6a28cfc6af2ae77.zip",
+                "reference": "390c7b26c74e06d9371ebf92a6a28cfc6af2ae77",
                 "shasum": ""
             },
             "require": {
@@ -3231,6 +3231,7 @@
                 "symfony/monolog-bundle": "~3.7.1",
                 "symfony/polyfill-iconv": "~1.6",
                 "symfony/polyfill-php80": "^1.23.1",
+                "symfony/process": "~5.4",
                 "symfony/property-access": "^5.4.5",
                 "symfony/property-info": "^5.4",
                 "symfony/routing": "^5.4",
@@ -3278,6 +3279,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+                    "dev-release/0.17": "0.17.x-dev",
                     "dev-release/0.20": "0.20.x-dev",
                     "dev-release/0.21": "0.21.x-dev",
                     "dev-release/0.22": "0.22.x-dev",
@@ -3317,9 +3319,9 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/3c62fd8d0a1e07243efe25670729ba5b1cb443cc/?at=release/0.25"
+                "source": "https://bitbucket.org/eactive/integrated/src/390c7b26c74e06d9371ebf92a6a28cfc6af2ae77/?at=release/0.25"
             },
-            "time": "2022-04-26T10:43:48+00:00"
+            "time": "2022-05-05T09:21:44+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
@@ -9253,6 +9255,68 @@
             "time": "2021-09-13T13:58:11+00:00"
         },
         {
+            "name": "symfony/process",
+            "version": "v5.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/95440409896f90a5f85db07a32b517ecec17fa4c",
+                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v5.4.5"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-30T18:16:22+00:00"
+        },
+        {
             "name": "symfony/property-access",
             "version": "v5.4.5",
             "source": {
@@ -14960,68 +15024,6 @@
             "time": "2022-01-26T16:28:35+00:00"
         },
         {
-            "name": "symfony/process",
-            "version": "v5.4.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/95440409896f90a5f85db07a32b517ecec17fa4c",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Executes commands in sub-processes",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.5"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-01-30T18:16:22+00:00"
-        },
-        {
             "name": "symfony/web-profiler-bundle",
             "version": "v5.4.6",
             "source": {
@@ -15219,5 +15221,5 @@
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }

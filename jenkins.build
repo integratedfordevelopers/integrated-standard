@@ -2,9 +2,8 @@ set -e
 
 rm -Rf vendor
 curl -sS https://getcomposer.org/installer | php8.1
-php8.1 bin/console cache:clear --no-warmup -e test
-php8.1 bin/console doctrine:schema:drop -e test --force --full-database
 php8.1 composer.phar install -n --ansi
+php8.1 bin/console doctrine:schema:drop -e test --force --full-database
 php8.1 bin/console integrated:install -e test
 php8.1 bin/phpcs
 php8.1 bin/phpunit

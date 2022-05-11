@@ -39,10 +39,8 @@ RUN echo 'source ~/.bashrc' > ~/.bash_profile; \
 
 USER root
 
-RUN npm install -g less@1.7.5 bower uglify-js uglifycss;
-
 RUN set -eux; \
-    curl https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -; \
+    curl -L https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -; \
     echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list; \
     apt-get update; \
     apt-get install -y --no-install-recommends mongodb-org-tools mariadb-client-10.3;\
