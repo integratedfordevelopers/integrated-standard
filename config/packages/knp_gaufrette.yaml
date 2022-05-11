@@ -1,0 +1,9 @@
+# Storage Configuration
+knp_gaufrette:
+    adapters:
+        local:
+            local:
+                directory: '%kernel.project_dir%/public/files'
+    filesystems:
+        integrated:
+            adapter: local

@@ -65,7 +65,11 @@
     },
     "config": {
         "bin-dir": "bin",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "endroid/installer": true,
+            "symfony/flex": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
