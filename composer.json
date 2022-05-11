@@ -78,5 +78,10 @@
             "dev-release/0.20": "0.20-dev",
             "dev-release/0.25": "0.25-dev"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "endroid/installer": true
+        }
     }
 }

@@ -1,3 +1,11 @@
+# Changelog Integrated version 0.17 #
+
+## New Features ##
+- [INTEGRATED-1422](https://eactive.atlassian.net/browse/INTEGRATED-1422) Optimize and improve content history
+- [INTEGRATED-1707](https://eactive.atlassian.net/browse/INTEGRATED-1707) Optimize search for relations
+- [INTEGRATED-1710](https://eactive.atlassian.net/browse/INTEGRATED-1710) Don't send password reset mails when account has not been found
+- [INTEGRATED-1711](https://eactive.atlassian.net/browse/INTEGRATED-1711) Allow to list and bulk change content based on ids
+
 # Changelog Integrated version 0.16 #
 
 ## New Features ##
