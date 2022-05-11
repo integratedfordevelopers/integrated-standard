@@ -65,7 +65,11 @@
     },
     "config": {
         "bin-dir": "bin",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "endroid/installer": true,
+            "symfony/flex": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -77,6 +81,11 @@
             "dev-release/0.15": "0.15-dev",
             "dev-release/0.20": "0.20-dev",
             "dev-release/0.25": "0.25-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "endroid/installer": true
         }
     }
 }
