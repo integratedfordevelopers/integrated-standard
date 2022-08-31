@@ -1,12 +1,13 @@
 set -e
-curl -sS https://getcomposer.org/installer | php7.2
-php7.2 composer.phar self-update 2.2.9 # Required until fix is available or upgraded to Symfony 4 https://github.com/composer/composer/issues/10671
-php7.2 composer.phar install -n --ansi
-php7.2 bin/console cache:clear --no-warmup -e test
-php7.2 bin/console doctrine:schema:drop -e test --force --full-database
-php7.2 bin/console integrated:install -e test
-php7.2 vendor/bin/phpcs
-php7.2 vendor/bin/phpunit
-php7.2 vendor/bin/behat --colors
-php7.2 vendor/bin/phpstan analyse --no-progress -c phpstan.test.neon
-php7.2 bin/console lint:twig vendor/integrated/ -e test
+
+rm -Rf vendor
+curl -sS https://getcomposer.org/installer | php7.3
+php7.3 composer.phar install -n --ansi
+php7.3 bin/console cache:clear --no-warmup -e test
+php7.3 bin/console doctrine:schema:drop -e test --force --full-database
+php7.3 bin/console integrated:install -e test
+php7.3 bin/phpcs
+php7.3 bin/phpunit
+php7.3 bin/behat --colors
+php7.3 bin/phpstan analyse --no-progress -c phpstan.test.neon
+php7.3 bin/console lint:twig vendor/integrated/ -e test

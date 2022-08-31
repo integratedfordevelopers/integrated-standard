@@ -1,0 +1,14 @@
+# see https://symfony.com/doc/current/reference/configuration/framework.html
+framework:
+    secret: '%env(APP_SECRET)%'
+    form: ~
+    csrf_protection: ~
+    serializer: { enable_annotations: true }
+    default_locale: '%env(LOCALE)%'
+    trusted_hosts: ~
+    session:
+        handler_id: ~
+    http_method_override: true
+    assets: ~
+    php_errors:
+        log: true

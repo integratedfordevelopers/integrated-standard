@@ -1,4 +1,4 @@
-FROM thecodingmachine/php:7.2-v3-fpm-node8
+FROM thecodingmachine/php:7.3-v4-fpm-node10
 
 ENV PHP_EXTENSION_INTL=1 \
     PHP_EXTENSION_GD=1 \
@@ -14,14 +14,13 @@ RUN set -eux; \
     apt-get install -y --no-install-recommends bash-completion;\
     rm -rf /var/lib/apt/lists/*
 
-RUN mv /usr/local/bin/real_composer /usr/local/bin/composer
-
 RUN set -eux; \
     curl https://bitbucket.org/eactive/docker-utils/raw/master/bash/.bashrc --output /root/.bashrc; \
     cp /root/.bashrc /home/docker/.bashrc; \
     chown docker:docker /home/docker/.bashrc
 
 RUN set -eux; \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -; \
     apt-get update; \
     apt-get install -y --no-install-recommends ssmtp; \
     rm -rf /var/lib/apt/lists/*; \
@@ -46,7 +45,7 @@ RUN set -eux; \
     curl https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -; \
     echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list; \
     apt-get update; \
-    apt-get install -y --no-install-recommends mongodb-org-tools mariadb-client-10.1;\
+    apt-get install -y --no-install-recommends mongodb-org-tools mariadb-client-10.3;\
     apt-get install -y --no-install-recommends zip;\
     rm -rf /var/lib/apt/lists/*
 
