@@ -1,13 +1,12 @@
 set -e
 
 rm -Rf vendor
-curl -sS https://getcomposer.org/installer | php7.3
-php7.3 composer.phar install -n --ansi
-php7.3 bin/console cache:clear --no-warmup -e test
-php7.3 bin/console doctrine:schema:drop -e test --force --full-database
-php7.3 bin/console integrated:install -e test
-php7.3 bin/phpcs
-php7.3 bin/phpunit
-php7.3 bin/behat --colors
-php7.3 bin/phpstan analyse --no-progress -c phpstan.test.neon
-php7.3 bin/console lint:twig vendor/integrated/ -e test
+curl -sS https://getcomposer.org/installer | php8.1
+php8.1 composer.phar install -n --ansi
+php8.1 bin/console doctrine:schema:drop -e test --force --full-database
+php8.1 bin/console integrated:install -e test
+php8.1 bin/phpcs
+php8.1 bin/phpunit
+php8.1 bin/behat --colors
+php8.1 bin/phpstan analyse --no-progress -c phpstan.test.neon
+php8.1 bin/console lint:twig vendor/integrated/ -e test

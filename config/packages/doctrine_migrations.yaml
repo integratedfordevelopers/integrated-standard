@@ -1,5 +1,5 @@
 doctrine_migrations:
-    dir_name: '%kernel.root_dir%/Migrations/MySQL'
+    dir_name: '%kernel.project_dir%/Migrations/MySQL'
     namespace: 'Application\Migrations\Doctrine'
     table_name: 'migration_versions'
     name: 'MySQL Migrations'

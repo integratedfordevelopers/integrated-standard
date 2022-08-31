@@ -16,7 +16,7 @@ use Behat\Mink\Exception\UnsupportedDriverActionException;
 use Integrated\Bundle\UserBundle\Model\RoleManagerInterface;
 use Integrated\Bundle\UserBundle\Model\UserInterface;
 use Integrated\Bundle\UserBundle\Model\UserManagerInterface;
-use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
+use \Symfony\Component\PasswordHasher\Hasher\PasswordHasherFactoryInterface;
 
 class Context implements ContextInterface
 {
@@ -36,26 +36,26 @@ class Context implements ContextInterface
     private $roleManager;
 
     /**
-     * @var EncoderFactoryInterface
+     * @var PasswordHasherFactoryInterface
      */
-    private $encoderFactory;
+    private $hasherFactory;
 
     /**
      * @param SecurityContext $securityContext
      * @param UserManagerInterface $userManager
      * @param RoleManagerInterface $roleManager
-     * @param EncoderFactoryInterface $encoderFactory
+     * @param PasswordHasherFactoryInterface $hasherFactory
      */
     public function __construct(
         SecurityContext $securityContext,
         UserManagerInterface $userManager,
         RoleManagerInterface $roleManager,
-        EncoderFactoryInterface $encoderFactory
+        PasswordHasherFactoryInterface $hasherFactory
     ) {
         $this->securityContext = $securityContext;
         $this->userManager = $userManager;
         $this->roleManager = $roleManager;
-        $this->encoderFactory = $encoderFactory;
+        $this->hasherFactory = $hasherFactory;
     }
 
     /**
@@ -77,8 +77,7 @@ class Context implements ContextInterface
 
         $user->setUsername('integrated');
         $user->setEmail('integrated@example.com');
-        $user->setSalt(base64_encode(random_bytes(72)));
-        $user->setPassword($this->encoderFactory->getEncoder($user)->encodePassword('integrated', $user->getSalt()));
+        $user->setPassword($this->hasherFactory->getPasswordHasher($user)->hash('integrated'));
         $user->setGoogleAuthenticatorSecret('secret');
         $user->setGoogleAuthenticatorEnabled(true);
 

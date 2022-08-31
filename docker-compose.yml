@@ -31,7 +31,7 @@ services:
       - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
 
   mysql:
-    image: 'mariadb:10.3'
+    image: 'mariadb:10.5'
     ports:
       - '3306:3306'
     environment:

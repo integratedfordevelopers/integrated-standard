@@ -10,10 +10,11 @@ default:
 
         FriendsOfBehat\SymfonyExtension:
             kernel:
-                bootstrap: vendor/autoload.php
+                environment: test
+            bootstrap: tests/bootstrap.php
 
-        FriendsOfBehat\ContextServiceExtension:
-            imports:
-                - "src/Behat/Resources/config/services.xml"
+        #FriendsOfBehat\ContextServiceExtension:
+        #    imports:
+        #        - "src/Behat/Resources/config/services.xml"
 
-        FriendsOfBehat\CrossContainerExtension: ~
+        #FriendsOfBehat\CrossContainerExtension: ~
