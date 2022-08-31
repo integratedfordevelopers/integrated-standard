@@ -1,3 +1,16 @@
+# Upgrade to Integrated version 0.20 #
+
+- Replace the current Integrated routes with:
+
+{noformat}integrated:
+    resource: "@IntegratedIntegratedBundle/Resources/config/routing.xml"
+    prefix: "/admin"{noformat}
+
+
+- Stop using the {{braincrafted_bootstrap.flash}} service, use the Symfony flash component instead
+
+- Replace everything in the {{Braincrafted}} namespace (most form types have been moved to the IntegratedFormBundle)
+
 # Upgrade to Integrated version 0.17 #
 
 -
