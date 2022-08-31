@@ -237,9 +237,6 @@
     "justinrainbow/json-schema": {
         "version": "5.2.11"
     },
-    "khanamiryan/qrcode-detector-decoder": {
-        "version": "1.0.5.2"
-    },
     "knplabs/gaufrette": {
         "version": "v0.9.0"
     },
@@ -272,9 +269,6 @@
     },
     "myclabs/deep-copy": {
         "version": "1.10.2"
-    },
-    "myclabs/php-enum": {
-        "version": "1.7.7"
     },
     "nelmio/alice": {
         "version": "3.2",

@@ -1,3 +1,33 @@
+# Changelog Integrated version 0.25 #
+
+## Highlights ##
+- Symfony 5.4 is required
+
+## New Features ##
+- [INTEGRATED-1679](https://eactive.atlassian.net/browse/INTEGRATED-1679) User activity logging
+- [INTEGRATED-1680](https://eactive.atlassian.net/browse/INTEGRATED-1680) Upgrade to Symfony 5
+- [INTEGRATED-1696](https://eactive.atlassian.net/browse/INTEGRATED-1696) Use PHP 8.1 in integrated/standard
+- [INTEGRATED-1703](https://eactive.atlassian.net/browse/INTEGRATED-1703) Upgrade to new Symfony security system
+- [INTEGRATED-1704](https://eactive.atlassian.net/browse/INTEGRATED-1704) Upgrade scheb/two-factor-bundle to scheb/2fa-bundle
+- [INTEGRATED-1705](https://eactive.atlassian.net/browse/INTEGRATED-1705) Replace Swift mailer by symfony/mailer
+- [INTEGRATED-1718](https://eactive.atlassian.net/browse/INTEGRATED-1718) Solve PHP 8.1 / Symfony 5 deprecations
+- [INTEGRATED-1746](https://eactive.atlassian.net/browse/INTEGRATED-1746) Support endroid/qr-code-bundle version 4
+
+## Bug Fixes ##
+- [INTEGRATED-1719](https://eactive.atlassian.net/browse/INTEGRATED-1719) User groups are not selected in the edit user screen
+- [INTEGRATED-1722](https://eactive.atlassian.net/browse/INTEGRATED-1722) Results are not shown after upgrade to Solarium 6
+- [INTEGRATED-1723](https://eactive.atlassian.net/browse/INTEGRATED-1723) Datafixtures are broken
+- [INTEGRATED-1725](https://eactive.atlassian.net/browse/INTEGRATED-1725) PublishTime default endDate is not stored as UTC timestamp but on the php default timezone
+- [INTEGRATED-1728](https://eactive.atlassian.net/browse/INTEGRATED-1728) Filter on block is broken
+- [INTEGRATED-1729](https://eactive.atlassian.net/browse/INTEGRATED-1729) Proxy classes are added to the queue instead of real classes
+- [INTEGRATED-1732](https://eactive.atlassian.net/browse/INTEGRATED-1732) Fallback images do not work correctly any more
+- [INTEGRATED-1734](https://eactive.atlassian.net/browse/INTEGRATED-1734) Storage cache files can 0 bytes
+- [INTEGRATED-1736](https://eactive.atlassian.net/browse/INTEGRATED-1736) (tijdelijk doorlopend issue op de kanban) Integrated 0.25 bugs
+- [INTEGRATED-1748](https://eactive.atlassian.net/browse/INTEGRATED-1748) Solr ProcessPoolGenerator fix
+- [INTEGRATED-1749](https://eactive.atlassian.net/browse/INTEGRATED-1749) Theme path without directory does not work
+- [INTEGRATED-1750](https://eactive.atlassian.net/browse/INTEGRATED-1750) Adding an image in TinyMCE fails
+- [INTEGRATED-1752](https://eactive.atlassian.net/browse/INTEGRATED-1752) Routing CommentBundle
+
 # Changelog Integrated version 0.20 #
 
 ## Notes ##
