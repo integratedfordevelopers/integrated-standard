@@ -1,3 +1,35 @@
+# Changelog Integrated version 0.20 #
+
+## Notes ##
+- This release is not recommended for production use. This release can be used to upgrade to Symfony 4.4, upgrading to 0.25 afterwards is recommended 
+
+## New Features ##
+- [INTEGRATED-1587](https://eactive.atlassian.net/browse/INTEGRATED-1587) Upgrade to Symfony 4
+- [INTEGRATED-1645](https://eactive.atlassian.net/browse/INTEGRATED-1645) Support Symfony Flex - support in application
+- [INTEGRATED-1653](https://eactive.atlassian.net/browse/INTEGRATED-1653) Upgrade to MongoDB ODM 2
+- [INTEGRATED-1660](https://eactive.atlassian.net/browse/INTEGRATED-1660) Use seperate symfony packages instead of symfony/symfony
+- [INTEGRATED-1666](https://eactive.atlassian.net/browse/INTEGRATED-1666) Upgrade Vihuvac RecaptchaBundle to support Symfony 4
+- [INTEGRATED-1670](https://eactive.atlassian.net/browse/INTEGRATED-1670) Allow to include a centralized routing file
+- [INTEGRATED-1672](https://eactive.atlassian.net/browse/INTEGRATED-1672) Remove BraincraftedBootstrapBundle
+- [INTEGRATED-1675](https://eactive.atlassian.net/browse/INTEGRATED-1675) Migrate Bower to Webpack part 1: CSS
+- [INTEGRATED-1678](https://eactive.atlassian.net/browse/INTEGRATED-1678) Migrate Bower to Webpack part 2: main JS
+- [INTEGRATED-1681](https://eactive.atlassian.net/browse/INTEGRATED-1681) Stop using Symfony\Bundle\FrameworkBundle\Templating\GlobalVariables
+- [INTEGRATED-1682](https://eactive.atlassian.net/browse/INTEGRATED-1682) Stop using Symfony\Component\Security\Http\Firewall\ListenerInterface
+- [INTEGRATED-1683](https://eactive.atlassian.net/browse/INTEGRATED-1683) Application generated UUID
+- [INTEGRATED-1684](https://eactive.atlassian.net/browse/INTEGRATED-1684) Upgrade phpstan
+- [INTEGRATED-1686](https://eactive.atlassian.net/browse/INTEGRATED-1686) Upgrade knp-menu-bundle
+- [INTEGRATED-1687](https://eactive.atlassian.net/browse/INTEGRATED-1687) Allow PHP 8
+- [INTEGRATED-1689](https://eactive.atlassian.net/browse/INTEGRATED-1689) Migrate rct567/dom-query
+- [INTEGRATED-1691](https://eactive.atlassian.net/browse/INTEGRATED-1691) Upgrade Solarium
+- [INTEGRATED-1693](https://eactive.atlassian.net/browse/INTEGRATED-1693) Allow Twig 3
+- [INTEGRATED-1698](https://eactive.atlassian.net/browse/INTEGRATED-1698) Migrate Bower to Webpack: TinyMCE
+- [INTEGRATED-1699](https://eactive.atlassian.net/browse/INTEGRATED-1699) Migrate Bower to Webpack: javascript implementation
+- [INTEGRATED-1702](https://eactive.atlassian.net/browse/INTEGRATED-1702) Migrate Bower to Webpack: javascript implementation - DateTime picker
+
+## Bug Fixes ##
+- [INTEGRATED-1720](https://eactive.atlassian.net/browse/INTEGRATED-1720) Incorrect argument to OutputInterface
+- [INTEGRATED-1726](https://eactive.atlassian.net/browse/INTEGRATED-1726) ContentType pages are created when channels are disabled and not when enabled + hide
+
 # Changelog Integrated version 0.17 #
 
 ## New Features ##
