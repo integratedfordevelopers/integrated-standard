@@ -11,7 +11,6 @@ integrated_solr:
             username: '%env(resolve:SOLR_USERNAME)%'
             password: '%env(resolve:SOLR_PASSWORD)%'
             core: '%env(resolve:SOLR_CORE)%'
-            timeout: '%env(resolve:SOLR_TIMEOUT)%'
 
 integrated_social:
     facebook:
