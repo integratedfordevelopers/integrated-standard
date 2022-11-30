@@ -1,3 +1,14 @@
+# Changelog Integrated version 0.26 #
+
+## New Features ##
+- [INTEGRATED-1757](https://eactive.atlassian.net/browse/INTEGRATED-1757) Update password hashing
+
+## Bug Fixes ##
+- [INTEGRATED-1754](https://eactive.atlassian.net/browse/INTEGRATED-1754) Serialization of 'Closure' is not allowed vendor/integrated/integrated/src/Bundle/UserBundle/Form/EventListener/AuthenticatorErrorListener.php:75
+- [INTEGRATED-1758](https://eactive.atlassian.net/browse/INTEGRATED-1758) Workflow (admin/workflow/new) Add status not working. (Select2)
+- [INTEGRATED-1759](https://eactive.atlassian.net/browse/INTEGRATED-1759) [INTEGRATED] Version 0.26 bugs
+- [INTEGRATED-1777](https://eactive.atlassian.net/browse/INTEGRATED-1777) Incorrect resolving of referenced documents
+
 # Changelog Integrated version 0.25 #
 
 ## Highlights ##
