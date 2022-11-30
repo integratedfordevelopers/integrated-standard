@@ -4,6 +4,7 @@ integrated_storage:
             public: '/files'
 
 integrated_solr:
+    timeout: '%env(resolve:SOLR_TIMEOUT)%'
     endpoints:
         default:
             host: '%env(resolve:SOLR_HOST)%'
