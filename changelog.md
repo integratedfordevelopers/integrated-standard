@@ -1,3 +1,13 @@
+# Changelog Integrated version 0.28 #
+
+## New Features ##
+- [INTEGRATED-1767](https://eactive.atlassian.net/browse/INTEGRATED-1767) IntegratedHttpRequestHandler: is it correctly implemented?
+
+## Bug Fixes ##
+- [INTEGRATED-1743](https://eactive.atlassian.net/browse/INTEGRATED-1743) /admin/workflow/new adding status does not work
+- [INTEGRATED-1769](https://eactive.atlassian.net/browse/INTEGRATED-1769) Usage of getManager in WorkflowController.php (131) throws error
+- [INTEGRATED-1785](https://eactive.atlassian.net/browse/INTEGRATED-1785) Globe link does not support target blank
+
 # Changelog Integrated version 0.27 #
 
 ## Bug Fixes ##
