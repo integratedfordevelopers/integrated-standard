@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d39853a3e8161fda16527c9e3f0a5854",
+    "content-hash": "dca2e593c5fe1d50f8d996ac75b18c00",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3115,16 +3115,16 @@
         },
         {
             "name": "integrated/integrated",
-            "version": "0.25",
+            "version": "0.26",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated.git",
-                "reference": "302f5d676fb1039068ff77fb75d6414ea92426f2"
+                "reference": "be153e9479b1f71d6ecd539dd743c8721c8af876"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated/get/302f5d676fb1039068ff77fb75d6414ea92426f2.zip",
-                "reference": "302f5d676fb1039068ff77fb75d6414ea92426f2",
+                "url": "https://bitbucket.org/eactive/integrated/get/be153e9479b1f71d6ecd539dd743c8721c8af876.zip",
+                "reference": "be153e9479b1f71d6ecd539dd743c8721c8af876",
                 "shasum": ""
             },
             "require": {
@@ -3261,9 +3261,9 @@
                 "publishing"
             ],
             "support": {
-                "source": "https://bitbucket.org/eactive/integrated/src/302f5d676fb1039068ff77fb75d6414ea92426f2/?at=0.25"
+                "source": "https://bitbucket.org/eactive/integrated/src/be153e9479b1f71d6ecd539dd743c8721c8af876/?at=0.26"
             },
-            "time": "2022-08-31T12:50:32+00:00"
+            "time": "2022-10-06T07:54:57+00:00"
         },
         {
             "name": "integrated/thompson-theme-bundle",
