@@ -1,4 +1,4 @@
-FROM thecodingmachine/php:8.1.0-v4-fpm-node12
+FROM thecodingmachine/php:8.1.0-v4-fpm-node14
 
 ENV PHP_EXTENSION_INTL=1 \
     PHP_EXTENSION_GD=1 \
