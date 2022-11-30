@@ -1,3 +1,10 @@
+# Changelog Integrated version 0.27 #
+
+## Bug Fixes ##
+- [INTEGRATED-1768](https://eactive.atlassian.net/browse/INTEGRATED-1768) Custom fields can't be added
+- [INTEGRATED-1772](https://eactive.atlassian.net/browse/INTEGRATED-1772) integrated_workflow.extension.doctrine.object_manager isn't public
+- [INTEGRATED-1780](https://eactive.atlassian.net/browse/INTEGRATED-1780) FieldMapperType gives notices when property does not exists
+
 # Changelog Integrated version 0.26 #
 
 ## New Features ##
